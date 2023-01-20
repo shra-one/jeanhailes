@@ -1,0 +1,22 @@
+.template--homepage-homepage {
+	.banner.banner--with-media.banner--home {
+		+ .main .main__container.container {
+			> .matrix-block.matrix-block--infoBlock {
+				.info-block {
+					margin-top: -40px;
+					@include media-breakpoint-up(lg) {
+						margin-top: -110px;
+					}
+					@include media-breakpoint-up(lg) {
+						margin-top: -140px;
+					}
+					@include media-breakpoint-up(xl) {
+						margin-left: -14px;
+						padding-right: 36px;
+						margin-top: -260px;
+					}
+				}
+			}
+		}
+	}
+}

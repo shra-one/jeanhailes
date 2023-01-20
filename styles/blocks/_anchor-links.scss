@@ -1,0 +1,52 @@
+// When this block is not the first block, give it more margin
+// this is to visually separate it from the top section as its a menu for the rest of the page
+.matrix-block + .matrix-block-anchorLinks {
+	margin-top: $gap;
+}
+
+.anchor-links {
+	$anchor-links: &;
+	@include fluid-property("margin-top", 40, 24);
+	padding: 3.2rem 0 1rem;
+	border-left: 3px solid $light-green;
+	&__heading {
+		@extend %sub-heading;
+		@include fluid-property("padding-left", $gap-middle-px, $gap-mobile-px);
+		margin-bottom: 0;
+		padding-bottom: 1rem;
+	}
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 0;
+	}
+	&__link {
+		display: block;
+		@extend %minor-heading;
+		font-size: 1.6rem;
+		color: $text-color;
+		padding-top: 1.6rem;
+		border: 0;
+		background-color: transparent;
+		font-weight: 400;
+		border-left: 3px solid transparent;
+		@include fluid-property("padding-left", $gap-middle-px, $gap-mobile-px);
+		margin-left: -2px;
+		&:hover,
+		&:visited,
+		&:active,
+		&:focus {
+			@include fluid-property(
+				"padding-left",
+				$gap-middle-px,
+				$gap-mobile-px
+			);
+			color: $green;
+			border-left: 3px solid $green;
+			background: none;
+			outline: none;
+			border-radius: 0;
+			box-shadow: none;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+.share-widget {
+	$share-widget: &;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1.6rem;
+	background-color: $cream;
+	border-radius: $basic-border-radius;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2.4rem;
+	@include media-breakpoint-up(xl) {
+		grid-gap: 32px;
+		grid-template-columns: auto 1fr;
+		justify-items: last baseline;
+	}
+	&__social-share {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1.6rem;
+		@include media-breakpoint-up(md) {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+	}
+	&__heading {
+		@extend %sub-heading;
+		margin-bottom: 0;
+	}
+
+	&__buttons-wrap {
+		display: flex;
+	}
+
+	&__button {
+		@extend %share-this-button;
+		&--email {
+			@extend %share-this-button--email;
+			@include hover-focus {
+				background-color: darken($black, 10%);
+			}
+		}
+		&--twitter {
+			@extend %share-this-button--twitter;
+			@include hover-focus {
+				background-color: darken(#4b97d9, 10%);
+			}
+		}
+		&--facebook {
+			@extend %share-this-button--facebook;
+			@include hover-focus {
+				background-color: darken(#2c3e90, 10%);
+			}
+		}
+		&--linkedin {
+			@extend %share-this-button--linkedin;
+			@include hover-focus {
+				background-color: darken(#0073b1, 10%);
+			}
+			#{$share-widget}__button-icon {
+				margin-top: -6px;
+				height: 20px;
+			}
+		}
+	}
+
+	&__button-icon {
+		width: 22px;
+		@extend %button__prepend;
+		transition: scale 0.3s ease-in-out;
+		margin-right: 0.6rem;
+		@include media-breakpoint-up(sm) {
+			margin-right: 1.2rem;
+		}
+	}
+
+	&__button-text {
+		font-size: 16px;
+		display: none;
+		@include media-breakpoint-up(sm) {
+			display: inline-block;
+		}
+	}
+}

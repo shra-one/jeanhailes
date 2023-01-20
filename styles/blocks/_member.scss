@@ -1,0 +1,30 @@
+.member {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	&__image {
+		border-radius: 204px;
+		@include fluid-property("width", 222, 80);
+		@include fluid-property(
+			"margin-bottom",
+			$gap-mobile-normal-px,
+			$gap-mobile-small-px
+		);
+	}
+	&__heading {
+		@extend %secondary-heading;
+		margin-bottom: 0.8rem;
+	}
+	&__gender {
+		background-color: $cream;
+		border-radius: 21px;
+		padding: 0.4rem 0.8rem;
+		margin-bottom: 1.6rem;
+		font-size: 12px;
+	}
+	&__job {
+		@extend %sub-heading;
+		margin-bottom: 0.2rem;
+	}
+}

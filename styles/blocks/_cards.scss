@@ -1,0 +1,72 @@
+/**
+ * Cards layout
+ *
+ * Reminder of the card layout rules in design system:
+ * Withing main content (article width)
+ * ---
+ ..* < 576px: 1 column layout
+ ..* >= 576px, < 992px: 2 columns layout
+ ..* >= 992px: 3 columns layout if only 3 cards in total. Otherwise, 2 columns layout.
+ * Within secondary content (full width body)
+ * ---
+ ..* < 576px: 1 column layout
+ ..* >= 576px, < 992px: 2 columns layout
+ ..* >= 992px, < 1200px: 3 columns layout if only 3 cards in total. Otherwise, 2 columns layout. (Same as main content)
+ ..* >= 1200px: 4 columns layout if only 4 cards in total. Otherwise, 3 columns layout
+ *
+ * Also, each card should be equally high >= 576px
+ * 
+ */
+
+/** Cards is the outer element, card is an individual card **/
+
+/** Deafult (Main Content Area) **/
+.cards {
+	$self: &;
+	&__rows {
+		display: grid;
+		grid-gap: $card-gutter-width-vertical;
+		@include media-breakpoint-up(sm) {
+			grid-template-columns: 1fr 1fr;
+			grid-gap: $card-gutter-width-horizontal;
+			grid-auto-rows: auto;
+		}
+	}
+
+	&--count-3 {
+		#{$self}__rows {
+			@include media-breakpoint-up(lg) {
+				grid-column-gap: $card-gutter-width-horizontal;
+				grid-row-gap: $card-gutter-width-row;
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+	}
+	&--count-4 {
+		#{$self}__rows {
+			@include media-breakpoint-up(lg) {
+				grid-gap: $card-gutter-width-vertical;
+				grid-template-columns: repeat(4, 1fr);
+			}
+		}
+	}
+}
+
+/* Within Secondary content */
+.neo-secondary-content {
+	.cards {
+		$self: &;
+
+		&__rows {
+			@include media-breakpoint-up(xl) {
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+		}
+
+		&--count-4 {
+			#{$self}__rows {
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+		}
+	}
+}

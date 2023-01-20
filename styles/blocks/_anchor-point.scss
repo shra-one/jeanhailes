@@ -1,0 +1,13 @@
+.anchor-point {
+    &__heading {
+        @extend %secondary-heading;
+    }
+}
+
+.matrix-block--anchorPoint {
+    margin-bottom: 1.6rem;
+}
+
+.matrix-block--anchorPoint + .matrix-block {
+    margin-top: 1.6rem;
+}

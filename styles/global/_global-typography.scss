@@ -1,0 +1,54 @@
+html {
+  font-size: 10px; /* font-size 1rem = 10px on default browser settings */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $white;
+  color: $text-color;
+  letter-spacing: normal;
+}
+figure {
+  margin: 0;
+}
+img {
+  border-radius: $normal-border-radius;
+}
+iframe {
+  max-width: 100%;
+}
+h1 {
+  @extend %main-heading;
+}
+h2 {
+  @extend %secondary-heading;
+}
+h3 {
+  @extend %section-heading-lg;
+}
+h4 {
+  @extend %sub-heading;
+}
+h5 {
+  @extend %minor-heading;
+}
+a {
+  color: $green;
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+.dividing-line {
+  border-top: 1px solid $yellow;
+  @include fluid-property("margin-top", $gap-bigest-px, $gap-mobile-normal-px);
+  @include fluid-property(
+    "margin-bottom",
+    $gap-bigest-px,
+    $gap-mobile-normal-px
+  );
+}
+$outline: 2px dotted $text-color;

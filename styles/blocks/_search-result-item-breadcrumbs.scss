@@ -1,0 +1,38 @@
+.search-results-item-breadcrumbs {
+	@include media-breakpoint-up(sm) {
+		display: block;
+	}
+	background: none;
+	margin-top: 0;
+	padding-top: 0;
+	@include fluid-property("margin-bottom", 18, 12);
+	&__list {
+		list-style: none;
+		margin-bottom: 5px;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+		padding-left: 0;
+		height: auto;
+		background-color: transparent;
+	}
+	&__link {
+		color: $green;
+		text-decoration: underline;
+		font-size: 1.4rem;
+		line-height: 20px;
+		&:focus {
+			outline: $outline;
+		}
+	}
+	&__text {
+		font-size: 1.4rem;
+		line-height: 16px;
+		font-weight: 500;
+	}
+	&__icon {
+		position: relative;
+		margin-left: 0.4rem;
+		margin-right: 0.4rem;
+	}
+}

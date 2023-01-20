@@ -1,0 +1,59 @@
+.matrix-block {
+	$matrix-block: &;
+	@extend %block-margin-y;
+	&--dividingLine,
+	&--video,
+	&--profile,
+	&--richText,
+	&--downloads,
+	&--share-widget,
+	&--images,
+	&--ctaBanner {
+		@extend %block-margin-y--small;
+	}
+	&--with-background {
+		@extend %no-margin-y;
+	}
+	&:first-child {
+		@include fluid-property("margin-top", 0, 0);
+	}
+	&--richMedia,
+	&--bannerWithBackgroundColour,
+	&--imageCards,
+	&--newsCards {
+		@extend %block-margin-y--bigger;
+	}
+	&--testimonialBlock,
+	&--bannerWithRoundedImage {
+		@extend %block-margin-y--biggest;
+	}
+	&--buttons,
+	&--video,
+	&--columns {
+		@extend %block-margin-y--big;
+	}
+	&--signup-banner {
+		margin-bottom: 0;
+	}
+	&--richText {
+		+ #{$matrix-block}--video,
+		+ #{$matrix-block}--images {
+			margin-top: -16px;
+		}
+	}
+	&--ctaBanner {
+		+ #{$matrix-block}--hardCodedBlock {
+			> #{$matrix-block}--signup-banner {
+				@include fluid-property(
+					"margin-top",
+					-$gap-mobile-normal-small-px,
+					-$gap-mobile-smallest-px
+				);
+			}
+		}
+	}
+	&--locationBlock {
+		position: relative;
+		z-index: 99;
+	}
+}

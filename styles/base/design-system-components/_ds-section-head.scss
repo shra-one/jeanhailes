@@ -1,0 +1,27 @@
+%section-head {
+	@include fluid-property("margin-bottom", 32, 24);
+	&__heading {
+		@extend %secondary-heading;
+		margin-bottom: 1.6rem;
+	}
+	&__summary {
+		max-width: 835px;
+		text-align: left;
+		@include media-breakpoint-up(lg) {
+			text-align: center;
+		}
+		figure,
+		img {
+			max-width: 100%;
+		}
+		p {
+			@extend %body-text;
+		}
+		p:last-child {
+			margin-bottom: 0;
+		}
+		&--dulled {
+			@extend %body-text;
+		}
+	}
+}

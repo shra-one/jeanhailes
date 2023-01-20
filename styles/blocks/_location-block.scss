@@ -1,0 +1,37 @@
+.location-block {
+	&__cards {
+		grid-gap: 2.4rem;
+		@include media-breakpoint-up(lg) {
+			grid-gap: 4.8rem;
+		}
+	}
+	&__title {
+		@extend %section-heading-md;
+		font-weight: 600;
+		@include fluid-property("margin-bottom", 0, 16);
+		align-self: baseline;
+		@include media-breakpoint-up(lg) {
+			align-self: center;
+		}
+	}
+	&__button {
+		font-weight: 500;
+		font-size: 1.6rem;
+		order: 3;
+		@include fluid-property("margin-top", -10, 16);
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 0;
+			align-self: baseline;
+			grid-column: 2;
+			grid-row: 3;
+		}
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			color: $text-color;
+		}
+	}
+	&__text {
+		@include fluid-property("margin-top", -16, 16);
+	}
+}

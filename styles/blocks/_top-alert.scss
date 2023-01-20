@@ -1,0 +1,48 @@
+.top-alert {
+    $self: &;
+    @include make-container();
+    position: relative;
+    z-index: 1030;
+    background-color: #ddd;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    flex-wrap: wrap;
+    padding: 13px 10px 13px 13px;
+
+    @include media-breakpoint-up(sm){
+        flex-wrap: nowrap;
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 30px;
+        justify-content: space-between;
+    }
+
+    &__content {
+        text-align: center;
+        padding-right: 10px;
+        @include media-breakpoint-up(sm){
+            text-align: left;
+        }
+        p, a {
+            @extend %body-text;
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+        a {
+            text-decoration: underline;
+            &:hover, &:focus {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__close-btn {
+        @extend %button--primary;
+        min-width: 126.81px;
+        margin-top: 10px;
+        @include media-breakpoint-up(md) {
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+//Fluid Typography - adapated from https://css-tricks.com/snippets/css/fluid-typography/
+//the widths to shrink/grow between default to Bootstrap SM and LG
+//Set min (mobile - bs-sm) and max (desktop bs-xl) font-sizes/line-heights:
+//Used primarily in components here src\styles\base\design-system\_ds-typography.scss then extended to content blocks
+
+//  H1 mainly
+$main-heading: (
+	font-size-dt: 40px,
+	font-size-mobile: 32px,
+	line-height-dt: 52px,
+	line-height-mobile: 40px,
+);
+//  H1 mainly
+$home-banner-heading: (
+	font-size-dt: 48px,
+	font-size-mobile: 32px,
+	line-height-dt: 56px,
+	line-height-mobile: 36px,
+);
+// H2 mainly
+$secondary-heading: (
+	font-size-dt: 32px,
+	font-size-mobile: 32px,
+	line-height-dt: 40px,
+	line-height-mobile: 40px,
+);
+$secondary-heading-md: (
+	font-size-dt: 32px,
+	font-size-mobile: 24px,
+	line-height-dt: 40px,
+	line-height-mobile: 32px,
+);
+// H3
+$section-heading-lg: (
+	font-size-dt: 24px,
+	font-size-mobile: 24px,
+	line-height-dt: 32px,
+	line-height-mobile: 32px,
+);
+$section-heading-md: (
+	font-size-dt: 24px,
+	font-size-mobile: 20px,
+	line-height-dt: 32px,
+	line-height-mobile: 24px,
+);
+// H4 and body  mainly
+$sub-heading: (
+	font-size-dt: 20px,
+	font-size-mobile: 16px,
+	line-height-dt: 24px,
+	line-height-mobile: 24px,
+);
+// H5
+$minor-heading: (
+	font-size-dt: 16px,
+	font-size-mobile: 14px,
+	line-height-dt: 24px,
+	line-height-mobile: 20px,
+);
+$lead-text: (
+	font-size-dt: 20px,
+	font-size-mobile: 14px,
+	line-height-dt: 28px,
+	line-height-mobile: 20px,
+);
+$body: (
+	font-size-dt: 16px,
+	font-size-mobile: 14px,
+	line-height-dt: 26px,
+	line-height-mobile: 20px,
+);
+$menu-text: (
+	font-size-dt: 17px,
+	font-size-mobile: 14px,
+	line-height-dt: 24px,
+	line-height-mobile: 16px,
+);
+$strong-text: (
+	font-size-dt: 14px,
+	font-size-mobile: 14px,
+	line-height-dt: 16px,
+	line-height-mobile: 20px,
+);
+$footer-menu-text: (
+	font-size-dt: 14px,
+	font-size-mobile: 14px,
+	line-height-dt: 24px,
+	line-height-mobile: 20px,
+);
+$breadcrumb-menu-text: (
+	font-size-dt: 14px,
+	font-size-mobile: 14px,
+	line-height-dt: 20px,
+	line-height-mobile: 16px,
+);
+$small-text: (
+	font-size-dt: 16px,
+	font-size-mobile: 12px,
+	line-height-dt: 24px,
+	line-height-mobile: 16px,
+);
+$table-title: (
+	font-size-dt: 18px,
+	font-size-mobile: 16px,
+	line-height-dt: 20px,
+	line-height-mobile: 24px,
+);
+//  H1 mainly
+$big-heading: (
+	font-size-dt: 56px,
+	font-size-mobile: 32px,
+	line-height-dt: 84px,
+	line-height-mobile: 40px,
+);

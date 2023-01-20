@@ -1,0 +1,25 @@
+.client-block {
+	&__img {
+		width: 192px;
+		border-radius: 0;
+		@include fluid-property("margin-bottom", 32, 16);
+		order: 1;
+	}
+	&__text {
+		order: 2;
+		text-align: center;
+		*:last-child {
+			margin-bottom: 2.4rem;
+		}
+	}
+	&__button {
+		order: 3;
+		margin-top: auto;
+		font-size: 14px;
+		line-height: 20px;
+		@include media-breakpoint-up(md) {
+			font-size: 16px;
+			line-height: 26px;
+		}
+	}
+}

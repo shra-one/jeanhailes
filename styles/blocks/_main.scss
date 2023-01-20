@@ -1,0 +1,63 @@
+.main {
+	$self: &;
+	@include fluid-property("padding-top", $gap-big-px, $gap-big-mobile-px);
+
+	&__container {
+		&:first-child {
+			@include fluid-property("margin-top", 0, 0);
+		}
+		&:last-child {
+			@include fluid-property("margin-bottom", 0, 0);
+		}
+	}
+
+	&__row {
+		display: block;
+		@include make-row();
+	}
+
+	&__sidebar {
+		order: 1;
+		display: none;
+		@include make-col-ready();
+		@include media-breakpoint-up(lg) {
+			display: block;
+			@include make-col(3);
+			@include fluid-property("padding-right", 48);
+			max-width: 275px;
+			order: 1;
+		}
+		@include media-breakpoint-up(xl) {
+			display: block;
+			max-width: 275px;
+		}
+
+		// more space when articled-box shows alongside a sidebar
+		+ #{$self}__articled-box {
+			@include media-breakpoint-up(lg) {
+				// @include fluid-property("padding-left", 72);
+			}
+		}
+	}
+
+	&__articled-box {
+		margin-left: auto;
+		margin-right: auto;
+		order: 2;
+		@include make-col-ready();
+		@include media-breakpoint-up(lg) {
+			@include make-col(9);
+			flex: 1 0 75%;
+			max-width: 75%;
+		}
+		@include media-breakpoint-up(xl) {
+			max-width: 969px;
+		}
+	}
+}
+
+//cancel inner container's padding if we have containers inside containers
+.container .container {
+	padding-right: 0;
+	padding-left: 0;
+}

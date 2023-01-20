@@ -1,0 +1,215 @@
+.custom-form {
+	position: relative;
+	background-color: $light-green;
+	border-radius: $basic-border-radius;
+	@include fluid-property(
+		"padding-top",
+		$gap-big-mobile-px,
+		$gap-small-mobile-px
+	);
+	@include fluid-property(
+		"padding-bottom",
+		$gap-big-mobile-px,
+		$gap-small-mobile-px
+	);
+	@include fluid-property("padding-right", $gap-px, $gap-mobile-smaller-px);
+	@include fluid-property("padding-left", $gap-px, $gap-mobile-smaller-px);
+	&--signup-banner {
+		background-color: transparent;
+		padding: 0;
+	}
+	&__top {
+		display: flex;
+	}
+	&__icon {
+		margin-left: $gap-smallest;
+		@include fluid-property("width", 86, 56);
+		@include fluid-property("margin-bottom", 32, 24);
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="number"],
+	input[type="url"],
+	select,
+	textarea {
+		@extend .form-control;
+		&:focus {
+			outline: none;
+			box-shadow: 1px 1px 4px $text-color;
+		}
+	}
+	.tab {
+		@include make-row();
+		&.tab-hidden {
+			display: none;
+		}
+	}
+	header {
+		@include make-col-ready();
+		margin-top: 2.4rem;
+		margin-bottom: 2.4rem;
+	}
+	.field {
+		margin-bottom: 2.4rem;
+		@include make-col-ready();
+		@include media-breakpoint-up(md) {
+			margin-bottom: 2.8rem;
+		}
+		@include media-breakpoint-up(xl) {
+			margin-bottom: 3.2rem;
+		}
+		.instructions {
+			font-size: 1.3rem;
+			margin-top: 0.4rem;
+		}
+		.heading {
+			font-size: 1.4rem;
+			line-height: 1;
+		}
+		&.errors {
+			.input {
+				input[type="text"],
+				input[type="tel"],
+				input[type="email"],
+				input[type="number"],
+				input[type="url"],
+				select {
+					border-color: $danger;
+					box-shadow: none;
+					border-bottom: 1px solid $danger;
+				}
+			}
+			ul.errors {
+				list-style: none;
+				padding-left: 3rem;
+				color: $danger;
+				margin-top: 0.6rem;
+				margin-bottom: 0;
+				font-size: 1.4rem;
+				font-weight: 700;
+				letter-spacing: -0.3px;
+				li {
+					position: relative;
+					&:before {
+						display: inline-block;
+						font-style: normal;
+						font-variant: normal;
+						text-rendering: auto;
+						-webkit-font-smoothing: antialiased;
+
+						font-family: "Font Awesome 5 Free";
+						font-weight: 900;
+						content: "\f071";
+						position: absolute;
+						left: -2.4rem;
+					}
+				}
+			}
+		}
+		&.required {
+			.heading {
+				label,
+				legend {
+					&:after {
+						content: "*";
+						display: inline;
+						margin-left: 3px;
+						// color: red;
+					}
+				}
+			}
+		}
+		&:not(.paragraph):not(.address):not(.multiplechoice):not(.checkboxes) {
+			@include media-breakpoint-up(md) {
+				@include make-col(6);
+			}
+		}
+		&.multiplechoice,
+		&.checkboxes {
+			label {
+				&:not(:last-child) {
+					margin-right: 1.2rem;
+				}
+			}
+			input {
+				margin-right: 3px;
+			}
+		}
+		&.phone {
+			.input {
+				[class*="wrapper"] {
+					select {
+						display: none;
+					}
+				}
+			}
+		}
+		&.address {
+			.input {
+				& > .address {
+					.sprout-address-country-fields {
+						@include make-row();
+					}
+					.address-countrycode-field {
+						order: 1;
+					}
+				}
+			}
+		}
+	}
+	.form-message-section {
+		font-weight: 300;
+		padding: 1.6rem;
+		@include media-breakpoint-up(lg) {
+			padding: 2.4rem;
+		}
+		margin-bottom: 2.4rem;
+		border-radius: 4px;
+		border: 1px solid $success;
+		background-color: $success;
+		&__error {
+			background-color: transparentize($danger, 0.8);
+			border-color: $danger;
+		}
+		.global-message {
+			&__error {
+				.fa-exclamation-triangle {
+					margin-right: 0.6rem;
+				}
+			}
+		}
+		.form-messages {
+			margin-bottom: 0;
+			&__error {
+			}
+		}
+	}
+}
+
+.neo-secondary-content {
+	.form-head {
+		margin-left: auto;
+		margin-right: auto;
+		@include media-breakpoint-up(lg) {
+			width: 66.6666%;
+			max-width: 100%;
+		}
+	}
+	.custom-form {
+		margin-left: auto;
+		margin-right: auto;
+		@include media-breakpoint-up(lg) {
+			width: 66.6666%;
+			max-width: 100%;
+		}
+
+		.field {
+			&:not(.paragraph):not(.address):not(.multiplechoice):not(.checkboxes) {
+				@include media-breakpoint-up(md) {
+					@include make-col(12);
+				}
+			}
+		}
+	}
+}

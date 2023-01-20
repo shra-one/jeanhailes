@@ -1,0 +1,25 @@
+form {
+	@extend %form;
+	.freeform-row {
+		.freeform-column {
+			@extend .freeform-column;
+		}
+		.freeform-input {
+			@extend .freeform-input;
+		}
+	}
+	button[type="submit"] {
+		@extend %button;
+		@extend %button--primary;
+	}
+	.form-control::placeholder,
+	.custom-form input[type="text"]::placeholder,
+	.custom-form input[type="email"]::placeholder,
+	.custom-form input[type="tel"]::placeholder,
+	.custom-form input[type="number"]::placeholder,
+	.custom-form input[type="url"]::placeholder,
+	.custom-form select::placeholder,
+	.custom-form textarea::placeholder {
+		color: $text-color;
+	}
+}

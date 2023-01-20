@@ -1,0 +1,63 @@
+.sidebar-refine-search {
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 4rem;
+	}
+	&__heading {
+		@extend %sub-heading;
+		margin-bottom: 2.4rem;
+		color: $text-color;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 2.8rem;
+		}
+	}
+	&__inner {
+		background-color: $cream;
+		padding: 2.4rem;
+		border-radius: $basic-border-radius;
+	}
+	&__control {
+		padding-left: 3rem;
+		&:not(:last-child) {
+			margin-bottom: 1.9rem;
+		}
+	}
+	&__control-label {
+		font-weight: 400;
+		&:before,
+		&:after {
+			box-shadow: none;
+			border: 0;
+			top: 0.2rem;
+			width: 2rem;
+			height: 2rem;
+			left: -3rem;
+		}
+	}
+}
+
+.sidebar-refine-search__control-label::after {
+	width: 19px;
+	height: 19px;
+	border-radius: 4px;
+	background-color: $white;
+	border-color: $inputs;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+	width: 19px;
+	height: 19px;
+	border-radius: 4px;
+	background-color: $white;
+	border-color: $inputs;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+	background-image: url("/assets/img/svg/ic-check.svg");
+	width: 19px;
+	height: 19px;
+	background-color: $white;
+	border-color: $inputs;
+	border-radius: 4px;
+}
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+	box-shadow: none;
+	border: 0;
+}

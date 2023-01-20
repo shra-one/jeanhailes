@@ -1,0 +1,33 @@
+/* Typography specific mixin, basically the same as _fluid-property.scss but handles line height as well */
+@mixin fluid-type($map, $min-vw: $typography_min_width, $max-vw: $typography_max_width) {
+	$min-font-size: map-get($map, font-size-mobile);
+	$max-font-size: map-get($map, font-size-dt);
+	$min-line-height: map-get($map, line-height-mobile);
+	$max-line-height: map-get($map, line-height-dt);
+	$u1: unit($min-vw);
+	$u2: unit($max-vw);
+	$u3: unit($min-font-size);
+	$u4: unit(50px);
+
+	@if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+		& {
+			font-size: strip-unit($min-font-size) * 0.1rem;
+			line-height: strip-unit($min-line-height) * 0.1rem;
+			@media screen and (min-width: $min-vw) {
+				font-size: calc(
+					#{strip-unit($min-font-size) * 0.1rem} + #{strip-unit($max-font-size - $min-font-size)} *
+						((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+				);
+				line-height: calc(
+					#{strip-unit($min-line-height) * 0.1rem} + #{strip-unit($max-line-height - $min-line-height)} *
+						((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+				);
+			}
+
+			@media screen and (min-width: $max-vw) {
+				font-size: strip-unit($max-font-size) * 0.1rem;
+				line-height: strip-unit($max-line-height) * 0.1rem;
+			}
+		}
+	}
+}

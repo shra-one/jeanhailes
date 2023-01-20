@@ -1,0 +1,163 @@
+// see templates\_content-blocks\images.html
+// slider class added if more than one image
+// @import "slick.scss";
+
+$slider-dot-color: $black-with-opacity;
+$image-caption-text-color: $pepper;
+
+.matrix-block--image {
+  figure {
+    margin-bottom: 0;
+  }
+}
+
+.image-slider-wrap {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slider {
+  $slider: &;
+  &__nav-button {
+    position: absolute;
+    background: $light-orange;
+    box-shadow: none;
+    border: none;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    @include hover-focus() {
+      box-shadow: none !important;
+      background-color: $orange;
+    }
+    &--left {
+      // https://bennettfeely.com/clippy/
+      clip-path: ellipse(32% 40% at 0% 49%);
+      padding: 30px 90px 30px 10px;
+      left: 0;
+    }
+    &--right {
+      // https://bennettfeely.com/clippy/
+      clip-path: ellipse(32% 40% at 100% 49%);
+      padding: 30px 10px 30px 90px;
+      right: 0;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+  }
+
+  &__captions {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 1.2rem;
+    #{$slider}__caption {
+      margin-right: 1rem;
+      margin-top: 0;
+    }
+  }
+}
+
+.slider-item {
+  $slider: &;
+  &__image {
+    border-radius: $basic-border-radius;
+  }
+  &__caption-counter {
+    font-weight: 400;
+    grid-column: 2;
+    font-size: 1.4rem;
+  }
+
+  &__caption,
+  &__caption-text {
+    font-weight: 500;
+    @extend %breadcrumb-menu-text;
+  }
+  &__caption {
+    display: block;
+    @include fluid-property("padding-left", 16, 12);
+    margin-top: 1.2rem;
+    grid-column: 1;
+  }
+
+  // Because a static image will still be a ".slider-item"
+  &--in-slider {
+    #{$slider}__caption {
+      display: none; // we handle a slider caption differently using javascript
+    }
+  }
+}
+
+// Slick overrides
+.slider {
+  .slick-arrow {
+    opacity: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    img {
+      width: 11px;
+      height: auto;
+      @include media-breakpoint-up(md) {
+        width: 11px;
+      }
+    }
+  }
+  .slick-arrow:hover {
+    opacity: 1;
+  }
+  .slick-arrow:focus {
+    outline: 0;
+    box-shadow: 0 0 0 5px #09f;
+  }
+  .slick-arrow:active {
+    opacity: 1;
+  }
+  .arrow-previous {
+    left: 0;
+    z-index: 1;
+    -webkit-appearance: none;
+  }
+  .arrow-next {
+    right: 0;
+    -webkit-appearance: none;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      cursor: pointer;
+      button {
+        display: none;
+        -webkit-appearance: none;
+        box-shadow: none;
+        border: none;
+      }
+
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $slider-dot-color;
+      border: 0.5px solid $white;
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+      &.slick-active {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}

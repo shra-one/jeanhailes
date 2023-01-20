@@ -1,0 +1,16 @@
+%datalist {
+	&__button {
+		display: flex;
+		margin: 0 auto;
+		@include fluid-property(
+			"margin-bottom",
+			$gap-bigest-px,
+			$gap-mobile-normal-px
+		);
+		@extend %button--primary;
+	}
+	&__loading-text {
+		text-align: center;
+		margin-bottom: 1.6rem;
+	}
+}

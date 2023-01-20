@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import "bs-variables/_bs-variables";
+
+/** Bootstrap **/
+//this works because in our Gulpfile we are loading the path: node_modules/bootstrap/ and then importing files from there see more info at https://stackoverflow.com/questions/33585617/what-does-gulps-includepaths-do
+
+// @import "/scss/bootstrap"; this will load all of bootstrap
+// BOOTSTRAP PARTS: This is our customised import of Bootstrap
+// Required (BS wont work without these):
+@import "../vendor/bootstrap/scss/functions";
+@import "../vendor/bootstrap/scss/mixins";
+@import "../vendor/bootstrap/scss/variables";
+
+// Optional
+@import "../vendor/bootstrap/scss/root";
+@import "../vendor/bootstrap/scss/reboot";
+@import "../vendor/bootstrap/scss/type";
+@import "../vendor/bootstrap/scss/images";
+// @import "code";
+@import "../vendor/bootstrap/scss/grid";
+@import "../vendor/bootstrap/scss/tables";
+@import "../vendor/bootstrap/scss/forms";
+// @import "buttons";
+@import "../vendor/bootstrap/scss/transitions";
+@import "../vendor/bootstrap/scss/dropdown";
+@import "../vendor/bootstrap/scss/button-group";
+@import "../vendor/bootstrap/scss/input-group";
+@import "../vendor/bootstrap/scss/custom-forms";
+@import "../vendor/bootstrap/scss/nav";
+@import "../vendor/bootstrap/scss/navbar";
+// @import "card";
+@import "../vendor/bootstrap/scss/breadcrumb";
+@import "../vendor/bootstrap/scss/pagination";
+// @import "badge";
+// @import "jumbotron";
+@import "../vendor/bootstrap/scss/alert";
+@import "../vendor/bootstrap/scss/progress";
+@import "../vendor/bootstrap/scss/media";
+@import "../vendor/bootstrap/scss/list-group";
+@import "../vendor/bootstrap/scss/close";
+// @import "toasts";
+@import "../vendor/bootstrap/scss/modal";
+@import "../vendor/bootstrap/scss/tooltip";
+@import "../vendor/bootstrap/scss/popover";
+@import "../vendor/bootstrap/scss/carousel";
+@import "../vendor/bootstrap/scss/spinners";
+@import "../vendor/bootstrap/scss/utilities";
+@import "../vendor/bootstrap/scss/print";
+/** End Bootstrap **/
+
+//PROJECT PARTS
+// Steps to include another library's styles:
+// 1. run npm install [library name] to install the node modules
+// 2. Add the path to the folder in the gulpfile OR just load it directly
+// 3. import the base SCSS file here: e.g import "jquery.smartmenus.bootstrap-4" OR use full path;
+// @import "jquery.smartmenus.bootstrap-4";
+@import "mixins/_mixins";
+@import "design-system-components/_design-system";

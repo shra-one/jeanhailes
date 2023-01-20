@@ -1,0 +1,31 @@
+// BS-Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+// Override the BS defaults here
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1124px,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  xsm: 361px,
+  xxsm: 402px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  lgl: 1145px,
+  lgxl: 1300px,
+  xl: 1366px,
+  xll: 1440px,
+  xxl: 1600px,
+  xxll: 1800px,
+  xxxll: 2200px,
+);
+$grid-gutter-width: 24px;
+$grid-gutter-half: calc($grid-gutter-width / 2);

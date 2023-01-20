@@ -1,0 +1,19 @@
+.icon-grids-block {
+	&--fourColumn {
+		@include media-breakpoint-up(md) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+	&__img {
+		width: 92px;
+	}
+	&__button {
+		order: 4;
+	}
+	&__text {
+		text-align: center;
+	}
+}

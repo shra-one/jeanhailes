@@ -1,0 +1,19 @@
+.blog-author {
+	background-color: $cream;
+	border-radius: $basic-border-radius;
+    @include fluid-property("margin-bottom", 20, 16);
+	@include fluid-property("padding-top", 40, 24);
+	@include fluid-property("padding-bottom", 40, 24);
+	@include fluid-property("padding-left", 40, 24);
+	@include fluid-property("padding-right", 40, 24);
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	@include media-breakpoint-up(lg) {
+		grid-template-columns: 128px 1fr;
+	}
+	align-items: center;
+	@include fluid-property("grid-gap", 40, 24);
+	&__img {
+		border-radius: 100%;
+	}
+}

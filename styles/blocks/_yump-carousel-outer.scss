@@ -1,0 +1,32 @@
+.yump-carousel-outer {
+	// Hide before slick initialized
+	// position: absolute;
+	// visibility: hidden;
+	padding: 0 3rem;
+	position: relative;
+	.slick-arrow {
+		opacity: 0.8;
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.slick-arrow:hover {
+		opacity: 1;
+	}
+	.slick-arrow:focus {
+		outline: 0;
+		box-shadow: 0 0 0 5px #09f;
+	}
+	.slick-arrow:active {
+		opacity: 1;
+	}
+	.slick-prev {
+		left: 0;
+		-webkit-appearance: none;
+	}
+	.slick-next {
+		right: 0;
+		-webkit-appearance: none;
+	}
+}

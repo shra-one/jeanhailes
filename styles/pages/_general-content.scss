@@ -1,0 +1,23 @@
+.template--pages-generalContent {
+	.banner.banner--with-media.banner--generalContent {
+		+ .main .main__container.container {
+			.matrix-block:first-child.matrix-block.matrix-block--locationBlock {
+				.location-block {
+					margin-top: -24px;
+					@include media-breakpoint-up(lg) {
+						margin-top: -110px;
+					}
+				}
+			}
+		}
+		+ .main .main__container {
+			+ .main__container {
+				.matrix-block.matrix-block--locationBlock {
+					.location-block {
+						@extend %block-margin-y;
+					}
+				}
+			}
+		}
+	}
+}

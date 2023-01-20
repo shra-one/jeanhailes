@@ -1,0 +1,98 @@
+// for post page. E.g. blog post page
+$blog-news-post-container: (
+	sm: 540px,
+	md: 720px,
+	lg: 947px,
+	xl: 967px,
+);
+
+.post {
+	.breadcrumbs {
+		display: flex;
+	}
+	.container.breadcrumbs__container {
+		@include media-breakpoint-up(xl) {
+			flex: 0 0 75%;
+			max-width: 75%;
+		}
+	}
+	.main {
+		@include fluid-property("padding-top", 0, 0);
+		&__container.container {
+			&:first-child {
+				@include fluid-property(
+					"margin-top",
+					$gap-big-px,
+					$gap-big-mobile-px
+				);
+				@include fluid-property(
+					"margin-bottom",
+					$gap-px,
+					$gap-mobile-px
+				);
+			}
+		}
+
+		&__row {
+			justify-content: center;
+		}
+	}
+
+	&__back {
+		@include fluid-property("margin-top", 35);
+		@include fluid-property("margin-bottom", 50);
+		a {
+			@extend %body-text;
+			span {
+				color: $primary;
+				font-weight: 700;
+			}
+			i {
+				margin-right: 7px;
+			}
+		}
+	}
+
+	&__latest-posts {
+		@include make-row();
+	}
+
+	&__latest-posts-wrap {
+		@include fluid-property("margin-top", 70, 20);
+		> h2 {
+			@include fluid-property("margin-bottom", 30);
+		}
+	}
+
+	&__heading-text {
+		margin-top: 0;
+	}
+
+	&__featured-image--no-caption {
+		box-shadow: 0 3px 0 0 #d2d2d2;
+	}
+
+	&__summary {
+		@extend %lead-text;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.section-head {
+		&--news {
+			@include fluid-property("margin-top", 80, 32);
+		}
+	}
+
+	&--thank-you-page {
+		.before-boxed {
+			@include media-breakpoint-down(xs) {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+.post-list-wrap {
+	margin-top: 5.9rem;
+}

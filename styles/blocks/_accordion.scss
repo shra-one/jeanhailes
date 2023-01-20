@@ -1,0 +1,138 @@
+.accordion {
+	$self: &;
+	background-color: $cream;
+	border-radius: $basic-border-radius;
+	@include fluid-property(
+		"padding-top",
+		$gap-super-big-px,
+		$gap-mobile-normal-px
+	);
+	@include fluid-property(
+		"padding-bottom",
+		$gap-super-big-px,
+		$gap-mobile-normal-px
+	);
+	@include fluid-property(
+		"padding-right",
+		$gap-super-big-px,
+		$gap-mobile-small-px
+	);
+	@include fluid-property(
+		"padding-left",
+		$gap-super-big-px,
+		$gap-mobile-small-px
+	);
+	&__accordion-container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__accordion-collapse {
+		align-self: flex-start;
+		font-size: 13px;
+		color: $green;
+		text-decoration: underline;
+		padding: 0;
+		span {
+			display: none;
+			&.show {
+				display: inline-block;
+			}
+		}
+	}
+	&__item {
+		border: 0;
+		border-radius: 0;
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__header {
+		border: 0;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		border-bottom: 0;
+		cursor: pointer;
+		background: none;
+
+		&[aria-expanded="true"] {
+			#{$self}__header-tag {
+				background-image: image-url("svg/ic-collapse.svg");
+				background-size: 14px 14px;
+			}
+			#{$self}__header-content {
+				border-bottom: 0;
+				border-bottom-right-radius: 0;
+			}
+		}
+	}
+
+	&__header-tag {
+		background: $yellow image-url("svg/ic-expand.svg");
+		background-size: 14px 14px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		width: 32px;
+		min-height: 32px;
+		border-radius: 100%;
+		flex: 0 0 32px;
+		@include media-breakpoint-up(lg) {
+			width: 32px;
+			height: 32px;
+			min-height: 32px;
+			flex-basis: 32px;
+		}
+	}
+
+	&__header-content {
+		@extend %minor-heading;
+		font-weight: 500;
+		color: $text-color;
+		flex-basis: 100%;
+		display: block;
+		padding: 0 0 0 2rem;
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+		margin-bottom: 0;
+		text-align: left;
+	}
+
+	&__body {
+		// max-height: 0;
+		transition: height 0.35s ease;
+		background-color: $white;
+		border-radius: 8px;
+		margin-top: 2.4rem;
+		padding-left: 52px;
+		@include media-breakpoint-up(lg) {
+			padding-left: 52px;
+		}
+	}
+
+	&__body-content {
+		padding: 24px 24px 24px 0;
+		border-top: 0;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		@include media-breakpoint-up(lg) {
+			padding: 24px 24px 24px 0;
+		}
+		& > * {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		img {
+			max-width: 100%;
+		}
+		a {
+			text-decoration: underline;
+			font-weight: 500;
+			&:hover,
+			&:focus {
+				text-decoration: none;
+			}
+		}
+	}
+}

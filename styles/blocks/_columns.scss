@@ -1,0 +1,45 @@
+.columns {
+	$self: &;
+
+	&__row {
+		@include make-row();
+	}
+
+	&__column {
+		overflow-x: hidden;
+		@include make-col-ready();
+		// margin-bottom: 24px;
+		.rich-text {
+			display: block;
+			figure {
+				@include media-breakpoint-down(sm) {
+					margin-bottom: 24px;
+				}
+			}
+		}
+		&:last-child {
+			.matrix-block {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&--top {
+		#{$self}__column {
+			display: flex;
+			align-items: flex-start;
+		}
+	}
+	&--center {
+		#{$self}__column {
+			display: flex;
+			align-items: center;
+		}
+	}
+	&--bottom {
+		#{$self}__column {
+			display: flex;
+			align-items: flex-end;
+		}
+	}
+}

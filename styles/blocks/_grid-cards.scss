@@ -1,0 +1,85 @@
+.grid-cards {
+	$grid-cards: &;
+	&__cards {
+		@extend %grid-cards__cards;
+	}
+	&__card {
+		@extend %grid-cards__card;
+	}
+	&__img {
+		@extend %grid-cards__img;
+	}
+	&__title {
+		@extend %grid-cards__title;
+	}
+	&__button {
+		@extend %grid-cards__button;
+	}
+	&__link {
+		@extend %grid-cards__link;
+	}
+	&__label {
+		@extend %grid-cards__label;
+		text-align: center;
+		@extend %breadcrumb-menu-text;
+		font-weight: 600;
+		margin-bottom: 0.4rem;
+	}
+	&__text {
+		@extend %grid-cards__text;
+	}
+	&--two-column {
+		position: relative;
+		z-index: 9;
+		#{$grid-cards}__cards {
+			@include media-breakpoint-up(lg) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+		#{$grid-cards}__card {
+			align-items: center;
+			@include fluid-property("padding-top", 32, 24);
+			@include fluid-property("padding-bottom", 32, 24);
+			@include fluid-property("padding-left", 32, 24);
+			@include fluid-property("padding-right", 32, 24);
+			border-radius: $normal-border-radius;
+			background-color: $white;
+			@include media-breakpoint-up(lg) {
+				display: grid;
+				grid-gap: 2.4rem;
+				grid-template-columns: auto 1fr;
+			}
+		}
+		#{$grid-cards}__img {
+			@include fluid-property("width", 107, 80);
+			grid-column: 1;
+			grid-row: 1 / span 2;
+			@include fluid-property("margin-bottom", 0, 24);
+			align-self: baseline;
+			@include media-breakpoint-up(lg) {
+				align-self: center;
+			}
+		}
+		#{$grid-cards}__button {
+			align-self: baseline;
+			justify-self: flex-start;
+		}
+		#{$grid-cards}__text {
+			align-self: baseline;
+			@include media-breakpoint-up(lg) {
+				grid-column: 2;
+				grid-row: 2;
+				* {
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	&--three-rows {
+		#{$grid-cards}__img {
+			grid-row: 1 / span 3;
+		}
+	}
+}

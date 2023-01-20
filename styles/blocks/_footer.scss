@@ -1,0 +1,199 @@
+.footer {
+	$footer: &;
+	@include fluid-property("padding-top", 104, 64);
+	@include fluid-property("padding-bottom", 80, 40);
+	&__nav-section {
+		padding-bottom: $gap;
+	}
+	&__divider,
+	&__wrapper {
+		border-top: 1px solid $yellow;
+	}
+	&__divider {
+		margin-top: 0.8rem;
+		margin-bottom: 1.1rem;
+	}
+	&__columns {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: $gap-big-mobile;
+		@include media-breakpoint-up(sm) {
+			grid-gap: $gap-small;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: repeat(5, 1fr);
+		}
+	}
+	&__heading {
+		font-size: 1.8rem;
+		line-height: 20px;
+		@include fluid-property("margin-bottom", 11, 8);
+	}
+	&__link {
+		color: $text-color;
+		font-weight: 600;
+	}
+	&__menu-link {
+		display: block;
+		@extend %footer-menu-text;
+		margin-top: 1.2rem;
+		font-weight: 400;
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+	&__icon {
+		max-width: 55px;
+		@include media-breakpoint-up(xl) {
+			max-width: 80px;
+		}
+	}
+	&__logo {
+		border-radius: 0;
+		max-width: 80px;
+		margin-right: 0.4rem;
+		@include media-breakpoint-up(md) {
+			margin-top: 0.5rem;
+		}
+	}
+	&__social-media {
+		background-color: $cream;
+		border-radius: $normal-border-radius;
+		padding: 2.4rem;
+		margin-bottom: 3.2rem;
+		@include media-breakpoint-up(lg) {
+			padding: 0 4rem;
+			@include fluid-property("padding-top", 24, 32);
+			@include fluid-property("padding-bottom", 24, 32);
+			display: grid;
+			grid-template-columns: 1fr auto;
+			justify-items: center;
+		}
+		@include media-breakpoint-up(xl) {
+			grid-template-columns: 4fr 1fr;
+		}
+	}
+
+	&__contact-section {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: $gap-small;
+		@include media-breakpoint-up(lg) {
+			grid-gap: 0;
+			justify-self: baseline;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	&__text-small {
+		@extend %footer-menu-text;
+		#{$footer}__link {
+			text-decoration: underline;
+			&:focus {
+				text-decoration: none;
+			}
+		}
+	}
+	&__contact {
+		display: grid;
+		grid-template-columns: 55px 1fr;
+		grid-gap: $gap-small;
+		align-items: center;
+		@include media-breakpoint-up(xl) {
+			grid-template-columns: 80px 1fr;
+		}
+	}
+	&__text-link {
+		color: $green;
+	}
+	&__text-section {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: $gap-big;
+		@include media-breakpoint-up(lg) {
+			grid-gap: $big-gap;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	&__col {
+		@include media-breakpoint-up(lg) {
+			display: grid;
+			grid-template-columns: 36px 36px 1fr;
+			grid-gap: 0.8rem;
+		}
+	}
+	&__text {
+		margin-top: 1.6rem;
+		margin-left: 0;
+		@include media-breakpoint-up(lg) {
+			margin-top: 0;
+			margin-left: 1.6rem;
+		}
+		p:last-child {
+			margin: 0;
+		}
+		* {
+			@extend %footer-menu-text;
+		}
+	}
+	&__inner-bottom {
+		display: grid;
+		justify-content: space-between;
+		grid-template-columns: 1fr;
+		border-top: 1px solid $yellow;
+		margin-top: $gap-mobile;
+		padding-top: $gap-mobile;
+		align-items: center;
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: 1fr auto;
+		}
+	}
+	&__title {
+		@include fluid-property("margin-bottom", 8, 4);
+		@extend %sub-heading;
+		display: block;
+	}
+	&__yump {
+		margin-bottom: $gap-mobile;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 0;
+		}
+	}
+	&__yump-text {
+		font-size: 1.4rem;
+		list-style: 24px;
+		font-weight: 400;
+
+		&:nth-child(2) {
+			padding: 0 1rem;
+			@include media-breakpoint-up(md) {
+			}
+		}
+	}
+	&__yump-link {
+		text-decoration: underline;
+		font-weight: 500;
+		&:focus,
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&__bottom-link {
+		color: $text-color;
+		display: block;
+		margin-bottom: $gap-small-mobile;
+		font-size: 1.4rem;
+		list-style: 20px;
+		font-weight: 500;
+		@include media-breakpoint-up(md) {
+			&:not(:last-child) {
+				padding-right: 2rem;
+			}
+			display: inline-block;
+		}
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}

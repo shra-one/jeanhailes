@@ -1,0 +1,152 @@
+/* 
+	Button with icon prepending it:
+    <a href="#" class="button button--primary">
+        <span class="button__prepend">
+            {{svg('@webroot/assets/img/svg/ic-caret-left.svg')|attr({
+                class: 'button__icon'
+            }) }}
+        </span>
+        <span class="button__text">
+            {{ parent.title }}
+        </span>
+    </a>
+	
+	Icon only as a button:
+	<a href="#" class="button button--primary">
+	{{svg('@webroot/assets/img/svg/ic-chevron-left.svg')|attr({
+		class: 'button__icon'
+	}) }}
+	</a>
+	*/
+// .button__text {
+//   font-size: 1.6rem;
+//   line-height: 19px;
+//   font-weight: 700;
+// }
+
+%button {
+  user-select: none;
+  color: $text-color;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.15s;
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  padding: 1.4rem 2.4rem;
+  //   @extend %minor-heading;
+  @include media-breakpoint-up(lg) {
+    padding: 1.4rem 2.4rem;
+  }
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  &--lg {
+    @include media-breakpoint-up(lg) {
+      padding: 1.8rem 3.2rem;
+    }
+  }
+
+  &--extra-wide {
+    @include media-breakpoint-up(lg) {
+      padding-inline: 5.8rem;
+    }
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: 2px dotted $text-color;
+  }
+  &__text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 19px;
+  }
+
+  &__append {
+    display: block;
+    margin-left: $spacing-s;
+    margin-bottom: 0;
+    float: right;
+    .button__icon {
+      float: right;
+    }
+  }
+
+  &__prepend {
+    display: block;
+    margin-right: $spacing-s;
+    margin-bottom: 0;
+    float: left;
+    .button__icon {
+      float: left;
+    }
+  }
+
+  &__icon {
+    display: block;
+  }
+  &--primary {
+    background-color: $purple-dark;
+    border-radius: $big-border-radius;
+    color: $white;
+    @include hover-focus {
+      background-color: lighten($purple-dark, 10%);
+      color: $white;
+      text-decoration: none;
+      box-shadow: none;
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+  &--primary-outline {
+    background-color: transparent;
+    border-radius: $big-border-radius;
+    border: 2px solid $purple-dark;
+    color: $purple-dark;
+    @include hover-focus {
+      background-color: lighten($purple-dark, 10%);
+      color: $white;
+      text-decoration: none;
+      box-shadow: none;
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+  &--secondary {
+    background-color: transparent;
+    @include hover-focus {
+      color: $green;
+      text-decoration: underline;
+    }
+  }
+
+  &--centered {
+    display: flex;
+    flex-basis: 1;
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+  }
+
+  // in the style of a link
+  &--link {
+    padding: 0;
+    background-color: transparent;
+    color: $green;
+    text-decoration: underline;
+    @include hover-focus {
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
+}

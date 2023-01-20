@@ -1,0 +1,2 @@
+## What are content-blocks?
+ These are all of the neo blocks that the admin gets to use in the backend + any hardcoded blocks we create. Basically, anything that gets input into an entry through the backend. 

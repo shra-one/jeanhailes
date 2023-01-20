@@ -1,0 +1,67 @@
+.search-results {
+	&__content {
+		margin-top: 64px;
+		margin-bottom: 64px;
+	}
+
+	&__heading {
+		@extend %main-heading;
+	}
+
+	&__count {
+		@include fluid-property("margin-bottom", 64, 24);
+		@extend %sub-heading;
+		font-weight: 400;
+	}
+
+	&__list {
+		list-style: none;
+		padding-left: 0;
+		& > li {
+			&:not(:last-child) {
+				margin-bottom: 42px;
+			}
+			.highlight {
+				background-color: lighten($success, 20%);
+				padding: 4px 0;
+			}
+		}
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid $yellow;
+		@include fluid-property("margin-top", 32, 16);
+		@include fluid-property("padding-bottom", 32, 16);
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+	&__img {
+		@include fluid-property("width", 160, 100);
+		border-radius: 0;
+		margin-left: 2.4rem;
+		object-fit: contain;
+	}
+	&__button {
+		margin-top: 2.4rem;
+	}
+
+	&__item-title-link {
+		@include fluid-property("margin-bottom", 18, 12);
+		@extend %section-heading-md;
+		transition: all 0.3s;
+		color: $text-color;
+		&:focus,
+		&:hover,
+		&:active {
+			color: $green;
+		}
+		&:focus {
+			outline: $outline;
+		}
+	}
+}

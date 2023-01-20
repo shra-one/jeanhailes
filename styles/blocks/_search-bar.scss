@@ -1,0 +1,106 @@
+$search-bar-height: 56px;
+$input-padding: 10px;
+$search-bar-lh: $search-bar-height - ($input-padding * 2);
+.search-results-top-section {
+	background-color: $green;
+}
+.search-bar {
+	padding: 24px 0;
+	&--js {
+		background-color: $green;
+		display: none;
+	}
+
+	&--crumbs {
+		position: relative;
+		@include fluid-property("padding-top", 64, 24);
+		@include fluid-property("padding-bottom", 56, 24);
+		&::after {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			bottom: 0;
+			left: inherit;
+			right: 0;
+			top: inherit;
+			width: 110px;
+			height: 100%;
+			background: url("/assets/img/svg/search-result-bg.svg") no-repeat
+				center center/cover;
+			@include media-breakpoint-up(sm) {
+				// bottom: -20px;
+				// height: 295px;
+			}
+			@include media-breakpoint-up(lg) {
+				bottom: 0;
+				right: 0px;
+			}
+			@include media-breakpoint-up(xxl) {
+				right: 0px;
+				// width: 355px;
+			}
+		}
+	}
+	&--with-close {
+		//make room for the close button if present
+		.search-bar-form {
+			padding-right: 27px;
+			@include media-breakpoint-up(sm) {
+				padding-right: 15px;
+			}
+			&__btn {
+				right: 37px;
+				flex: 0 0 54px;
+				@include media-breakpoint-up(sm) {
+					right: 27px;
+				}
+			}
+		}
+	}
+
+	&__container {
+		z-index: 9;
+		// @include make-container();
+		// @include make-container-max-widths();
+		position: relative;
+	}
+
+	//close button
+	&__close {
+		color: $white;
+		position: absolute;
+		top: 0;
+		right: 15px;
+		line-height: $search-bar-height;
+		@include media-breakpoint-up(sm) {
+			right: 0;
+		}
+	}
+
+	&__form {
+		position: relative;
+		display: grid;
+		grid-gap: 1rem;
+		@include media-breakpoint-up(lg) {
+			grid-gap: 1.6rem;
+			grid-template-columns: minmax(200px, 1fr) 125px;
+		}
+	}
+
+	&__form-search-icon {
+		display: inline-block;
+	}
+
+	&__form-input {
+		background-color: $white;
+		padding: 0 32px;
+		width: 100%;
+		line-height: $search-bar-lh;
+		border: 0px;
+		border-radius: 100px 0 0 100px;
+	}
+
+	&__form-button {
+		padding: 1.7rem 3rem;
+	}
+}

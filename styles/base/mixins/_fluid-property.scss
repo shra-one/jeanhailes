@@ -1,0 +1,42 @@
+/*
+http://www.adrenalinmedia.com.au/blog/january-2016/this-changes-everything-css-%E2%80%98fluid-properties%E2%80%99
+example:
+h1 {
+  @include fp(font-size, 100, 50); //100px at 1920, 50px at 320;
+}
+see  _fluid-typography.scss for the type specific version of this
+*/
+
+$typography_min_width: map-get($grid-breakpoints, sm);
+$typography_max_width: map-get($grid-breakpoints, xl);
+
+$typography_min_width_val: strip-unit($typography_min_width);
+$typography_max_width_val: strip-unit($typography_max_width);
+@mixin fluid-property(
+  $property,
+  $max,
+  $min: 0,
+  $start: $typography_min_width_val,
+  $end: $typography_max_width_val,
+  $clip: true,
+  $clipAtStart: true,
+  $clipAtEnd: true
+) {
+  @if $min == 0 {
+    $min: round($max * 0.78);
+  }
+  $multiplier: calc((($max - $min) / ($end - $start)) * 100);
+  $adder: calc(($min * $end - $max * $start) / ($end - $start));
+  $formula: calc(#{$multiplier + 0vw} + #{$adder + 0px});
+  @if $clip and $clipAtStart {
+    @media (max-width: #{$start + 0px}) {
+      #{$property}: $min + 0px;
+    }
+  }
+  @if $clip and $clipAtEnd {
+    @media (min-width: #{$end + 0px}) {
+      #{$property}: $max + 0px;
+    }
+  }
+  #{$property}: $formula;
+}

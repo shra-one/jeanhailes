@@ -1,0 +1,73 @@
+.share-this {
+	$self: &;
+	&__heading {
+		@extend %minor-heading;
+		font-weight: 700;
+		color: $light-grey;
+		margin-bottom: $spacing-s;
+	}
+
+	&__buttons-wrap {
+		display: flex;
+	}
+
+	&__button {
+		@extend %share-this-button;
+		&:not(:last-child) {
+			margin-right: 12px;
+		}
+		&--email {
+			@extend %share-this-button--email;
+			@include hover-focus {
+				background-color: darken($light-grey, 10%);
+				#{$self}__button-icon {
+					transform: scale(1.1);
+				}
+			}
+		}
+		&--twitter {
+			@extend %share-this-button--twitter;
+			@include hover-focus {
+				background-color: darken(#4b97d9, 10%);
+				#{$self}__button-icon {
+					transform: scale(1.1);
+				}
+			}
+		}
+		&--facebook {
+			@extend %share-this-button--facebook;
+			@include hover-focus {
+				background-color: darken(#2c3e90, 10%);
+				#{$self}__button-icon {
+					transform: scale(1.1);
+				}
+			}
+		}
+		&--linkedin {
+			@extend %share-this-button--linkedin;
+			@include hover-focus {
+				background-color: darken(#0073b1, 10%);
+				#{$self}__button-icon {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
+	&__button-icon {
+		@extend %button__prepend;
+		transition: scale 0.3s ease-in-out;
+		margin-right: 0;
+		@include media-breakpoint-up(sm) {
+			margin-right: 12px;
+		}
+	}
+
+	&__button-text {
+		font-size: 16px;
+		display: none;
+		@include media-breakpoint-up(sm) {
+			display: inline-block;
+		}
+	}
+}

@@ -1,0 +1,134 @@
+.anchor-block {
+	&.main__container {
+		@include fluid-property(
+			"margin-top",
+			-$gap-big-px,
+			-$gap-big-mobile-px
+		);
+	}
+	&__head {
+		@include fluid-property(
+			"margin-bottom",
+			$gap-bigest-px,
+			$gap-mobile-normal-px
+		);
+		background-color: $cream;
+		@include fluid-property(
+			"padding-top",
+			$gap-big-mobile-px,
+			$gap-mobile-normal-px
+		);
+		@include fluid-property(
+			"padding-bottom",
+			$gap-big-mobile-px,
+			$gap-mobile-small-px
+		);
+	}
+	&__container {
+		display: grid;
+		justify-content: space-between;
+		grid-template-columns: 1fr;
+		align-items: self-start;
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: 1fr auto;
+		}
+	}
+	&__main-links {
+		position: relative;
+		&::after {
+			@include media-breakpoint-up(lg) {
+				position: absolute;
+				right: 0;
+				top: 0;
+				content: "";
+				width: 1px;
+				height: 68px;
+				background-color: $text-color;
+			}
+		}
+	}
+	&__main-link {
+		margin-top: $gap-small;
+		@include media-breakpoint-up(lg) {
+			margin-top: 0;
+			@include fluid-property(
+				"padding-left",
+				$gap-big-px,
+				$gap-mobile-small-px
+			);
+		}
+	}
+	&__heading {
+		@extend %secondary-heading-md;
+		@include fluid-property(
+			"margin-bottom",
+			$gap-big-mobile-px,
+			$gap-mobile-small-px
+		);
+	}
+	&__subheading {
+		@extend %body-text;
+		font-weight: 600;
+		margin-bottom: 1.6rem;
+	}
+	&__mini-heading {
+		@extend %sub-heading;
+	}
+	&__links {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__link {
+		color: $green;
+		text-decoration: underline;
+		@extend %table-title;
+		margin-right: 24px;
+		margin-bottom: 1.6rem;
+		@include media-breakpoint-up(lg) {
+		}
+		@include media-breakpoint-up(xl) {
+			margin-right: 64px;
+			margin-bottom: 0;
+		}
+		&:focus {
+			outline: $outline;
+		}
+	}
+	&__btt {
+		display: inline-block;
+		color: $green;
+		text-decoration: underline;
+		@include fluid-property(
+			"margin-top",
+			$gap-big-px,
+			$gap-mobile-normal-px
+		);
+		&:hover,
+		&:focus {
+			color: $text-color;
+			text-decoration: none;
+		}
+		&:focus {
+			outline: $outline;
+		}
+	}
+	&__cards {
+		grid-template-columns: 1fr;
+		grid-gap: 4rem;
+		@include media-breakpoint-up(md) {
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			grid-gap: 5rem;
+		}
+		@include media-breakpoint-up(xl) {
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		}
+	}
+	&__img {
+		@include media-breakpoint-up(lg) {
+			width: 200px;
+		}
+	}
+	&__button {
+		text-align: center;
+	}
+}

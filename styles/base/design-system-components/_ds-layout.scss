@@ -1,0 +1,123 @@
+// layout padding bottoms
+$layout-dt-pb: 80;
+$layout-mb-pb: 80;
+$layout-dt-pt: 80;
+$layout-mb-pt: 64;
+// blocks margin bottoms
+$block-dt-pt: 80;
+$block-dt-pb: 110;
+$block-mb-pt: 64;
+$block-mb-pb: 80;
+$block-mb-mb: 48;
+$block-dt-mb: 64;
+$block-mb-mb: 48;
+// inner block paddings
+$block-dt-normal-pt: 40;
+$block-mb-normal-pt: 32;
+$block-dt-normal-pb: 40;
+$block-mb-normal-pb: 32;
+$block-dt-normal-padding-side: 48;
+$block-mb-normal-padding-side: 24;
+// inter-blocks
+$gap-smallest: 2rem;
+$gap-small: 2.4rem;
+$gap-small-mobile: 1.6rem;
+
+$gap-small-px: 46;
+$gap-small-mobile-px: 32;
+
+$big-gap: 6.4rem;
+$gap: 5.6rem;
+$gap-normal: 3.8rem;
+$gap-big: 4rem;
+$gap-mobile: 3.2rem;
+$gap-mobile-small: 1.2rem;
+
+$gap-super-px: 96;
+$gap-super-big-px: 88;
+$gap-super-big-m-px: 72;
+$gap-bigest-px: 80;
+$gap-big-px: 64;
+$gap-px: 56;
+$gap-midd-px: 50;
+$gap-middle-px: 38;
+$gap-normal-px: 44;
+$gap-mobile-px: 32;
+$gap-mobile-normal-small-px: 36;
+$gap-mobile-normal-px: 40;
+$gap-mobile-small-px: 24;
+$gap-mobile-middle-px: 21;
+$gap-mobile-midd-px: 18;
+$gap-mobile-smaller-px: 16;
+$gap-mobile-smallest-px: 14;
+$gap-mobile-tablet-small-px: 8;
+$gap-mobile-mobile-small-px: 3;
+$gap-mobile-very-small-px: 2;
+
+$gap-big-mobile: 4.8rem;
+$gap-bigger-px: 84;
+$gap-big-mobile-px: 48;
+
+$desktop-menu-breakpoint: "lg";
+$mobile-menu-breakpoint: "md";
+$spacing-unit: 6px;
+$spacing-s: 8px;
+$spacing-m: 24px;
+
+%block-padding-y {
+	@include fluid-property("padding-top", $gap-px, $gap-mobile-px);
+	@include fluid-property("padding-bottom", $gap-px, $gap-mobile-px);
+	&--small {
+		@include fluid-property(
+			"padding-top",
+			$gap-small-px,
+			$gap-big-mobile-px
+		);
+		@include fluid-property(
+			"padding-bottom",
+			$gap-small-px,
+			$gap-big-mobile-px
+		);
+	}
+	&--big {
+		@include fluid-property("padding-top", $gap-big-px, $gap-big-mobile-px);
+		@include fluid-property(
+			"padding-bottom",
+			$gap-big-px,
+			$gap-big-mobile-px
+		);
+	}
+}
+
+%block-margin-y {
+	margin-top: 0;
+	@include fluid-property("margin-bottom", $gap-px, $gap-mobile-px);
+	&--small {
+		margin-top: 0;
+		@include fluid-property(
+			"margin-bottom",
+			$gap-mobile-normal-small-px,
+			$gap-mobile-smallest-px
+		);
+	}
+	&--big {
+		margin-top: 0;
+		@include fluid-property("margin-bottom", $gap-px, $gap-mobile-px);
+	}
+	&--bigger {
+		margin-top: 0;
+		@include fluid-property("margin-bottom", $gap-bigest-px, $gap-px);
+	}
+	&--biggest {
+		margin-top: 0;
+		@include fluid-property(
+			"margin-bottom",
+			$gap-super-big-px,
+			$gap-super-big-m-px
+		);
+	}
+}
+%no-margin-y {
+	@include fluid-property("margin-top", 0, 0);
+	@include fluid-property("margin-bottom", 0, 0);
+}

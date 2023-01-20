@@ -1,0 +1,105 @@
+.careers-jobs {
+    .job {
+        padding:3.2rem 0;
+        display:flex;
+        align-items: flex-start;
+        gap:2.4rem;
+        flex-direction: column;
+        
+        flex-wrap:wrap;
+        @include media-breakpoint-up(md) {
+       
+            flex-direction: row;
+            align-items: center;
+        }
+        &:first-child {
+            padding-top:0;
+        }
+        &:not(:last-child){
+            border-bottom: 1px solid var(--primary);
+        }
+        
+        &__title {
+            margin-bottom: 1.6rem;
+            color: #3d3935;
+        }
+        
+        &__content {
+            flex:1;
+        }
+        
+        .button {
+            padding:0.8rem 2rem;
+            margin:0;
+            display: flex;
+            align-items: center;
+        }
+        
+        &__infos {
+            padding:0;
+            list-style: none;
+            display:flex;
+            gap:2.4rem;
+            align-items: center;
+            margin: 0;
+            flex-wrap:wrap;
+            
+            &-item {
+                display:flex;
+                align-items: center;
+                gap:0.6rem;
+                
+                &__label {
+                    display: block;
+                    margin-top:0.2rem;
+                }
+            }
+           
+        }
+    }
+    .careers-jobs__filters {
+        margin-bottom: 3.2rem;
+        margin-left: -0.4rem;
+        margin-right: -0.4rem;
+        >[class*="col-"] {
+            padding-left: 0.4rem;
+            padding-right: 0.4rem;
+        }
+    }
+    .filter {
+        margin-bottom: 1.6rem;
+        &__input {
+            border: 0.5px solid #3D3935;
+            height: 4.8rem;
+            width: 100%;
+            font-size: 1.6rem;
+            line-height: 1.25;
+            font-weight: 400;
+            padding: 1.4rem 2.4rem;
+            border-radius: 11.5rem;
+            &:focus {
+                outline:0;
+            }
+        }
+        &__label {
+            display: block;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 1.4;
+            margin-bottom: 0.6rem;
+        }
+        select {
+            padding-right: 2.4rem;
+            background-size:2rem 2rem;
+             -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: #ffffff url(/assets/img/svg/arrow-form.svg) no-repeat right 16px center;
+        }
+    }
+    
+    .load-more-button {
+        text-align: center;
+        padding: 3.2rem 0;
+    }
+}

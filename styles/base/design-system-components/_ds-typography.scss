@@ -1,0 +1,183 @@
+/**
+ * Custom fonts inclusion example:
+ */
+// // Gilroy
+// @include font-face(Gilroy, "/vendor/fonts/Gilroy/Gilroy-Regular", $weight: 400, $file-formats: woff woff2); //Gilroy Regular
+// @include font-face(Gilroy, "/vendor/fonts/Gilroy/Gilroy-Italic", $weight: 400, $style: italic, $file-formats: woff woff2); //Gilroy Regular Italic
+// @include font-face(Gilroy, "/vendor/fonts/Gilroy/Gilroy-Medium", $weight: 600, $file-formats: woff woff2); //Gilroy Medium
+// @include font-face(Gilroy, "/vendor/fonts/Gilroy/Gilroy-Bold", $weight: 700, $file-formats: woff woff2); //Gilroy Bold
+// @include font-face(Gilroy, "/vendor/fonts/Gilroy/Gilroy-BoldItalic", $weight: 700, $style: italic, $file-formats: woff woff2); //Gilroy Bold Italic
+// @include font-face(Gilroy, "/vendor/fonts/Gilroy/Gilroy-ExtraBold", $weight: 800, $file-formats: woff woff2); //Gilroy Extra Bold
+// @include font-face(Gilroy, "/vendor/fonts/Gilroy/Gilroy-ExtraBoldItalic", $weight: 800, $style: italic, $file-formats: woff woff2); //Gilroy Extra Bold Italic
+
+// See _ds-vars-typography.scss for the maps for these components
+
+%main-heading {
+  font-size: 3.2rem;
+  line-height: 40px;
+  @include media-breakpoint-up(lg) {
+    font-size: 4rem;
+    line-height: 52px;
+  }
+  font-weight: 800;
+  @include fluid-property("margin-bottom", 24, 16);
+  @include fluid-property("letter-spacing", 0, -1);
+}
+%home-banner-heading {
+  font-size: 3.2rem;
+  line-height: 36px;
+  @include media-breakpoint-up(xl) {
+    font-size: 4.8rem;
+    line-height: 56px;
+  }
+  font-weight: 800;
+  @include fluid-property("margin-bottom", 36, 24);
+  letter-spacing: -1px;
+}
+%secondary-heading {
+  font-size: 2.8rem;
+  line-height: 34px;
+  @include media-breakpoint-up(md) {
+    font-size: 3.4rem;
+    line-height: 40px;
+  }
+  font-weight: 500;
+  @include fluid-property("margin-bottom", 24, 16);
+}
+%secondary-heading-md {
+  font-size: 2.4rem;
+  line-height: 32px;
+  @include media-breakpoint-up(md) {
+    font-size: 3.2rem;
+    line-height: 40px;
+  }
+}
+%section-heading-lg {
+  font-size: 2.4rem;
+  line-height: 32px;
+  font-weight: 600;
+  @include fluid-property("margin-bottom", 16, 8);
+}
+%section-heading-md {
+  font-size: 2rem;
+  line-height: 24px;
+  @include media-breakpoint-up(md) {
+    font-size: 2.4rem;
+    line-height: 32px;
+  }
+  font-weight: 600;
+  @include fluid-property("margin-bottom", 16, 8);
+}
+%sub-heading {
+  font-size: 1.6rem;
+  line-height: 24px;
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+  }
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+%minor-heading {
+  font-size: 1.4rem;
+  line-height: 20px;
+  @include media-breakpoint-up(md) {
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+  font-weight: 600;
+}
+
+%lead-text {
+  font-size: 1.4rem;
+  line-height: 20px;
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+    line-height: 28px;
+  }
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+
+%body-text {
+  font-family: $font-family-base;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 26px;
+  @include media-breakpoint-up(md) {
+    font-size: 2rem;
+    line-height: 32px;
+  }
+}
+%menu-text {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 16px;
+  @include media-breakpoint-up(lg) {
+    font-size: 1.36rem;
+  }
+  @include media-breakpoint-up(lgl) {
+    font-size: 1.5rem;
+    line-height: 22px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 1.6rem;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 1.7rem;
+    line-height: 24px;
+  }
+}
+%strong-text {
+  font-size: 1.4rem;
+  line-height: 20px;
+  @include media-breakpoint-up(md) {
+    line-height: 16px;
+  }
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+%card-title {
+  font-size: 2rem;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+%footer-menu-text {
+  font-size: 1.4rem;
+  line-height: 20px;
+  @include media-breakpoint-up(md) {
+    line-height: 24px;
+  }
+}
+%breadcrumb-menu-text {
+  font-size: 1.4rem;
+  line-height: 20px;
+  @include media-breakpoint-up(md) {
+    line-height: 24px;
+  }
+}
+%small-text {
+  font-size: 1.2rem;
+  line-height: 16px;
+  @include media-breakpoint-up(md) {
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+}
+%table-title {
+  font-size: 1.6rem;
+  line-height: 24px;
+  @include media-breakpoint-up(md) {
+    font-size: 1.8rem;
+    line-height: 20px;
+  }
+}
+%big-heading {
+  font-size: 3.2rem;
+  line-height: 40px;
+  @include media-breakpoint-up(md) {
+    font-size: 5.6rem;
+    line-height: 84px;
+  }
+}

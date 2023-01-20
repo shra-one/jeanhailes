@@ -1,0 +1,379 @@
+/* 
+* @type This is a secondary content area banner.
+* @extends banner from src\styles\base\design-system\_ds-banner.scss.
+*/
+.rich-media {
+  @extend %banner;
+  $rich-media: &;
+  &__row {
+    @extend %banner__row;
+    // padding: 1.2rem;
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+    @include media-breakpoint-up(lg) {
+      //   grid-gap: 2.4rem;
+      grid-template-columns: 1fr 1fr;
+      //   grid-gap: 6.4rem;
+      padding: inherit;
+    }
+  }
+
+  &__column {
+    @extend %banner__column;
+    align-self: stretch;
+
+    &--media {
+      grid-column: 1;
+      grid-row: 1;
+
+      @include media-breakpoint-up(lg) {
+        grid-column: inherit;
+        grid-row: inherit;
+      }
+      &--1 {
+        .video {
+          .glightbox {
+            border-radius: $normal-border-radius;
+            @include media-breakpoint-up(lg) {
+              border-radius: 0 $normal-border-radius $normal-border-radius 0;
+            }
+          }
+        }
+      }
+      &--2 {
+        .video {
+          .glightbox {
+            border-radius: $normal-border-radius;
+            @include media-breakpoint-up(lg) {
+              border-radius: $normal-border-radius 0 0 $normal-border-radius;
+            }
+          }
+        }
+      }
+    }
+    &--text {
+      // padding-top: $gap-normal;
+      grid-column: 1;
+      grid-row: 2;
+      align-self: center;
+      @include media-breakpoint-up(lg) {
+        grid-column: inherit;
+        grid-row: inherit;
+        @include fluid-property("padding-bottom", 0, 44);
+      }
+      &--1 {
+        @include media-breakpoint-up(lg) {
+          justify-self: end;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+        }
+      }
+    }
+  }
+  &__inner-column {
+    padding: 3.2rem 1.6rem;
+    &.banner__inner-column {
+      max-width: 610px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 6.4rem;
+    }
+  }
+  &__media {
+    &--1 {
+      border-radius: $normal-border-radius;
+      @include media-breakpoint-up(lg) {
+        border-radius: 0 $normal-border-radius $normal-border-radius 0;
+      }
+    }
+    &--2 {
+      border-radius: $normal-border-radius;
+      @include media-breakpoint-up(lg) {
+        border-radius: $normal-border-radius 0 0 $normal-border-radius;
+      }
+    }
+    &--image {
+      // we need to make sure the image itself is cropped 16/9
+      //   min-height: calc(100vw * 9 / 16);
+      @supports (aspect-ratio: 1/1) {
+        aspect-ratio: 16/9;
+      }
+      padding-bottom: 56.25%;
+      width: 100%;
+      height: 100%;
+      @include media-breakpoint-up(lg) {
+        @supports (aspect-ratio: 1/1) {
+          aspect-ratio: 4/3;
+        }
+        padding-bottom: 75%;
+        width: 100%;
+      }
+      background-size: cover;
+      //   @include media-breakpoint-up(lg) {
+      //     min-height: calc(64vw * 9 / 16);
+      //   }
+      //   @include media-breakpoint-up(lgl) {
+      //     min-height: calc(59vw * 9 / 16);
+      //   }
+      //   @include media-breakpoint-up(lgxl) {
+      //     min-height: calc(53vw * 9 / 16);
+      //   }
+      //   @include media-breakpoint-up(xl) {
+      //     min-height: calc(50vw * 9 / 16);
+      //   }
+      //   @include media-breakpoint-up(xll) {
+      //     min-height: calc(47vw * 9 / 16);
+      //   }
+      //   @include media-breakpoint-up(xxl) {
+      //     min-height: calc(52vw * 9 / 16);
+      //   }
+      //   @include media-breakpoint-up(xxll) {
+      //     min-height: calc(47vw * 9 / 16);
+      //   }
+      //   @include media-breakpoint-up(xxxll) {
+      //     min-height: calc(50vw * 9 / 16);
+      //   }
+    }
+  }
+  &__bg {
+    right: 0;
+    left: inherit;
+    @include media-breakpoint-up(md) {
+      height: 400px;
+      width: 123px;
+    }
+    @include media-breakpoint-up(xl) {
+      height: 511px;
+      width: 200px;
+    }
+  }
+  &__text {
+    @extend %banner__text;
+  }
+  &__text-content-summary {
+    @include media-breakpoint-up(lg) {
+      max-width: 534px;
+    }
+    * {
+      @extend %body-text;
+    }
+  }
+  &__text-content-heading {
+    @extend %secondary-heading;
+    color: $purple-dark;
+
+    @at-root .rich-media--theme-outcast & {
+      font-weight: 700;
+      font-size: 4.2rem;
+      line-height: 48px;
+      color: $body-color;
+      @include media-breakpoint-up(lg) {
+        font-size: 4rem;
+        line-height: 44px;
+      }
+    }
+  }
+  &--bannerWithBg,
+  &--bannerWithRoundedImage {
+    #{$rich-media}__column {
+      &--text {
+        align-items: flex-start;
+        display: block;
+        @include media-breakpoint-up(lg) {
+          @include fluid-property(
+            "padding-right",
+            $gap-super-px,
+            $gap-mobile-smallest-px
+          );
+        }
+        grid-column: 1;
+        grid-row: 2;
+        @include media-breakpoint-up(md) {
+          grid-column: 2;
+          grid-row: 1;
+        }
+      }
+      &--media {
+        grid-column: 1;
+        grid-row: 1;
+        @include media-breakpoint-up(md) {
+          grid-column: 1;
+          grid-row: 1;
+        }
+      }
+    }
+  }
+  &--bannerWithBg {
+    #{$rich-media}__row {
+      padding: 0;
+      background-color: $green;
+      grid-template-columns: 1fr;
+      @include media-breakpoint-up(md) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+      }
+      @include media-breakpoint-up(lg) {
+        grid-gap: 7.5rem;
+      }
+    }
+    #{$rich-media}__text-content-summary {
+      @include media-breakpoint-up(lg) {
+        max-width: 539px;
+      }
+      * {
+        color: $cream;
+      }
+    }
+    #{$rich-media}__text-content-heading {
+      letter-spacing: -0.5px;
+      color: $cream;
+      @include media-breakpoint-up(lg) {
+        max-width: 454px;
+      }
+    }
+    #{$rich-media}__column {
+      &--text {
+        padding: 3.6rem 2.4rem 5.6rem;
+        @include media-breakpoint-up(md) {
+          padding: 0;
+        }
+        grid-column: 1;
+        grid-row: 2;
+        @include media-breakpoint-up(md) {
+          grid-column: 2;
+          grid-row: 1;
+        }
+      }
+      &--media {
+        background-size: cover;
+        grid-column: 1;
+        grid-row: 1;
+        height: 360px;
+        @include media-breakpoint-up(xsm) {
+          height: 402px;
+        }
+        @include media-breakpoint-up(xxsm) {
+          height: 511px;
+        }
+        @include media-breakpoint-up(sm) {
+          height: 734px;
+        }
+        @include media-breakpoint-up(md) {
+          height: 400px;
+        }
+        @include media-breakpoint-up(xl) {
+          height: 511px;
+        }
+      }
+      .banner__bg {
+        bottom: -1px;
+        @include media-breakpoint-up(md) {
+          bottom: 0;
+          right: -3px;
+        }
+      }
+    }
+  }
+  &--bannerWithRoundedImage,
+  &--error-page {
+    #{$rich-media}__row {
+      grid-gap: 0;
+      @include media-breakpoint-up(md) {
+        grid-gap: 2.4rem;
+      }
+      @include media-breakpoint-up(lg) {
+        grid-gap: 0;
+      }
+      @include media-breakpoint-up(xl) {
+        grid-gap: 8.4rem;
+      }
+    }
+    #{$rich-media}__column {
+      &--media {
+        justify-self: center;
+        grid-column: 1;
+        grid-row: 1;
+        width: 327px;
+        height: 314px;
+        @include media-breakpoint-up(md) {
+          width: 374px;
+          height: 360px;
+        }
+        @include media-breakpoint-up(lg) {
+          justify-self: baseline;
+        }
+        @include media-breakpoint-up(xl) {
+          width: 546px;
+          height: 524px;
+        }
+      }
+      &--text {
+        @include media-breakpoint-up(md) {
+          padding: 0;
+        }
+      }
+    }
+    .banner__bg {
+      width: 327px;
+      height: 314px;
+      @include media-breakpoint-up(md) {
+        width: 374px;
+        height: 360px;
+      }
+      @include media-breakpoint-up(xl) {
+        width: 547px;
+        height: 524px;
+      }
+    }
+  }
+  &--error-page {
+    #{$rich-media}__text-content-heading {
+      @extend %home-banner-heading;
+      margin-bottom: 1.6rem;
+    }
+    #{$rich-media}__row {
+      justify-content: center;
+    }
+  }
+
+  &--theme-lightGray {
+    background-color: $light-grey;
+  }
+  &--theme-primary {
+    background-color: $purple-dark;
+    color: $white;
+    .rich-media__text-content-heading {
+      color: $white;
+    }
+    .rich-media__text-content-cta {
+      border: 1px solid $white;
+      border-radius: $big-border-radius;
+      .button__text {
+        color: white;
+      }
+
+      &:hover {
+        background-color: $purple;
+        border-color: transparent;
+      }
+    }
+  }
+
+  &--theme-lightPink {
+    background-color: $purple-light;
+
+    .rich-media__text-content-cta {
+      background-color: $purple-dark;
+      border-radius: $big-border-radius;
+
+      &:hover {
+        background-color: $purple;
+      }
+    }
+  }
+
+  &--theme-white {
+    background-color: $white;
+  }
+}

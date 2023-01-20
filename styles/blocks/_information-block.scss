@@ -1,0 +1,39 @@
+.information-block {
+	&__cards {
+		grid-template-columns: 1fr;
+		grid-gap: 3.2rem;
+		@include media-breakpoint-up(lg) {
+			grid-gap: 4rem;
+		}
+	}
+	&__card {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		grid-column-gap: 2.4rem;
+		grid-template-columns: 70px 1fr;
+		@include media-breakpoint-up(lg) {
+			grid-column-gap: 3.2rem;
+		}
+	}
+	&__title {
+		// grid-column: 2;
+		// grid-row: 1;
+	}
+	&__text {
+		grid-column: 2;
+		grid-row: 2;
+		justify-self: start;
+		*:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__img {
+		width: 69px;
+		grid-column: 1;
+		grid-row: 1 / span 2;
+		margin: 0;
+		align-self: baseline;
+	}
+}

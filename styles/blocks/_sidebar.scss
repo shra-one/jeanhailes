@@ -1,0 +1,48 @@
+.sidebar {
+	$sidebar: &;
+	&__heading {
+		margin-bottom: 0.4rem;
+		@extend %section-heading-lg;
+	}
+	&__heading-link {
+		color: $text-color;
+		&:hover,
+		&:focus {
+			color: $green;
+		}
+	}
+	&__nav {
+		padding-left: 0;
+	}
+	&__nav-item {
+		list-style-type: none;
+	}
+	&__sub-nav-link {
+	}
+	&__current {
+		#{$sidebar}__sub-nav-link {
+			background-color: $light-green;
+			border-radius: $basic-border-radius;
+			color: $green;
+			font-weight: 600;
+		}
+	}
+	&__sub-child-nav-link {
+		color: $green;
+		padding-top: 1rem;
+		display: block;
+	}
+	&__sub-nav-link {
+		padding: 1.8rem 1.6rem;
+		font-size: 1.6rem;
+		line-height: 1.5;
+		color: $text-color;
+		font-weight: 500;
+		display: block;
+		&:hover,
+		&:focus {
+			background-color: $light-green;
+			border-radius: $basic-border-radius;
+		}
+	}
+}

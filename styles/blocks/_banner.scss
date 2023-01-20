@@ -1,0 +1,320 @@
+/* 
+* @type This is a the main banner in the header
+* @related src\styles\content-blocks\_rich-media.scss
+* @extends banner from src\styles\base\design-system\_ds-banner.scss.
+*/
+
+$simple-banner-container-max-widths: (
+	sm: 540px,
+	md: 600px,
+	lg: 750px,
+	xl: 950px,
+);
+@keyframes animateText {
+	0% {
+		transform: translateY(50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+.banner {
+	@extend %banner;
+	$banner: &;
+	&__mobile-only {
+		display: inline-block;
+		@include media-breakpoint-up(md) {
+			display: none;
+		}
+	}
+	&__desktop-only {
+		display: none;
+		@include media-breakpoint-up(md) {
+			display: inline-block;
+		}
+	}
+	&__row {
+		@extend %banner__row;
+	}
+
+	&__column {
+		@extend %banner__column;
+		&--media {
+			@extend %banner__column--media;
+		}
+		&--text {
+			@extend %banner__column--text;
+		}
+	}
+	&__bg {
+		@extend %banner__bg;
+		&--mobile {
+			@extend %banner__bg--mobile;
+		}
+		&--desktop {
+			@extend %banner__bg--desktop;
+		}
+	}
+	&__text {
+		@extend %banner__text;
+	}
+	&__inner-column {
+		@extend %banner__inner-column;
+	}
+	&__text-content-summary {
+		* {
+			@extend %lead-text;
+		}
+	}
+	&__text-content-heading,
+	&__text-content-summary {
+		transform: translateY(50px);
+		opacity: 0;
+	}
+	&__text-content-heading,
+	&__text-content-summary {
+		animation-name: animateText;
+		animation-duration: 1400ms;
+		animation-fill-mode: forwards;
+	}
+	&__text-content-summary {
+		animation-delay: 300ms;
+		@extend %banner__summary;
+		margin-bottom: 0;
+		* {
+			@extend %banner__summary;
+		}
+	}
+	&__button {
+		animation-delay: 600ms;
+		@include fluid-property(
+			"margin-top",
+			$gap-mobile-smaller-px,
+			$gap-mobile-very-small-px
+		);
+	}
+	&--simple {
+		overflow: hidden;
+		position: relative;
+		#{$banner}__row {
+			grid-template-columns: 1fr;
+		}
+		#{$banner}__column--text {
+			text-align: center;
+			padding-top: $gap-normal;
+			padding-bottom: $gap;
+			margin: 0 auto;
+			padding-right: 0;
+			padding-left: 0;
+			max-width: 576px;
+		}
+		#{$banner}__inner-column {
+			max-width: inherit;
+		}
+		#{$banner}__text-content {
+			@extend %block-padding-y;
+		}
+	}
+	&--teamLanding,
+	&--newsBlogLanding,
+	&--generalLanding {
+		color: $banner-accessible-colour;
+	}
+	&--teamLanding {
+		.banner__bg {
+			bottom: -3px;
+			@include media-breakpoint-up(xsm) {
+				bottom: -6px;
+			}
+			@include media-breakpoint-up(md) {
+				bottom: 0;
+			}
+		}
+		#{$banner}__text-content-summary {
+			* {
+				color: $cream;
+			}
+		}
+		#{$banner}__text-content-heading {
+			color: $cream;
+		}
+	}
+	&--cta-banner,
+	&--error {
+		@include fluid-property(
+			"margin-bottom",
+			-$gap-big-px,
+			-$gap-big-mobile-px
+		);
+	}
+	&--cta-banner,
+	&--error {
+		#{$banner}__media {
+			&::before {
+				content: "";
+				display: inline-block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				bottom: -5px;
+				top: inherit;
+				width: 100%;
+				height: 80px;
+				background: url("/assets/img/svg/ligh-banner-bg-mobile.svg")
+					no-repeat center center/cover;
+				@include media-breakpoint-up(xsm) {
+					height: 118px;
+				}
+				@include media-breakpoint-up(sm) {
+					height: 155px;
+				}
+				@include media-breakpoint-up(md) {
+					height: 200px;
+				}
+				@include media-breakpoint-up(lg) {
+					bottom: 0;
+					left: -1px;
+					right: inherit;
+					height: 100%;
+					width: 160px;
+					background: url("/assets/img/svg/ligh-banner-bg-normal.svg")
+						no-repeat center center/cover;
+				}
+				@include media-breakpoint-up(xll) {
+					left: -30px;
+					width: 170px;
+				}
+				@include media-breakpoint-up(xxll) {
+					width: 189px;
+				}
+				@include media-breakpoint-up(xxxll) {
+					width: 270px;
+				}
+			}
+		}
+		#{$banner}__text-content-heading {
+			color: $primary;
+		}
+		#{$banner}__text-content-summary {
+			color: $green;
+		}
+	}
+	&--error {
+		@include fluid-property(
+			"margin-top",
+			-$gap-big-px,
+			-$gap-big-mobile-px
+		);
+	}
+	&--home {
+		@include fluid-property(
+			"padding-top",
+			$gap-mobile-small-px,
+			$gap-mobile-smaller-px
+		);
+		#{$banner}__row {
+			align-items: center;
+			justify-content: center;
+			@include media-breakpoint-up(md) {
+				grid-template-columns: 1fr;
+			}
+			@include media-breakpoint-up(lg) {
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 24px;
+			}
+			@include media-breakpoint-up(xl) {
+				@include fluid-property("grid-gap", 82, $gap-mobile-small-px);
+				max-width: 1324px;
+				margin: 0 auto;
+			}
+		}
+		#{$banner}__media {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			z-index: 1;
+			transition: opacity 1s;
+			&::before {
+				display: none;
+			}
+			&.showing {
+				opacity: 1;
+				z-index: 2;
+			}
+		}
+		#{$banner}__column {
+			&--text {
+				align-self: baseline;
+				padding-right: 0;
+				padding-left: 0;
+				@include fluid-property("padding-top", 64, 24);
+			}
+			&--media {
+				overflow: hidden;
+				position: relative;
+				justify-self: center;
+				width: 346px;
+				height: 333px;
+				@include media-breakpoint-up(sm) {
+					width: 442px;
+					height: 426px;
+				}
+				@include media-breakpoint-up(md) {
+					width: 368px;
+					height: 366px;
+				}
+				@include media-breakpoint-up(lg) {
+					width: 470px;
+					height: 467px;
+					justify-self: baseline;
+				}
+				@include media-breakpoint-up(xl) {
+					width: 615px;
+					height: 611px;
+				}
+				&::before {
+					content: "";
+					display: inline-block;
+					position: absolute;
+					z-index: 9;
+					bottom: 0;
+					left: -0.65px;
+					right: 0;
+					top: 0;
+					width: 348px;
+					height: 333px;
+					background: url("/assets/img/bg/rounded-bg-yellow.svg")
+						no-repeat center center / cover;
+					@include media-breakpoint-up(sm) {
+						width: 444px;
+						height: 426px;
+						left: -0.3px;
+					}
+					@include media-breakpoint-up(md) {
+						width: 381px;
+						height: 366px;
+						left: -0.45px;
+					}
+					@include media-breakpoint-up(lg) {
+						width: 486px;
+						height: 467px;
+						justify-self: baseline;
+					}
+					@include media-breakpoint-up(xl) {
+						width: 636px;
+						height: 611px;
+					}
+				}
+			}
+		}
+		#{$banner}__text-content-heading {
+			@extend %home-banner-heading;
+		}
+	}
+}

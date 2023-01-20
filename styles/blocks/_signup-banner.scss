@@ -1,0 +1,76 @@
+.signup-banner {
+	background-color: $light-orange;
+	@include fluid-property("padding-top", 76, $gap-mobile-normal-px);
+	@include fluid-property("padding-bottom", 76, $gap-mobile-normal-px);
+	@include fluid-property("padding-left", 0, 12);
+	@include fluid-property("padding-right", 0, 12);
+	margin-top: 0;
+	&__wrapper {
+		max-width: 984px;
+		display: grid;
+		align-items: center;
+		grid-template-columns: 1fr;
+		@include fluid-property("grid-gap", 133, $gap-mobile-small-px);
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: auto 1fr;
+		}
+	}
+	&__img {
+		justify-self: center;
+		@include media-breakpoint-up(lg) {
+			justify-self: baseline;
+		}
+	}
+	.custom-form {
+		button[type="submit"] {
+			background-color: $text-color;
+			color: $white;
+			&:hover,
+			&:focus {
+				background-color: $orange;
+			}
+		}
+		.freeform-row {
+			align-items: flex-end;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 1.6rem;
+			@include media-breakpoint-up(lg) {
+				grid-template-columns: 1fr 1fr auto;
+				grid-gap: 1.6rem;
+			}
+		}
+		.freeform-column {
+			align-self: end;
+			margin: 0 1.5rem;
+			@include media-breakpoint-up(lg) {
+				margin: 0;
+			}
+			&:first-child {
+				@include media-breakpoint-up(lg) {
+					margin-left: 1.5rem;
+				}
+			}
+			&:last-child {
+				@include media-breakpoint-up(lg) {
+					margin-right: 1.5rem;
+				}
+			}
+		}
+		.freeform-column.freeform-column-content-align-left {
+			margin-bottom: 0;
+			justify-content: flex-end;
+			margin: 0 1.5rem;
+			@include media-breakpoint-up(lg) {
+				margin: 0;
+				justify-content: flex-end;
+			}
+			button {
+				height: 48px;
+				display: flex;
+				justify-content: center;
+				width: 100%;
+			}
+		}
+	}
+}

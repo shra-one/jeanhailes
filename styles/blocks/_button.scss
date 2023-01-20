@@ -1,0 +1,47 @@
+.button {
+  @extend %button;
+
+  &__append {
+    @extend %button__append;
+  }
+
+  &__prepend {
+    @extend %button__prepend;
+  }
+
+  &__prepend {
+    @extend %button__prepend;
+  }
+
+  &--primary {
+    @extend %button--primary;
+  }
+  &--primary-outline {
+    @extend %button--primary-outline;
+  }
+  &--secondary {
+    @extend %button--secondary;
+  }
+
+  &--centered {
+    @extend %button--centered;
+  }
+
+  &--link {
+    @extend %button--link;
+  }
+  &__text {
+    @extend %button__text;
+  }
+  &--lg {
+    @extend %button--lg;
+  }
+  &--extra-wide {
+    @extend %button--extra-wide;
+  }
+
+  &--group {
+    display: flex;
+    gap: 1.6rem;
+  }
+}

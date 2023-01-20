@@ -1,0 +1,19 @@
+.footer-nav {
+	@include media-breakpoint-up(sm) {
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		display: flex;
+	}
+	&__group {
+		margin-top: 15px;
+	}
+	&__parent-link {
+		font-weight: 700;
+	}
+	&__child-list {
+		margin: 5px 0 0;
+		list-style: none;
+		padding: 0;
+	}
+}

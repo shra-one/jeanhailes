@@ -1,0 +1,145 @@
+.rich-text {
+	&--with-bg {
+		background-color: $light-blue;
+		border-radius: $basic-border-radius;
+		&.container {
+		}
+	}
+	& > *:last-child {
+		margin-bottom: 0;
+	}
+
+	img {
+		max-width: 100% !important;
+		height: auto !important;
+	}
+	p.lead-text,
+	b.lead-text,
+	span.lead-text {
+		@extend %lead-text;
+	}
+	h4 {
+		@extend %minor-heading;
+	}
+	h3 {
+		@extend %section-heading-lg;
+	}
+	h2 {
+		@extend %secondary-heading;
+	}
+	h1 {
+		@extend %main-heading;
+	}
+
+	p:not(.lead-text),
+	b,
+	span {
+		@extend %body-text;
+	}
+
+	b {
+		font-weight: 500;
+	}
+
+	li {
+		@extend %body-text;
+		margin-bottom: 1.2rem;
+		list-style: none;
+	}
+
+	ol {
+		padding-inline-start: 0;
+		counter-reset: item;
+		position: relative;
+		li {
+			padding-inline-start: 1.8rem;
+			@include media-breakpoint-up(lg) {
+				padding-inline-start: 2.4rem;
+			}
+			&:before {
+				counter-increment: ol;
+				content: counter(ol) ".";
+				position: absolute;
+				font-weight: bold;
+				@include fluid-property("left", 12, 12);
+				content: counter(item) " ";
+				counter-increment: item;
+				left: 0;
+			}
+		}
+	}
+
+	ul {
+		padding-inline-start: 11px;
+		li {
+			position: relative;
+			padding-inline-start: 1.8rem;
+			@include media-breakpoint-up(lg) {
+				padding-inline-start: 2.4rem;
+			}
+			&:before {
+				content: "";
+				margin-right: 8px;
+				background-color: $text-color;
+				border-radius: 50%;
+				width: 8px;
+				height: 8px;
+				position: absolute;
+				top: 5px;
+				left: 0;
+				@include media-breakpoint-up(lg) {
+					height: 6px;
+					width: 6px;
+					top: 10px;
+				}
+			}
+		}
+	}
+	.blockquote {
+		margin: 4rem 0;
+		border-left: 2px solid $orange;
+		@include fluid-property(
+			"padding-inline-start",
+			$gap-mobile-normal-px,
+			$gap-mobile-small-px
+		);
+		@extend %lead-text;
+	}
+	a {
+		color: $green;
+		text-decoration: underline;
+		font-weight: 600;
+		&:hover,
+		&:focus {
+			color: $text-color;
+			text-decoration: none;
+		}
+	}
+	&--special {
+		&.editor-default {
+			@include fluid-property(
+				"padding-top",
+				$gap-normal-px,
+				$gap-mobile-normal-px
+			);
+			@include fluid-property(
+				"padding-bottom",
+				$gap-normal-px,
+				$gap-mobile-normal-px
+			);
+			@include fluid-property(
+				"padding-right",
+				$gap-normal-px,
+				$gap-mobile-small-px
+			);
+			@include fluid-property(
+				"padding-left",
+				$gap-normal-px,
+				$gap-mobile-small-px
+			);
+			& > *:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

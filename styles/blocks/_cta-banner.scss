@@ -1,0 +1,24 @@
+.cta-banner {
+	background-color: $blue;
+	padding: 0 $gap-mobile-small;
+	@include fluid-property("padding-top", $gap-super-px, $gap-px);
+	@include fluid-property("padding-bottom", $gap-super-px, $gap-px);
+	&__container {
+		max-width: 845px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	&__image {
+		@include fluid-property("margin-bottom", $gap-midd-px, $gap-mobile-px);
+	}
+	&__img {
+		max-width: 253px;
+	}
+	&__heading {
+		@extend %secondary-heading-md;
+	}
+}

@@ -1,0 +1,72 @@
+.yump-carousel {
+	$self: &;
+
+	&__cell {
+		&:focus {
+			outline: 0;
+		}
+		&--multi-items {
+			#{$self}__item {
+				&:not(:last-child) {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+
+	&__item {
+		padding: 0 8px;
+		p {
+			margin-bottom: 0px;
+			line-height: 17px;
+			font-size: 14px;
+		}
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	&__item-img-container {
+		display: flex;
+		align-items: center;
+		height: 80px;
+		padding: 0 2rem;
+	}
+
+	&__item-img {
+		max-height: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	&__item-text-container {
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	&__item-text-heading {
+		margin-top: 1.6rem;
+		font-size: 16px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.5;
+		letter-spacing: -0.2px;
+		color: #313131;
+		@include media-breakpoint-up(md) {
+			margin-top: 2.4rem;
+		}
+	}
+
+	&__item-text-subheading {
+		margin-top: 0.2rem;
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.43;
+		letter-spacing: normal;
+		text-align: center;
+		color: #737373;
+	}
+}

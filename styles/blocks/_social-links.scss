@@ -1,0 +1,42 @@
+.social-links {
+	$self: &;
+	margin-top: 2.4rem;
+	@include media-breakpoint-up(lg) {
+		margin-top: 0;
+	}
+	&__heading {
+		font-size: 1.2rem;
+		list-style: 16px;
+		font-weight: 500;
+		margin-bottom: 1.5rem;
+		display: block;
+	}
+	&__link {
+		display: inline-block;
+		margin-right: 0.8rem;
+		overflow: hidden;
+		text-decoration: none;
+		&:hover,
+		&:focus {
+			#{$self}__icon {
+				& > path {
+					transition: all 0.3s;
+					fill: $white;
+				}
+				g path {
+					transition: all 0.3s;
+					fill: $text-color;
+				}
+			}
+		}
+		&:focus {
+			outline: 2px dotted;
+		}
+	}
+	&__icon {
+		transition: transform 0.3s;
+		transform: scale(0.9);
+		width: 40px;
+		height: 40px;
+	}
+}

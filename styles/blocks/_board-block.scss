@@ -1,0 +1,10 @@
+.board-block{
+    .section-head{
+        &--grid-cards {
+            align-items: baseline;
+        }
+        &__summary{
+            text-align: left;
+        }
+    }
+}

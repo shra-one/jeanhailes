@@ -122,6 +122,15 @@
       }
     }
   }
+
+  &--primary-light {
+    background-color: $primary-light;
+    color: $primary-dark;
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
   &--secondary {
     background-color: transparent;
     @include hover-focus {

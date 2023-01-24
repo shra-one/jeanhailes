@@ -22,6 +22,9 @@
   &--secondary {
     @extend %button--secondary;
   }
+  &--primary-light {
+    @extend %button--primary-light;
+  }
 
   &--centered {
     @extend %button--centered;

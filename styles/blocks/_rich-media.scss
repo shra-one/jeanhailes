@@ -158,6 +158,9 @@
     * {
       @extend %body-text;
     }
+    b {
+      font-weight: 700;
+    }
   }
   &__text-content-heading {
     @extend %secondary-heading;
@@ -360,10 +363,10 @@
     }
   }
 
-  &--theme-lightPink {
-    background-color: $purple-light;
+  &--theme-lightPrimary {
+    background-color: #f4e8fe;
 
-    .rich-media__text-content-cta {
+    .rich-media__text-content-cta.button--primary {
       background-color: $purple-dark;
       border-radius: $big-border-radius;
 

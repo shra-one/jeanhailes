@@ -1,112 +1,210 @@
 .card {
-	&:focus,
-	&.focus {
-		outline: $outline;
-		border-radius: $normal-border-radius;
-	}
-	&__container {
-		display: flex;
-		flex-direction: column;
-		min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
-		width: 100%;
-		height: 100%;
-		word-wrap: break-word;
-		background-clip: border-box;
-		@include border-radius($card-border-radius);
-		@include media-breakpoint-up(sm) {
-			& > .card__link {
-				flex: 0 0 auto;
-			}
-		}
-	}
+  $self: &;
+  &:focus,
+  &.focus {
+    outline: $outline;
+    border-radius: $normal-border-radius;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+    width: 100%;
+    height: 100%;
+    word-wrap: break-word;
+    background-clip: border-box;
+    @include border-radius($card-border-radius);
+    @include media-breakpoint-up(sm) {
+      & > .card__link {
+        flex: 0 0 auto;
+      }
+    }
+  }
 
-	&__body {
-		background: $white;
-		border-radius: 0px 0px $normal-border-radius $normal-border-radius;
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-		order: 2;
-		flex: 1 1 auto;
-		// Workaround for the image size bug in IE
-		// See: https://github.com/twbs/bootstrap/pull/28855
-		min-height: 1px;
-		padding: $card-spacer-y 0 0;
-		color: $card-color;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		padding: $gap-small;
-		@include media-breakpoint-up(lg) {
-			padding: $gap-mobile;
-		}
-	}
-	&__heading {
-		@extend %card-title;
-	}
-	&__text {
-		font-size: 1.4rem;
-		line-height: 20px;
-	}
-	&__button {
-		cursor: pointer;
-		margin-top: auto;
-		margin-left: auto;
-		position: relative;
-		left: 0;
-		display: block;
-		transition: left 0.3s ease-in-out;
-		&:hover {
-			left: $spacing-s;
-			transition: left 0.3s ease-in-out;
-		}
-	}
-	&__link {
-		display: flex;
-		text-decoration: none;
-		color: $text-color;
-		&:hover,
-		&:focus {
-			text-decoration: none;
-			color: $text-color;
-		}
-	}
-	&__tags {
-		margin: 0;
-	}
-	&__tag,
-	&__postdate {
-		@extend %strong-text;
-		display: inline-block;
-	}
-	&__tag {
-		color: $green;
-	}
-	&__postdate {
-		color: $text-color;
-		font-weight: 500;
-	}
-	&__image-wrap {
-		order: 1;
-		overflow: hidden;
-		cursor: pointer;
-		img {
-			border-radius: $normal-border-radius $normal-border-radius 0 0;
-		}
-	}
-	&__icon {
-		margin-right: 0.3rem;
-	}
-	&__footer {
-		padding: $card-spacer-y $card-spacer-x;
-		background-color: $card-cap-bg;
-		border-top: $card-border-width solid $card-border-color;
-		margin-top: auto;
-		&:last-child {
-			@include border-radius(
-				0 0 $card-inner-border-radius $card-inner-border-radius
-			);
-		}
-	}
-	&--whole-link {
-		display: flex;
-	}
+  &__body {
+    background: $white;
+    border-radius: 0px 0px $normal-border-radius $normal-border-radius;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    order: 2;
+    flex: 1 1 auto;
+    // Workaround for the image size bug in IE
+    // See: https://github.com/twbs/bootstrap/pull/28855
+    min-height: 1px;
+    padding: $card-spacer-y 0 0;
+    color: $card-color;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: $gap-small;
+    @include media-breakpoint-up(lg) {
+      padding: $gap-mobile;
+    }
+  }
+  &__heading {
+    @extend %card-title;
+  }
+  &__text {
+    font-size: 1.4rem;
+    line-height: 20px;
+  }
+  &__button {
+    cursor: pointer;
+    margin-top: auto;
+    margin-left: auto;
+    position: relative;
+    left: 0;
+    display: block;
+    transition: left 0.3s ease-in-out;
+    &:hover {
+      left: $spacing-s;
+      transition: left 0.3s ease-in-out;
+    }
+  }
+  &__link {
+    display: flex;
+    text-decoration: none;
+    color: $text-color;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+  &__tags {
+    margin: 0;
+  }
+  &__tag,
+  &__postdate {
+    @extend %strong-text;
+    display: inline-block;
+  }
+  &__tag {
+    color: $green;
+  }
+  &__postdate {
+    color: $text-color;
+    font-weight: 500;
+  }
+  &__image-wrap {
+    order: 1;
+    overflow: hidden;
+    cursor: pointer;
+    img {
+      border-radius: $normal-border-radius $normal-border-radius 0 0;
+    }
+  }
+  &__icon {
+    margin-right: 0.3rem;
+  }
+  &__footer {
+    padding: $card-spacer-y $card-spacer-x;
+    background-color: $card-cap-bg;
+    border-top: $card-border-width solid $card-border-color;
+    margin-top: auto;
+    &:last-child {
+      @include border-radius(
+        0 0 $card-inner-border-radius $card-inner-border-radius
+      );
+    }
+  }
+  &--whole-link {
+    display: flex;
+  }
+
+  &--flushed {
+    position: relative;
+    &#{$self}__container {
+      border-radius: 0;
+    }
+    #{$self}__container {
+      border-radius: 0;
+    }
+    #{$self}__body {
+      border-radius: 0;
+      box-shadow: unset;
+      padding: 1.6rem 0 2.4rem 0;
+      @include media-breakpoint-up(lg) {
+        padding: 2.4rem 0 3.2rem 0;
+      }
+    }
+    #{$self}__heading {
+      color: $purple-dark;
+      font-weight: 500;
+      font-size: 2.2rem;
+      line-height: 30px;
+      margin-bottom: 0.4rem;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 1.6rem;
+        font-size: 2.8rem;
+        line-height: 32px;
+      }
+    }
+    #{$self}__image-wrap {
+      > img {
+        border-radius: 0;
+      }
+    }
+    #{$self}__link {
+      &:after {
+        // position: absolute;
+        // inset: 0;
+        // z-index: 1;
+        // content: "";
+      }
+    }
+    #{$self}__text {
+      margin-bottom: 1.6rem;
+      color: $graynew;
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+    #{$self}__tag {
+      color: $text-color;
+    }
+    #{$self}__day {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 26px;
+      margin-bottom: 8px;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 1.6rem;
+      }
+      b {
+        font-weight: 700;
+      }
+    }
+    #{$self}__postdate {
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 17px;
+      margin-bottom: 0;
+    }
+  }
+
+  &--customers {
+    #{$self}__body {
+      padding: 16px 16px 0 16px;
+      box-shadow: none;
+    }
+    #{$self}__image-wrap {
+      position: relative;
+      cursor: default;
+      .button {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        cursor: default;
+      }
+    }
+    #{$self}__img {
+      border-radius: 16px;
+    }
+    #{$self}__text {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 24px;
+    }
+  }
 }

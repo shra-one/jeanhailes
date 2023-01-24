@@ -36,7 +36,8 @@ h5 {
   @extend %minor-heading;
 }
 a {
-  color: $green;
+  color: $primary-dark;
+  font-weight: 700;
   &:hover {
     color: $text-color;
     text-decoration: underline;

@@ -89,13 +89,13 @@
 }
 
 %lead-text {
-  font-size: 1.4rem;
-  line-height: 20px;
+  font-size: 2rem;
+  line-height: 32px;
   @include media-breakpoint-up(md) {
-    font-size: 2rem;
-    line-height: 28px;
+    font-size: 2.4rem;
+    line-height: 36px;
   }
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 1.6rem;
 }
 

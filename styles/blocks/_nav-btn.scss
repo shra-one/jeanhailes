@@ -11,95 +11,95 @@ $hamburger-line-border-radius: 0 !default;
 $hamburger-background: transparent !default;
 
 .nav-btn {
-	$self: &;
-	@include media-breakpoint-up($desktop-menu-breakpoint) {
-		display: none;
-	}
-	height: $hamburger-height;
-	padding: $hamburger-padding;
-	background: $hamburger-background;
-	border: 0;
-	min-width: 0;
-	&:focus,
-	&:active {
-		outline: none;
-	}
+  $self: &;
+  @include media-breakpoint-up($desktop-menu-breakpoint) {
+    display: none;
+  }
+  height: $hamburger-height;
+  padding: $hamburger-padding;
+  background: $hamburger-background;
+  border: 0;
+  min-width: 0;
+  &:focus,
+  &:active {
+    outline: none;
+  }
 
-	&:not(.collapsed) {
-		outline: none;
-		#{$self}__burger-line {
-			&--1 {
-				top: $hamburger-height / 2 - $hamburger-line-height;
-				left: $hamburger-width / 2;
+  &:not(.collapsed) {
+    outline: none;
+    #{$self}__burger-line {
+      &--1 {
+        top: calc($hamburger-height / 2 - $hamburger-line-height);
+        left: $hamburger-width / 2;
 
-				width: 0;
+        width: 0;
 
-				opacity: 0;
-			}
+        opacity: 0;
+      }
 
-			&--2 {
-				transform: rotate(45deg);
-			}
+      &--2 {
+        transform: rotate(45deg);
+      }
 
-			&--3 {
-				transform: rotate(-45deg);
-			}
+      &--3 {
+        transform: rotate(-45deg);
+      }
 
-			&--4 {
-				top: $hamburger-height / 2 - $hamburger-line-height;
-				left: $hamburger-width / 2;
+      &--4 {
+        top: calc($hamburger-height / 2 - $hamburger-line-height);
+        left: $hamburger-width / 2;
 
-				width: 0;
+        width: 0;
 
-				opacity: 0;
-			}
-		}
-	}
+        opacity: 0;
+      }
+    }
+  }
 
-	&__text {
-		color: $white;
-		font-size: 1.6rem;
-		font-weight: bold;
-		line-height: 1.25;
-		padding-right: 1rem;
-		bottom: 3px;
-	}
+  &__text {
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.25;
+    padding-right: 1rem;
+    bottom: 3px;
+  }
 
-	&__burger {
-		display: block;
-		position: relative;
+  &__burger {
+    display: block;
+    position: relative;
 
-		width: $hamburger-width;
-		height: $hamburger-height;
-	}
-	
-	&__burger-line {
-		position: absolute;
-		left: 0;
-		display: block;
-		width: 100%;
-		height: $hamburger-line-height;
-		border-radius: $hamburger-line-border-radius;
-		background: $hamburger-line-colour;
+    width: $hamburger-width;
+    height: $hamburger-height;
+  }
 
-		opacity: 1;
+  &__burger-line {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: $hamburger-line-height;
+    border-radius: $hamburger-line-border-radius;
+    background: $hamburger-line-colour;
 
-		transition: top 0.3s, left 0.3s, width 0.3s, opacity 0.3s, transform 0.3s;
+    opacity: 1;
 
-		&--1 {
-			top: 0;
-		}
+    transition: top 0.3s, left 0.3s, width 0.3s, opacity 0.3s, transform 0.3s;
 
-		&--2 {
-			top: ($hamburger-height - $hamburger-line-height) / 2;
-		}
+    &--1 {
+      top: 0;
+    }
 
-		&--3 {
-			top: ($hamburger-height - $hamburger-line-height) / 2;
-		}
+    &--2 {
+      top: calc(($hamburger-height - $hamburger-line-height) / 2);
+    }
 
-		&--4 {
-			top: $hamburger-height - $hamburger-line-height;
-		}
-	}
+    &--3 {
+      top: calc(($hamburger-height - $hamburger-line-height) / 2);
+    }
+
+    &--4 {
+      top: $hamburger-height - $hamburger-line-height;
+    }
+  }
 }

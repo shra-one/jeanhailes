@@ -1,0 +1,46 @@
+/**
+ *
+ * rich-media
+ * class="rich-media"
+ */
+
+.matrix-block {
+  .rich-media {
+    --container: 1140px;
+    display: grid;
+    &.rich-media--special {
+      grid-template-columns: 1fr repeat(12, calc(var(--container) / 12)) 1fr;
+      padding-inline: 2rem;
+
+      .rich-media__text-content {
+        grid-column: 2 / span 6;
+      }
+      .rich-media__figure-content {
+        grid-column: 8/-1;
+      }
+    }
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+
+    p,
+    b,
+    span {
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      @media (min-width: 992px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+
+    &--whw {
+      &.editor-default {
+        padding-block: 0;
+      }
+    }
+  }
+}

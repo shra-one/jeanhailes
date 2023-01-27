@@ -1,0 +1,17 @@
+:root {
+  --purple-darker: #3d0f58;
+  --purple-light: #e0c9f6;
+  --purple: #662d91;
+  --blue-light: #badafb;
+  --blue: #02267e;
+  --pink: #d40f7d;
+  --gray: #54575b;
+  --text: #383c3d;
+  --border: #dce6e8;
+  --primary-light: var(--purple-light);
+  --primary-darker: var(--purple-darker);
+  --primary: var(--purple);
+  --secondary-light: var(--blue-light);
+  --secondary-darker: var(--blue-darker);
+  --secondary: var(--blue);
+}

@@ -17,9 +17,9 @@
   line-height: 40px;
   @include media-breakpoint-up(lg) {
     font-size: 4rem;
-    line-height: 52px;
+    line-height: 44px;
   }
-  font-weight: 800;
+  font-weight: 600;
   @include fluid-property("margin-bottom", 24, 16);
   @include fluid-property("letter-spacing", 0, -1);
 }
@@ -41,7 +41,7 @@
     font-size: 3.4rem;
     line-height: 40px;
   }
-  font-weight: 500;
+  font-weight: 400;
   @include fluid-property("margin-bottom", 24, 16);
 }
 %secondary-heading-md {

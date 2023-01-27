@@ -1,0 +1,41 @@
+.topic-chip {
+  @include fluid-property("padding-block", 80, 48);
+
+  &__title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 3.2rem;
+  }
+
+  &__list {
+    --gutter: 1.2rem;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: 1fr;
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 1fr 1fr;
+      gap: calc(var(--gutter) * 2);
+    }
+  }
+
+  &__link {
+    border-radius: 26px;
+    padding: var(--gutter);
+    background-color: $light-grey;
+    display: flex;
+    align-items: center;
+    gap: var(--gutter);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__label {
+    text-decoration: none;
+  }
+}

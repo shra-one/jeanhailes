@@ -59,4 +59,24 @@
   &--margin-bottom-zero {
     margin-bottom: 0;
   }
+  &--content {
+    @include fluid-property("padding-top", 64, 64);
+    margin-top: 0;
+    @include media-breakpoint-up(lg) {
+      margin-top: 72px !important;
+    }
+  }
+
+  &--counter-steps {
+    @include fluid-property("padding-block", 40, 48);
+    margin-block: 0;
+  }
+
+  &--padding80 {
+    @include fluid-property("padding-block", 80, 48);
+  }
+
+  &--mb24 {
+    @include fluid-property("margin-bottom", 24, 24);
+  }
 }

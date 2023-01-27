@@ -56,12 +56,13 @@
     position: relative;
     li {
       padding-inline-start: 1.8rem;
+      position: relative;
       @include media-breakpoint-up(lg) {
         padding-inline-start: 2.4rem;
       }
       &:before {
         counter-increment: ol;
-        content: counter(ol) ".";
+
         position: absolute;
         font-weight: bold;
         @include fluid-property("left", 12, 12);
@@ -69,31 +70,42 @@
         counter-increment: item;
         left: 0;
       }
+      &:after {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: 1px solid $primary-dark;
+        display: inline-block;
+        content: "";
+        transform: translateY(8px);
+        position: absolute;
+        left: 0;
+      }
     }
   }
 
   ul {
-    padding-inline-start: 11px;
+    padding-inline-start: 4px;
     li {
       position: relative;
-      padding-inline-start: 1.8rem;
+
+      padding-inline-start: 2.4rem;
       @include media-breakpoint-up(lg) {
-        padding-inline-start: 2.4rem;
       }
       &:before {
         content: "";
         margin-right: 8px;
-        background-color: $text-color;
+        background-color: $primary-dark;
         border-radius: 50%;
         width: 8px;
         height: 8px;
         position: absolute;
-        top: 5px;
+        top: 10px;
         left: 0;
         @include media-breakpoint-up(lg) {
           height: 6px;
           width: 6px;
-          top: 10px;
+          top: 14px;
         }
       }
     }
@@ -148,8 +160,7 @@
 
   &--whw {
     &.editor-default {
-      @include fluid-property("padding-top", 88, 64);
-      @include fluid-property("padding-bottom", 88, 32);
+      padding-block: 0;
     }
   }
 }

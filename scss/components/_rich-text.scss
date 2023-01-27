@@ -1,0 +1,28 @@
+/**
+ *
+ * Rich Text
+ * class="rich-text"
+ */
+
+.matrix-block {
+  .rich-text {
+    padding-top: 64px;
+    padding-bottom: 32px;
+    @media (min-width: 992px) {
+      padding-top: 88px;
+      padding-bottom: 88px;
+    }
+    p,
+    b,
+    span {
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      @media (min-width: 992px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+}

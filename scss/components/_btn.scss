@@ -1,0 +1,55 @@
+.btn {
+  &--link {
+    padding: 0 !important;
+    background: transparent !important;
+    color: var(--primary-darker) !important;
+    text-decoration: underline;
+    &:hover {
+      background: transparent !important;
+      color: var(--primary) !important;
+      text-decoration: none;
+    }
+  }
+
+  &--small {
+    line-height: 19px;
+    padding: 14px 24px;
+  }
+
+  &--primary-light {
+    background: var(--primary-light);
+    color: var(--primary-darker);
+    border: 0;
+    &:hover {
+      background: var(--primary);
+      color: white;
+    }
+  }
+
+  &--primary-outline {
+    border: 2px solid var(--primary-darker);
+    background: transparent;
+    color: var(--primary-darker);
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__group {
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    @media (min-width: 768px) {
+      gap: 16px;
+    }
+    .btn {
+      margin: 0;
+    }
+  }
+  &--inline-wide {
+    padding-inline: 24px;
+    @media (min-width: 768px) {
+      padding-inline: 58px;
+    }
+  }
+}

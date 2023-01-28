@@ -1,0 +1,10 @@
+.component-grid {
+  --col: 1;
+  --spacer: 4px;
+  --gap-x: var(--spacer);
+  --gap-y: var(--spacer);
+  --gap: var(--spacer);
+  display: grid;
+  gap: var(--spacer);
+  grid-template-columns: repeat(var(--col), 1fr);
+}

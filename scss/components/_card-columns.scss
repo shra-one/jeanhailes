@@ -1,0 +1,58 @@
+.matrix-block--card-columns {
+  --matrix-block-title-size-lg: 34px;
+  --matrix-block-title-lineheight-lg: 40px;
+  --matrix-block-title-size-sm: 28px;
+  --matrix-block-title-lineheight-sm: 40px;
+  --matrix-block-title-weight-sm: 400;
+  --matrix-block-title-weight-lg: 400;
+  --matrix-block-title-margin-lg: 0 0 32px 0;
+  --matrix-block-title-margin-sm: 0 0 24px 0;
+  --matrix-block-section-padding-lg: 0 0 96px 0;
+  --matrix-block-section-padding-sm: 0 0 36px 0;
+  .component-grid {
+    --spacer: 16px;
+    row-gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    $p: ".component-card";
+    #{$p} {
+      --col: inherit;
+      --spacer: inherit;
+      --gap: inherit;
+      --card-img-radius: 8px;
+      --card-body-pading-lg: 0;
+      --card-body-pading-sm: 0;
+      display: flex;
+      flex-direction: column;
+      --spacer: 0;
+      gap: var(--spacer);
+    }
+
+    #{$p}__body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #{$p}__figure {
+    }
+
+    #{$p}__img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .btn {
+      background: var(--primary-light);
+      color: var(--primary-darker);
+      border: 0;
+      @media (min-width: 768px) {
+        margin-top: 8px;
+      }
+
+      &:hover {
+        background: var(--primary);
+        color: white;
+      }
+    }
+  }
+}

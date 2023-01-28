@@ -1,0 +1,110 @@
+.matrix-block--full-image-text {
+  --matrix-block-section-padding-lg: 0;
+  --matrix-block-section-padding-sm: 0;
+  .component-grid {
+    --spacer: 0;
+
+    --spacer: 0;
+
+    $p: ".component-card";
+    #{$p} {
+      --col: inherit;
+      --spacer: inherit;
+      --gap: inherit;
+      --card-img-radius: 0;
+      --card-body-pading-lg: 0;
+      --card-body-pading-sm: 0;
+      --card-title-size-sm: 36px;
+      --card-title-size-lg: 40px;
+      --card-title-weight-sm: 700;
+      --card-title-weight-lg: 700;
+      --card-title-lineheight-sm: 42px;
+      --card-title-lineheight-lg: 44px;
+      --card-title-margin-sm: 0 0 1.5rem 0;
+      --card-title-margin-lg: 0 0 1rem 0;
+      --card-title-color: var(--text);
+      --card-root-bg: transparent;
+      --card-text-size-lg: 20px;
+      --card-text-lineheight-lg: 32.5px;
+      --card-text-size-sm: 17px;
+      --card-text-lineheight-sm: 26px;
+      --card-text-weight-sm: 400;
+      --card-text-weight-lg: 400;
+
+      display: flex;
+      flex-direction: column;
+      --spacer: 0;
+      gap: var(--spacer);
+      --container: 1140px;
+      display: flex;
+
+      flex-direction: column;
+      @at-root .matrix-block--full-image-text-reverse
+          .component-grid
+          .component-card {
+        flex-direction: column-reverse;
+      }
+      @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+      }
+      @media (min-width: 1180px) {
+        grid-template-columns: 1fr repeat(12, calc(var(--container) / 12)) 1fr;
+      }
+    }
+
+    #{$p}__body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      grid-column: 7 / span 6;
+      padding: 2rem 1rem;
+      @media (min-width: 1180px) {
+        // grid-column: 2 / span 6;
+        grid-column: 8 / span 6;
+        padding: 64px 0 64px 64px;
+        align-self: center;
+      }
+    }
+    #{$p}__figure {
+      width: 100%;
+      grid-row: 1/2;
+      object-fit: cover;
+      aspect-ratio: 16/9;
+      height: auto;
+      grid-column: 1 / span 6;
+      @media (min-width: 1180px) {
+        grid-column: 1 / span 7;
+        height: 100%;
+      }
+    }
+    @at-root .matrix-block--full-image-text-reverse .component-grid {
+      #{$p}__figure {
+        grid-column: 7 / span 6;
+        @media (min-width: 1180px) {
+          grid-column: 8 / -1;
+        }
+      }
+
+      #{$p}__body {
+        grid-column: 1 / span 6;
+        @media (min-width: 1180px) {
+          grid-column: 2 / span 6;
+          padding: 64px 64px 64px 0;
+        }
+      }
+    }
+    #{$p}__img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+
+    .btn {
+      @media (min-width: 768px) {
+        margin-top: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.component-card {
+  @mixin props($props) {
+    font-weight: var(--card-#{$props}-weight-sm);
+    font-size: var(--card-#{$props}-size-sm);
+    line-height: var(--card-#{$props}-lineheight-sm);
+    margin: var(--card-#{$props}-margin-sm);
+    padding: var(--card-#{$props}-padding-sm);
+    color: var(--card-#{$props}-color);
+    @media (min-width: 768px) {
+      font-weight: var(--card-#{$props}-weight-lg);
+      font-size: var(--card-#{$props}-size-lg);
+      line-height: var(--card-#{$props}-lineheight-lg);
+      margin: var(--card-#{$props}-margin-lg);
+      padding: var(--card-#{$props}-padding-lg);
+      color: var(--card-#{$props}-color);
+    }
+  }
+
+  //title
+  --card-title-margin-lg: 24px 0 24px 0;
+  --card-title-margin-sm: 16px 0 8px 0;
+  --card-title-padding-lg: 0;
+  --card-title-padding-sm: 0;
+  --card-title-weight-lg: 500;
+  --card-title-weight-sm: 500;
+  --card-title-lineheight-lg: 32px;
+  --card-title-lineheight-sm: 30px;
+  --card-title-size-lg: 28px;
+  --card-title-size-sm: 22px;
+  --card-title-color: var(--primary-darker);
+
+  //text
+  --card-text-margin-lg: 0 0 16px 0;
+  --card-text-margin-sm: 0 0 16px 0;
+  --card-text-padding-lg: 0;
+  --card-text-padding-sm: 0;
+  --card-text-weight-lg: 400;
+  --card-text-weight-sm: 400;
+  --card-text-lineheight-lg: 24px;
+  --card-text-lineheight-sm: 24px;
+  --card-text-size-lg: 16px;
+  --card-text-size-sm: 14px;
+  --card-text-color: var(--text);
+
+  //body
+  --card-body-lg: 0;
+  --card-body-sm: 0;
+
+  //img
+  --card-img-radius: 0;
+
+  // card
+  --card-root-radius: 0;
+  --card-root-bg: white;
+  --card-root-padding-lg: 0;
+  --card-root-padding-sm: 0;
+
+  position: relative;
+  border-radius: var(--card-root-radius);
+  background-color: var(--card-root-bg);
+  padding: var(--card-root-padding-sm);
+
+  @media (min-width: 768px) {
+    padding: var(--card-root-padding-lg);
+  }
+  &__text,
+  &__text > * {
+    @include props(text);
+  }
+
+  &__title {
+    @include props(title);
+  }
+
+  &__meta-date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  &__body {
+    padding: var(--card-body-sm);
+    @media (min-width: 768px) {
+      padding: var(--card-body-lg);
+    }
+  }
+
+  &__img {
+    border-radius: var(--card-img-radius);
+  }
+
+  &__link--stretched {
+    display: block;
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+}

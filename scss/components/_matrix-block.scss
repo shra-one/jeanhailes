@@ -1,0 +1,44 @@
+.matrix-block {
+    --matrix-block-title-margin-lg: 0;
+    --matrix-block-title-margin-sm: 0
+    --matrix-block-title-padding-lg: 0;
+    --matrix-block-title-padding-sm: 0;
+    --matrix-block-title-weight-lg:600;
+    --matrix-block-title-weight-sm: 600;
+    --matrix-block-title-lineheight-lg: 44px;
+    --matrix-block-title-lineheight-sm: 42px;
+    --matrix-block-title-size-lg: 40px;
+    --matrix-block-title-size-sm: 36px;
+    --matrix-block-title-color: var(--text);
+    --matrix-block-section-padding-lg:96px 0 96px 0;
+    --matrix-block-section-padding-sm:36px 0 36px 0;
+
+
+    &__title {
+        font-weight: var(--matrix-block-title-weight-sm);
+        font-size: var(--matrix-block-title-size-sm);
+        line-height: var(--matrix-block-title-lineheight-sm);
+        margin: var(--matrix-block-title-margin-sm);
+        padding: var(--matrix-block-title-padding-sm);
+        color: var(--matrix-block-title-color);
+        @media (min-width: 768px) {
+          font-weight: var(--matrix-block-title-weight-lg);
+          font-size: var(--matrix-block-title-size-lg);
+          line-height: var(--matrix-block-title-lineheight-lg);
+          margin: var(--matrix-block-title-margin-lg);
+          padding: var(--matrix-block-title-padding-lg);
+          color: var(--matrix-block-title-color);
+        }
+    }
+
+    &--section {
+          padding:var(--matrix-block-section-padding-sm);
+        @media (min-width:768px){
+           padding:var(--matrix-block-section-padding-lg);
+   
+        }
+       }
+  &--theme-gray {
+    background-color: #f3f4f6 !important;
+  }
+}

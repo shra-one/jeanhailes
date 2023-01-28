@@ -3,16 +3,11 @@
 @import "./components/card";
 @import "./components/cards";
 @import "./components/rich-media";
-
-.grid {
-  --col: 1;
-  --spacer: 4px;
-  --gap-x: var(--spacer);
-  --gap-y: var(--spacer);
-  display: grid;
-  gap: var(--spacer);
-  grid-template-columns: repeat(var(--1), 1fr);
-  &--5 {
-    --col: 5;
-  }
-}
+@import "./components/matrix-block";
+@import "./components/component-grid";
+@import "./components/component-card";
+@import "./components/week-cards";
+@import "./components/featured-card";
+@import "./components/card-columns";
+@import "./components/btn";
+@import "./components/full-image-text";

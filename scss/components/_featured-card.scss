@@ -1,0 +1,97 @@
+.matrix-block--featured-card {
+  --matrix-block-title-margin-lg: 0 0 32px 0;
+  --matrix-block-title-margin-sm: 0 0 24px 0;
+  .component-grid {
+    --col: 12;
+    --spacer: 40px;
+    display: block;
+    @media (min-width: 768px) {
+      --spacer: 16px;
+      display: grid;
+    }
+
+    $p: ".component-card";
+    #{$p} {
+      --col: inherit;
+      --spacer: inherit;
+      --gap: inherit;
+      --card-title-margin-lg: 0 0 24px 0;
+      --card-title-margin-sm: 0 0 24px 0;
+      --card-title-size-lg: 40px;
+      --card-title-size-sm: 36px;
+      --card-title-lineheight-lg: 44px;
+      --card-title-lineheight-sm: 42px;
+      --card-title-weight-sm: 600;
+      --card-title-weight-lg: 600;
+      --card-text-size-sm: 16px;
+      --card-text-size-lg: 16px;
+      --card-text-lineheight-lg: 24px;
+      --card-text-lineheight-sm: 24px;
+      --card-title-color: white;
+      --card-text-color: white;
+      --card-body-lg: 24px 0 0 0;
+      --card-body-sm: 16px 0 0 0;
+      --card-img-radius: 4px;
+      --card-root-radius: 16px;
+      --card-root-bg: var(--primary-darker);
+      --card-root-padding-lg: 40px;
+      --card-root-padding-sm: 24px;
+      --card-img-radius: 8px;
+
+      display: flex;
+      flex-direction: column-reverse;
+      grid-column: 1/-1;
+      --spacer: 32px;
+      gap: var(--spacer);
+
+      @media (min-width: 992px) {
+        display: grid;
+        grid-template-columns: inherit;
+        --spacer: 16px;
+      }
+    }
+
+    #{$p}__body {
+      order: 1;
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @media (min-width: 992px) {
+        grid-column: 1/4;
+      }
+    }
+    #{$p}__figure {
+      order: 1;
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      @media (min-width: 992px) {
+        grid-column: 5/-1;
+        padding-left: 40px;
+      }
+    }
+
+    #{$p}__img {
+      width: 100%;
+      object-fit: cover;
+      @media (min-width: 992px) {
+        height: 100%;
+      }
+    }
+
+    .btn {
+      background: var(--primary-light);
+      color: var(--primary-darker);
+      border: 0;
+      margin-top: 24px;
+      @media (min-width: 992px) {
+        margin-top: auto;
+      }
+      &:hover {
+        background: var(--primary);
+        color: white;
+      }
+    }
+  }
+}

@@ -43,8 +43,8 @@
   --card-text-color: var(--text);
 
   //body
-  --card-body-lg: 0;
-  --card-body-sm: 0;
+  --card-body-padding-lg: 0;
+  --card-body-padding-sm: 0;
 
   //img
   --card-img-radius: 0;
@@ -72,7 +72,7 @@
     @include props(title);
   }
 
-  &__meta-date {
+  &__meta-info {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -83,9 +83,9 @@
   }
 
   &__body {
-    padding: var(--card-body-sm);
+    padding: var(--card-body-padding-sm);
     @media (min-width: 768px) {
-      padding: var(--card-body-lg);
+      padding: var(--card-body-padding-lg);
     }
   }
 

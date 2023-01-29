@@ -1,0 +1,56 @@
+.freeform-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  row-gap: 24px;
+
+  &--two-column {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .freeform-column {
+    flex: 1;
+    flex-basis: auto;
+
+    &--full {
+      grid-column: 1/-1;
+    }
+  }
+}
+.freeform-column {
+  h3 {
+    margin: 16px 0 0;
+  }
+}
+.freeform-label {
+  font-size: 14px;
+  line-height: 20px;
+}
+.freeform-input {
+  border-radius: 4px;
+  box-shadow: none !important;
+  border: 1px solid var(--text);
+  color: var(--text);
+  height: 50px;
+  padding: 10px 16px;
+  width: 100%;
+}
+textarea.freeform-input {
+  height: auto;
+  &:focus {
+    outline: none;
+    box-shadow: 0;
+  }
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("/assets/img/svg/arrow-form.svg");
+  background-repeat: no-repeat;
+  background-position: 98% center;
+}

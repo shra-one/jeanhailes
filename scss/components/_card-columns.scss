@@ -5,8 +5,8 @@
   --matrix-block-title-lineheight-sm: 40px;
   --matrix-block-title-weight-sm: 400;
   --matrix-block-title-weight-lg: 400;
-  --matrix-block-title-margin-lg: 0 0 32px 0;
-  --matrix-block-title-margin-sm: 0 0 24px 0;
+  --matrix-block-header-margin-lg: 0 0 32px 0;
+  --matrix-block-header-margin-sm: 0 0 24px 0;
   --matrix-block-section-padding-lg: 0 0 96px 0;
   --matrix-block-section-padding-sm: 0 0 36px 0;
   .component-grid {
@@ -20,8 +20,6 @@
       --spacer: inherit;
       --gap: inherit;
       --card-img-radius: 8px;
-      --card-body-pading-lg: 0;
-      --card-body-pading-sm: 0;
       display: flex;
       flex-direction: column;
       --spacer: 0;
@@ -34,24 +32,54 @@
       align-items: flex-start;
     }
     #{$p}__figure {
+      position: relative;
     }
 
     #{$p}__img {
       width: 100%;
       object-fit: cover;
     }
+  }
 
-    .btn {
-      background: var(--primary-light);
-      color: var(--primary-darker);
-      border: 0;
-      @media (min-width: 768px) {
-        margin-top: 8px;
+  //champion-block columns
+  &--champions-block {
+    --matrix-block-section-padding-lg: 96px 0 96px 0;
+    --matrix-block-section-padding-sm: 32px 0 32px 0;
+    --matrix-block-section-margin-lg: 0;
+    --matrix-block-section-margin-sm: 18px 0 0 0;
+    --matrix-block-title-weight-lg: 600;
+    --matrix-block-title-weight-sm: 600;
+    --matrix-block-title-size-lg: 40px;
+    --matrix-block-title-lineheight-lg: 44px;
+    --matrix-block-title-size-sm: 36px;
+    --matrix-block-title-lineheight-sm: 42px;
+
+    .component-grid {
+      --spacer: 24px;
+      $p: ".component-card";
+      #{$p} {
+        --card-body-padding-lg: 16px 16px 0 16px;
+        --card-body-padding-sm: 16px 0 0 0;
+        --card-img-radius: 16px;
+        position: relative;
+        align-self: flex-start;
+
+        &:hover {
+          .btn--champion-chip {
+            background: var(--primary);
+          }
+        }
+      }
+      .btn--champion-chip {
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
       }
 
-      &:hover {
-        background: var(--primary);
-        color: white;
+      #{$p}__meta-info--designation {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
       }
     }
   }

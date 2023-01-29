@@ -1,6 +1,7 @@
 :root {
   --purple-darker: #3d0f58;
   --purple-light: #e0c9f6;
+  --purple-lighter: #f4e8fe;
   --purple: #662d91;
   --blue-light: #badafb;
   --blue: #02267e;
@@ -8,6 +9,7 @@
   --gray: #54575b;
   --text: #383c3d;
   --border: #dce6e8;
+  --primary-lighter: var(--purple-lighter);
   --primary-light: var(--purple-light);
   --primary-darker: var(--purple-darker);
   --primary: var(--purple);

@@ -1,4 +1,13 @@
 .matrix-block--card-columns {
+  @extend %matrix-block;
+  @extend %matrix-block--section;
+
+  .matrix-block__header {
+    @extend %matrix-block__header;
+  }
+  .matrix-block__title {
+    @extend %matrix-block__title;
+  }
   --matrix-block-title-size-lg: 34px;
   --matrix-block-title-lineheight-lg: 40px;
   --matrix-block-title-size-sm: 28px;

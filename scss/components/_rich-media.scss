@@ -24,9 +24,11 @@
       justify-content: center;
       &--1 {
         order: 1;
-        .rich-media__inner--column {
+        .rich-media__inner-column {
           align-items: end;
           justify-self: end;
+          align-self: flex-end;
+          max-width: 560px;
 
           @media (min-width: 768px) {
             padding: 0 64px 0 0;

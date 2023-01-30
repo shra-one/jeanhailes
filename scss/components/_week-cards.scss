@@ -21,6 +21,29 @@
       --card-img-radius: 4px;
     }
 
+    #{$p}__figure {
+      --aspect-ratio: 4/3;
+      aspect-ratio: var(--aspect-ratio);
+      position: relative;
+      @supports not (aspect-ratio: 16 / 9) {
+        &:before {
+          display: block;
+          content: "";
+          width: 100%;
+          padding-bottom: calc(100% / (var(--aspect-ratio)));
+        }
+      }
+    }
+
+    #{$p}__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
     #{$p}__meta-info--week {
       line-height: 26px;
 

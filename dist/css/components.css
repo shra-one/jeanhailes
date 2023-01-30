@@ -664,6 +664,28 @@
   --card-body-padding-sm: 16px 0 0 0;
   --card-img-radius: 4px;
 }
+.matrix-block--week-cards .component-grid .component-card__figure {
+  --aspect-ratio: 4/3;
+  aspect-ratio: var(--aspect-ratio);
+  position: relative;
+}
+@supports not (aspect-ratio: 16/9) {
+  .matrix-block--week-cards .component-grid .component-card__figure:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }
+}
+.matrix-block--week-cards .component-grid .component-card__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .matrix-block--week-cards .component-grid .component-card__meta-info--week {
   line-height: 26px;
 }

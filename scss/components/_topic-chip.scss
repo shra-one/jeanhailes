@@ -1,0 +1,53 @@
+.matrix-block--topic-chip {
+  .topic-chip {
+    &__title {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 32px;
+    }
+
+    &__list {
+      --gutter: 12px;
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: var(--gutter);
+      grid-template-columns: 1fr;
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        gap: calc(var(--gutter) * 2);
+      }
+    }
+
+    &__link {
+      border-radius: 26px;
+      padding: var(--gutter);
+      background-color: var(--gray-light);
+      display: flex;
+      align-items: center;
+      gap: var(--gutter);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 26px;
+      --svg-top: 0px;
+      svg {
+        margin-top: var(--svg-top);
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 20px;
+        line-height: 32px;
+      }
+    }
+
+    &__label {
+      text-decoration: none;
+    }
+  }
+}

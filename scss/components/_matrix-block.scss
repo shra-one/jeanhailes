@@ -59,6 +59,11 @@
            padding:var(--matrix-block-section-padding-lg);
    
         }
+        margin:var(--matrix-block-section-margin-sm);
+        @media (min-width:768px){
+           margin:var(--matrix-block-section-margin-lg);
+   
+        }
        }
   &--theme-gray {
     background-color: #f3f4f6 !important;

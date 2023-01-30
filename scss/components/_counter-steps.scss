@@ -1,0 +1,93 @@
+.matrix-block--counter-steps {
+  // margin-block: 48px;
+  // @media (min-width: 992px) {
+  //   margin-block: 40px;
+  // }
+  .counter-steps {
+    $self: ".counter-steps";
+    --gutter: 4px;
+    --col: 2;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    counter-reset: steps;
+
+    display: grid;
+    grid-template-columns: repeat(var(--col), 1fr);
+    gap: calc(var(--gutter) * 4);
+    @media (min-width: 992px) {
+      --col: 4;
+    }
+    &__item {
+      counter-increment: steps;
+    }
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: calc(var(--gutter) * 5);
+      padding-block: calc(var(--gutter) * 8);
+      padding-inline: calc(var(--gutter) * 4);
+      background: var(--primary-lighter);
+      text-align: center;
+      border-radius: 4px;
+      @media (min-width: 992px) {
+        gap: calc(var(--gutter) * 10);
+        padding-block: calc(var(--gutter) * 10);
+        padding-inline: calc(var(--gutter) * 10);
+      }
+      &:hover {
+        text-decoration: none;
+        #{$self}__number {
+          text-decoration: none;
+          color: white;
+          -webkit-text-stroke: 3px transparent;
+        }
+
+        #{$self}__text {
+          color: var(--primary-darker);
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__number {
+      --size: 84px;
+
+      width: var(--size);
+      height: var(--size);
+      background: var(--primary-darker);
+      border-radius: 50%;
+      display: grid;
+      place-items: Center;
+      color: var(--primary-darker);
+      font-weight: 800;
+      font-size: 45px;
+      line-height: 54px;
+
+      -webkit-text-stroke: 1.5px white;
+      @media (min-width: 992px) {
+        --size: 162px;
+        font-size: 90px;
+        line-height: 109px;
+        -webkit-text-stroke: 3px white;
+      }
+      &:before {
+        content: counter(steps);
+      }
+    }
+
+    &__text {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: underline;
+      width: min(155px, 100%);
+      @media (min-width: 992px) {
+        font-size: 20px;
+        line-height: 32px;
+      }
+    }
+  }
+}

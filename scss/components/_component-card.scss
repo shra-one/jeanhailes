@@ -92,7 +92,12 @@
   &__img {
     border-radius: var(--card-img-radius);
   }
-
+  &__chip {
+    padding: 10px 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
   &__link--stretched {
     display: block;
     &:after {

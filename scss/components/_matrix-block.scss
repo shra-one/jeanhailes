@@ -65,10 +65,20 @@
    
         }
        }
-  &--theme-gray {
-    background-color: #f3f4f6 !important;
-  }
-  &--theme-primary-lighter {
-    background-color: var(--primary-lighter);
-  }
+ 
+}
+
+.matrix-block--theme-gray {
+  background-color: #F3F4F6 !important;
+}
+.matrix-block--theme-white {
+  background-color: #fff !important;
+}
+.matrix-block--theme-primary-lighter {
+  background-color: var(--primary-lighter);
+}
+.matrix-block--theme-primary {
+  --matrix-block-title-color:white;
+  background-color: var(--primary-darker) !important; 
+
 }

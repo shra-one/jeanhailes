@@ -1,0 +1,104 @@
+.matrix-block--card-columns-2 {
+  @extend %matrix-block;
+  @extend %matrix-block--section;
+
+  .matrix-block__header {
+    @extend %matrix-block__header;
+    @media (min-width: 768px) {
+      justify-content: center;
+    }
+  }
+  .matrix-block__title {
+    @extend %matrix-block__title;
+  }
+  --matrix-block-title-size-lg: 48px;
+  --matrix-block-title-lineheight-lg: 52px;
+  --matrix-block-title-size-sm: 36px;
+  --matrix-block-title-lineheight-sm: 42px;
+  --matrix-block-title-weight-sm: 600;
+  --matrix-block-title-weight-lg: 600;
+  --matrix-block-header-margin-lg: 0 0 32px 0;
+  --matrix-block-header-margin-sm: 0 0 36px 0;
+  --matrix-block-section-padding-lg: 128px 0 128px 0;
+  --matrix-block-section-padding-sm: 32px 0 32px 0;
+  .component-grid {
+    --spacer: 16px;
+    row-gap: 32px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+    $p: ".component-card";
+    #{$p} {
+      --col: inherit;
+      --spacer: inherit;
+      --gap: inherit;
+      --card-root-radius: 4px;
+      --card-img-radius: 4px 4px 0 0;
+      --card-body-padding-lg: 24px;
+      --card-body-padding-sm: 24px;
+      --card-title-size-lg: 20px;
+      --card-title-lineheight-lg: 26px;
+      --card-title-weight-lg: 500;
+      --card-title-size-sm: 20px;
+      --card-title-lineheight-sm: 26px;
+      --card-title-weight-sm: 500;
+      --card-title-margin-lg: 0 0 16px 0;
+      --card-title-margin-sm: 0 0 16px 0;
+      --card-text-margin-lg: 0 0 32px 0;
+      --card-text-margin-sm: 0 0 21 0;
+
+      display: flex;
+      flex-direction: column;
+      --spacer: 0;
+      gap: var(--spacer);
+      box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.07);
+    }
+
+    #{$p}__body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 1;
+    }
+    #{$p}__figure {
+      --aspect-ratio: 4/3;
+      aspect-ratio: var(--aspect-ratio);
+      position: relative;
+      @supports not (aspect-ratio: 16 / 9) {
+        &:before {
+          display: block;
+          content: "";
+          width: 100%;
+          padding-bottom: calc(100% / (var(--aspect-ratio)));
+        }
+      }
+    }
+
+    #{$p}__img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    #{$p}__chip {
+      position: absolute;
+      bottom: 0;
+      transform: translateY(50%);
+      left: 24px;
+      &:hover {
+        background-color: var(--primary-light);
+        color: var(--primary);
+      }
+    }
+    #{$p}__cta {
+      margin-top: auto;
+      &:hover {
+        svg rect {
+          fill: var(--primary);
+        }
+      }
+    }
+  }
+}

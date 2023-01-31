@@ -1,0 +1,49 @@
+.matrix-block--logo-grid {
+  @extend %matrix-block;
+  @extend %matrix-block--section;
+
+  .matrix-block__header {
+    @extend %matrix-block__header;
+
+    justify-content: center;
+  }
+  .matrix-block__title {
+    @extend %matrix-block__title;
+    text-align: center;
+  }
+  --matrix-block-title-size-lg: 48px;
+  --matrix-block-title-lineheight-lg: 52px;
+  --matrix-block-title-size-sm: 36px;
+  --matrix-block-title-lineheight-sm: 42px;
+  --matrix-block-title-weight-sm: 600;
+  --matrix-block-title-weight-lg: 600;
+  --matrix-block-header-margin-lg: 0 0 32px 0;
+  --matrix-block-header-margin-sm: 0 0 36px 0;
+  --matrix-block-section-padding-lg: 0 0 80px 0;
+  --matrix-block-section-padding-sm: 32px 0 32px 0;
+
+  .logo-list {
+    --col: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    @media (min-width: 600px) {
+      --col: 2;
+    }
+    @media (min-width: 992px) {
+      --col: 3;
+    }
+
+    &-item {
+      flex-basis: calc(100% / var(--col));
+      flex-shrink: 1;
+      flex-grow: 0;
+      padding: 16px;
+      display: grid;
+      place-items: center;
+    }
+
+    &-link {
+      display: inline-block;
+    }
+  }
+}

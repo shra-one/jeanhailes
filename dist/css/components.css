@@ -19,7 +19,7 @@
   --secondary: var(--blue);
 }
 
-.matrix-block--card-columns-2, .matrix-block--card-columns-1, .matrix-block--signup-banner, .matrix-block--card-columns--champions-list, .matrix-block--card-columns--champions-block, .matrix-block--card-columns, .matrix-block--featured-card-reverse, .matrix-block--featured-card, .matrix-block--rich-text {
+.matrix-block--logo-grid, .matrix-block--logo-list, .matrix-block--card-columns-2, .matrix-block--card-columns-1, .matrix-block--signup-banner, .matrix-block--card-columns--champions-list, .matrix-block--card-columns--champions-block, .matrix-block--card-columns, .matrix-block--featured-card-reverse, .matrix-block--featured-card, .matrix-block--rich-text {
   --matrix-block-header-margin-lg: 0;
   --matrix-block-header-margin-sm: 0;
   --matrix-block-header-padding-lg: 0;
@@ -42,7 +42,7 @@
   --matrix-block-section-margin-lg:0;
   --matrix-block-section-margin-sm:0;
 }
-.matrix-block--card-columns-2 .matrix-block__header, .matrix-block--card-columns-1 .matrix-block__header, .matrix-block--card-columns--champions-list .matrix-block__header, .matrix-block--card-columns--champions-block .matrix-block__header, .matrix-block--card-columns .matrix-block__header, .matrix-block--featured-card .matrix-block__header {
+.matrix-block--logo-grid .matrix-block__header, .matrix-block--logo-list .matrix-block__header, .matrix-block--card-columns-2 .matrix-block__header, .matrix-block--card-columns-1 .matrix-block__header, .matrix-block--card-columns--champions-list .matrix-block__header, .matrix-block--card-columns--champions-block .matrix-block__header, .matrix-block--card-columns .matrix-block__header, .matrix-block--featured-card .matrix-block__header {
   margin: var(--matrix-block-header-margin-sm);
   padding: var(--matrix-block-header-padding-sm);
   display: flex;
@@ -52,13 +52,13 @@
   align-items: center;
 }
 @media (min-width: 768px) {
-  .matrix-block--card-columns-2 .matrix-block__header, .matrix-block--card-columns-1 .matrix-block__header, .matrix-block--card-columns--champions-list .matrix-block__header, .matrix-block--card-columns--champions-block .matrix-block__header, .matrix-block--card-columns .matrix-block__header, .matrix-block--featured-card .matrix-block__header {
+  .matrix-block--logo-grid .matrix-block__header, .matrix-block--logo-list .matrix-block__header, .matrix-block--card-columns-2 .matrix-block__header, .matrix-block--card-columns-1 .matrix-block__header, .matrix-block--card-columns--champions-list .matrix-block__header, .matrix-block--card-columns--champions-block .matrix-block__header, .matrix-block--card-columns .matrix-block__header, .matrix-block--featured-card .matrix-block__header {
     margin: var(--matrix-block-header-margin-lg);
     padding: var(--matrix-block-header-padding-lg);
     gap: var(--matrix-block-header-gap-lg);
   }
 }
-.matrix-block--card-columns-2 .matrix-block__title, .matrix-block--card-columns-1 .matrix-block__title, .matrix-block--card-columns--champions-list .matrix-block__title, .matrix-block--card-columns--champions-block .matrix-block__title, .matrix-block--card-columns .matrix-block__title, .matrix-block--featured-card .matrix-block__title {
+.matrix-block--logo-grid .matrix-block__title, .matrix-block--logo-list .matrix-block__title, .matrix-block--card-columns-2 .matrix-block__title, .matrix-block--card-columns-1 .matrix-block__title, .matrix-block--card-columns--champions-list .matrix-block__title, .matrix-block--card-columns--champions-block .matrix-block__title, .matrix-block--card-columns .matrix-block__title, .matrix-block--featured-card .matrix-block__title {
   font-weight: var(--matrix-block-title-weight-sm);
   font-size: var(--matrix-block-title-size-sm);
   line-height: var(--matrix-block-title-lineheight-sm);
@@ -67,7 +67,7 @@
   color: var(--matrix-block-title-color);
 }
 @media (min-width: 768px) {
-  .matrix-block--card-columns-2 .matrix-block__title, .matrix-block--card-columns-1 .matrix-block__title, .matrix-block--card-columns--champions-list .matrix-block__title, .matrix-block--card-columns--champions-block .matrix-block__title, .matrix-block--card-columns .matrix-block__title, .matrix-block--featured-card .matrix-block__title {
+  .matrix-block--logo-grid .matrix-block__title, .matrix-block--logo-list .matrix-block__title, .matrix-block--card-columns-2 .matrix-block__title, .matrix-block--card-columns-1 .matrix-block__title, .matrix-block--card-columns--champions-list .matrix-block__title, .matrix-block--card-columns--champions-block .matrix-block__title, .matrix-block--card-columns .matrix-block__title, .matrix-block--featured-card .matrix-block__title {
     font-weight: var(--matrix-block-title-weight-lg);
     font-size: var(--matrix-block-title-size-lg);
     line-height: var(--matrix-block-title-lineheight-lg);
@@ -76,17 +76,17 @@
     color: var(--matrix-block-title-color);
   }
 }
-.matrix-block--card-columns-2, .matrix-block--card-columns-1, .matrix-block--signup-banner, .matrix-block--card-columns--champions-list, .matrix-block--card-columns--champions-block, .matrix-block--card-columns, .matrix-block--featured-card-reverse, .matrix-block--featured-card, .matrix-block--rich-text {
+.matrix-block--logo-grid, .matrix-block--logo-list, .matrix-block--card-columns-2, .matrix-block--card-columns-1, .matrix-block--signup-banner, .matrix-block--card-columns--champions-list, .matrix-block--card-columns--champions-block, .matrix-block--card-columns, .matrix-block--featured-card-reverse, .matrix-block--featured-card, .matrix-block--rich-text {
   padding: var(--matrix-block-section-padding-sm);
   margin: var(--matrix-block-section-margin-sm);
 }
 @media (min-width: 768px) {
-  .matrix-block--card-columns-2, .matrix-block--card-columns-1, .matrix-block--signup-banner, .matrix-block--card-columns--champions-list, .matrix-block--card-columns--champions-block, .matrix-block--card-columns, .matrix-block--featured-card-reverse, .matrix-block--featured-card, .matrix-block--rich-text {
+  .matrix-block--logo-grid, .matrix-block--logo-list, .matrix-block--card-columns-2, .matrix-block--card-columns-1, .matrix-block--signup-banner, .matrix-block--card-columns--champions-list, .matrix-block--card-columns--champions-block, .matrix-block--card-columns, .matrix-block--featured-card-reverse, .matrix-block--featured-card, .matrix-block--rich-text {
     padding: var(--matrix-block-section-padding-lg);
   }
 }
 @media (min-width: 768px) {
-  .matrix-block--card-columns-2, .matrix-block--card-columns-1, .matrix-block--signup-banner, .matrix-block--card-columns--champions-list, .matrix-block--card-columns--champions-block, .matrix-block--card-columns, .matrix-block--featured-card-reverse, .matrix-block--featured-card, .matrix-block--rich-text {
+  .matrix-block--logo-grid, .matrix-block--logo-list, .matrix-block--card-columns-2, .matrix-block--card-columns-1, .matrix-block--signup-banner, .matrix-block--card-columns--champions-list, .matrix-block--card-columns--champions-block, .matrix-block--card-columns, .matrix-block--featured-card-reverse, .matrix-block--featured-card, .matrix-block--rich-text {
     margin: var(--matrix-block-section-margin-lg);
   }
 }
@@ -1639,7 +1639,7 @@ select {
 .matrix-block--card-columns-1 .component-grid {
   --spacer: 16px;
   row-gap: 32px;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .matrix-block--card-columns-1 .component-grid .component-card {
   --col: inherit;
@@ -1731,7 +1731,7 @@ select {
 .matrix-block--card-columns-2 .component-grid {
   --spacer: 16px;
   row-gap: 32px;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .matrix-block--card-columns-2 .component-grid .component-card {
   --col: inherit;
@@ -1801,4 +1801,97 @@ select {
 }
 .matrix-block--card-columns-2 .component-grid .component-card__cta:hover svg rect {
   fill: var(--primary);
+}
+
+.matrix-block--logo-list {
+  --matrix-block-title-size-lg: 48px;
+  --matrix-block-title-lineheight-lg: 52px;
+  --matrix-block-title-size-sm: 36px;
+  --matrix-block-title-lineheight-sm: 42px;
+  --matrix-block-title-weight-sm: 600;
+  --matrix-block-title-weight-lg: 600;
+  --matrix-block-header-margin-lg: 0 0 32px 0;
+  --matrix-block-header-margin-sm: 0 0 36px 0;
+  --matrix-block-section-padding-lg: 80px 0 80px 0;
+  --matrix-block-section-padding-sm: 32px 0 32px 0;
+}
+.matrix-block--logo-list .matrix-block__header {
+  justify-content: center;
+}
+.matrix-block--logo-list .matrix-block__title {
+  text-align: center;
+}
+.matrix-block--logo-list .logo-list {
+  --col: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 880px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .matrix-block--logo-list .logo-list {
+    --col: 2;
+  }
+}
+@media (min-width: 992px) {
+  .matrix-block--logo-list .logo-list {
+    --col: 3;
+  }
+}
+.matrix-block--logo-list .logo-list-item {
+  flex-basis: calc(100% / var(--col));
+  flex-shrink: 1;
+  flex-grow: 0;
+  padding: 16px;
+  display: grid;
+  place-items: center;
+}
+.matrix-block--logo-list .logo-list-link {
+  display: inline-block;
+}
+
+.matrix-block--logo-grid {
+  --matrix-block-title-size-lg: 48px;
+  --matrix-block-title-lineheight-lg: 52px;
+  --matrix-block-title-size-sm: 36px;
+  --matrix-block-title-lineheight-sm: 42px;
+  --matrix-block-title-weight-sm: 600;
+  --matrix-block-title-weight-lg: 600;
+  --matrix-block-header-margin-lg: 0 0 32px 0;
+  --matrix-block-header-margin-sm: 0 0 36px 0;
+  --matrix-block-section-padding-lg: 0 0 80px 0;
+  --matrix-block-section-padding-sm: 32px 0 32px 0;
+}
+.matrix-block--logo-grid .matrix-block__header {
+  justify-content: center;
+}
+.matrix-block--logo-grid .matrix-block__title {
+  text-align: center;
+}
+.matrix-block--logo-grid .logo-list {
+  --col: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+@media (min-width: 600px) {
+  .matrix-block--logo-grid .logo-list {
+    --col: 2;
+  }
+}
+@media (min-width: 992px) {
+  .matrix-block--logo-grid .logo-list {
+    --col: 3;
+  }
+}
+.matrix-block--logo-grid .logo-list-item {
+  flex-basis: calc(100% / var(--col));
+  flex-shrink: 1;
+  flex-grow: 0;
+  padding: 16px;
+  display: grid;
+  place-items: center;
+}
+.matrix-block--logo-grid .logo-list-link {
+  display: inline-block;
 }/*# sourceMappingURL=components.css.map */

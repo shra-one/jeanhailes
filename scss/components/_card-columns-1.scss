@@ -24,7 +24,7 @@
   .component-grid {
     --spacer: 16px;
     row-gap: 32px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
     $p: ".component-card";
     #{$p} {

@@ -1,0 +1,39 @@
+.matrix-block--columns {
+  .columns {
+    .columns__row {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      display: flex;
+      flex-wrap: wrap;
+
+      margin: -1rem;
+    }
+
+    &__column {
+      flex: 1;
+      padding: 16px;
+      @for $i from 1 through 12 {
+        &.col-#{$i} {
+          flex-shrink: 0;
+          flex-basis: calc(100% * $i / 12);
+        }
+      }
+
+      @media (min-width: 768px) {
+        @for $i from 1 through 12 {
+          &.col-md-#{$i} {
+            flex-basis: calc(100% * $i / 12);
+          }
+        }
+      }
+
+      @media (min-width: 992px) {
+        @for $i from 1 through 12 {
+          &.col-lg-#{$i} {
+            flex-basis: calc(100% * $i / 12);
+          }
+        }
+      }
+    }
+  }
+}

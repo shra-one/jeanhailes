@@ -1,4 +1,16 @@
 .btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 33px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  white-space: nowrap;
+
   &--link {
     padding: 0 !important;
     background: transparent !important;
@@ -27,12 +39,31 @@
     }
   }
 
+  &--primary {
+    background: var(--primary-darker);
+    color: white;
+    border: 0;
+    &:hover {
+      background: var(--primary);
+      color: white;
+    }
+  }
+
   &--primary-outline {
     border: 2px solid var(--primary-darker);
     background: transparent;
     color: var(--primary-darker);
     &:hover {
       color: white;
+    }
+  }
+
+  &--white-outline {
+    border: 2px solid white !important;
+    background: transparent;
+    color: white;
+    &:hover {
+      background-color: var(--primary);
     }
   }
 

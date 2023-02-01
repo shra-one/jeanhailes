@@ -1,4 +1,4 @@
-.matrix-block--card-columns--champions-block {
+.matrix-block--championCards {
   @extend %matrix-block;
   @extend %matrix-block--section;
 
@@ -23,7 +23,7 @@
   .component-grid {
     --spacer: 24px;
     row-gap: 32px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     $p: ".component-card";
     #{$p} {

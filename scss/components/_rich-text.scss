@@ -4,13 +4,13 @@
  * class="rich-text"
  */
 
-.matrix-block--rich-text {
+.matrix-block--richText {
   @extend %matrix-block;
   @extend %matrix-block--section;
   --matrix-block-section-padding-lg: 0;
   --matrix-block-section-padding-sm: 0;
-  --matrix-block-section-margin-lg: 88px 0 88px 0;
-  --matrix-block-section-margin-sm: 64px 0 32px 0;
+  --matrix-block-section-margin-lg: 40px 0 40px 0;
+  --matrix-block-section-margin-sm: 48px 0 48px 0;
 
   .rich-text {
     p,
@@ -28,15 +28,18 @@
     b {
       font-weight: 600;
     }
+    p:last-child {
+      margin-bottom: 0;
+    }
     li {
       margin-bottom: 16px;
       list-style: none;
       font-weight: 400;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 17px;
+      line-height: 26px;
       @media (min-width: 768px) {
-        font-size: 17px;
-        line-height: 26px;
+        font-size: 20px;
+        line-height: 32px;
       }
     }
     ol {
@@ -106,7 +109,7 @@
         }
       }
     }
-    h1 {
+    h2 {
       font-weight: 600;
       font-size: 26px;
       line-height: 44px;
@@ -115,11 +118,12 @@
         font-weight: 600;
         font-size: 40px;
         line-height: 44px;
+        margin-top: 80px;
         margin-bottom: 24px;
         letter-spacing: normal;
       }
     }
-    h2 {
+    h3 {
       font-size: 26px;
       line-height: 31px;
       letter-spacing: 0.03em;
@@ -128,9 +132,13 @@
       @media (min-width: 768px) {
         font-size: 34px;
         line-height: 40px;
+        margin-top: 80px;
         margin-bottom: 24px;
         letter-spacing: normal;
       }
+    }
+    h2 + h3 {
+      margin-top: 0;
     }
   }
 }

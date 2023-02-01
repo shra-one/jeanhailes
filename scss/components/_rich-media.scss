@@ -1,23 +1,72 @@
+.matrix-block--richMedia {
+  &:first-child {
+    padding-top: 40px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
 .rich-media {
+  border-radius: 4px;
+  overflow: hidden;
+  .rich-media {
+    --heading-color: var(--text);
+    --summary-color: var(--text);
+  }
+  &--theme-dark-purple,
+  &--theme-primary-dark {
+    background-color: var(--primary-darker);
+    .rich-media {
+      --heading-color: white;
+      --summary-color: white;
+
+      .btn {
+        @extend .btn--white-outline;
+      }
+    }
+  }
+
+  &--theme-gray {
+    background-color: #f3f4f6;
+    .rich-media {
+      // --heading-color: white;
+      // --summary-color: white;
+    }
+  }
+
+  &--theme-purple-light,
+  &--theme-primary-lighter {
+    background-color: var(--primary-lighter);
+    .rich-media {
+      --heading-color: var(--primary-darker);
+      --summary-color: var(--text);
+    }
+  }
   &__row {
     display: grid;
     grid-gap: 0;
     padding: inherit;
     grid-template-columns: 1fr;
-    @media (min-width: 768px) {
+
+    @media (min-width: 992px) {
       grid-template-columns: 1fr 1fr;
+    }
+  }
+  &__inner-column {
+    padding: 32px 16px;
+    @media (min-width: 992px) {
+      padding: 64px;
+    }
+    @at-root .fullWidthContent & {
+      @media (min-width: 992px) {
+        max-width: 640px;
+        padding: 64px;
+      }
     }
   }
 
   &__column {
-    .banner__inner-column {
-      max-width: 500px;
-      padding: 32px 16px;
-      @media (min-width: 768px) {
-        padding: 0;
-      }
-    }
-
     &--text {
       display: flex;
       flex-direction: column;
@@ -25,25 +74,27 @@
       &--1 {
         order: 1;
         .rich-media__inner-column {
-          align-items: end;
-          justify-self: end;
-          align-self: flex-end;
-          max-width: 560px;
-
-          @media (min-width: 768px) {
-            padding: 0 64px 0 0;
+          @at-root .fullWidthContent & {
+            @media (min-width: 992px) {
+              max-width: 640px;
+              align-items: end;
+              justify-self: end;
+              align-self: flex-end;
+              // padding-left: 0;
+            }
           }
         }
       }
       &--2 {
         order: 2;
-        @media (min-width: 768px) {
-          padding: 0 0 0 64px;
+        @media (min-width: 992px) {
+          // padding: 0 0 0 64px;
         }
       }
     }
 
     &--media {
+      height: 100%;
       &--1 {
         order: 1;
       }
@@ -66,31 +117,48 @@
 
   &__text-content {
     &-heading {
-      --heading-color: var(--text);
+      --font-size: 28px;
+      --lineheight: 34px;
+      --margin-bottom: 16px;
       font-weight: 600;
-      font-size: 42px;
-      line-height: 48px;
-      margin-bottom: 16px;
+      font-size: var(--font-size);
+      line-height: var(--lineheight);
+      margin-bottom: var(--margin-bottom);
       color: var(--heading-color);
-      @media (min-width: 768px) {
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 56px;
+      @media (min-width: 992px) {
+        --font-size: 34px;
+        --lineheight: 40px;
+        --margin-bottom: 24px;
+      }
+      @at-root .fullWidthContent & {
+        --font-size: 36px;
+        --lineheight: 42px;
+        @media (min-width: 992px) {
+          --font-size: 40px;
+          --lineheight: 44px;
+        }
       }
     }
 
     &-summary {
-      --summary-color: var(--text);
+      --font-size: 17px;
+      --lineheight: 26px;
+      --margin-bottom: 32px;
       font-weight: 400;
-      font-size: 17px;
-      line-height: 26px;
-      margin-bottom: 32px;
+      font-size: var(--font-size);
+      line-height: var(--lineheight);
+      margin-bottom: var(--margin-bottom);
       color: var(--summary-color);
-      @media (min-width: 768px) {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 32px;
-        margin-bottom: 24px;
+
+      @media (min-width: 992px) {
+        --margin-bottom: 24px;
+      }
+
+      @at-root .fullWidthContent & {
+        @media (min-width: 992px) {
+          --font-size: 20px;
+          --lineheight: 32px;
+        }
       }
     }
   }

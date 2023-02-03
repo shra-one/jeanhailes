@@ -7,10 +7,10 @@
 .matrix-block--leadText {
   .lead-text {
     padding-top: 64px;
-    padding-bottom: 32px;
+    padding-bottom: 24px;
     @media (min-width: 992px) {
-      padding-top: 88px;
-      padding-bottom: 88px;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
     p,
     b,
@@ -23,6 +23,9 @@
         font-size: 24px;
         line-height: 36px;
       }
+    }
+    p:last-child {
+      margin-bottom: 0;
     }
   }
 }

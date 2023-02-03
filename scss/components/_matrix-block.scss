@@ -16,8 +16,8 @@
     --matrix-block-title-size-lg: 40px;
     --matrix-block-title-size-sm: 36px;
     --matrix-block-title-color: var(--text);
-    --matrix-block-section-padding-lg:96px 0 96px 0;
-    --matrix-block-section-padding-sm:36px 0 36px 0;
+    --matrix-block-section-padding-lg:40px 0 40px 0;
+    --matrix-block-section-padding-sm:24px 0 24px 0;
     --matrix-block-section-margin-lg:0;
     --matrix-block-section-margin-sm:0;
 
@@ -68,20 +68,3 @@
  
 }
 
-.matrix-block--theme-gray {
-  background-color: #F3F4F6 !important;
-}
-.matrix-block--theme-white {
-  background-color: #fff !important;
-}
-.matrix-block--theme-primary-lighter {
-  background-color: var(--primary-lighter);
-}
-.matrix-block--theme-primary {
-  --matrix-block-title-color:white;
-  background-color: var(--primary-darker) !important; 
-
-}
-.matrix-block--line {
-  margin:80px 0 40px 0;
-}

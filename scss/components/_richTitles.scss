@@ -1,0 +1,18 @@
+.matrix-block--topicsOnThisPage {
+  @extend %matrix-block;
+  @extend %matrix-block--section;
+  --matrix-block-section-padding-lg: 40px 0 0 0;
+  --matrix-block-section-padding-sm: 24px 0 0 0;
+
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 44px;
+  letter-spacing: 0.03em;
+
+  @media (min-width: 768px) {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: normal;
+  }
+}

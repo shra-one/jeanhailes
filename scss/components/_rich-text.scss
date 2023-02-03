@@ -7,10 +7,6 @@
 .matrix-block--richText {
   @extend %matrix-block;
   @extend %matrix-block--section;
-  --matrix-block-section-padding-lg: 0;
-  --matrix-block-section-padding-sm: 0;
-  --matrix-block-section-margin-lg: 40px 0 40px 0;
-  --matrix-block-section-margin-sm: 48px 0 48px 0;
 
   .rich-text {
     p,
@@ -32,11 +28,13 @@
       margin-bottom: 0;
     }
     li {
-      margin-bottom: 16px;
       list-style: none;
       font-weight: 400;
       font-size: 17px;
       line-height: 26px;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
       @media (min-width: 768px) {
         font-size: 20px;
         line-height: 32px;
@@ -119,7 +117,7 @@
         font-weight: 600;
         font-size: 40px;
         line-height: 44px;
-        margin-top: 80px;
+        // margin-top: 80px;
         margin-bottom: 24px;
         letter-spacing: normal;
       }
@@ -133,7 +131,7 @@
       @media (min-width: 768px) {
         font-size: 34px;
         line-height: 40px;
-        margin-top: 80px;
+        // margin-top: 80px;
         margin-bottom: 24px;
         letter-spacing: normal;
       }

@@ -1,4 +1,7 @@
 .matrix-block--topic-chip {
+  @extend %matrix-block;
+  @extend %matrix-block--section;
+
   .topic-chip {
     &__title {
       font-weight: 700;

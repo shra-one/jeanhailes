@@ -1,9 +1,21 @@
 .matrix-block--richMedia {
   &:first-child {
-    padding-top: 40px;
+    padding-top: 24px;
+    @media (min-width: 768px) {
+      padding-top: 40px;
+    }
+  }
+  &:last-child {
+    padding-bottom: 24px;
+    @media (min-width: 768px) {
+      padding-bottom: 40px;
+    }
   }
   &:not(:last-child) {
     margin-bottom: 24px;
+  }
+  @at-root .fullWidthContent & {
+    margin-bottom: 0;
   }
 }
 

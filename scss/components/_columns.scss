@@ -1,4 +1,8 @@
 .matrix-block--columns {
+  @extend %matrix-block;
+  @extend %matrix-block--section;
+  --matrix-block-section-padding-lg: 0 0 40px 0;
+  --matrix-block-section-padding-sm: 0 0 24px 0;
   .columns {
     .columns__row {
       display: grid;

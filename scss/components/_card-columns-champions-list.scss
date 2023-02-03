@@ -1,4 +1,4 @@
-.matrix-block--card-columns--champions-list {
+.matrix-block--championCards {
   @extend %matrix-block;
   @extend %matrix-block--section;
 
@@ -8,117 +8,116 @@
   .matrix-block__title {
     @extend %matrix-block__title;
   }
-  --matrix-block-header-margin-lg: 0 0 24px 0;
-  --matrix-block-header-margin-sm: 0 0 24px 0;
-  --matrix-block-section-padding-lg: 0 0 0 0;
-  --matrix-block-section-padding-sm: 0 0 0 0;
-  --matrix-block-section-margin-lg: 80px 0 80px 0;
-  --matrix-block-section-margin-sm: 36px 0 24px 0;
-  --matrix-block-title-weight-lg: 600;
-  --matrix-block-title-weight-sm: 600;
-  --matrix-block-title-size-lg: 40px;
-  --matrix-block-title-lineheight-lg: 44px;
-  --matrix-block-title-size-sm: 36px;
-  --matrix-block-title-lineheight-sm: 42px;
-  .component-grid {
-    --spacer: 24px;
-    row-gap: 32px;
-    display: block;
+  .champion-cards-list {
+    --matrix-block-header-margin-lg: 0 0 24px 0;
+    --matrix-block-header-margin-sm: 0 0 24px 0;
+    --matrix-block-title-weight-lg: 600;
+    --matrix-block-title-weight-sm: 600;
+    --matrix-block-title-size-lg: 40px;
+    --matrix-block-title-lineheight-lg: 44px;
+    --matrix-block-title-size-sm: 36px;
+    --matrix-block-title-lineheight-sm: 42px;
 
-    $p: ".component-card";
-    #{$p} {
-      --col: inherit;
-      --spacer: inherit;
-      --gap: inherit;
-
-      --card-root-padding-lg: 32px 0;
-      --card-root-padding-sm: 24px 0;
-
-      --card-body-padding-lg: 0;
-      --card-body-padding-sm: 0 0 0 0;
-      --card-img-radius: 16px;
-      --card-title-padding-lg: 0;
-      --card-title-margin-lg: 0 0 24px 0;
-      --card-title-margin-sm: 0 0 8px 0;
-      --card-title-size-lg: 34px;
-      --card-title-size-sm: 26px;
-      --card-title-lineheight-lg: 40px;
-      --card-title-lineheight-sm: 44px;
-      --card-title-weight-lg: 400;
-      --card-title-weight-sm: 400;
-      --card-title-color: var(--text);
-
-      --card-text-color: var(--text);
-      --card-text-size-lg: 20px;
-      --card-text-size-sm: 17px;
-      --card-text-lineheight-lg: 32px;
-      --card-text-lineheight-sm: 26px;
-      --card-text-weight-lg: 400;
-      --card-text-weight-sm: 400;
-      --card-text-margin-lg: 0;
-      --card-text-margin-sm: 0;
-      display: grid;
+    .component-grid {
       --spacer: 24px;
-      @media (min-width: 768px) {
-        --spacer: 40px;
-        grid-template-columns: fit-content(360px) 1fr;
-      }
-      gap: var(--spacer);
-      position: relative;
-      align-self: flex-start;
-      &:not(:last-child) {
-        border-bottom: 1px solid var(--border);
-      }
-      &:first-child {
-        padding-top: 0;
-      }
+      row-gap: 32px;
+      display: block;
 
-      &:hover {
-        .btn--champion-chip {
-          background: var(--primary);
+      $p: ".component-card";
+      #{$p} {
+        --col: inherit;
+        --spacer: inherit;
+        --gap: inherit;
+
+        --card-root-padding-lg: 32px 0;
+        --card-root-padding-sm: 24px 0;
+
+        --card-body-padding-lg: 0;
+        --card-body-padding-sm: 0 0 0 0;
+        --card-img-radius: 16px;
+        --card-title-padding-lg: 0;
+        --card-title-margin-lg: 0 0 24px 0;
+        --card-title-margin-sm: 0 0 8px 0;
+        --card-title-size-lg: 34px;
+        --card-title-size-sm: 26px;
+        --card-title-lineheight-lg: 40px;
+        --card-title-lineheight-sm: 44px;
+        --card-title-weight-lg: 400;
+        --card-title-weight-sm: 400;
+        --card-title-color: var(--text);
+
+        --card-text-color: var(--text);
+        --card-text-size-lg: 20px;
+        --card-text-size-sm: 17px;
+        --card-text-lineheight-lg: 32px;
+        --card-text-lineheight-sm: 26px;
+        --card-text-weight-lg: 400;
+        --card-text-weight-sm: 400;
+        --card-text-margin-lg: 0;
+        --card-text-margin-sm: 0;
+        display: grid;
+        --spacer: 24px;
+        @media (min-width: 768px) {
+          --spacer: 40px;
+          grid-template-columns: fit-content(360px) 1fr;
+        }
+        gap: var(--spacer);
+        position: relative;
+        align-self: flex-start;
+        &:not(:last-child) {
+          border-bottom: 1px solid var(--border);
+        }
+        &:first-child {
+          padding-top: 0;
+        }
+
+        &:hover {
+          .btn--champion-chip {
+            background: var(--primary);
+          }
         }
       }
-    }
 
-    #{$p}__body {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    #{$p}__figure {
-      position: relative;
-      max-width: 152px;
-      @media (min-width: 768px) {
-        max-width: 100%;
+      #{$p}__body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
       }
-    }
+      #{$p}__figure {
+        position: relative;
+        max-width: 152px;
+        @media (min-width: 768px) {
+          max-width: 100%;
+        }
+      }
 
-    #{$p}__img {
-      width: 100%;
-      object-fit: cover;
-    }
+      #{$p}__img {
+        width: 100%;
+        object-fit: cover;
+      }
 
-    .btn--champion-chip {
-      position: absolute;
-      left: 16px;
-      bottom: 16px;
-      display: none;
-    }
+      .btn--champion-chip {
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        display: none;
+      }
 
-    #{$p}__meta-info--designation {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 32px;
-      margin-bottom: 8px;
-      @media (min-width: 768px) {
-        margin-bottom: 24px;
+      #{$p}__meta-info--designation {
         font-weight: 500;
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 8px;
+        @media (min-width: 768px) {
+          margin-bottom: 24px;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 30px;
+        }
       }
-    }
-    .btn {
-      margin-top: 24px;
+      .btn {
+        margin-top: 24px;
+      }
     }
   }
 }

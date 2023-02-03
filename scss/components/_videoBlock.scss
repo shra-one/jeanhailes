@@ -1,0 +1,20 @@
+.matrix-block--video {
+  .video {
+    --aspect-ratio: 16/9;
+    padding: 0;
+    aspect-ratio: var(--aspect-ratio);
+    position: relative;
+    @supports not (aspect-ratio: 16 / 9) {
+      &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-bottom: calc(100% / (var(--aspect-ratio)));
+      }
+    }
+    a {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

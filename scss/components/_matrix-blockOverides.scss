@@ -1,0 +1,27 @@
+.matrix-block--theme-gray {
+  background-color: #f3f4f6;
+}
+.matrix-block--theme-white {
+  background-color: #fff;
+}
+.matrix-block--theme-primary-lighter {
+  background-color: var(--primary-lighter);
+}
+.matrix-block--theme-primary {
+  --matrix-block-title-color: white;
+  background-color: var(--primary-darker);
+}
+.matrix-block--line {
+  margin: 40px 0 40px 0;
+}
+
+.matrix-block {
+  &--topicsOnThisPage {
+    + .matrix-block--richText {
+      --matrix-block-section-padding-lg: 24px 0 40px 0;
+      h3 {
+        margin-top: 0;
+      }
+    }
+  }
+}

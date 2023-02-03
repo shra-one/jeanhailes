@@ -19,6 +19,7 @@
       --card-body-padding-lg: 24px 0 0 0;
       --card-body-padding-sm: 16px 0 0 0;
       --card-img-radius: 4px;
+      --card-text-color: var(--gray);
     }
 
     #{$p}__figure {
@@ -46,10 +47,17 @@
 
     #{$p}__meta-info--week {
       line-height: 26px;
+      color: var(--text);
+      font-weight: 500;
 
       @media (min-width: 768px) {
         font-size: 16px;
       }
+    }
+
+    #{$p}__meta-info--date {
+      color: var(--text);
+      font-weight: 500;
     }
   }
 }

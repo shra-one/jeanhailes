@@ -20,6 +20,8 @@
       --gap: inherit;
       --card-title-margin-lg: 0 0 24px 0;
       --card-title-margin-sm: 0 0 24px 0;
+      // --card-title-margin-lg: 0 0 24px 0;
+      --card-text-margin-sm: 0 0 24px 0;
       --card-title-size-lg: 40px;
       --card-title-size-sm: 36px;
       --card-title-lineheight-lg: 44px;
@@ -36,7 +38,7 @@
       --card-body-padding-sm: 32px 0 0 0;
       --card-img-radius: 8px;
       --card-root-radius: 16px;
-      --card-root-bg: var(--primary-darker);
+      --card-root-bg: var(--primary);
       --card-root-padding-lg: 40px;
       --card-root-padding-sm: 24px;
       --card-img-radius: 8px;
@@ -48,6 +50,7 @@
       gap: var(--spacer);
 
       @media (min-width: 992px) {
+        --card-root-bg: var(--primary-darker);
         display: grid;
         grid-template-columns: inherit;
         --spacer: 16px;
@@ -88,7 +91,8 @@
       background: var(--primary-light);
       color: var(--primary-darker);
       border: 0;
-      //   margin-top: 24px;
+      font-weight: 400;
+      // margin-top: 24px;
       @media (min-width: 992px) {
         // margin-top: auto;
       }

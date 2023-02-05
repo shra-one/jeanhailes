@@ -23,7 +23,10 @@
   --matrix-block-section-padding-sm: 32px 0 32px 0;
   .component-grid {
     --spacer: 16px;
-    row-gap: 32px;
+    row-gap: 16px;
+    @media (min-width: 992px) {
+      row-gap: 32px;
+    }
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
     $p: ".component-card";
@@ -44,7 +47,7 @@
       --card-title-margin-lg: 20px 0 16px 0;
       --card-title-margin-sm: 20px 0 16px 0;
       --card-text-margin-lg: 0 0 32px 0;
-      --card-text-margin-sm: 0 0 21 0;
+      --card-text-margin-sm: 0 0 21px 0;
 
       display: flex;
       flex-direction: column;
@@ -60,7 +63,10 @@
       flex-grow: 1;
     }
     #{$p}__figure {
-      --aspect-ratio: 4/3;
+      --aspect-ratio: 1/1;
+      @media (min-width: 992px) {
+        --aspect-ratio: 4/3;
+      }
       aspect-ratio: var(--aspect-ratio);
       position: relative;
       @supports not (aspect-ratio: 16 / 9) {

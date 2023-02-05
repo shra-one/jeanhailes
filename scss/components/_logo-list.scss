@@ -10,6 +10,7 @@
   .matrix-block__title {
     @extend %matrix-block__title;
     text-align: center;
+    letter-spacing: -0.06em;
   }
   --matrix-block-title-size-lg: 48px;
   --matrix-block-title-lineheight-lg: 52px;
@@ -45,6 +46,14 @@
       padding: 16px;
       display: grid;
       place-items: center;
+      max-width: 250px;
+      @media (min-width: 992px) {
+        max-width: 100%;
+      }
+
+      img {
+        max-height: 80px;
+      }
     }
 
     &-link {

@@ -18,10 +18,25 @@
 .matrix-block {
   &--topicsOnThisPage {
     + .matrix-block--richText {
-      --matrix-block-section-padding-lg: 24px 0 40px 0;
+      --matrix-block-section-padding-sm: 0 0 20px 0;
+      @media (min-width: 992px) {
+        --matrix-block-section-padding-lg: 24px 0 40px 0;
+      }
       h3 {
         margin-top: 0;
       }
     }
+  }
+}
+.matrix-block--customHtml {
+  padding-bottom: 24px;
+  @media (min-width: 992px) {
+    padding-bottom: 40px;
+  }
+}
+.matrix-block--buttons {
+  padding-bottom: 4px;
+  @media (min-width: 992px) {
+    padding-bottom: 40px;
   }
 }

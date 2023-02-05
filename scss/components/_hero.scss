@@ -1,0 +1,27 @@
+.whw-landing {
+  .hero:after {
+    display: none;
+  }
+}
+
+.hero {
+  &__summary {
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      b {
+        font-weight: 700 !important;
+      }
+      @media (min-width: 992px) {
+        margin-top: 24px;
+        font-weight: 500 !important;
+        font-size: 24px !important;
+        line-height: 36px !important;
+        b {
+          font-weight: 700 !important;
+        }
+      }
+    }
+  }
+}

@@ -1,20 +1,57 @@
-.matrix-block--video {
-  .video {
-    --aspect-ratio: 16/9;
-    padding: 0;
-    aspect-ratio: var(--aspect-ratio);
-    position: relative;
-    @supports not (aspect-ratio: 16 / 9) {
-      &:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-bottom: calc(100% / (var(--aspect-ratio)));
-      }
-    }
-    a {
+.video {
+  --aspect-ratio: 16/9;
+  padding: 0;
+  aspect-ratio: var(--aspect-ratio);
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  @supports not (aspect-ratio: 16 / 9) {
+    &:before {
+      display: block;
+      content: "";
       width: 100%;
-      height: 100%;
+      padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+  }
+  a {
+    display: grid;
+    place-items: center;
+    width: inherit;
+    height: inherit;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      width: inherit;
+      height: inherit;
+      position: absolute;
+      inset: 0;
+      background: black;
+      opacity: 0.2;
+    }
+
+    .video__button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      isolation: isolate;
+      .sr-only {
+        display: none;
+        @media (min-width: 992px) {
+          display: block;
+        }
+      }
+      .video__icon {
+        width: 60px;
+        height: 60px;
+        @media (min-width: 992px) {
+          width: auto;
+          height: auto;
+        }
+      }
     }
   }
 }

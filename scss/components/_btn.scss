@@ -66,6 +66,15 @@
       background-color: var(--primary);
     }
   }
+  &--white {
+    border: 2px solid transparent !important;
+    background: white;
+    color: var(--primary-darker);
+    &:hover {
+      color: white;
+      background-color: var(--primary);
+    }
+  }
 
   &__group {
     gap: 8px;

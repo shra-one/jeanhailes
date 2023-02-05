@@ -7,7 +7,7 @@
     $self: ".counter-steps";
     --gutter: 4px;
     --col: 2;
-    padding: 0;
+    padding: 24px 0;
     margin: 0;
     list-style: none;
     counter-reset: steps;
@@ -17,6 +17,7 @@
     gap: calc(var(--gutter) * 4);
     @media (min-width: 992px) {
       --col: 4;
+      padding: 0 0;
     }
     &__item {
       counter-increment: steps;

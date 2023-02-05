@@ -40,6 +40,12 @@
         line-height: 32px;
       }
     }
+    ul,
+    ol {
+      + p {
+        padding-top: 20px;
+      }
+    }
     ol {
       padding-inline-start: 0;
       counter-reset: item;

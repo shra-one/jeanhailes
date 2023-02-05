@@ -34,7 +34,7 @@
 
         --card-body-padding-lg: 0;
         --card-body-padding-sm: 0 0 0 0;
-        --card-img-radius: 16px;
+        --card-img-radius: 0;
         --card-title-padding-lg: 0;
         --card-title-margin-lg: 0 0 24px 0;
         --card-title-margin-sm: 0 0 8px 0;
@@ -59,13 +59,17 @@
         --spacer: 24px;
         @media (min-width: 768px) {
           --spacer: 40px;
+          --card-img-radius: 16px;
           grid-template-columns: fit-content(360px) 1fr;
         }
         gap: var(--spacer);
         position: relative;
         align-self: flex-start;
+        border-bottom: 1px solid var(--border);
         &:not(:last-child) {
-          border-bottom: 1px solid var(--border);
+          @media (min-width: 992px) {
+            border-bottom: 1px solid var(--border);
+          }
         }
         &:first-child {
           padding-top: 0;

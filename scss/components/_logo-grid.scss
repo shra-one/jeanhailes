@@ -1,6 +1,10 @@
 .matrix-block--logo-grid {
   @extend %matrix-block;
   @extend %matrix-block--section;
+  border-top: 1px solid var(--border);
+  @media (min-width: 600px) {
+    border-top: 0;
+  }
 
   .matrix-block__header {
     @extend %matrix-block__header;

@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+  .header__logo img {
+    max-width: 148px !important;
+  }
+  .header .tag {
+    padding: 8px 14px;
+  }
+  .header__container {
+    flex-wrap: wrap;
+  }
+  .header__date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    &--mobile {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      display: block;
+      text-align: center;
+      flex: 1;
+      flex-basis: 100%;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+      margin-top: 16px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header__date--mobile {
+    display: none;
+  }
+}

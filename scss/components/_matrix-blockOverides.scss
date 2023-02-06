@@ -40,3 +40,14 @@
     padding-bottom: 40px;
   }
 }
+.matrix-block--columns .columns__column .matrix-block--image {
+  @media (min-width: 992px) {
+    padding-left: 43px;
+  }
+
+  img {
+    height: 117px;
+    display: block;
+    margin-inline: auto;
+  }
+}

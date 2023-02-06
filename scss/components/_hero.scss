@@ -24,4 +24,8 @@
       }
     }
   }
+  &:after {
+    background-color: var(--primary-darker);
+    opacity: 0.63;
+  }
 }

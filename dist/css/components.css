@@ -2489,6 +2489,10 @@ select {
     font-weight: 700 !important;
   }
 }
+.hero:after {
+  background-color: var(--primary-darker);
+  opacity: 0.63;
+}
 
 .matrix-block--theme-gray {
   background-color: #f3f4f6;

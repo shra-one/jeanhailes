@@ -1701,12 +1701,12 @@ select {
 
 @media (max-width: 768px) {
   .freeform-row {
-    margin: 0;
+    margin: 0 !important;
     display: flex;
-    gap: 15px;
+    gap: 0px !important;
   }
   .freeform-row .freeform-column {
-    padding: 0;
+    padding-inline: 0 !important;
   }
 }
 .matrix-block--signup-banner {
@@ -1760,11 +1760,18 @@ select {
   flex-direction: column;
   align-items: flex-start;
   grid-column: 7/span 5;
-  padding: 2rem 1rem;
+  padding: 2rem;
+  grid-column: 7/-1;
+}
+@media (min-width: 768px) {
+  .matrix-block--signup-banner .component-grid .component-card__body {
+    grid-column: 7/-1 !important;
+  }
 }
 @media (min-width: 1180px) {
   .matrix-block--signup-banner .component-grid .component-card__body {
-    padding: 48px;
+    grid-column: 7/span 5 !important;
+    max-width: 600px;
     align-self: center;
   }
 }

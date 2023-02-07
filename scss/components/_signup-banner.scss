@@ -55,11 +55,16 @@
       flex-direction: column;
       align-items: flex-start;
       grid-column: 7 / span 5;
-      padding: 2rem 1rem;
+      padding: 2rem;
+      grid-column: 7/-1;
+      @media (min-width: 768px) {
+        // padding:48px !important;
+        grid-column: 7/-1 !important;
+      }
       @media (min-width: 1180px) {
         // grid-column: 2 / span 6;
-        // max-width: 500px;
-        padding: 48px;
+        grid-column: 7 / span 5 !important;
+        max-width: 600px;
         // padding: 64px 0 64px 64px;
         align-self: center;
       }

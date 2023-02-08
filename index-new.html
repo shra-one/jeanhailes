@@ -679,5 +679,122 @@
         </div>
       </div>
     </div>
+
+    <div class="banner banner--textImage" id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="banner-content">
+              <nav
+                id="breadcrumbs"
+                class="main-breadcrumbs"
+                aria-label="breadcrumb"
+              >
+                <span>
+                  <span>
+                    <a href="https://www.cohealth.org.au/">Home</a> /
+                  </span>
+                  <span>
+                    <a href="https://www.cohealth.org.au/our-services/"
+                      >Our services</a
+                    >
+                    /
+                  </span>
+                  <span>
+                    <a
+                      href="https://www.cohealth.org.au/service-category/health-support-services/"
+                      >Health and support services</a
+                    >
+                    /
+                  </span>
+                  <span>
+                    <a
+                      href="https://www.cohealth.org.au/service-category/doctors/"
+                      >Doctors</a
+                    >
+                    /
+                  </span>
+                </span>
+              </nav>
+              <div class="services__main">
+                <h1 class="summary__title" tabindex="0">Doctors</h1>
+                <div class="services__tagLine">
+                  High quality medical care for all
+                </div>
+                <a class="btn btn--primary" data-open-hotdoc=""
+                  >Request appointment</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="banner__image">
+              <img
+                src="./Doctors - cohealth_files/img1.jpg"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .banner--textImage {
+        background: #f6f6f6;
+        position: relative;
+        .container {
+          position: static;
+        }
+        [class*="col-"] {
+          position: static;
+        }
+        .row {
+          flex-direction: column-reverse;
+          @media (min-width: 1024px) {
+            flex-direction: row;
+          }
+        }
+        .banner-content {
+          padding-block: 32px;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+
+        .main-breadcrumbs {
+          margin-top: 0;
+          a {
+            // color: white;
+          }
+        }
+        .services__main {
+          width: auto;
+          margin-top: auto;
+          margin-bottom: auto;
+          .summary__title {
+            color: var(--gray-dark);
+            font-weight: 600;
+            margin-bottom: 24px;
+          }
+          .services__tagLine {
+            font-size: 20px;
+            margin-bottom: 24px;
+          }
+        }
+        .banner__image {
+          height: 100%;
+          @media (min-width: 1024px) {
+            position: absolute;
+            width: 50%;
+            right: 0;
+          }
+
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    </style>
   </body>
 </html>

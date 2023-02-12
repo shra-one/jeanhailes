@@ -1,0 +1,14 @@
+.event-result-status {
+  background-color: var(--gray-light);
+
+  .form-check-label {
+    @include media-breakpoint-down(lg) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  .badge {
+    --size: 13.5px;
+  }
+}

@@ -1,0 +1,54 @@
+:root {
+  --bs-border-color: var(--gray) !important;
+}
+$grid-gutter-width: 1rem;
+$font-size-base: 16px;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1124px,
+  //   xxl: 1320px
+);
+
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  //4
+  2: $spacer * 0.5,
+  //6
+  3: $spacer * 0.75,
+  //12
+  4: $spacer * 1,
+  //16
+  5: $spacer * 1.25,
+  //20
+  6: $spacer * 1.5,
+  //24
+  7: $spacer * 1.75,
+  //28
+  8: $spacer * 2,
+  //32
+  9: $spacer * 2.25,
+  //36
+  10: $spacer * 2.5,
+  //40
+  11: $spacer * 2.75,
+  //44
+  12: $spacer * 3,
+  //48
+);
+
+$form-label-font-size: 14px;
+$form-label-font-weight: 600;
+$form-label-color: #333333;
+$input-border-radius: 4px;
+$input-border-color: var(--gray);
+$input-padding-y: 0.625rem;
+$input-padding-x: 1rem;
+$input-placeholder-color: #5f6263;
+$input-color: var(--text);
+$form-select-padding-y: $input-padding-y;
+$form-select-padding-x: $input-padding-x;
+$form-select-border-color: $input-border-color;
+$form-check-input-width: 24px;

@@ -1,4 +1,5 @@
 @import "./cssvars";
+@import "./bootstrap5.scss";
 @import "./components/matrix-block";
 @import "./components/btn";
 @import "./components/component-grid";
@@ -30,5 +31,11 @@
 @import "./components/richTitles";
 @import "./components/hero";
 @import "./components/header";
+@import "./components/filter-events";
+@import "./components/container";
+@import "./components/form";
+@import "./components/event-result-status";
+@import "./components/badge";
+@import "./components/card-columns-featured";
 
 @import "./components/matrix-blockOverides";

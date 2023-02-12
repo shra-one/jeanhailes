@@ -1,0 +1,163 @@
+.matrix-block--card-columns-featured {
+  @extend %matrix-block;
+  @extend %matrix-block--section;
+  background-color: var(--gray-light) !important;
+
+  &.matrix-block--theme-primary {
+    @include media-breakpoint-up(lg) {
+      background-color: var(--primary-darker) !important;
+    }
+  }
+
+  .matrix-block__header {
+    @extend %matrix-block__header;
+    justify-content: flex-start;
+    display: none;
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+  .matrix-block__title {
+    @extend %matrix-block__title;
+    justify-content: flex-start;
+    @include media-breakpoint-up(lg) {
+      color: white;
+    }
+  }
+  --matrix-block-title-size-lg: 20px;
+  --matrix-block-title-lineheight-lg: 20px;
+  --matrix-block-title-weight-lg: 600;
+  --matrix-block-title-size-sm: 36px;
+  --matrix-block-title-lineheight-sm: 42px;
+  --matrix-block-title-weight-sm: 600;
+  --matrix-block-title-weight-lg: 600;
+  --matrix-block-header-margin-lg: 0 0 24px 0;
+  --matrix-block-header-margin-sm: 0 0 36px 0;
+  --matrix-block-section-padding-lg: 64px 0 64px 0;
+  --matrix-block-section-padding-sm: 0 0 0 0;
+  .component-grid {
+    --spacer: 16px;
+    row-gap: 16px;
+    @media (min-width: 992px) {
+      row-gap: 32px;
+    }
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    $p: ".component-card";
+    #{$p} {
+      --col: inherit;
+      --spacer: inherit;
+      --gap: inherit;
+      --card-root-radius: 4px;
+      --card-img-radius: 4px 4px 0 0;
+      --card-body-padding-lg: 24px;
+      --card-body-padding-sm: 24px;
+      --card-title-size-lg: 28px;
+      --card-title-lineheight-lg: 32px;
+      --card-title-weight-lg: 500;
+      --card-title-size-sm: 22px;
+      --card-title-lineheight-sm: 30px;
+      --card-title-weight-sm: 500;
+      --card-title-margin-lg: 24px 0 24px 0;
+      --card-title-margin-sm: 16px 0 16px 0;
+      --card-text-margin-lg: 0 0 40px 0;
+      --card-text-margin-sm: 0 0 16px 0;
+
+      display: flex;
+      flex-direction: column;
+      --spacer: 0;
+      gap: var(--spacer);
+      box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.07);
+    }
+
+    #{$p}__body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 1;
+
+      .catGroups {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        &__item {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 14px;
+          &.active {
+            padding: 8px 16px;
+            border-radius: 150px;
+            border: 1px solid var(--border);
+          }
+        }
+      }
+    }
+    #{$p}__figure {
+      --aspect-ratio: 1/1;
+      --aspect-ratio: 4.5/3;
+      @media (min-width: 992px) {
+      }
+      aspect-ratio: var(--aspect-ratio);
+      position: relative;
+      @supports not (aspect-ratio: 16 / 9) {
+        &:before {
+          display: block;
+          content: "";
+          width: 100%;
+          padding-bottom: calc(100% / (var(--aspect-ratio)));
+        }
+      }
+
+      #{$p}__img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      #{$p}__chip {
+        position: absolute;
+        top: 16px;
+        bottom: auto;
+        transform: translateY(0);
+        left: 16px;
+        background-color: var(--primary-darker);
+        color: white;
+        display: inline-block;
+        @include media-breakpoint-up(lg) {
+          display: none;
+        }
+        &:hover {
+          background-color: var(--primary-darker);
+        }
+      }
+
+      .badge {
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        right: 24px;
+        transform: translateY(50%);
+      }
+    }
+
+    #{$p}__cta {
+      margin-top: auto;
+      &:hover {
+        svg rect {
+          fill: var(--primary);
+        }
+      }
+    }
+
+    #{$p}__footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: auto;
+      align-self: normal;
+      align-items: center;
+    }
+  }
+}

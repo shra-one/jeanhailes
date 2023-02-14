@@ -80,6 +80,7 @@
     @at-root .fullWidthContent & {
       @media (min-width: 992px) {
         max-width: 640px;
+        max-width: 590px;
         padding: 64px;
       }
     }
@@ -96,6 +97,7 @@
           @at-root .fullWidthContent & {
             @media (min-width: 992px) {
               max-width: 640px;
+              max-width: 590px;
               align-items: end;
               justify-self: end;
               align-self: flex-end;

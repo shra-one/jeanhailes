@@ -52,3 +52,13 @@ $form-select-padding-y: $input-padding-y;
 $form-select-padding-x: $input-padding-x;
 $form-select-border-color: $input-border-color;
 $form-check-input-width: 24px;
+
+$pagination-bg: transparent;
+$pagination-hover-bg: var(--primary);
+$pagination-hover-color: white;
+$pagination-color: #000;
+$pagination-disabled-bg: transparent;
+$pagination-focus-box-shadow: none;
+$pagination-focus-color: var(--primary);
+$pagination-focus-bg: transparent;
+$pagination-active-bg: var(--primary-darker);

@@ -2,6 +2,10 @@
   @extend %matrix-block;
   @extend %matrix-block--section;
   background-color: var(--gray-light) !important;
+  &:not(.matrix-block--theme-primary) {
+    --matrix-block-section-padding-lg: 48px 0 106px 0;
+    --matrix-block-section-padding-sm: 0 0 0 0;
+  }
 
   &.matrix-block--theme-primary {
     @include media-breakpoint-up(lg) {

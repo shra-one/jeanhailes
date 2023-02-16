@@ -17972,7 +17972,7 @@ select {
 .pagination .page-item--next {
   margin-left: 0;
 }
-.pagination .page-item:not(.page-item--previous):not(.page-item-next) .page-link {
+.pagination .page-item:not(.page-item--previous):not(.page-item--next) .page-link {
   --size: 40px;
   width: var(--size);
   height: var(--size);

@@ -17985,6 +17985,7 @@ select {
   font-size: 16px;
   line-height: 26px;
   border-radius: 50%;
+  z-index: 1;
 }
 .pagination .page-link__label {
   display: none;

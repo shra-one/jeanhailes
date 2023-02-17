@@ -1665,7 +1665,7 @@
   display: inline-block !important;
 }
 
-.d-block {
+.d-block, .event-detail .event-info-box + .matrix-block--richText .btn, .event-detail .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .event-detail .event-info-box + .matrix-block--richText button[type=submit] {
   display: block !important;
 }
 
@@ -1685,7 +1685,7 @@
   display: table-cell !important;
 }
 
-.d-flex {
+.d-flex, .event-info-content-header, .event-info-content, .event-info-header {
   display: flex !important;
 }
 
@@ -1777,7 +1777,7 @@
   align-items: flex-end !important;
 }
 
-.align-items-center {
+.align-items-center, .event-info-content-header, .event-info-header {
   align-items: center !important;
 }
 
@@ -2436,7 +2436,7 @@
   padding-bottom: 1.25rem !important;
 }
 
-.py-6 {
+.py-6, .event-info-header--border {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 }
@@ -7210,7 +7210,7 @@
   display: inline-block !important;
 }
 
-.d-block {
+.d-block, .event-detail .event-info-box + .matrix-block--richText .btn, .event-detail .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .event-detail .event-info-box + .matrix-block--richText button[type=submit] {
   display: block !important;
 }
 
@@ -7230,7 +7230,7 @@
   display: table-cell !important;
 }
 
-.d-flex {
+.d-flex, .event-info-content-header, .event-info-content, .event-info-header {
   display: flex !important;
 }
 
@@ -7639,7 +7639,7 @@
   align-items: flex-end !important;
 }
 
-.align-items-center {
+.align-items-center, .event-info-content-header, .event-info-header {
   align-items: center !important;
 }
 
@@ -8298,7 +8298,7 @@
   padding-bottom: 1.25rem !important;
 }
 
-.py-6 {
+.py-6, .event-info-header--border {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 }
@@ -8549,11 +8549,11 @@
   gap: 0.25rem !important;
 }
 
-.gap-2 {
+.gap-2, .event-info-header {
   gap: 0.5rem !important;
 }
 
-.gap-3 {
+.gap-3, .event-info-content-header {
   gap: 0.75rem !important;
 }
 
@@ -8798,7 +8798,7 @@
   text-align: right !important;
 }
 
-.text-center {
+.text-center, .event-detail .event-info-box + .matrix-block--richText .btn, .event-detail .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .event-detail .event-info-box + .matrix-block--richText button[type=submit] {
   text-align: center !important;
 }
 
@@ -17634,6 +17634,83 @@ select {
   }
 }
 
+.event-detail .hero {
+  padding: 0;
+  position: relative;
+  display: flex;
+  min-height: unset !important;
+  height: unset !important;
+}
+@media (min-width: 992px) {
+  .event-detail .hero {
+    min-height: 445px !important;
+  }
+}
+.event-detail .hero:after {
+  display: none;
+}
+.event-detail .hero .container-fluid, .event-detail .hero .container-sm, .event-detail .hero .container-md, .event-detail .hero .container-lg, .event-detail .hero .container-xl,
+.event-detail .hero .row {
+  --bs-gutter-x: 0;
+  height: 100%;
+}
+.event-detail .hero [class*=col-] {
+  height: 100%;
+}
+.event-detail .hero img {
+  height: 100%;
+  width: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.3;
+}
+@media (min-width: 992px) {
+  .event-detail .hero img {
+    top: unset;
+    opacity: 1;
+  }
+}
+.event-detail .hero__content {
+  max-width: 414px;
+  z-index: 1;
+  position: relative;
+  padding: 80px 0 36px 0;
+}
+@media (min-width: 992px) {
+  .event-detail .hero__content {
+    padding: 112px 0 76px 0;
+  }
+}
+.event-detail .hero__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px !important;
+}
+@media (min-width: 992px) {
+  .event-detail .hero__title {
+    font-size: 40px;
+    line-height: 48px !important;
+  }
+}
+.event-detail .hero__summary {
+  margin-top: 16px;
+}
+@media (min-width: 992px) {
+  .event-detail .hero__summary {
+    margin-top: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .event-detail .hero__summary p {
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    line-height: 32px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .header__logo img {
     max-width: 148px !important;
@@ -18239,6 +18316,70 @@ select {
   }
 }
 
+.event-info-header {
+  margin-block: 48px;
+  flex-wrap: wrap;
+}
+.event-info-header--border {
+  margin-block: 0;
+  border-bottom: 1px solid #dce6e8;
+}
+.event-info-header-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.event-info-box {
+  background-color: var(--primary-lighter);
+  border-radius: 16px;
+  margin-block: 32px;
+  padding: 24px;
+}
+@media (min-width: 768px) {
+  .event-info-box {
+    padding: 40px;
+    margin-block: 72px;
+  }
+}
+.event-info-box .row {
+  --bs-gutter-x: 2rem;
+}
+.event-info-content {
+  flex-direction: column;
+  height: 100%;
+}
+.event-info-content-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+}
+.event-info-content-description {
+  flex-grow: 1;
+  margin-top: 24px;
+  padding-left: 24px;
+  border-left: 1px solid #d3bfe5;
+  margin-left: 11px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.event-info-content a {
+  color: var(--primary-darker);
+  font-weight: 600;
+  text-decoration: underline;
+}
+.event-info-content a:hover {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.event-detail .event-info-box + .matrix-block--richText {
+  padding-block: 0;
+}
+.event-detail .event-info-box + .matrix-block--richText .btn, .event-detail .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .event-detail .event-info-box + .matrix-block--richText button[type=submit] {
+  margin-top: 32px;
+}
+
 .matrix-block--theme-gray {
   background-color: #f3f4f6;
 }
@@ -18299,4 +18440,8 @@ select {
   height: 117px;
   display: block;
   margin-inline: auto;
+}
+
+.text--pinkSolid {
+  color: var(--pink);
 }/*# sourceMappingURL=components.css.map */

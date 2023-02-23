@@ -1,0 +1,98 @@
+.steps {
+  --theme-color: #fff;
+  --line-min-height: 24px;
+  --icon-size: 32px;
+  counter-reset: steps-counter;
+  @include media-breakpoint-up(lg) {
+    position: sticky;
+    top: 180px;
+  }
+  &__item--complete {
+    --theme-color: var(--primary-darker);
+    list-style: none;
+    padding: 0;
+    .steps__label {
+      &:after {
+        width: 8px;
+        height: 12px;
+        border-radius: 0;
+        background: transparent;
+        border: 3px solid white;
+        border-top: transparent;
+        border-left: transparent;
+        transform: rotate(40deg) translateY(-50%);
+        top: 40%;
+        left: 9px;
+        border-radius: 1px;
+        content: "";
+      }
+    }
+  }
+  &__item--current {
+    .steps__label {
+      font-weight: 700;
+      &:before {
+        --theme-color: var(--primary-lighter);
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    counter-increment: steps-counter;
+  }
+  &__label {
+    position: relative;
+    padding-left: calc(var(--icon-size) + 12px);
+    margin: 8px 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    &:before,
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      content: "";
+      width: var(--icon-size);
+      height: var(--icon-size);
+      display: grid;
+      place-items: center;
+      color: var(--primary-darker);
+    }
+    &:before {
+      border-radius: 50%;
+      background-color: var(--theme-color);
+      border: 1px solid var(--primary-darker);
+    }
+
+    &:after {
+      content: counter(steps-counter);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+    }
+  }
+  &__space {
+    position: relative;
+    margin-left: calc(var(--icon-size) / 2);
+    flex: 1 0 var(--line-min-height);
+    padding: 1em;
+    box-sizing: border-box;
+    // min-height:var(--line-min-height);
+    @at-root .steps__item:last-child & {
+      display: none;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      border-left: 1px dashed var(--primary-darker);
+      // background-color: var(--theme-color);
+    }
+  }
+}

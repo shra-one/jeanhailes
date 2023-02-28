@@ -80,18 +80,21 @@
     flex: 1 0 var(--line-min-height);
     padding: 1em;
     box-sizing: border-box;
+
+    align-self: flex-start;
+    padding: 0;
     // min-height:var(--line-min-height);
     @at-root .steps__item:last-child & {
-      display: none;
+      // display: none;
     }
 
     &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      border-left: 1px dashed var(--primary-darker);
+      // content: "";
+      // position: absolute;
+      // left: 0;
+      // top: 0;
+      // height: 100%;
+      // border-left: 1px dashed var(--primary-darker);
       // background-color: var(--theme-color);
     }
   }

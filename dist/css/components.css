@@ -14174,9 +14174,9 @@
 }
 .form-label {
   margin-bottom: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #333333;
+  color: var(--text);
 }
 
 .col-form-label {
@@ -14186,7 +14186,7 @@
   font-size: inherit;
   font-weight: 600;
   line-height: 29px;
-  color: #333333;
+  color: var(--text);
 }
 
 .col-form-label-lg {
@@ -14203,8 +14203,9 @@
 
 .form-text {
   margin-top: 0.25rem;
-  font-size: 0.875em;
-  color: var(--bs-secondary-color);
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--text);
 }
 
 .form-control {
@@ -14540,7 +14541,7 @@ textarea.form-control-lg {
 
 .form-check-inline {
   display: inline-block;
-  margin-right: 0.25rem;
+  margin-right: 2rem;
 }
 
 .btn-check {
@@ -15262,6 +15263,9 @@ textarea.form-control-lg {
 }
 .btn__group .btn, .btn__group .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .btn__group button[type=submit] {
   margin: 0;
+}
+.btn__group--flushed {
+  gap: 0;
 }
 .btn--inline-wide {
   padding-inline: 24px;
@@ -17823,7 +17827,7 @@ select {
 
 .form-label {
   display: block;
-  line-height: 17px;
+  line-height: 19px;
 }
 
 .form-check-label {
@@ -17982,6 +17986,44 @@ select {
 .form-check--uploadFile .upload-box input {
   max-width: 250px;
   width: 100%;
+}
+
+.form-box {
+  padding: 1rem;
+  background-color: var(--gray-light);
+  margin-top: 0;
+}
+
+.form-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+}
+.form-text a {
+  color: var(--primary-darker);
+  text-decoration: underline;
+}
+.form-text a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.form-check-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .form-check-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-checkbox {
+  padding-block: 8px;
+}
+
+.form-select--time {
+  max-width: 80px;
 }
 
 .event-result-status {
@@ -18621,20 +18663,9 @@ select {
   flex: 1 0 var(--line-min-height);
   padding: 1em;
   box-sizing: border-box;
+  align-self: flex-start;
+  padding: 0;
 }
-.steps__item:last-child .steps__space {
-  display: none;
-}
-
-.steps__space:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  border-left: 1px dashed var(--primary-darker);
-}
-
 .matrix-block--theme-gray {
   background-color: #f3f4f6;
 }

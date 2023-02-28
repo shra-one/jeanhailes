@@ -62,13 +62,22 @@ $form-select-border-radius: $input-border-radius;
 $form-select-font-size: $input-font-size;
 $form-select-font-weight: $input-font-weight;
 $form-select-line-height: $input-line-height;
+
+$form-text-font-size: 18px;
+$form-text-font-weight: 400;
+$form-text-color: var(--text);
+
+$form-label-font-size: 16px;
+$form-label-font-weight: 600;
+$form-label-color: var(--text);
+
 $form-check-input-width: 24px;
 $form-check-input-checked-bg-color: white;
 $form-check-input-checked-color: var(--primary-darker);
 $form-check-input-checked-border-color: var(--primary-darker);
 $form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>");
 $form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
-$form-check-inline-margin-end: 0.25rem;
+$form-check-inline-margin-end: 2rem;
 $form-check-input-border: 1px solid var(--primary-darker);
 $pagination-bg: transparent;
 $component-active-bg: #3d0f58;

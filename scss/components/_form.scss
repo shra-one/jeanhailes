@@ -1,6 +1,6 @@
 .form-label {
   display: block;
-  line-height: 17px;
+  line-height: 19px;
 }
 .form-check-label {
   font-weight: 400;
@@ -171,4 +171,37 @@
       width: 100%;
     }
   }
+}
+.form-box {
+  padding: 1rem;
+  background-color: var(--gray-light);
+  margin-top: 0;
+}
+.form-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  a {
+    color: var(--primary-darker);
+    text-decoration: underline;
+    &:hover {
+      color: var(--primary);
+      text-decoration: none;
+    }
+  }
+}
+
+.form-check-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  @include media-breakpoint-up(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-checkbox {
+  padding-block: 8px;
+}
+.form-select--time {
+  max-width: 80px;
 }

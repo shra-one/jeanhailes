@@ -1,5 +1,7 @@
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem 2rem;
   border: 2px solid transparent;
   font-size: 1rem;
@@ -55,6 +57,14 @@
     color: var(--primary-darker);
     &:hover {
       color: white;
+      svg {
+        rect {
+          fill: white;
+        }
+        path {
+          fill: var(--primary-darker);
+        }
+      }
     }
   }
 
@@ -89,6 +99,14 @@
     &--flushed {
       gap: 0;
     }
+    &--gridColumn-two {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      @include media-breakpoint-up(sm) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   }
   &--inline-wide {
     padding-inline: 24px;
@@ -98,5 +116,26 @@
   }
   &--full {
     width: 100%;
+  }
+
+  &--radioGroup {
+    .btn--radio {
+      .btn {
+        --radius: 6px;
+        border-radius: 0;
+        padding-inline: 16px;
+      }
+      &:first-child {
+        .btn {
+          border-radius: var(--radius) 0 0 var(--radius);
+          border-right: 0;
+        }
+      }
+      &:last-child {
+        .btn {
+          border-radius: 0 var(--radius) var(--radius) 0;
+        }
+      }
+    }
   }
 }

@@ -94,3 +94,17 @@
     }
   }
 }
+
+.confirmation-textBlock {
+  padding-block: 24px 48px;
+
+  @include media-breakpoint-up(md) {
+    padding-block: 64px 95px;
+  }
+
+  &-wrapper {
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 100px;
+  }
+}

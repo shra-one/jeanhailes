@@ -15181,7 +15181,9 @@ textarea.form-control-lg {
 }
 
 .btn, .matrix-block--signup-banner .component-grid button[type=submit] {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem 2rem;
   border: 2px solid transparent;
   font-size: 1rem;
@@ -15234,6 +15236,12 @@ textarea.form-control-lg {
 .btn--primary-outline:hover {
   color: white;
 }
+.btn--primary-outline:hover svg rect {
+  fill: white;
+}
+.btn--primary-outline:hover svg path {
+  fill: var(--primary-darker);
+}
 .btn--white-outline {
   border: 2px solid white !important;
   background: transparent;
@@ -15267,6 +15275,16 @@ textarea.form-control-lg {
 .btn__group--flushed {
   gap: 0;
 }
+.btn__group--gridColumn-two {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 576px) {
+  .btn__group--gridColumn-two {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .btn--inline-wide {
   padding-inline: 24px;
 }
@@ -15277,6 +15295,18 @@ textarea.form-control-lg {
 }
 .btn--full {
   width: 100%;
+}
+.btn--radioGroup .btn--radio .btn, .btn--radioGroup .btn--radio .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .btn--radioGroup .btn--radio button[type=submit] {
+  --radius: 6px;
+  border-radius: 0;
+  padding-inline: 16px;
+}
+.btn--radioGroup .btn--radio:first-child .btn, .btn--radioGroup .btn--radio:first-child .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .btn--radioGroup .btn--radio:first-child button[type=submit] {
+  border-radius: var(--radius) 0 0 var(--radius);
+  border-right: 0;
+}
+.btn--radioGroup .btn--radio:last-child .btn, .btn--radioGroup .btn--radio:last-child .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .btn--radioGroup .btn--radio:last-child button[type=submit] {
+  border-radius: 0 var(--radius) var(--radius) 0;
 }
 
 .component-grid {
@@ -17714,6 +17744,29 @@ select {
   }
 }
 
+.hero-confirmation {
+  position: relative;
+  overflow: hidden;
+  padding-block: 132px;
+}
+.hero-confirmation img {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+}
+.hero-confirmation .hero-title {
+  color: white;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+}
+
 @media (max-width: 768px) {
   .header__logo img {
     max-width: 148px !important;
@@ -17848,11 +17901,16 @@ select {
 }
 
 .form-fieldset {
-  padding: 48px;
   background-color: var(--gray-light);
   border-radius: 16px;
   border: 0;
   margin-bottom: 32px;
+  padding: 24px;
+}
+@media (min-width: 768px) {
+  .form-fieldset {
+    padding: 48px;
+  }
 }
 .form-fieldset-title {
   font-weight: 500;
@@ -17866,6 +17924,12 @@ select {
   font-size: 34px;
   line-height: 40px;
   margin-bottom: 32px;
+}
+
+.form-section-title {
+  font-weight: 400 !important;
+  font-size: 28px;
+  line-height: 40px;
 }
 
 .form-check input[type=checkbox]:checked {
@@ -17885,7 +17949,20 @@ select {
 .form-check-wrapper .form-check {
   margin-bottom: 0.5rem;
 }
+.form-check-visible-content {
+  display: none;
+  margin-left: -1.5em;
+}
+.form-check-visible-content .form-fieldset {
+  margin-bottom: 0 !important;
+}
+.form-check-input:checked ~ .form-check-visible-content {
+  display: block;
+}
 
+.form-jh {
+  margin-bottom: 32px;
+}
 .form-jh p {
   font-weight: 400;
   font-size: 18px;
@@ -17896,7 +17973,6 @@ select {
 .form-check--image {
   border-radius: 4px;
   background-color: gray;
-  max-width: 135px;
   position: relative;
   padding: 0;
   margin: 0;
@@ -17944,10 +18020,10 @@ select {
   opacity: 1;
 }
 
-.upload-picture-wrapper {
-  display: flex;
+.event-picture-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 8px;
-  flex-wrap: wrap;
 }
 
 .form-check--uploadFile {
@@ -18022,8 +18098,25 @@ select {
   padding-block: 8px;
 }
 
+.form-check--blocks .form-check {
+  padding-block: 8px;
+  margin-bottom: 0;
+}
+
 .form-select--time {
   max-width: 80px;
+}
+
+input[type=radio] + label.btn {
+  border-radius: 6px;
+  background: white;
+  color: var(--text);
+  border-color: var(--primary-darker);
+  cursor: pointer;
+}
+input[type=radio]:checked + label.btn {
+  background: var(--primary-darker);
+  color: white;
 }
 
 .event-result-status {
@@ -18584,6 +18677,20 @@ select {
   fill: var(--primary) !important;
 }
 
+.confirmation-textBlock {
+  padding-block: 24px 48px;
+}
+@media (min-width: 768px) {
+  .confirmation-textBlock {
+    padding-block: 64px 95px;
+  }
+}
+.confirmation-textBlock-wrapper {
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 100px;
+}
+
 .steps {
   --theme-color: #fff;
   --line-min-height: 24px;
@@ -18730,4 +18837,26 @@ select {
 
 .text--pinkSolid {
   color: var(--pink);
+}
+
+.lead-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.lead-text-sm {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.text-link {
+  text-decoration: underline;
+  color: var(--primary-darker);
+  font-weight: 600;
+}
+.text-link:hover {
+  text-decoration: none;
+  color: var(--primary);
 }/*# sourceMappingURL=components.css.map */

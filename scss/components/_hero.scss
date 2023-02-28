@@ -120,3 +120,25 @@
     }
   }
 }
+
+.hero-confirmation {
+  position: relative;
+  // max-height: 303px;
+  overflow: hidden;
+  padding-block: 132px;
+  img {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+  .hero-title {
+    color: white;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 40px;
+  }
+}

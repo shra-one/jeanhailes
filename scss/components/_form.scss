@@ -20,11 +20,14 @@
 }
 
 .form-fieldset {
-  padding: 48px;
   background-color: var(--gray-light);
   border-radius: 16px;
   border: 0;
   margin-bottom: 32px;
+  padding: 24px;
+  @include media-breakpoint-up(md) {
+    padding: 48px;
+  }
 
   &-title {
     font-weight: 500;
@@ -40,7 +43,11 @@
   line-height: 40px;
   margin-bottom: 32px;
 }
-
+.form-section-title {
+  font-weight: 400 !important;
+  font-size: 28px;
+  line-height: 40px;
+}
 .form-check {
   $p: &;
 
@@ -64,9 +71,21 @@
       margin-bottom: 0.5rem;
     }
   }
+
+  &-visible-content {
+    display: none;
+    margin-left: calc($form-check-padding-start * -1);
+    .form-fieldset {
+      margin-bottom: 0 !important;
+    }
+  }
+  &-input:checked ~ #{$p}-visible-content {
+    display: block;
+  }
 }
 
 .form-jh {
+  margin-bottom: 32px;
   p {
     font-weight: 400;
     font-size: 18px;
@@ -80,7 +99,7 @@
   @extend .ratio-1x1;
   border-radius: 4px;
   background-color: gray;
-  max-width: 135px;
+  // max-width: 135px;
   position: relative;
   padding: 0;
   margin: 0;
@@ -129,10 +148,10 @@
   }
 }
 
-.upload-picture-wrapper {
-  display: flex;
+.event-picture-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 8px;
-  flex-wrap: wrap;
 }
 
 .form-check--uploadFile {
@@ -202,6 +221,26 @@
 .form-checkbox {
   padding-block: 8px;
 }
+.form-check--blocks {
+  .form-check {
+    padding-block: 8px;
+    margin-bottom: 0;
+  }
+}
 .form-select--time {
   max-width: 80px;
+}
+
+input[type="radio"] {
+  & + label.btn {
+    border-radius: 6px;
+    background: white;
+    color: var(--text);
+    border-color: var(--primary-darker);
+    cursor: pointer;
+  }
+  &:checked + label.btn {
+    background: var(--primary-darker);
+    color: white;
+  }
 }

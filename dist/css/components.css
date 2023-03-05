@@ -1661,7 +1661,10 @@
   display: inline-block !important;
 }
 
-.d-block, .event-detail .event-info-box + .matrix-block--richText .btn, .event-detail .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .event-detail .event-info-box + .matrix-block--richText button[type=submit] {
+.d-block, .event-detail .event-info-box + .matrix-block--richText .btn, .event-detail .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .event-detail .event-info-box + .matrix-block--richText button[type=submit],
+.register-your-event .event-info-box + .matrix-block--richText .btn,
+.register-your-event .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit],
+.matrix-block--signup-banner .component-grid .register-your-event .event-info-box + .matrix-block--richText button[type=submit] {
   display: block !important;
 }
 
@@ -7206,7 +7209,10 @@
   display: inline-block !important;
 }
 
-.d-block, .event-detail .event-info-box + .matrix-block--richText .btn, .event-detail .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .event-detail .event-info-box + .matrix-block--richText button[type=submit] {
+.d-block, .event-detail .event-info-box + .matrix-block--richText .btn, .event-detail .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .event-detail .event-info-box + .matrix-block--richText button[type=submit],
+.register-your-event .event-info-box + .matrix-block--richText .btn,
+.register-your-event .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit],
+.matrix-block--signup-banner .component-grid .register-your-event .event-info-box + .matrix-block--richText button[type=submit] {
   display: block !important;
 }
 
@@ -8794,7 +8800,10 @@
   text-align: right !important;
 }
 
-.text-center, .event-detail .event-info-box + .matrix-block--richText .btn, .event-detail .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .event-detail .event-info-box + .matrix-block--richText button[type=submit] {
+.text-center, .event-detail .event-info-box + .matrix-block--richText .btn, .event-detail .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .event-detail .event-info-box + .matrix-block--richText button[type=submit],
+.register-your-event .event-info-box + .matrix-block--richText .btn,
+.register-your-event .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit],
+.matrix-block--signup-banner .component-grid .register-your-event .event-info-box + .matrix-block--richText button[type=submit] {
   text-align: center !important;
 }
 
@@ -14430,22 +14439,22 @@ textarea.form-control-lg {
 .form-check {
   display: block;
   min-height: 1.5rem;
-  padding-left: 1.5em;
+  padding-left: 1.5rem;
   margin-bottom: 0.125rem;
 }
 .form-check .form-check-input {
   float: left;
-  margin-left: -1.5em;
+  margin-left: -1.5rem;
 }
 
 .form-check-reverse {
-  padding-right: 1.5em;
+  padding-right: 1.5rem;
   padding-left: 0;
   text-align: right;
 }
 .form-check-reverse .form-check-input {
   float: right;
-  margin-right: -1.5em;
+  margin-right: -1.5rem;
   margin-left: 0;
 }
 
@@ -17674,9 +17683,13 @@ select {
   min-height: unset !important;
   height: unset !important;
 }
+.event-detail .hero .container {
+  padding-inline: 0rem;
+}
 @media (min-width: 992px) {
   .event-detail .hero {
     min-height: 445px !important;
+    padding-inline: 1.5rem;
   }
 }
 .event-detail .hero:after {
@@ -17695,32 +17708,29 @@ select {
   width: inherit;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  right: 0;
-  top: 0;
-  opacity: 0.3;
+  position: static;
 }
 @media (min-width: 992px) {
   .event-detail .hero img {
-    top: unset;
-    opacity: 1;
+    position: absolute;
+    right: 0;
   }
 }
 .event-detail .hero__content {
-  max-width: 414px;
   z-index: 1;
   position: relative;
-  padding: 80px 0 36px 0;
+  padding: 24px 20px;
 }
 @media (min-width: 992px) {
   .event-detail .hero__content {
     padding: 112px 0 76px 0;
+    max-width: 414px;
   }
 }
 .event-detail .hero__title {
   font-weight: 600;
-  font-size: 28px;
-  line-height: 36px !important;
+  font-size: 24px;
+  line-height: 28px !important;
 }
 @media (min-width: 992px) {
   .event-detail .hero__title {
@@ -17729,12 +17739,16 @@ select {
   }
 }
 .event-detail .hero__summary {
-  margin-top: 16px;
+  margin-top: 24px;
 }
 @media (min-width: 992px) {
   .event-detail .hero__summary {
     margin-top: 32px;
   }
+}
+.event-detail .hero__summary p {
+  font-size: 16px !important;
+  line-height: 28px !important;
 }
 @media (min-width: 992px) {
   .event-detail .hero__summary p {
@@ -17747,7 +17761,12 @@ select {
 .hero-confirmation {
   position: relative;
   overflow: hidden;
-  padding-block: 132px;
+  padding-block: 64px;
+}
+@media (min-width: 768px) {
+  .hero-confirmation {
+    padding-block: 132px;
+  }
 }
 .hero-confirmation img {
   position: absolute;
@@ -17763,8 +17782,14 @@ select {
 .hero-confirmation .hero-title {
   color: white;
   font-weight: 600;
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 32px;
+}
+@media (min-width: 768px) {
+  .hero-confirmation .hero-title {
+    font-size: 34px;
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -17951,7 +17976,7 @@ select {
 }
 .form-check-visible-content {
   display: none;
-  margin-left: -1.5em;
+  margin-left: -1.5rem;
 }
 .form-check-visible-content .form-fieldset {
   margin-bottom: 0 !important;
@@ -18614,7 +18639,7 @@ input[type=radio]:checked + label.btn {
 .event-info-box {
   background-color: var(--primary-lighter);
   border-radius: 16px;
-  margin-block: 32px;
+  margin-block: 40px;
   padding: 24px;
 }
 @media (min-width: 768px) {
@@ -18644,6 +18669,9 @@ input[type=radio]:checked + label.btn {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .event-info-content a {
   color: var(--primary-darker);
@@ -18655,10 +18683,14 @@ input[type=radio]:checked + label.btn {
   color: var(--primary);
 }
 
-.event-detail .event-info-box + .matrix-block--richText {
+.event-detail .event-info-box + .matrix-block--richText,
+.register-your-event .event-info-box + .matrix-block--richText {
   padding-block: 0;
 }
-.event-detail .event-info-box + .matrix-block--richText .btn, .event-detail .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .event-detail .event-info-box + .matrix-block--richText button[type=submit] {
+.event-detail .event-info-box + .matrix-block--richText .btn, .event-detail .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .event-detail .event-info-box + .matrix-block--richText button[type=submit],
+.register-your-event .event-info-box + .matrix-block--richText .btn,
+.register-your-event .event-info-box + .matrix-block--richText .matrix-block--signup-banner .component-grid button[type=submit],
+.matrix-block--signup-banner .component-grid .register-your-event .event-info-box + .matrix-block--richText button[type=submit] {
   margin-top: 32px;
 }
 
@@ -18678,17 +18710,61 @@ input[type=radio]:checked + label.btn {
 }
 
 .confirmation-textBlock {
-  padding-block: 24px 48px;
+  padding-bottom: 48px;
 }
 @media (min-width: 768px) {
   .confirmation-textBlock {
-    padding-block: 64px 95px;
+    padding-bottom: 95px;
   }
 }
 .confirmation-textBlock-wrapper {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 100px;
+}
+
+.register-your-event {
+  padding-top: 0;
+}
+.register-your-event .navigation {
+  display: none;
+}
+.register-your-event .header {
+  height: auto;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.register-your-event .header__container {
+  padding-block: 24px;
+}
+.register-your-event .header__wrap {
+  border-bottom: 1px solid var(--border);
+  transform: unset !important;
+  position: relative;
+}
+.register-your-event .header + .pt-12 {
+  padding-top: 0 !important;
+}
+.register-your-event .main__container {
+  margin-top: 32px;
+}
+@media (min-width: 768px) {
+  .register-your-event .main__container {
+    margin-top: 64px;
+  }
+}
+.register-your-event .header__nav li {
+  margin-right: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .register-your-event .header__nav li {
+    font-size: 26px;
+    line-height: 31px;
+  }
 }
 
 .steps {
@@ -18700,7 +18776,7 @@ input[type=radio]:checked + label.btn {
 @media (min-width: 992px) {
   .steps {
     position: sticky;
-    top: 180px;
+    top: 120px;
   }
 }
 .steps__item--complete {
@@ -18736,7 +18812,7 @@ input[type=radio]:checked + label.btn {
 .steps__label {
   position: relative;
   padding-left: calc(var(--icon-size) + 12px);
-  margin: 8px 0;
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;

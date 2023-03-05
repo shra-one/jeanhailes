@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
-  <body class="event-detail">
+  <body class="event-detail register-your-event">
     <header
       class="header"
       itemscope=""
@@ -31,19 +31,18 @@
             />
           </a>
           <nav class="header__nav">
-            <ul class="hide--portable flex-center-b">
-              <li class="mr-spacer header__date">4-8 September 2023</li>
+            <ul class="flex-center-b">
+              <li class="header__register-your-event">Register your event</li>
             </ul>
 
-            <a href="#signup" class="tag js-go-to-topic">Sign up</a>
+            <!-- <a href="#signup" class="tag js-go-to-topic">Sign up</a> -->
 
-            <button class="nav-toggle ml-small hide--desk js-nav-toggle">
+            <!-- <button class="nav-toggle ml-small hide--desk js-nav-toggle">
               <figure class="nav-toggle__lines">
                 <div></div>
               </figure></button
-            ><button></button>
+            ><button></button> -->
           </nav>
-          <div class="header__date--mobile">4-8 September 2023</div>
         </div>
 
         <nav class="navigation">
@@ -282,268 +281,263 @@
       </div>
     </header>
 
-    <div class="pt-12">
-      <div class="main__container container">
-        <div class="row">
-          <div class="col-md-3">
-            <ul class="steps steps--vertical">
-              <li class="steps__item steps__item--current">
-                <div class="steps__label">Your details</div>
-                <div class="steps__space">
-                  <img src="./dist/img/step-line.svg" alt="" />
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-9">
-            <form action="" class="form-jh">
-              <div class="mb-4 mb-md-8">
-                <h3 class="form-title">Your Detail</h3>
+    <div class="main__container container">
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="steps steps--vertical">
+            <li class="steps__item steps__item--current">
+              <div class="steps__label">Your details</div>
+              <div class="steps__space">
+                <img src="./dist/img/step-line.svg" alt="" />
               </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-4 mb-md-8">
-                    <label for="" class="form-label"
-                      >What is your first name?<span class="text-danger"
-                        >*</span
-                      ></label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your first name"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-4 mb-md-8">
-                    <label for="" class="form-label"
-                      >What is your last name?<span class="text-danger"
-                        >*</span
-                      ></label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your last name"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label d-block"
-                  >Are you registering on behalf of an organisation?</label
-                >
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="inlineRadioOptions"
-                    id="inlineRadio1"
-                    value="option1"
-                  />
-                  <label class="form-check-label" for="inlineRadio1">Yes</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="inlineRadioOptions"
-                    id="inlineRadio2"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="inlineRadio2">No</label>
-                </div>
-              </div>
-              <div class="form-fieldset">
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <form action="" class="form-jh">
+            <div class="mb-4 mb-md-8">
+              <h3 class="form-title">Your Detail</h3>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
                 <div class="mb-4 mb-md-8">
                   <label for="" class="form-label"
-                    >What is the name of your organisation?
+                    >What is your first name?<span class="text-danger"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your first name"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-4 mb-md-8">
+                  <label for="" class="form-label"
+                    >What is your last name?<span class="text-danger"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your last name"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label d-block"
+                >Are you registering on behalf of an organisation?</label
+              >
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div>
+            </div>
+            <div class="form-fieldset">
+              <div class="mb-4 mb-md-8">
+                <label for="" class="form-label"
+                  >What is the name of your organisation?
+                  <span class="text-danger">*</span></label
+                >
+                <input type="text" class="form-control" placeholder=" " />
+              </div>
+              <div class="mb-0">
+                <label class="form-label"
+                  >How would you categorise your organisation?
+                  <span class="text-danger">*</span></label
+                >
+                <select name="" class="form-select" id="">
+                  <option selected value="">
+                    Select your organisation type
+                  </option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label"
+                >What is your contact email?
+                <span class="text-danger">*</span></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your email"
+              />
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-4 mb-md-8">
+                  <label for="" class="form-label"
+                    >What is your mobile number?
                     <span class="text-danger">*</span></label
                   >
-                  <input type="text" class="form-control" placeholder=" " />
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your email"
+                  />
                 </div>
-                <div class="mb-0">
-                  <label class="form-label"
-                    >How would you categorise your organisation?
+              </div>
+              <div class="col-md-6">
+                <div class="mb-4 mb-md-8">
+                  <label for="" class="form-label"
+                    >What is your landline phone number? (if you have one)
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter a number"
+                    inputmode="numeric"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label"
+                >What is your street address? 1
+                <span class="text-danger">*</span></label
+              >
+              <input type="text" class="form-control" placeholder=" " />
+            </div>
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label"
+                >What is your street address? 2
+              </label>
+              <input type="text" class="form-control" placeholder=" " />
+            </div>
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label"
+                >Which suburb do you live in?
+                <span class="text-danger">*</span></label
+              >
+              <input type="text" class="form-control" placeholder=" " />
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-4 mb-md-8">
+                  <label for="" class="form-label"
+                    >Which state do you live in?
                     <span class="text-danger">*</span></label
                   >
                   <select name="" class="form-select" id="">
-                    <option selected value="">
-                      Select your organisation type
-                    </option>
+                    <option selected value="">Select a state</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
                 </div>
               </div>
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label"
-                  >What is your contact email?
-                  <span class="text-danger">*</span></label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Your email"
-                />
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-4 mb-md-8">
-                    <label for="" class="form-label"
-                      >What is your mobile number?
-                      <span class="text-danger">*</span></label
-                    >
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Your email"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-4 mb-md-8">
-                    <label for="" class="form-label"
-                      >What is your landline phone number? (if you have one)
-                    </label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Enter a number"
-                      inputmode="numeric"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label"
-                  >What is your street address? 1
-                  <span class="text-danger">*</span></label
-                >
-                <input type="text" class="form-control" placeholder=" " />
-              </div>
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label"
-                  >What is your street address? 2
-                </label>
-                <input type="text" class="form-control" placeholder=" " />
-              </div>
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label"
-                  >Which suburb do you live in?
-                  <span class="text-danger">*</span></label
-                >
-                <input type="text" class="form-control" placeholder=" " />
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mb-4 mb-md-8">
-                    <label for="" class="form-label"
-                      >Which state do you live in?
-                      <span class="text-danger">*</span></label
-                    >
-                    <select name="" class="form-select" id="">
-                      <option selected value="">Select a state</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                </div>
 
-                <div class="col-md-3">
-                  <div class="mb-4 mb-md-8">
-                    <label for="" class="form-label"
-                      >What is your postcode?
-                      <span class="text-danger">*</span></label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder=" "
-                      pattern="[0-9]*"
-                    />
-                  </div>
+              <div class="col-md-3">
+                <div class="mb-4 mb-md-8">
+                  <label for="" class="form-label"
+                    >What is your postcode?
+                    <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder=" "
+                    pattern="[0-9]*"
+                  />
                 </div>
               </div>
+            </div>
 
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label"
-                  >Is your event in a regional, rural or remote area?
-                  <span class="text-danger">*</span></label
-                >
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label"
+                >Is your event in a regional, rural or remote area?
+                <span class="text-danger">*</span></label
+              >
 
-                <div class="form-check-wrapper">
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      value=""
-                      name="event"
-                      id="flexCheckDefaulta55"
-                    />
-                    <label class="form-check-label" for="flexCheckDefaulta55">
-                      Yes
-                    </label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      value=""
-                      name="event"
-                      id="flexCheckDefaulta556"
-                    />
-                    <label class="form-check-label" for="flexCheckDefaulta556">
-                      No
-                    </label>
-                  </div>
+              <div class="form-check-wrapper">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    value=""
+                    name="event"
+                    id="flexCheckDefaulta55"
+                  />
+                  <label class="form-check-label" for="flexCheckDefaulta55">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    value=""
+                    name="event"
+                    id="flexCheckDefaulta556"
+                  />
+                  <label class="form-check-label" for="flexCheckDefaulta556">
+                    No
+                  </label>
                 </div>
               </div>
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label"
-                  >Are you hosting an event, or just promoting Women’s Health
-                  Week? <span class="text-danger">*</span></label
-                >
+            </div>
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label"
+                >Are you hosting an event, or just promoting Women’s Health
+                Week? <span class="text-danger">*</span></label
+              >
 
-                <div class="form-check-wrapper">
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      value=""
-                      name="event"
-                      id="rfsdf"
-                    />
-                    <label class="form-check-label" for="rfsdf">
-                      Yes, I’m hosting an event
-                    </label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      value=""
-                      name="event"
-                      id="flexCheckDefaulta5fsdf"
-                    />
-                    <label
-                      class="form-check-label"
-                      for="flexCheckDefaulta5fsdf"
-                    >
-                      No, I’m only promoting
-                    </label>
-                  </div>
+              <div class="form-check-wrapper">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    value=""
+                    name="event"
+                    id="rfsdf"
+                  />
+                  <label class="form-check-label" for="rfsdf">
+                    Yes, I’m hosting an event
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    value=""
+                    name="event"
+                    id="flexCheckDefaulta5fsdf"
+                  />
+                  <label class="form-check-label" for="flexCheckDefaulta5fsdf">
+                    No, I’m only promoting
+                  </label>
                 </div>
               </div>
+            </div>
 
-              <button type="submit" class="btn btn--full">
-                Continue to your event
-              </button>
-            </form>
-          </div>
+            <button type="submit" class="btn btn--full">
+              Continue to your event
+            </button>
+          </form>
         </div>
       </div>
     </div>

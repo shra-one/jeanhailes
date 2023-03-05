@@ -5,7 +5,7 @@
   counter-reset: steps-counter;
   @include media-breakpoint-up(lg) {
     position: sticky;
-    top: 180px;
+    top: 120px;
   }
   &__item--complete {
     --theme-color: var(--primary-darker);
@@ -44,7 +44,8 @@
   &__label {
     position: relative;
     padding-left: calc(var(--icon-size) + 12px);
-    margin: 8px 0;
+    // margin: 8px 0;
+    margin-bottom: 8px;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;

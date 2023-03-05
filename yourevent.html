@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
-  <body class="event-detail">
+  <body class="event-detail register-your-event">
     <header
       class="header"
       itemscope=""
@@ -31,19 +31,18 @@
             />
           </a>
           <nav class="header__nav">
-            <ul class="hide--portable flex-center-b">
-              <li class="mr-spacer header__date">4-8 September 2023</li>
+            <ul class="flex-center-b">
+              <li class="header__register-your-event">Register your event</li>
             </ul>
 
-            <a href="#signup" class="tag js-go-to-topic">Sign up</a>
+            <!-- <a href="#signup" class="tag js-go-to-topic">Sign up</a> -->
 
-            <button class="nav-toggle ml-small hide--desk js-nav-toggle">
+            <!-- <button class="nav-toggle ml-small hide--desk js-nav-toggle">
               <figure class="nav-toggle__lines">
                 <div></div>
               </figure></button
-            ><button></button>
+            ><button></button> -->
           </nav>
-          <div class="header__date--mobile">4-8 September 2023</div>
         </div>
 
         <nav class="navigation">
@@ -282,333 +281,331 @@
       </div>
     </header>
 
-    <div class="pt-12">
-      <div class="main__container container">
-        <div class="row">
-          <div class="col-md-3">
-            <ul class="steps steps--vertical">
-              <li class="steps__item steps__item--complete">
-                <div class="steps__label">Your details</div>
-                <div class="steps__space">
-                  <img src="./dist/img/step-line.svg" alt="" />
-                </div>
-              </li>
-              <li class="steps__item steps__item--current">
-                <div class="steps__label">Your event</div>
-                <div class="steps__space">
-                  <img src="./dist/img/step-line.svg" alt="" />
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-9">
-            <form action="" class="form-jh">
-              <div class="mb-4 mb-md-8">
-                <h3 class="form-title">Your event</h3>
+    <div class="main__container container">
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="steps steps--vertical">
+            <li class="steps__item steps__item--complete">
+              <div class="steps__label">Your details</div>
+              <div class="steps__space">
+                <img src="./dist/img/step-line.svg" alt="" />
               </div>
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label"
-                  >In total, how many events are you registering?
-                  <span class="text-danger">*</span></label
-                >
-                <input type="text" class="form-control" placeholder="30" />
-                <div class="form-text form-box">
-                  Please <a href="#">contact Jean Hailes </a>if you want to
-                  register more than 20 events.
-                </div>
+            </li>
+            <li class="steps__item steps__item--current">
+              <div class="steps__label">Your event</div>
+              <div class="steps__space">
+                <img src="./dist/img/step-line.svg" alt="" />
               </div>
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label"
-                  >In total, how many people will be attending your event/s?
-                  <span class="text-danger">*</span></label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Number of attendees"
-                />
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <form action="" class="form-jh">
+            <div class="mb-4 mb-md-8">
+              <h3 class="form-title">Your event</h3>
+            </div>
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label"
+                >In total, how many events are you registering?
+                <span class="text-danger">*</span></label
+              >
+              <input type="text" class="form-control" placeholder="30" />
+              <div class="form-text form-box">
+                Please <a href="#">contact Jean Hailes </a>if you want to
+                register more than 20 events.
               </div>
+            </div>
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label"
+                >In total, how many people will be attending your event/s?
+                <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Number of attendees"
+              />
+            </div>
 
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label"
-                  >How many people are employed in your organisation?
-                  <span class="text-danger">*</span></label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Number of staff"
-                />
-              </div>
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label"
+                >How many people are employed in your organisation?
+                <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Number of staff"
+              />
+            </div>
 
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label">
-                  Will your event include any of the following people?
-                </label>
-                <p>You can tick more than one box or skip question</p>
-                <div class="form-check-columns form-check--blocks">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="ppp"
-                    />
-                    <label class="form-check-label" for="ppp">
-                      People in aged care
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="yyy"
-                    />
-                    <label class="form-check-label" for="yyy">
-                      Young people
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="pwpwpw"
-                    />
-                    <label class="form-check-label" for="pwpwpw">
-                      People who identify as LGBTIQ+
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="dddd"
-                    />
-                    <label class="form-check-label" for="dddd">
-                      People with disabilities
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="cccc"
-                    />
-                    <label class="form-check-label" for="cccc">
-                      People with a CALD background
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="ffff"
-                    />
-                    <label class="form-check-label" for="ffff">
-                      People from correctional facilities
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="fnfnfn"
-                    />
-                    <label class="form-check-label" for="fnfnfn">
-                      First Nations people
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="3fd"
-                    />
-                    <label class="form-check-label" for="3fd">
-                      People from workplaces
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label">
-                  What is the main focus of your event?
-                </label>
-                <p>You can tick more than one box or skip question</p>
-                <div class="form-check-columns form-check--blocks">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="Menopause"
-                    />
-                    <label class="form-check-label" for="Menopause">
-                      Menopause
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="Movement"
-                    />
-                    <label class="form-check-label" for="Movement">
-                      Movement
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="Endometriosis"
-                    />
-                    <label class="form-check-label" for="Endometriosis">
-                      Endometriosis
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="vulva"
-                    />
-                    <label class="form-check-label" for="vulva">
-                      Vulva and vagina
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="mental"
-                    />
-                    <label class="form-check-label" for="mental">
-                      Mental health and wellbeing
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="Periods"
-                    />
-                    <label class="form-check-label" for="Periods">
-                      Periods
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="PCOS"
-                    />
-                    <label class="form-check-label" for="PCOS"> PCOS </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="ovaries"
-                    />
-                    <label class="form-check-label" for="ovaries">
-                      Ovaries and uterus
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="health"
-                    />
-                    <label class="form-check-label" for="health">
-                      Health checks
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="bladder"
-                    />
-                    <label class="form-check-label" for="bladder">
-                      Bladder and bowel
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="sleep"
-                    />
-                    <label class="form-check-label" for="sleep"> Sleep </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="pelvic"
-                    />
-                    <label class="form-check-label" for="pelvic">
-                      Pelvic pain
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mb-4 mb-md-8">
-                <label for="" class="form-label d-block"
-                  >Are you happy for us to promote your event on the Jean Hailes
-                  Women’s Health Week website?
-                  <span class="text-danger">*</span></label
-                >
-                <p>If your event is private, please tick NO.</p>
-                <div class="form-check form-check-inline">
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label">
+                Will your event include any of the following people?
+              </label>
+              <p>You can tick more than one box or skip question</p>
+              <div class="form-check-columns form-check--blocks">
+                <div class="form-check">
                   <input
                     class="form-check-input"
-                    type="radio"
-                    name="inlineRadioOptions"
-                    id="inlineRadio1"
-                    value="option1"
+                    type="checkbox"
+                    value=""
+                    id="ppp"
                   />
-                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                  <label class="form-check-label" for="ppp">
+                    People in aged care
+                  </label>
                 </div>
-                <div class="form-check form-check-inline">
+                <div class="form-check">
                   <input
                     class="form-check-input"
-                    type="radio"
-                    name="inlineRadioOptions"
-                    id="inlineRadio2"
-                    value="option2"
+                    type="checkbox"
+                    value=""
+                    id="yyy"
                   />
-                  <label class="form-check-label" for="inlineRadio2">No</label>
+                  <label class="form-check-label" for="yyy">
+                    Young people
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="pwpwpw"
+                  />
+                  <label class="form-check-label" for="pwpwpw">
+                    People who identify as LGBTIQ+
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="dddd"
+                  />
+                  <label class="form-check-label" for="dddd">
+                    People with disabilities
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="cccc"
+                  />
+                  <label class="form-check-label" for="cccc">
+                    People with a CALD background
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="ffff"
+                  />
+                  <label class="form-check-label" for="ffff">
+                    People from correctional facilities
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="fnfnfn"
+                  />
+                  <label class="form-check-label" for="fnfnfn">
+                    First Nations people
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="3fd"
+                  />
+                  <label class="form-check-label" for="3fd">
+                    People from workplaces
+                  </label>
                 </div>
               </div>
+            </div>
 
-              <button type="submit" class="btn btn--full">
-                Continue to your event
-              </button>
-            </form>
-          </div>
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label">
+                What is the main focus of your event?
+              </label>
+              <p>You can tick more than one box or skip question</p>
+              <div class="form-check-columns form-check--blocks">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="Menopause"
+                  />
+                  <label class="form-check-label" for="Menopause">
+                    Menopause
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="Movement"
+                  />
+                  <label class="form-check-label" for="Movement">
+                    Movement
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="Endometriosis"
+                  />
+                  <label class="form-check-label" for="Endometriosis">
+                    Endometriosis
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="vulva"
+                  />
+                  <label class="form-check-label" for="vulva">
+                    Vulva and vagina
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="mental"
+                  />
+                  <label class="form-check-label" for="mental">
+                    Mental health and wellbeing
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="Periods"
+                  />
+                  <label class="form-check-label" for="Periods">
+                    Periods
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="PCOS"
+                  />
+                  <label class="form-check-label" for="PCOS"> PCOS </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="ovaries"
+                  />
+                  <label class="form-check-label" for="ovaries">
+                    Ovaries and uterus
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="health"
+                  />
+                  <label class="form-check-label" for="health">
+                    Health checks
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="bladder"
+                  />
+                  <label class="form-check-label" for="bladder">
+                    Bladder and bowel
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="sleep"
+                  />
+                  <label class="form-check-label" for="sleep"> Sleep </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="pelvic"
+                  />
+                  <label class="form-check-label" for="pelvic">
+                    Pelvic pain
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-4 mb-md-8">
+              <label for="" class="form-label d-block"
+                >Are you happy for us to promote your event on the Jean Hailes
+                Women’s Health Week website?
+                <span class="text-danger">*</span></label
+              >
+              <p>If your event is private, please tick NO.</p>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--full">
+              Continue to your event
+            </button>
+          </form>
         </div>
       </div>
     </div>

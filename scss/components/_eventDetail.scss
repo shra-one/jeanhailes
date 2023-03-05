@@ -20,7 +20,7 @@
   &-box {
     background-color: var(--primary-lighter);
     border-radius: 16px;
-    margin-block: 32px;
+    margin-block: 40px;
     padding: 24px;
     @include media-breakpoint-up(md) {
       padding: 40px;
@@ -56,6 +56,10 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
     }
     a {
       color: var(--primary-darker);
@@ -69,7 +73,8 @@
   }
 }
 
-.event-detail {
+.event-detail,
+.register-your-event {
   .event-info-box + .matrix-block--richText {
     padding-block: 0;
     .btn {
@@ -96,15 +101,60 @@
 }
 
 .confirmation-textBlock {
-  padding-block: 24px 48px;
+  // padding-block: 24px 48px;
+  padding-bottom: 48px;
 
   @include media-breakpoint-up(md) {
-    padding-block: 64px 95px;
+    // padding-block: 64px 95px;
+    padding-bottom: 95px;
   }
 
   &-wrapper {
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 100px;
+  }
+}
+
+.register-your-event {
+  padding-top: 0;
+  .navigation {
+    display: none;
+  }
+  .header {
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    &__container {
+      padding-block: 24px;
+    }
+    &__wrap {
+      border-bottom: 1px solid var(--border);
+      transform: unset !important;
+      position: relative;
+    }
+    + .pt-12 {
+      padding-top: 0 !important;
+    }
+  }
+  .main__container {
+    margin-top: 32px;
+    @include media-breakpoint-up(md) {
+      margin-top: 64px;
+    }
+  }
+  .header__nav {
+    li {
+      margin-right: 0;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      @include media-breakpoint-up(md) {
+        font-size: 26px;
+        line-height: 31px;
+      }
+    }
   }
 }

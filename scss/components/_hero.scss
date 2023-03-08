@@ -56,6 +56,9 @@
     height: unset !important;
     .container {
       padding-inline: 0rem;
+      @include media-breakpoint-up(lg) {
+        padding-inline: 2rem;
+      }
     }
     @include media-breakpoint-up(lg) {
       min-height: 445px !important;
@@ -126,6 +129,13 @@
       }
     }
   }
+
+  .matrix-block--richText .rich-text a {
+    color: white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .hero-confirmation {
@@ -156,3 +166,5 @@
     }
   }
 }
+
+// this is updated

@@ -17687,6 +17687,11 @@ select {
   padding-inline: 0rem;
 }
 @media (min-width: 992px) {
+  .event-detail .hero .container {
+    padding-inline: 2rem;
+  }
+}
+@media (min-width: 992px) {
   .event-detail .hero {
     min-height: 445px !important;
     padding-inline: 1.5rem;
@@ -17756,6 +17761,12 @@ select {
     font-size: 20px !important;
     line-height: 32px !important;
   }
+}
+.event-detail .matrix-block--richText .rich-text a {
+  color: white;
+}
+.event-detail .matrix-block--richText .rich-text a:hover {
+  text-decoration: none;
 }
 
 .hero-confirmation {
@@ -18731,20 +18742,18 @@ input[type=radio]:checked + label.btn {
 }
 .register-your-event .header {
   height: auto;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 .register-your-event .header__container {
   padding-block: 24px;
 }
 .register-your-event .header__wrap {
   border-bottom: 1px solid var(--border);
-  transform: unset !important;
-  position: relative;
 }
 .register-your-event .header + .pt-12 {
   padding-top: 0 !important;
+}
+.register-your-event .main {
+  padding-top: 122px;
 }
 .register-your-event .main__container {
   margin-top: 32px;

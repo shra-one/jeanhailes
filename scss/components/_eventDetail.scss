@@ -123,21 +123,24 @@
   }
   .header {
     height: auto;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    // position: sticky;
+    // top: 0;
+    // z-index: 100;
 
     &__container {
       padding-block: 24px;
     }
     &__wrap {
       border-bottom: 1px solid var(--border);
-      transform: unset !important;
-      position: relative;
+      // transform: unset !important;
+      // position: relative;
     }
     + .pt-12 {
       padding-top: 0 !important;
     }
+  }
+  .main {
+    padding-top: 122px;
   }
   .main__container {
     margin-top: 32px;

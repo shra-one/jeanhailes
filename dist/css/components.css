@@ -17836,6 +17836,14 @@ select {
     display: none;
   }
 }
+.header__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(1140px + 3rem);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .filter-event__header {
   border-bottom: 1px solid var(--border);
   padding-bottom: 8px;

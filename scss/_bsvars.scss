@@ -1,7 +1,7 @@
 :root {
   // --bs-border-color: var(--gray) !important;
 }
-
+$enable-container-classes: false;
 $primary: black;
 $gray-300: #dce6e8;
 $grid-gutter-width: 1rem;
@@ -10,7 +10,7 @@ $container-max-widths: (
   // sm: 540px,
   // md: 720px,
   // lg: 960px,
-  xl: 1124px,
+  // xl: 1124px,
   //   xxl: 1320px
 );
 

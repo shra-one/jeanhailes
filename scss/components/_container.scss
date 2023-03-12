@@ -1,5 +1,6 @@
 .container {
   padding-inline: 1.5rem;
+  width: 100%;
   @include media-breakpoint-up(lg) {
     padding-inline: 2rem;
   }

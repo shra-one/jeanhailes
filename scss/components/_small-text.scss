@@ -1,0 +1,24 @@
+/**
+ *
+ * small text
+ * 
+ */
+
+.matrix-block--smallText {
+  p,
+  b,
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    @media (min-width: 992px) {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 26px;
+    }
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

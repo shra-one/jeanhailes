@@ -22,6 +22,9 @@
       --spacer: 24px;
       row-gap: 32px;
       display: block;
+      .component-card:last-child {
+        padding-bottom: 0 !important;
+      }
 
       $p: ".component-card";
       #{$p} {

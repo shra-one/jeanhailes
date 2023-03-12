@@ -11,6 +11,7 @@
   .rich-text {
     p,
     b,
+    a,
     span {
       font-weight: 400;
       font-size: 17px;
@@ -112,38 +113,6 @@
           }
         }
       }
-    }
-    h2 {
-      font-weight: 600;
-      font-size: 26px;
-      line-height: 44px;
-      letter-spacing: 0.03em;
-      @media (min-width: 768px) {
-        font-size: inherit;
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 44px;
-        // margin-top: 80px;
-        margin-bottom: 24px;
-        letter-spacing: normal;
-      }
-    }
-    h3 {
-      font-size: 26px;
-      line-height: 31px;
-      letter-spacing: 0.03em;
-      margin-bottom: 20px;
-      font-weight: 400;
-      @media (min-width: 768px) {
-        font-size: 34px;
-        line-height: 40px;
-        // margin-top: 80px;
-        margin-bottom: 24px;
-        letter-spacing: normal;
-      }
-    }
-    h2 + h3 {
-      margin-top: 0;
     }
   }
 }

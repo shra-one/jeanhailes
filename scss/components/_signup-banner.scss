@@ -18,10 +18,10 @@
       --card-body-pading-lg: 0;
       --card-body-pading-sm: 0;
       --card-title-size-sm: 36px;
-      --card-title-size-lg: 40px;
-      --card-title-weight-sm: 700;
-      --card-title-weight-lg: 700;
+      --card-title-weight-sm: 600;
       --card-title-lineheight-sm: 42px;
+      --card-title-size-lg: 40px;
+      --card-title-weight-lg: 600;
       --card-title-lineheight-lg: 44px;
       --card-title-margin-sm: 0 0 1.5rem 0;
       --card-title-margin-lg: 0 0 1rem 0;
@@ -118,6 +118,10 @@
       @extend .btn;
       @extend .btn--small;
       @extend .btn--primary;
+      padding-inline: 55px;
+      @include media-breakpoint-up(lg) {
+        padding-inline: 47.5px;
+      }
     }
   }
 }

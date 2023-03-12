@@ -1,0 +1,7 @@
+.navigation {
+  &__item {
+    &.active {
+      background: var(--primary);
+    }
+  }
+}

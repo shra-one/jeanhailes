@@ -72,6 +72,14 @@
       --spacer: 0;
       gap: var(--spacer);
       box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.07);
+      &:hover {
+        #{$p}__img {
+          transform: scale(1.05);
+        }
+        #{$p}__title {
+          text-decoration: underline;
+        }
+      }
     }
 
     #{$p}__body {
@@ -79,6 +87,7 @@
       flex-direction: column;
       align-items: flex-start;
       flex-grow: 1;
+      position: relative;
 
       .catGroups {
         display: flex;
@@ -99,6 +108,7 @@
     #{$p}__figure {
       --aspect-ratio: 1/1;
       --aspect-ratio: 4.5/3;
+      overflow: hidden;
       @media (min-width: 992px) {
       }
       aspect-ratio: var(--aspect-ratio);
@@ -120,30 +130,46 @@
         position: absolute;
         left: 0;
         top: 0;
-      }
-      #{$p}__chip {
-        position: absolute;
-        top: 16px;
-        bottom: auto;
-        transform: translateY(0);
-        left: 16px;
-        background-color: var(--primary-darker);
-        color: white;
-        display: inline-block;
-        @include media-breakpoint-up(lg) {
-          display: none;
-        }
-        &:hover {
-          background-color: var(--primary-darker);
-        }
+        transition: all 0.3s;
       }
 
-      .badge {
-        z-index: 1;
-        position: absolute;
-        bottom: 0;
-        right: 24px;
-        transform: translateY(50%);
+      &:hover {
+        img {
+          // transform: scale(1.05);
+        }
+      }
+    }
+    #{$p}__chip {
+      position: absolute;
+      top: 16px;
+      bottom: auto;
+      transform: translateY(0);
+      left: 15px;
+      background-color: var(--primary-darker);
+      color: white;
+      display: inline-block;
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+      &:hover {
+        background-color: var(--primary-darker);
+      }
+    }
+    #{$p}_title {
+      a {
+        &:hover {
+          // text-decoration: underline;
+        }
+      }
+    }
+    .badge {
+      z-index: 1;
+      position: absolute;
+      top: calc(var(--card-body-padding-lg, --card-body-padding-sm) * -1);
+      // transform: translateY(50%);
+      right: 20px;
+      @include media-breakpoint-up(lg) {
+        right: 32px;
       }
     }
 

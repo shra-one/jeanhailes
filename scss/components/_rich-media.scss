@@ -235,12 +235,13 @@
         --margin-bottom: 24px;
       }
       @at-root .fullWidthContent & {
-        --font-size: 36px;
-        --lineheight: 42px;
-        font-weight: 400;
+        --font-size: 42px;
+        --lineheight: 48px;
+        font-weight: 600;
+        --margin-bottom: 16px;
         @media (min-width: 992px) {
           --font-size: 40px;
-          --lineheight: 44px;
+          --lineheight: 56px;
         }
 
         &--large {

@@ -42,6 +42,9 @@
   height: 50px;
   padding: 10px 16px;
   width: 100%;
+  &::placeholder {
+    color: #5f6263 !important;
+  }
 }
 textarea.freeform-input {
   height: auto;

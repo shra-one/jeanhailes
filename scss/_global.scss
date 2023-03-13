@@ -124,10 +124,7 @@ h1 {
     }
   }
 
-  p,
-  b,
-  a,
-  span {
+  p {
     font-weight: 400;
     font-size: 17px;
     line-height: 26px;
@@ -136,6 +133,15 @@ h1 {
       font-size: 20px;
       line-height: 32px;
     }
+    a {
+      text-decoration: none;
+      color: var(--primary-darker);
+      font-weight: 800;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
   b {
     font-weight: 600;
@@ -143,15 +149,5 @@ h1 {
 
   p:last-child {
     margin-bottom: 0;
-  }
-
-  a {
-    text-decoration: none;
-    color: var(--primary-darker);
-    font-weight: 800;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }

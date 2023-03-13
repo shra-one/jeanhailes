@@ -168,3 +168,11 @@
 }
 
 // this is updated
+
+.whw-landing {
+  .hero {
+    @media (min-width: 1600px) {
+      height: 50vh;
+    }
+  }
+}

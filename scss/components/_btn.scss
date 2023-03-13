@@ -6,7 +6,7 @@
   border: 2px solid transparent;
   font-size: 1rem;
   font-weight: 700;
-  border-radius: 33px;
+  border-radius: 150px;
   color: #ffffff;
   text-align: center;
   -webkit-transition: all 100ms linear;
@@ -57,7 +57,7 @@
     background: transparent;
     color: var(--primary-darker);
     &:hover {
-      color: white;
+      text-decoration: underline;
       svg {
         rect {
           fill: white;
@@ -135,6 +135,103 @@
       &:last-child {
         .btn {
           border-radius: 0 var(--radius) var(--radius) 0;
+        }
+      }
+    }
+  }
+}
+
+.matrix-block--richMedia {
+  .btn__group {
+    .btn {
+      height: 47px;
+      @include media-breakpoint-up(md) {
+        height: 64px;
+      }
+    }
+  }
+}
+
+.fullWidthContent {
+  .matrix-block--richMedia {
+    .btn__group {
+      .btn {
+        height: 47px;
+        @include media-breakpoint-up(md) {
+          height: 47px;
+        }
+      }
+    }
+  }
+}
+.rich-media--theme-dark-purple,
+.rich-media--theme-primary-dark {
+  .btn--secondary {
+    @extend .btn--white-outline;
+  }
+  .btn--primary {
+    @extend .btn--primary-light;
+  }
+}
+
+.rich-media--theme-purple-light,
+.rich-media--theme-white,
+.rich-media--theme-gray {
+  .btn--secondary {
+    @extend .btn--primary-outline;
+  }
+  .btn--primary {
+    @extend .btn--primary;
+  }
+}
+.matrix-block--buttons {
+  .btn--secondary {
+    @extend .btn--primary-outline;
+  }
+  .btn--primary {
+    @extend .btn--primary;
+  }
+}
+
+.matrix-block--textColumn {
+  .btn__group {
+    .btn {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19.36px;
+      padding: 14px 24px;
+      height: 47px;
+      @include media-breakpoint-up(md) {
+        padding: 18px 32px;
+        height: 69px;
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+      &--primary {
+        @include media-breakpoint-up(md) {
+          padding-inline: 60.5px;
+        }
+      }
+
+      &--secondary {
+        @extend .btn--primary-outline;
+        &:hover {
+          color: var(--primary);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.whw-landing {
+  .matrix-block--richMedia {
+    .btn__group {
+      .btn {
+        height: 47px;
+        @include media-breakpoint-up(md) {
+          height: 69px;
         }
       }
     }

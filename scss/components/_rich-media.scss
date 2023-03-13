@@ -225,8 +225,8 @@
       --lineheight: 34px;
       --margin-bottom: 16px;
       font-weight: 500;
-      font-size: var(--font-size);
-      line-height: var(--lineheight);
+      font-size: var(--font-size) !important;
+      line-height: var(--lineheight) !important;
       margin-bottom: var(--margin-bottom);
       color: var(--heading-color);
       @media (min-width: 992px) {
@@ -240,7 +240,7 @@
         font-weight: 600;
         --margin-bottom: 16px;
         @media (min-width: 992px) {
-          --font-size: 40px;
+          --font-size: 48px;
           --lineheight: 56px;
         }
 

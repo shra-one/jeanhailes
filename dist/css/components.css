@@ -28952,6 +28952,7 @@ select {
 }
 .event-detail .hero__summary {
   margin-top: 24px;
+  color: #fff;
 }
 @media (min-width: 992px) {
   .event-detail .hero__summary {
@@ -28959,6 +28960,7 @@ select {
   }
 }
 .event-detail .hero__summary p {
+  color: #fff;
   font-size: 16px !important;
   line-height: 28px !important;
 }
@@ -29013,6 +29015,33 @@ select {
 @media (min-width: 1600px) {
   .whw-landing .hero {
     height: 50vh;
+  }
+}
+
+.hero {
+  height: auto !important;
+  padding: 70px 0 35px !important;
+  min-height: 248px !important;
+}
+@media (min-width: 992px) {
+  .hero {
+    min-height: 303px !important;
+    padding: 109px 0 70px !important;
+  }
+}
+.hero__summary {
+  color: #fff;
+  margin-top: 24px;
+}
+.hero__summary p {
+  line-height: 24px;
+}
+.hero .breadcrumbs {
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  .hero .breadcrumbs {
+    margin-top: 38px;
   }
 }
 

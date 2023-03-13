@@ -115,10 +115,12 @@
 
     &__summary {
       margin-top: 24px;
+      color: #fff;
       @include media-breakpoint-up(lg) {
         margin-top: 32px;
       }
       p {
+        color: #fff;
         font-size: 16px !important;
         line-height: 28px !important;
         @include media-breakpoint-up(lg) {
@@ -173,6 +175,30 @@
   .hero {
     @media (min-width: 1600px) {
       height: 50vh;
+    }
+  }
+}
+
+.hero {
+  height: auto !important;
+  padding: 70px 0 35px !important;
+  min-height: 248px !important;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 303px !important;
+    padding: 109px 0 70px !important;
+  }
+  &__summary {
+    color: #fff;
+    margin-top: 24px;
+    p {
+      line-height: 24px;
+    }
+  }
+  .breadcrumbs {
+    margin-top: 0;
+    @include media-breakpoint-up(lg) {
+      margin-top: 38px;
     }
   }
 }

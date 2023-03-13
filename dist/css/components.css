@@ -27017,6 +27017,7 @@ h6 {
 }
 .rich-media__inner-column {
   padding: 32px 16px;
+  flex-grow: 1;
 }
 @media (min-width: 992px) {
   .rich-media__inner-column {
@@ -27038,6 +27039,9 @@ h6 {
 }
 .rich-media__column--text--1 {
   order: 1;
+}
+.rich-media__column--text--1 .rich-media__inner-column {
+  flex-grow: 1;
 }
 @media (min-width: 992px) {
   .fullWidthContent .rich-media__column--text--1 .rich-media__inner-column {

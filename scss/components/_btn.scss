@@ -28,8 +28,11 @@
   }
 
   &--small {
-    line-height: 19px;
     padding: 14px 24px;
+    height: 47px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   &--primary-light {
@@ -54,7 +57,7 @@
 
   &--primary-outline {
     border: 2px solid var(--primary-darker);
-    background: transparent;
+    background: transparent !important;
     color: var(--primary-darker);
     &:hover {
       text-decoration: underline;
@@ -158,7 +161,7 @@
       .btn {
         height: 47px;
         @include media-breakpoint-up(md) {
-          height: 47px;
+          height: 69px;
         }
       }
     }
@@ -225,15 +228,10 @@
   }
 }
 
-.whw-landing {
-  .matrix-block--richMedia {
-    .btn__group {
-      .btn {
-        height: 47px;
-        @include media-breakpoint-up(md) {
-          height: 69px;
-        }
-      }
-    }
-  }
+.btn--small {
+  padding: 14px 24px;
+  height: 47px !important;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
 }

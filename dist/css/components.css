@@ -15384,8 +15384,11 @@ h6 {
   text-decoration: none;
 }
 .btn--small, .matrix-block--signup-banner .component-grid button[type=submit] {
-  line-height: 19px;
   padding: 14px 24px;
+  height: 47px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
 }
 .btn--primary-light, .rich-media--theme-dark-purple .btn--primary, .rich-media--theme-dark-purple .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .rich-media--theme-dark-purple button[type=submit], .rich-media--theme-dark-purple .rich-media--theme-purple-light .matrix-block--signup-banner .component-grid button[type=submit], .rich-media--theme-purple-light .matrix-block--signup-banner .component-grid .rich-media--theme-dark-purple button[type=submit], .rich-media--theme-dark-purple .matrix-block--signup-banner .component-grid .rich-media--theme-purple-light button[type=submit], .matrix-block--signup-banner .component-grid .rich-media--theme-purple-light .rich-media--theme-dark-purple button[type=submit],
 .rich-media--theme-dark-purple .rich-media--theme-white .matrix-block--signup-banner .component-grid button[type=submit],
@@ -26243,7 +26246,7 @@ h6 {
 .rich-media--theme-white .btn--secondary,
 .rich-media--theme-gray .btn--secondary {
   border: 2px solid var(--primary-darker);
-  background: transparent;
+  background: transparent !important;
   color: var(--primary-darker);
 }
 .btn--primary-outline:hover, .matrix-block--textColumn .btn__group .btn--secondary:hover, .matrix-block--buttons .btn--secondary:hover, .rich-media--theme-purple-light .btn--secondary:hover,
@@ -26344,7 +26347,7 @@ h6 {
 }
 @media (min-width: 768px) {
   .fullWidthContent .matrix-block--richMedia .btn__group .btn, .fullWidthContent .matrix-block--richMedia .btn__group .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .fullWidthContent .matrix-block--richMedia .btn__group button[type=submit] {
-    height: 47px;
+    height: 69px;
   }
 }
 
@@ -26469,13 +26472,12 @@ h6 {
   text-decoration: underline;
 }
 
-.whw-landing .matrix-block--richMedia .btn__group .btn, .whw-landing .matrix-block--richMedia .btn__group .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .whw-landing .matrix-block--richMedia .btn__group button[type=submit] {
-  height: 47px;
-}
-@media (min-width: 768px) {
-  .whw-landing .matrix-block--richMedia .btn__group .btn, .whw-landing .matrix-block--richMedia .btn__group .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .whw-landing .matrix-block--richMedia .btn__group button[type=submit] {
-    height: 69px;
-  }
+.btn--small, .matrix-block--signup-banner .component-grid button[type=submit] {
+  padding: 14px 24px;
+  height: 47px !important;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .navigation__item.active {

@@ -27045,6 +27045,9 @@ h6 {
   justify-content: center;
   align-items: flex-start;
 }
+.rich-media__column--text .rich-media__inner-column > * {
+  align-self: flex-start;
+}
 .rich-media__column--media {
   height: 100%;
   order: -1;
@@ -27303,6 +27306,8 @@ h6 {
 .matrix-block--featureArticle {
   --matrix-block-header-margin-lg: 0 0 32px 0;
   --matrix-block-header-margin-sm: 0 0 24px 0;
+  --matrix-block-section-margin-lg: 96px 0 96px 0;
+  --matrix-block-section-margin-sm: 44px 0 40px 0;
 }
 .matrix-block--featureArticle .component-grid {
   --col: 12;
@@ -27589,8 +27594,8 @@ h6 {
   --matrix-block-title-weight-lg: 400;
   --matrix-block-header-margin-lg: 0 0 32px 0;
   --matrix-block-header-margin-sm: 0 0 24px 0;
-  --matrix-block-section-padding-lg: 0 0 96px 0;
-  --matrix-block-section-padding-sm: 0 0 36px 0;
+  --matrix-block-section-margin-lg: 96px 0 96px 0;
+  --matrix-block-section-margin-sm: 44px 0 40px 0;
 }
 .matrix-block--newsCards .component-grid {
   --spacer: 16px;

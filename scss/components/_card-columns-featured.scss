@@ -2,6 +2,7 @@
   @extend %matrix-block;
   @extend %matrix-block--section;
   background-color: var(--gray-light) !important;
+
   &:not(.matrix-block--theme-primary) {
     --matrix-block-section-padding-lg: 48px 0 106px 0;
     --matrix-block-section-padding-sm: 0 0 0 0;
@@ -39,6 +40,9 @@
   --matrix-block-header-margin-sm: 0 0 36px 0;
   --matrix-block-section-padding-lg: 64px 0 64px 0;
   --matrix-block-section-padding-sm: 0 0 0 0;
+
+  --matrix-block-section-margin-lg: 0 0 0 0;
+  --matrix-block-section-margin-sm: 0 0 0 0;
   .component-grid {
     --spacer: 16px;
     row-gap: 16px;

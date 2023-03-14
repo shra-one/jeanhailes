@@ -18,9 +18,9 @@
 .matrix-block {
   &--topicsOnThisPage {
     + .matrix-block--richText {
-      --matrix-block-section-padding-sm: 0 0 20px 0;
+      margin-top: 20px;
       @media (min-width: 992px) {
-        --matrix-block-section-padding-lg: 24px 0 40px 0;
+        margin-top: 24px;
       }
       h3 {
         margin-top: 0;

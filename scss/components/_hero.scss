@@ -186,8 +186,8 @@
 
 .whw-landing {
   .hero {
-    @media (min-width: 1600px) {
-      height: 50vh;
+    @media (min-width: 1366px) {
+      min-height: 28vw !important;
     }
   }
 }

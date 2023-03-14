@@ -1,4 +1,5 @@
-.matrix-block--card-columns-1 {
+.matrix-block--card-columns-1,
+.matrix-block--resourceCards {
   @extend %matrix-block;
   @extend %matrix-block--section;
 

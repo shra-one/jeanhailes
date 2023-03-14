@@ -1,4 +1,6 @@
 .matrix-block--counterSteps {
+  @extend %matrix-block;
+  @extend %matrix-block--section;
   // margin-block: 48px;
   // @media (min-width: 992px) {
   //   margin-block: 40px;

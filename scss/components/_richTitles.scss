@@ -1,8 +1,8 @@
 .matrix-block--topicsOnThisPage {
   @extend %matrix-block;
   @extend %matrix-block--section;
-  --matrix-block-section-padding-lg: 40px 0 0 0;
-  --matrix-block-section-padding-sm: 24px 0 0 0;
+  --matrix-block-section-margin-lg: 0 0 24px 0;
+  // --matrix-block-section-padding-sm: 24px 0 0 0;
 
   font-weight: 600;
   font-size: 26px;

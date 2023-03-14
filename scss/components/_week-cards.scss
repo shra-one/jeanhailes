@@ -1,14 +1,20 @@
 .matrix-block--dayCards {
+  @extend %matrix-block;
+  @extend %matrix-block--section;
+  --matrix-block-section-margin-lg: 40px 0 96px 0;
+  --matrix-block-section-margin-sm: 32px 0 40px 0;
   .component-grid {
     margin-inline: 20px;
-    padding: 32px 0 40px 0;
+    // padding: 32px 0 40px 0;
+    padding-top: 32px;
     border-top: 1px solid var(--border);
     --spacer: 40px;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 
     @media (min-width: 768px) {
       --spacer: 16px;
-      padding: 40px 0 96px 0;
+      padding-top: 40px;
+      // padding: 40px 0 96px 0;
       margin-inline: 40px;
     }
 

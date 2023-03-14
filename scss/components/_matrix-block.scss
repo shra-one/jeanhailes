@@ -16,9 +16,11 @@
     --matrix-block-title-size-lg: 40px;
     --matrix-block-title-size-sm: 36px;
     --matrix-block-title-color: var(--text);
-    --matrix-block-section-padding-lg:40px 0 40px 0;
-    --matrix-block-section-padding-sm:24px 0 24px 0;
-    --matrix-block-section-margin-lg:0;
+    // --matrix-block-section-padding-lg:40px 0 40px 0;
+    // --matrix-block-section-padding-sm:24px 0 24px 0;
+    --matrix-block-section-padding-lg:0 0 0 0;
+    --matrix-block-section-padding-sm:0 0 0 0;
+    --matrix-block-section-margin-lg:40px 0 40px 0;
     --matrix-block-section-margin-sm:0;
 
 &__header {

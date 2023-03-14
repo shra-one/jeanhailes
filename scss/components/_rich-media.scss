@@ -114,6 +114,13 @@
           // padding: 0 0 0 64px;
         }
       }
+
+      .rich-media__inner-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
     }
 
     &--media {

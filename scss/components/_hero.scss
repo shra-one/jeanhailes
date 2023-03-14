@@ -48,12 +48,25 @@
 }
 
 .event-detail {
-  .hero {
-    padding: 0;
+  padding-top: 0 !important;
+  .hero-special {
+    --headerHeight: 107px;
+    @include media-breakpoint-up(md) {
+      --headerHeight: 80px;
+    }
+    @include media-breakpoint-up(lg) {
+      --headerHeight: 136px;
+    }
+    padding-top: var(--headerHeight);
+    padding: var(--headerHeight) 0 0 0;
     position: relative;
     display: flex;
     min-height: unset !important;
     height: unset !important;
+    background-color: var(--primary-darker);
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+    }
     .container {
       padding-inline: 0rem;
       @include media-breakpoint-up(lg) {
@@ -71,7 +84,7 @@
     .container-fluid,
     .row {
       --bs-gutter-x: 0;
-      height: 100%;
+      // height: 100%;
     }
     [class*="col-"] {
       height: 100%;
@@ -91,7 +104,7 @@
       }
     }
 
-    &__content {
+    .hero__content {
       // margin-left: calc(50vw - calc(1124px / 2 - 24px));
 
       z-index: 1;
@@ -103,7 +116,7 @@
       }
     }
 
-    &__title {
+    .hero__title {
       font-weight: 600;
       font-size: 24px;
       line-height: 28px !important;
@@ -113,7 +126,7 @@
       }
     }
 
-    &__summary {
+    .hero__summary {
       margin-top: 24px;
       color: #fff;
       @include media-breakpoint-up(lg) {
@@ -199,6 +212,39 @@
     margin-top: 0;
     @include media-breakpoint-up(lg) {
       margin-top: 38px;
+    }
+  }
+}
+.register-your-event {
+  --headerHeight: 80.5px;
+  --herogutterY: 70px;
+  --fontSize: 24px;
+  --lineHeight: 1.17;
+  @include media-breakpoint-up(md) {
+    --headerHeight: 105px;
+    --herogutterY: 131.5px;
+    --fontSize: 34px;
+  }
+  .hero {
+    padding-top: var(--headerHeight) !important;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0 !important;
+    min-height: unset !important;
+    .breadcrumbs {
+      display: none;
+    }
+    &__container {
+      margin-block: var(--herogutterY);
+    }
+    &__title {
+      font-weight: 600;
+      font-size: var(--fontSize) !important;
+      line-height: var(--lineHeight) !important;
+    }
+    &__summary {
+      display: none;
     }
   }
 }

@@ -11,7 +11,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
-  <body class="event-detail register-your-event">
+  <body
+    class="register-your-event headroom headroom--not-bottom headroom--pinned headroom--top"
+  >
     <header
       class="header"
       itemscope=""
@@ -280,11 +282,47 @@
         </nav>
       </div>
     </header>
-    <div class="hero-confirmation">
-      <div class="container">
-        <h1 class="hero-title">Thank you for registering your event</h1>
+    <div
+      class="hero banner--with-media lazyloaded"
+      data-bgset="/imager/images/330284/Event-Banner_0c940c996e6493b19161d2de95058ba8.jpg 1920w, /imager/images/330284/Event-Banner_ba527674ab35ce7ac9ae6e760fd6e305.jpg 1366w, /imager/images/330284/Event-Banner_565ac0cd29dadffb7e08e5077aa5ef2d.jpg 768w, /imager/images/330284/Event-Banner_6e43b1d17b31190f15252ebd43493afc.jpg 375w"
+      style="
+        background-image: url('https://jeanhailes8.staging.yump.com.au/imager/images/330284/Event-Banner_0c940c996e6493b19161d2de95058ba8.jpg');
+      "
+    >
+      <div class="container hero__container on-overlay">
+        <div class="hero__content">
+          <nav class="breadcrumbs bold flex-center-start mb-small text--white">
+            <a
+              class="breadcrumbs__item mx-xsmall"
+              href="https://jeanhailes8.staging.yump.com.au/womens-health-week"
+            >
+              <svg class="icon breadcrumbs__icon text--white">
+                <use xlink:href="#carat-left" href="#carat-left"></use>
+              </svg>
+              Women's Health Week
+            </a>
+          </nav>
+          <h1 class="hero__title h1">Thank you for registering your event</h1>
+          <div class="hero__summary"></div>
+        </div>
       </div>
-      <img src="./dist/img/heroconfirnation-bg.jpg" alt="" />
+      <picture style="display: none"
+        ><source
+          data-srcset="/imager/images/330284/Event-Banner_0c940c996e6493b19161d2de95058ba8.jpg 1920w, /imager/images/330284/Event-Banner_ba527674ab35ce7ac9ae6e760fd6e305.jpg 1366w, /imager/images/330284/Event-Banner_565ac0cd29dadffb7e08e5077aa5ef2d.jpg 768w, /imager/images/330284/Event-Banner_6e43b1d17b31190f15252ebd43493afc.jpg 375w"
+          sizes="1447px"
+          srcset="
+            /imager/images/330284/Event-Banner_0c940c996e6493b19161d2de95058ba8.jpg 1920w,
+            /imager/images/330284/Event-Banner_ba527674ab35ce7ac9ae6e760fd6e305.jpg 1366w,
+            /imager/images/330284/Event-Banner_565ac0cd29dadffb7e08e5077aa5ef2d.jpg  768w,
+            /imager/images/330284/Event-Banner_6e43b1d17b31190f15252ebd43493afc.jpg  375w
+          " />
+        <img
+          alt=""
+          class="lazyautosizes lazyloaded"
+          data-sizes="auto"
+          data-parent-fit="cover"
+          sizes="1447px"
+      /></picture>
     </div>
 
     <div

@@ -27062,6 +27062,9 @@ h6 {
   justify-content: center;
   align-items: flex-start;
 }
+.rich-media__column--text .rich-media__inner-column > * {
+  align-self: flex-start;
+}
 .rich-media__column--media {
   height: 100%;
   order: -1;

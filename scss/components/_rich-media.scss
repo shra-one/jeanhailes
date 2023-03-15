@@ -1,4 +1,9 @@
 .matrix-block--richMedia {
+  @extend %matrix-block;
+  @extend %matrix-block--section;
+  --matrix-block-section-margin-lg: 24px 0 24px 0;
+  --matrix-block-section-margin-sm: 24px 0 24px 0;
+
   // &:first-child {
   //   padding-top: 24px;
   //   @media (min-width: 768px) {
@@ -15,7 +20,7 @@
   //   margin-bottom: 24px;
   // }
   @at-root .fullWidthContent & {
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -36,8 +41,8 @@
   &--theme-primary-dark {
     background-color: var(--primary-darker);
     .rich-media {
-      --heading-color: white;
-      --summary-color: white;
+      --heading-color: white !important;
+      --summary-color: white !important;
 
       .btn {
         // @extend .btn--white-outline;

@@ -1,3 +1,9 @@
+.matrix-block--video {
+  @extend %matrix-block;
+  @extend %matrix-block--section;
+  --matrix-block-section-margin-lg: 80px 0 80px 0;
+  --matrix-block-section-margin-sm: 48px 0 0 48px 0;
+}
 .video {
   --aspect-ratio: 16/9;
   padding: 0;

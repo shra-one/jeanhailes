@@ -1,4 +1,5 @@
-.matrix-block--dayCards {
+.matrix-block--dayCards,
+.matrix-block--eventDayCards {
   @extend %matrix-block;
   @extend %matrix-block--section;
   --matrix-block-section-margin-lg: 40px 0 96px 0;

@@ -1,8 +1,8 @@
 .matrix-block--signup-banner {
   @extend %matrix-block;
   @extend %matrix-block--section;
-  --matrix-block-section-padding-lg: 0;
-  --matrix-block-section-padding-sm: 0;
+  --matrix-block-section-margin-lg: 0;
+  --matrix-block-section-margin-sm: 0;
 
   .component-grid {
     --spacer: 0;

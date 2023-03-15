@@ -1,20 +1,23 @@
 .matrix-block--columns {
   @extend %matrix-block;
   @extend %matrix-block--section;
-  // --matrix-block-section-padding-lg: 0 0 40px 0;
-  // --matrix-block-section-padding-sm: 0 0 24px 0;
+  --matrix-block-section-padding-lg: 0 0 0 0;
+  --matrix-block-section-padding-sm: 0 0 0 0;
+  --matrix-block-section-margin-lg: 40px 0 80px 0;
+  --matrix-block-section-margin-sm: 32px 0 48px 0;
   .columns {
     .columns__row {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       display: flex;
       flex-wrap: wrap;
-      margin: -1rem;
+      // margin: -1rem;
+      @extend .row;
     }
 
     &__column {
       flex: 1;
-      padding: 16px;
+      // padding: 16px;
       .matrix-block {
         padding: 0;
         margin: 0;

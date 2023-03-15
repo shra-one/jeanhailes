@@ -7,261 +7,604 @@
     <title>Document</title>
     <link rel="stylesheet" href="./dist/css/app.css" />
     <link rel="stylesheet" href="./dist/css/components.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <div
-      class="matrix-block matrix-block--richText matrix-block--margin-bottom-zero matrix-block--content"
-      id="matrix-block-10027"
+    <header
+      class="header"
+      itemscope=""
+      itemtype="http://schema.org/Organization"
     >
+      <div class="header__wrap bg--white">
+        <div class="header__container container flex-center-b">
+          <a
+            href="https://jeanhailes8.staging.yump.com.au/"
+            class="header__logo"
+            itemprop="url"
+          >
+            <img
+              height="72"
+              src="./dist/img/Logo-JH-Womens-Health-Week.svg"
+              alt="Women's Health Week"
+            />
+          </a>
+          <nav class="header__nav">
+            <ul class="hide--portable flex-center-b">
+              <li class="mr-spacer header__date">4-8 September 2023</li>
+            </ul>
+
+            <a href="#signup" class="tag js-go-to-topic">Sign up</a>
+
+            <button class="nav-toggle ml-small hide--desk js-nav-toggle">
+              <figure class="nav-toggle__lines">
+                <div></div>
+              </figure></button
+            ><button></button>
+          </nav>
+          <div class="header__date--mobile">4-8 September 2023</div>
+        </div>
+
+        <nav class="navigation">
+          <div class="container container--no-pad portable-col-reverse">
+            <div
+              class="flex-center-b portable-col-center relative navigation__bar"
+            >
+              <ul class="navigation__list portable-px-small portable-pb-small">
+                <li class="navigation__item portable-p-min">
+                  <a href="">Host an event</a>
+                </li>
+
+                <li class="navigation__item portable-p-min">
+                  <a href="">Attend an event</a>
+                </li>
+
+                <li class="navigation__item portable-p-min">
+                  <a href="">Program</a>
+
+                  <svg
+                    class="icon navigation__icon text--white hide--desk js-subnav"
+                  >
+                    <use xlink:href="#arrow-next" href="#arrow-next"></use>
+                  </svg>
+
+                  <div class="mega-menu">
+                    <ul class="mega-menu__list">
+                      <li class="">
+                        <a
+                          class="mega-menu__link p-min"
+                          href="https://jeanhailes8.staging.yump.com.au/program/check-me-out"
+                          >Check me out</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="mega-menu__link p-min"
+                          href="https://jeanhailes8.staging.yump.com.au/program/menopause-matters"
+                          >Menopause Matters</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="mega-menu__link p-min"
+                          href="https://jeanhailes8.staging.yump.com.au/program/pelvic-power"
+                          >Pelvic power</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="mega-menu__link p-min"
+                          href="https://jeanhailes8.staging.yump.com.au/program/mind-health"
+                          >Mind health</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="mega-menu__link p-min"
+                          href="https://jeanhailes8.staging.yump.com.au/program/move-and-improve"
+                          >Move and improve</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mobile-subnav hide--desk">
+                    <ul
+                      class="mobile-subnav__list portable-pb-small portable-mb-small"
+                    >
+                      <li
+                        class="mobile-subnav__heading relative portable-p-small portable-mb-xsmall"
+                      >
+                        <a href="">319947</a>
+
+                        <svg
+                          class="icon mobile-subnav__icon text--white hide--desk js-subnav-close"
+                        >
+                          <use
+                            xlink:href="#arrow-back"
+                            href="#arrow-back"
+                          ></use>
+                        </svg>
+                      </li>
+                      <ul class="portable pt-small">
+                        <li class="">
+                          <a
+                            class="mega-menu__link portable-p-min"
+                            href="https://jeanhailes8.staging.yump.com.au/program/check-me-out"
+                            >Check me out</a
+                          >
+                        </li>
+                        <li class="">
+                          <a
+                            class="mega-menu__link portable-p-min"
+                            href="https://jeanhailes8.staging.yump.com.au/program/menopause-matters"
+                            >Menopause Matters</a
+                          >
+                        </li>
+                        <li class="">
+                          <a
+                            class="mega-menu__link portable-p-min"
+                            href="https://jeanhailes8.staging.yump.com.au/program/pelvic-power"
+                            >Pelvic power</a
+                          >
+                        </li>
+                        <li class="">
+                          <a
+                            class="mega-menu__link portable-p-min"
+                            href="https://jeanhailes8.staging.yump.com.au/program/mind-health"
+                            >Mind health</a
+                          >
+                        </li>
+                        <li class="">
+                          <a
+                            class="mega-menu__link portable-p-min"
+                            href="https://jeanhailes8.staging.yump.com.au/program/move-and-improve"
+                            >Move and improve</a
+                          >
+                        </li>
+                      </ul>
+                    </ul>
+                    <ul class="text--center hide--desk">
+                      <li
+                        class="portable-mb-small text--purple-light uppercase"
+                      >
+                        <a class="" href=""></a>
+                      </li>
+                      <li
+                        class="portable-mb-small text--purple-light uppercase"
+                      >
+                        <a class="" href=""></a>
+                      </li>
+                      <li
+                        class="portable-mb-small text--purple-light uppercase"
+                      >
+                        <a class="" href=""></a>
+                      </li>
+                      <li
+                        class="portable-mb-small text--purple-light uppercase"
+                      >
+                        <a class="" href=""></a>
+                      </li>
+                      <li
+                        class="portable-mb-small text--purple-light uppercase"
+                      >
+                        <a class="" href=""></a>
+                      </li>
+                    </ul>
+
+                    <a
+                      href="#signup"
+                      class="btn--cta btn--full mb-medium uppercase hide--desk"
+                      >Sign up</a
+                    >
+                  </div>
+                </li>
+
+                <li class="navigation__item portable-p-min">
+                  <a href="">Partners</a>
+                </li>
+
+                <li class="navigation__item portable-p-min">
+                  <a href="">About</a>
+                </li>
+              </ul>
+              <button
+                data-target="searchComponent"
+                class="navigation__search hide--portable js-toggle js-focus"
+              >
+                <svg class="icon">
+                  <use xlink:href="#search" href="#search"></use>
+                </svg>
+
+                <span class="nav-toggle">
+                  <figure class="nav-toggle__lines">
+                    <div></div>
+                  </figure>
+                  <span> </span
+                ></span>
+              </button>
+              <ul class="text--center hide--desk">
+                <li class="mb-small text--purple-light uppercase">
+                  <a class="" href=""></a>
+                </li>
+                <li class="mb-small text--purple-light uppercase">
+                  <a class="" href=""></a>
+                </li>
+                <li class="mb-small text--purple-light uppercase">
+                  <a class="" href=""></a>
+                </li>
+                <li class="mb-small text--purple-light uppercase">
+                  <a class="" href=""></a>
+                </li>
+                <li class="mb-small text--purple-light uppercase">
+                  <a class="" href=""></a>
+                </li>
+              </ul>
+              <a
+                href="#signup"
+                class="btn--cta btn--full mb-medium hide--desk tag js-go-to-topic"
+                >Sign up</a
+              >
+            </div>
+
+            <div id="searchComponent" class="search">
+              <form
+                class="search__form hide--desk"
+                action="https://jeanhailes8.staging.yump.com.au/search"
+              >
+                <svg class="icon">
+                  <use xlink:href="#search" href="#search"></use>
+                </svg>
+                <input
+                  type="search"
+                  name="q"
+                  placeholder="Search our website"
+                />
+              </form>
+              <div class="js-autocomplete">
+                <div class="hide--portable">
+                  <div class="search__form">
+                    <svg class="icon"><use href="#search"></use></svg>
+                    <input type="text" placeholder="Start typing to search" />
+                    <!---->
+                  </div>
+                  <p
+                    class="text--center container-small py-small"
+                    style="display: none"
+                  >
+                    Sorry, no results
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div
+      class="hero banner--with-media lazyloaded"
+      style="
+        background-image: url('https://jeanhailes8.staging.yump.com.au/imager/images/314008/WHW_day1_0c940c996e6493b19161d2de95058ba8.jpg');
+      "
+    >
+      <div class="container hero__container on-overlay">
+        <div class="hero__content">
+          <nav class="breadcrumbs bold flex-center-start mb-small text--white">
+            <a
+              class="breadcrumbs__item mx-xsmall"
+              href="https://jeanhailes8.staging.yump.com.au/womens-health-week"
+            >
+              <svg class="icon breadcrumbs__icon text--white">
+                <use xlink:href="#carat-left" href="#carat-left"></use>
+              </svg>
+              Women's Health Week
+            </a>
+            •
+            <a
+              class="breadcrumbs__item mx-xsmall"
+              href="https://jeanhailes8.staging.yump.com.au/womens-health-week/program"
+              >Program</a
+            >
+          </nav>
+          <h1 class="hero__title h1">Check me out</h1>
+          <div class="hero__summary">
+            <p><strong>Monday</strong> | Health checks at every age</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main__container container">
+      <div class="matrix-block matrix-block--leadText">
+        <div
+          class="lead-text editor-default lead-text--whw lead-text-in-articleWidthContent"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <p>
+            Vestibulum id ligula porta felis euismod semper. Maecenas faucibus
+            mollis interdum. Cras mattis consectetur purus sit amet fermentum.
+          </p>
+          <p>
+            Vestibulum id ligula porta felis euismod semper. Maecenas faucibus
+            mollis interdum. Cras mattis consectetur purus sit amet fermentum.
+          </p>
+        </div>
+      </div>
+
+      <div class="matrix-block matrix-block--topic-chip">
+        <div class="topic-chip" data-aos="fade-up" data-aos-duration="1000">
+          <h6 class="topic-chip__title">TOPICS ON THIS PAGE</h6>
+
+          <ul class="topic-chip__list">
+            <li
+              class="topic-chip__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <a href="#" class="topic-chip__link">
+                <svg
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="32"
+                    height="32"
+                    rx="16"
+                    transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 32 32.5)"
+                    fill="#3D0F58"
+                  ></rect>
+                  <rect
+                    x="5.53906"
+                    y="26.9615"
+                    width="20.9231"
+                    height="20.9231"
+                    rx="10.4615"
+                    transform="rotate(-90 5.53906 26.9615)"
+                    fill="#3D0F58"
+                  ></rect>
+                  <path
+                    d="M15.1294 8.65384L15.1294 20.9461L11.3812 17.1971L10.1602 18.4182L16.0015 24.2587L21.8428 18.4182L20.6217 17.1971L16.8736 20.9461L16.8736 8.65384L15.1294 8.65384Z"
+                    fill="white"
+                  ></path>
+                </svg>
+
+                <span class="topic-chip__label"
+                  >Cras mattis consectetur purus?</span
+                >
+              </a>
+            </li>
+
+            <li
+              class="topic-chip__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <a href="#" class="topic-chip__link">
+                <svg
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="32"
+                    height="32"
+                    rx="16"
+                    transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 32 32.5)"
+                    fill="#3D0F58"
+                  ></rect>
+                  <rect
+                    x="5.53906"
+                    y="26.9615"
+                    width="20.9231"
+                    height="20.9231"
+                    rx="10.4615"
+                    transform="rotate(-90 5.53906 26.9615)"
+                    fill="#3D0F58"
+                  ></rect>
+                  <path
+                    d="M15.1294 8.65384L15.1294 20.9461L11.3812 17.1971L10.1602 18.4182L16.0015 24.2587L21.8428 18.4182L20.6217 17.1971L16.8736 20.9461L16.8736 8.65384L15.1294 8.65384Z"
+                    fill="white"
+                  ></path>
+                </svg>
+
+                <span class="topic-chip__label">Morbi leo risus</span>
+              </a>
+            </li>
+
+            <li
+              class="topic-chip__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <a href="#" class="topic-chip__link">
+                <svg
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="32"
+                    height="32"
+                    rx="16"
+                    transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 32 32.5)"
+                    fill="#3D0F58"
+                  ></rect>
+                  <rect
+                    x="5.53906"
+                    y="26.9615"
+                    width="20.9231"
+                    height="20.9231"
+                    rx="10.4615"
+                    transform="rotate(-90 5.53906 26.9615)"
+                    fill="#3D0F58"
+                  ></rect>
+                  <path
+                    d="M15.1294 8.65384L15.1294 20.9461L11.3812 17.1971L10.1602 18.4182L16.0015 24.2587L21.8428 18.4182L20.6217 17.1971L16.8736 20.9461L16.8736 8.65384L15.1294 8.65384Z"
+                    fill="white"
+                  ></path>
+                </svg>
+
+                <span class="topic-chip__label">Vestibulum at eros kula</span>
+              </a>
+            </li>
+            <li
+              class="topic-chip__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
+              <a href="#" class="topic-chip__link">
+                <svg
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="32"
+                    height="32"
+                    rx="16"
+                    transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 32 32.5)"
+                    fill="#3D0F58"
+                  ></rect>
+                  <rect
+                    x="5.53906"
+                    y="26.9615"
+                    width="20.9231"
+                    height="20.9231"
+                    rx="10.4615"
+                    transform="rotate(-90 5.53906 26.9615)"
+                    fill="#3D0F58"
+                  ></rect>
+                  <path
+                    d="M15.1294 8.65384L15.1294 20.9461L11.3812 17.1971L10.1602 18.4182L16.0015 24.2587L21.8428 18.4182L20.6217 17.1971L16.8736 20.9461L16.8736 8.65384L15.1294 8.65384Z"
+                    fill="white"
+                  ></path>
+                </svg>
+
+                <span class="topic-chip__label">Champions</span>
+              </a>
+            </li>
+            <li
+              class="topic-chip__item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="800"
+            >
+              <a href="#" class="topic-chip__link">
+                <svg
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="32"
+                    height="32"
+                    rx="16"
+                    transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 32 32.5)"
+                    fill="#3D0F58"
+                  ></rect>
+                  <rect
+                    x="5.53906"
+                    y="26.9615"
+                    width="20.9231"
+                    height="20.9231"
+                    rx="10.4615"
+                    transform="rotate(-90 5.53906 26.9615)"
+                    fill="#3D0F58"
+                  ></rect>
+                  <path
+                    d="M15.1294 8.65384L15.1294 20.9461L11.3812 17.1971L10.1602 18.4182L16.0015 24.2587L21.8428 18.4182L20.6217 17.1971L16.8736 20.9461L16.8736 8.65384L15.1294 8.65384Z"
+                    fill="white"
+                  ></path>
+                </svg>
+
+                <span class="topic-chip__label"
+                  >Nibh ultricies vehicula ut</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div
-        class="rich-text container editor-default rich-text--whw rich-text-in-articleWidthContent"
+        class="matrix-block matrix-block--topicsOnThisPage"
+        id="matrix-block-316014"
       >
-        <p class="lead-text">
-          Vestibulum id ligula porta felis euismod semper. Maecenas faucibus
-          mollis interdum. Cras mattis consectetur purus sit amet fermentum.
-        </p>
-        <p class="lead-text">
-          Nullam quis risus eget urna mollis ornare vel eu leo. Praesent commodo
-          cursus magna, vel scelerisque nisl consectetur et. Sed posuere
-          consectetur est at lobortis. Nullam id dolor id nibh ultricies
-          vehicula ut id elit. Aenean eu leo quam.
-        </p>
-        <p class="lead-text">
-          Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta
-          sem malesuada magna mollis euismod.
-        </p>
+        <h2 class="rb-zeplin-focused">Morbi leo risus</h2>
       </div>
-    </div>
-    <div
-      class="matrix-block matrix-block--topic-chip matrix-block--margin-bottom-zero"
-    >
-      <div class="container topic-chip">
-        <h6 class="topic-chip__title">TOPICS ON THIS PAGE</h6>
-
-        <ul class="topic-chip__list">
-          <li class="topic-chip__item">
-            <a href="#" class="topic-chip__link">
-              <svg
-                width="32"
-                height="33"
-                viewBox="0 0 32 33"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  width="32"
-                  height="32"
-                  rx="16"
-                  transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 32 32.5)"
-                  fill="#3D0F58"
-                />
-                <rect
-                  x="5.53906"
-                  y="26.9615"
-                  width="20.9231"
-                  height="20.9231"
-                  rx="10.4615"
-                  transform="rotate(-90 5.53906 26.9615)"
-                  fill="#3D0F58"
-                />
-                <path
-                  d="M15.1294 8.65384L15.1294 20.9461L11.3812 17.1971L10.1602 18.4182L16.0015 24.2587L21.8428 18.4182L20.6217 17.1971L16.8736 20.9461L16.8736 8.65384L15.1294 8.65384Z"
-                  fill="white"
-                />
-              </svg>
-
-              <span class="topic-chip__label"
-                >Cras mattis consectetur purus?</span
-              >
-            </a>
-          </li>
-
-          <li class="topic-chip__item">
-            <a href="#" class="topic-chip__link">
-              <svg
-                width="32"
-                height="33"
-                viewBox="0 0 32 33"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  width="32"
-                  height="32"
-                  rx="16"
-                  transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 32 32.5)"
-                  fill="#3D0F58"
-                />
-                <rect
-                  x="5.53906"
-                  y="26.9615"
-                  width="20.9231"
-                  height="20.9231"
-                  rx="10.4615"
-                  transform="rotate(-90 5.53906 26.9615)"
-                  fill="#3D0F58"
-                />
-                <path
-                  d="M15.1294 8.65384L15.1294 20.9461L11.3812 17.1971L10.1602 18.4182L16.0015 24.2587L21.8428 18.4182L20.6217 17.1971L16.8736 20.9461L16.8736 8.65384L15.1294 8.65384Z"
-                  fill="white"
-                />
-              </svg>
-
-              <span class="topic-chip__label">Morbi leo risus</span>
-            </a>
-          </li>
-
-          <li class="topic-chip__item">
-            <a href="#" class="topic-chip__link">
-              <svg
-                width="32"
-                height="33"
-                viewBox="0 0 32 33"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  width="32"
-                  height="32"
-                  rx="16"
-                  transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 32 32.5)"
-                  fill="#3D0F58"
-                />
-                <rect
-                  x="5.53906"
-                  y="26.9615"
-                  width="20.9231"
-                  height="20.9231"
-                  rx="10.4615"
-                  transform="rotate(-90 5.53906 26.9615)"
-                  fill="#3D0F58"
-                />
-                <path
-                  d="M15.1294 8.65384L15.1294 20.9461L11.3812 17.1971L10.1602 18.4182L16.0015 24.2587L21.8428 18.4182L20.6217 17.1971L16.8736 20.9461L16.8736 8.65384L15.1294 8.65384Z"
-                  fill="white"
-                />
-              </svg>
-
-              <span class="topic-chip__label">Vestibulum at eros kula</span>
-            </a>
-          </li>
-          <li class="topic-chip__item">
-            <a href="#" class="topic-chip__link">
-              <svg
-                width="32"
-                height="33"
-                viewBox="0 0 32 33"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  width="32"
-                  height="32"
-                  rx="16"
-                  transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 32 32.5)"
-                  fill="#3D0F58"
-                />
-                <rect
-                  x="5.53906"
-                  y="26.9615"
-                  width="20.9231"
-                  height="20.9231"
-                  rx="10.4615"
-                  transform="rotate(-90 5.53906 26.9615)"
-                  fill="#3D0F58"
-                />
-                <path
-                  d="M15.1294 8.65384L15.1294 20.9461L11.3812 17.1971L10.1602 18.4182L16.0015 24.2587L21.8428 18.4182L20.6217 17.1971L16.8736 20.9461L16.8736 8.65384L15.1294 8.65384Z"
-                  fill="white"
-                />
-              </svg>
-
-              <span class="topic-chip__label">Champions</span>
-            </a>
-          </li>
-          <li class="topic-chip__item">
-            <a href="#" class="topic-chip__link">
-              <svg
-                width="32"
-                height="33"
-                viewBox="0 0 32 33"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  width="32"
-                  height="32"
-                  rx="16"
-                  transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 32 32.5)"
-                  fill="#3D0F58"
-                />
-                <rect
-                  x="5.53906"
-                  y="26.9615"
-                  width="20.9231"
-                  height="20.9231"
-                  rx="10.4615"
-                  transform="rotate(-90 5.53906 26.9615)"
-                  fill="#3D0F58"
-                />
-                <path
-                  d="M15.1294 8.65384L15.1294 20.9461L11.3812 17.1971L10.1602 18.4182L16.0015 24.2587L21.8428 18.4182L20.6217 17.1971L16.8736 20.9461L16.8736 8.65384L15.1294 8.65384Z"
-                  fill="white"
-                />
-              </svg>
-
-              <span class="topic-chip__label">Nibh ultricies vehicula ut</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div
-      class="matrix-block matrix-block--richText matrix-block--margin-bottom-zero"
-      id="matrix-block-10027"
-    >
       <div
-        class="rich-text container editor-default rich-text--whw rich-text-in-articleWidthContent"
+        class="matrix-block matrix-block--richText"
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
-        <h1>Cras mattis consectetur purus?</h1>
-        <p>
-          Your ‘pelvic floor’ is made up of muscles and tissues that stretch,
-          like a supportive trampoline, from your pubic bone at the front of
-          your pelvis to your tailbone (coccyx) at the bottom of your spine. It
-          also stretches sideways from one sitting bone to the other.
-        </p>
-        <p>
-          Your pelvic floor muscles are part of a muscle group known as your
-          ‘core’. Your core muscles support your spine and control the pressure
-          in your abdomen.
-        </p>
+        <div
+          class="rich-text editor-default rich-text--whw rich-text-in-articleWidthContent"
+        >
+          <p>
+            Your ‘pelvic floor’ is made up of muscles and tissues that stretch,
+            like a supportive trampoline, from your pubic bone at the front of
+            your pelvis to your tailbone (coccyx) at the bottom of your spine.
+            It also stretches sideways from one sitting bone to the other.
+          </p>
+          <p>
+            Your pelvic floor muscles are part of a muscle group known as your
+            ‘core’. Your core muscles support your spine and control the
+            pressure in your abdomen.
+          </p>
+        </div>
       </div>
-    </div>
-    <div
-      class="matrix-block matrix-block--counter-steps matrix-block--margin-bottom-zero"
-    >
-      <div class="container">
+      <div class="matrix-block matrix-block--counterSteps">
         <ul class="counter-steps">
-          <li class="counter-steps__item">
+          <li
+            class="counter-steps__item"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
             <a href="" class="counter-steps__link">
               <span class="counter-steps__number"></span>
               <span class="counter-steps__text">Download the event guide</span>
             </a>
           </li>
 
-          <li class="counter-steps__item">
+          <li
+            class="counter-steps__item"
+            data-aos="flip-left"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
             <a href="" class="counter-steps__link">
               <span class="counter-steps__number"></span>
               <span class="counter-steps__text">Start planning your event</span>
             </a>
           </li>
-          <li class="counter-steps__item">
+          <li
+            class="counter-steps__item"
+            data-aos="flip-left"
+            data-aos-delay="1000"
+            data-aos-duration="1000"
+          >
             <a href="" class="counter-steps__link">
               <span class="counter-steps__number"></span>
               <span class="counter-steps__text">Register your event</span>
             </a>
           </li>
-          <li class="counter-steps__item">
+          <li
+            class="counter-steps__item"
+            data-aos="flip-left"
+            data-aos-delay="1500"
+            data-aos-duration="1000"
+          >
             <a href="" class="counter-steps__link">
               <span class="counter-steps__number"></span>
               <span class="counter-steps__text">Access resources</span>
@@ -269,584 +612,2754 @@
           </li>
         </ul>
       </div>
-    </div>
 
-    <div class="matrix-block matrix-block--richText" id="matrix-block-10027">
-      <div
-        class="rich-text container editor-default rich-text--whw rich-text-in-articleWidthContent"
-      >
-        <p>
-          Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis
-          lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus,
-          tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-          massa justo sit amet risus. Praesent commodo cursus magna, vel
-          scelerisque nisl consectetur et.
-        </p>
+      <div class="matrix-block matrix-block--richText">
+        <div
+          class="rich-text editor-default rich-text--whw rich-text-in-articleWidthContent"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <p>
+            Maecenas sed diam eget risus varius blandit sit amet non magna.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce
+            dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+            ut fermentum massa justo sit amet risus. Praesent commodo cursus
+            magna, vel scelerisque nisl consectetur et.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div
-      class="matrix-block matrix-block--richMedia matrix-block--margin-bottom-zero"
-    >
-      <div
-        class="rich-media container rich-media--with-image rich-media--theme-white rich-media--three-col"
-      >
-        <div class="rich-media__row">
-          <div
-            class="rich-media__column rich-media__column--one-third rich-media__column--media"
-          >
-            <figure
-              class="rich-media__media rich-media__media--image rich-media__media--square"
-              style="
-                background-image: url('./dist/img/aboriginal-woman-smiling-holding-phone\ 1.jpg');
-                background-position: 50% 50%;
-                background-repeat: no-repeat;
-                background-size: cover;
-              "
-            ></figure>
-          </div>
-          <div
-            class="rich-media__column rich-media__column--two-third rich-media__column--text"
-          >
-            <section class=" ">
-              <div class="rich-media__text-content-summary">
-                <p>
-                  It’s normal to feel your lower tummy muscles draw in towards
-                  your spine as you tighten your pelvic floor muscles. It’s also
-                  okay if your lower tummy does not move.
-                </p>
-                <p>
-                  At the end of each squeeze, you should have a distinct feeling
-                  of the muscles ‘letting go’ and releasing.
-                </p>
-                <p>
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus. Aenean lacinia bibendum nulla sed
-                  consectetur. Praesent commodo cursus magna, vel scelerisque
-                  nisl consectetur et.
-                </p>
+      <div class="matrix-block matrix-block--columns" id="matrix-block-315479">
+        <div class="columns" data-aos="fade-up" data-aos-duration="1000">
+          <div class="columns__row">
+            <div
+              class="columns__column col-lg-4 col-md-6 col-12"
+              id="matrix-block-315480"
+            >
+              <div
+                class="matrix-block matrix-block--image"
+                id="matrix-block-315485"
+              >
+                <img
+                  class="img-fluid slider-item__image"
+                  src="/dist/img/featured-img.jpg"
+                  alt="Image 56"
+                />
+                <!-- End image container -->
               </div>
-            </section>
+            </div>
+            <div
+              class="columns__column col-lg-8 col-md-6 col-12"
+              id="matrix-block-315482"
+            >
+              <div
+                class="matrix-block matrix-block--richText"
+                id="matrix-block-315483"
+              >
+                <div
+                  class="rich-text editor-default rich-text--whw rich-text-in-boxedWidthContent rich-text-in-columns rich-text-in-column"
+                >
+                  <p class="">
+                    It’s normal to feel your lower tummy muscles draw in towards
+                    your spine as you tighten your pelvic floor muscles. It’s
+                    also okay if your lower tummy does not move.
+                  </p>
+                  <p class="rb-zeplin-focused">
+                    At the end of each squeeze, you should have a distinct
+                    feeling of the muscles ‘letting go’ and releasing.
+                  </p>
+                  <p>
+                    Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Aenean lacinia bibendum
+                    nulla sed consectetur. Praesent commodo cursus magna, vel
+                    scelerisque nisl consectetur et.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div
-      class="matrix-block matrix-block--richText matrix-block--padding80"
-      id="matrix-block-10027"
-    >
       <div
-        class="rich-text container editor-default rich-text--whw rich-text-in-articleWidthContent"
+        class="matrix-block matrix-block--richText"
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
-        <h2>Sit amet fermentum</h2>
-        <p>Your pelvic floor muscles:</p>
-        <ul>
-          <li>support your pelvic organs</li>
-          <li>help maintain control of your bladder and bowel</li>
-          <li>improve sexual function by enhancing sensation and arousal</li>
-          <li>support your lower back and pelvis</li>
-          <li>support your lower back and pelvis</li>
-        </ul>
+        <div
+          class="rich-text editor-default rich-text--whw rich-text-in-articleWidthContent"
+        >
+          <h3>Sit amet fermentum</h3>
+          <p>Your pelvic floor muscles:</p>
+          <ul>
+            <li>support your pelvic organs</li>
+            <li>help maintain control of your bladder and bowel</li>
+            <li>improve sexual function by enhancing sensation and arousal</li>
+            <li>support your lower back and pelvis</li>
+            <li>support your lower back and pelvis</li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="matrix-block matrix-block--richMedia matrix-block--mb24">
-      <div class="container">
-        <div
-          class="rich-media rich-media--with-image rich-media--theme-primary"
-        >
-          <div class="rich-media__row">
-            <div class="rich-media__column rich-media__column--media">
-              <figure
-                class="rich-media__media rich-media__media--image"
-                style="
-                  background-image: url('./dist/img/aboriginal-woman-smiling-holding-phone\ 1.jpg');
-                  background-position: 50% 50%;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              ></figure>
-            </div>
-            <div
-              class="rich-media__column rich-media__column--text rich-media__column--text--2"
-            >
-              <section class="banner__inner-column rich-media__inner-column">
-                <h2 class="rich-media__text-content-heading">
-                  Donec id elit non mi porta gravida at eges
-                </h2>
-                <div class="rich-media__text-content-summary">
-                  <p>
-                    This year's highlighted topics include the top five concerns
-                    in women’s health: menopause and perimenopause, pelvic
-                    health, health checks, mental wellbeing as well as physical
-                    activity.
-                  </p>
-                </div>
-                <a
-                  class="button banner__button rich-media__text-content-cta"
-                  href="https://www.inlife.org.au/join-our-team/before-you-apply"
-                >
-                  <span class="button__text">Get the poster</span>
-                </a>
-              </section>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="matrix-block matrix-block--richMedia matrix-block--mb24">
-      <div class="container">
-        <div
-          class="rich-media rich-media--with-image rich-media--theme-lightPrimary"
-        >
-          <div class="rich-media__row">
-            <div
-              class="rich-media__column rich-media__column--text rich-media__column--text--1"
-            >
-              <section class="banner__inner-column rich-media__inner-column">
-                <h2 class="rich-media__text-content-heading">
-                  Women's Health Week
-                </h2>
-                <div class="rich-media__text-content-summary">
-                  <p>
-                    Welcome to the fourth day of Jean Hailes Women's Health Week
-                    2023! Today is all about move and improve. Get your guide to
-                    what nulla vitae elit liber you need and when.
-                  </p>
-                </div>
-                <a
-                  class="button button--primary banner__button rich-media__text-content-cta"
-                  href="https://www.inlife.org.au/join-our-team/before-you-apply"
-                >
-                  <span class="button__text">Jump into day 5</span>
-                </a>
-              </section>
-            </div>
-            <div class="rich-media__column rich-media__column--media">
-              <figure
-                class="rich-media__media rich-media__media--image"
-                style="
-                  background-image: url('./dist/img/aboriginal-woman-smiling-holding-phone\ 1.jpg');
-                  background-position: 50% 50%;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              ></figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="matrix-block matrix-block--richMedia matrix-block--mb24">
-      <div class="container">
-        <div class="rich-media rich-media--with-image rich-media--theme-white">
-          <div class="rich-media__row">
-            <div class="rich-media__column rich-media__column--media">
-              <figure
-                class="rich-media__media rich-media__media--image"
-                style="
-                  background-image: url('./dist/img/aboriginal-woman-smiling-holding-phone\ 1.jpg');
-                  background-position: 50% 50%;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              ></figure>
-            </div>
-            <div
-              class="rich-media__column rich-media__column--text rich-media__column--text--2"
-            >
-              <section class="banner__inner-column rich-media__inner-column">
-                <h2 class="rich-media__text-content-heading">
-                  Women's Health Week
-                </h2>
-                <div class="rich-media__text-content-summary">
-                  <p>
-                    Welcome to the fourth day of Jean Hailes Women's Health Week
-                    2023! Today is all about move and improve. Get your guide to
-                    what nulla vitae elit liber you need and when.
-                  </p>
-                </div>
-                <a
-                  class="button button--primary banner__button rich-media__text-content-cta"
-                  href="https://www.inlife.org.au/join-our-team/before-you-apply"
-                >
-                  <span class="button__text">Jump into day 5</span>
-                </a>
-              </section>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="matrix-block matrix-block--richMedia matrix-block--mb24">
-      <div class="container">
-        <div
-          class="rich-media rich-media--with-image rich-media--theme-lightGray"
-        >
-          <div class="rich-media__row">
-            <div
-              class="rich-media__column rich-media__column--text rich-media__column--text--1"
-            >
-              <section class="banner__inner-column rich-media__inner-column">
-                <h2 class="rich-media__text-content-heading">
-                  Women's Health Week
-                </h2>
-                <div class="rich-media__text-content-summary">
-                  <p>
-                    Welcome to the fourth day of Jean Hailes Women's Health Week
-                    2023! Today is all about move and improve. Get your guide to
-                    what nulla vitae elit liber you need and when.
-                  </p>
-                </div>
-                <a
-                  class="button button--primary banner__button rich-media__text-content-cta"
-                  href="https://www.inlife.org.au/join-our-team/before-you-apply"
-                >
-                  <span class="button__text">Jump into day 5</span>
-                </a>
-              </section>
-            </div>
-            <div class="rich-media__column rich-media__column--media">
-              <figure
-                class="rich-media__media rich-media__media--image"
-                style="
-                  background-image: url('./dist/img/aboriginal-woman-smiling-holding-phone\ 1.jpg');
-                  background-position: 50% 50%;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              ></figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="matrix-block matrix-block--richText matrix-block--padding80"
-      id="matrix-block-10027"
-    >
       <div
-        class="rich-text container editor-default rich-text--whw rich-text-in-articleWidthContent"
+        class="matrix-block matrix-block--richMedia"
+        id="matrix-block-314486"
       >
-        <h1>Morbi leo risus</h1>
-        <h2>Porta ac consectetur</h2>
+        <div
+          class="rich-media rich-media--theme-primary-dark"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="rich-media rich-media--with-image">
+            <div class="rich-media__row">
+              <div
+                class="rich-media__column rich-media__column--media rich-media__column--media--1"
+              >
+                <div class="rich-media__media">
+                  <div class="rich-media__media__figure">
+                    <img
+                      class="img-fluid"
+                      src="/dist/img/aboriginal-woman-smiling-holding-phone 1.jpg"
+                      alt="Aboriginal woman smiling holding phone 2 3"
+                    />
+                  </div>
+                </div>
+              </div>
 
-        <ol>
-          <li>support your pelvic organs</li>
-          <li>help maintain control of your bladder and bowel</li>
-          <li>improve sexual function by enhancing sensation and arousal</li>
-          <li>support your lower back and pelvis</li>
-          <li>support your lower back and pelvis</li>
-        </ol>
+              <div
+                class="rich-media__column rich-media__column--text rich-media__column--text--2"
+              >
+                <section class="banner__inner-column rich-media__inner-column">
+                  <h2 class="rich-media__text-content-heading">
+                    Donec id elit non mi porta gravida at eges
+                  </h2>
+
+                  <div class="rich-media__text-content-summary">
+                    <p>
+                      Not sure which health checks you need? Thanks to our
+                      partner Hologic, here’s our handy guide for women
+                    </p>
+                  </div>
+
+                  <div class="btn__group">
+                    <a
+                      class="btn btn--small btn--secondary button--has-icon btn--small banner__button rich-media__text-content-cta"
+                      href="/#"
+                    >
+                      <span class="button__text">Get the poster</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="matrix-block matrix-block--richMedia"
+        id="matrix-block-314878"
+      >
+        <div
+          class="rich-media rich-media--with-image rich-media--theme-purple-light rich-media--theme-outcast"
+        >
+          <div class="rich-media rich-media--with-image">
+            <div class="rich-media__row">
+              <div
+                class="rich-media__column rich-media__column--text rich-media__column--text--1"
+              >
+                <section class="banner__inner-column rich-media__inner-column">
+                  <h2 class="rich-media__text-content-heading">
+                    Nullam id dolor id nibh ultricies vehicula ut id elit
+                  </h2>
+
+                  <div class="rich-media__text-content-summary">
+                    <p>
+                      Not sure which health checks you need? Thanks to our
+                      partner Hologic, here’s our handy guide for women
+                    </p>
+                  </div>
+
+                  <div class="btn__group">
+                    <a
+                      class="btn btn--small btn--primary button--has-icon btn--small banner__button rich-media__text-content-cta"
+                      href="https://jeanhailes8.staging.yump.com.au/news/the-12-gifts-of-wellness-part-3"
+                    >
+                      <span class="button__text">Get the poster</span>
+                    </a>
+                    <a
+                      class="btn btn--small button--has-icon btn--small banner__button rich-media__text-content-cta btn--secondary"
+                      href="https://www.womenshealthweek.com.au/get-involved/health-resources/"
+                    >
+                      <span class="button__text">Health resources</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+
+              <div
+                class="rich-media__column rich-media__column--media rich-media__column--media--2"
+              >
+                <div class="rich-media__media rich-media__media--video">
+                  <div class="video">
+                    <a
+                      href="//www.youtube.com/embed/MlpmLA0OGP8?controls=1&amp;rel=0"
+                      class="glightbox"
+                      style="
+                        background-image: url('https://jeanhailes8.staging.yump.com.au/imager/images/314645/aboriginal-woman-smiling-holding-phone-2-2_4b32b63c5c28c858e051e9d1a2a717a1.png');
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                      "
+                    >
+                      <span
+                        class="button video__button"
+                        aria-label="click to watch the video"
+                      >
+                        <!-- <img
+                            src="https://jeanhailes8.staging.yump.com.au/dist/images/play-button.png"
+                            class="video__icon"
+                            alt=""
+                          /> -->
+                        <svg
+                          width="162"
+                          height="161"
+                          viewBox="0 0 162 161"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M81 0C59.6473 0 39.1777 8.48536 24.0777 23.5777C8.98481 38.6777 0.5 59.1473 0.5 80.5C0.5 101.853 8.98536 122.322 24.0777 137.422C39.1777 152.515 59.6473 161 81 161C102.353 161 122.822 152.515 137.922 137.422C153.015 122.322 161.5 101.853 161.5 80.5C161.5 59.1473 153.015 38.6777 137.922 23.5777C122.822 8.48481 102.353 0 81 0Z"
+                            fill="#3D0F58"
+                            class="play-btn-circle"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M61.9704 53.481C61.7179 55.5299 61.8965 106.416 61.9704 107.96C62.0997 110.652 66.0721 113.211 70.2968 110.958C73.9428 109.011 114.171 86.5705 115.883 85.0615C119.012 82.3217 118.876 78.344 115.729 76.2952C113.371 74.763 70.9123 50.5431 70.1366 50.0201C67.6423 48.3498 62.5186 48.9927 61.9704 53.481Z"
+                            fill="white"
+                          />
+                        </svg>
+
+                        <span class="sr-only">click to watch video</span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="matrix-block matrix-block--richMedia"
+        id="matrix-block-314883"
+      >
+        <div
+          class="rich-media rich-media--with-image rich-media--theme-white rich-media--theme-outcast"
+        >
+          <div class="rich-media rich-media--with-image">
+            <div class="rich-media__row">
+              <div
+                class="rich-media__column rich-media__column--media rich-media__column--media--1"
+              >
+                <div class="rich-media__media">
+                  <div class="rich-media__media__figure">
+                    <img
+                      class="img-fluid"
+                      src="https://jeanhailes8.staging.yump.com.au/imager/images/314645/aboriginal-woman-smiling-holding-phone-2-2_4b32b63c5c28c858e051e9d1a2a717a1.png"
+                      alt="Aboriginal woman smiling holding phone 2 2"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="rich-media__column rich-media__column--text rich-media__column--text--2"
+              >
+                <section class="banner__inner-column rich-media__inner-column">
+                  <h2 class="rich-media__text-content-heading">
+                    Maecenas sed diam eget risus varius blandit
+                  </h2>
+
+                  <div class="rich-media__text-content-summary">
+                    <p>
+                      Not sure which health checks you need? Thanks to our
+                      partner Hologic, here’s our handy guide for women
+                    </p>
+                  </div>
+
+                  <div class="btn__group">
+                    <a
+                      class="btn btn--small btn--primary button--has-icon btn--small banner__button rich-media__text-content-cta"
+                      href="https://jeanhailes8.staging.yump.com.au/news/mobility-aids-are-freedom-machines-zoe-simmons"
+                    >
+                      <span class="button__text">Get the poster</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="matrix-block matrix-block--richMedia"
+        id="matrix-block-314888"
+      >
+        <div
+          class="rich-media rich-media--with-image rich-media--theme-gray rich-media--theme-outcast"
+        >
+          <div class="rich-media rich-media--with-image">
+            <div class="rich-media__row">
+              <div
+                class="rich-media__column rich-media__column--text rich-media__column--text--1"
+              >
+                <section class="banner__inner-column rich-media__inner-column">
+                  <h2 class="rich-media__text-content-heading">
+                    Sit amet non magna
+                  </h2>
+
+                  <div class="rich-media__text-content-summary">
+                    <p>
+                      Not sure which health checks you need? Thanks to our
+                      partner Hologic, here’s our handy guide for women
+                    </p>
+                  </div>
+
+                  <div class="btn__group">
+                    <a
+                      class="btn btn--small btn--primary button--has-icon btn--small banner__button rich-media__text-content-cta"
+                      href="https://www.google.com"
+                    >
+                      <span class="button__text">Get the poster</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+
+              <div
+                class="rich-media__column rich-media__column--media rich-media__column--media--2"
+              >
+                <div class="rich-media__media">
+                  <div class="rich-media__media__figure">
+                    <img
+                      class="img-fluid"
+                      src="https://jeanhailes8.staging.yump.com.au/imager/images/314374/aboriginal-woman-smiling-holding-phone-2_4b32b63c5c28c858e051e9d1a2a717a1.png"
+                      alt="Aboriginal woman smiling holding phone 2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- break -->
+      <div
+        class="matrix-block matrix-block--topicsOnThisPage"
+        id="matrix-block-316014"
+      >
+        <h2>Morbi leo risus</h2>
+      </div>
+      <div class="matrix-block matrix-block--richText">
+        <div
+          class="rich-text editor-default rich-text--whw rich-text-in-articleWidthContent aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h3>Porta ac consectetur</h3>
+
+          <ol>
+            <li>support your pelvic organs</li>
+            <li>help maintain control of your bladder and bowel</li>
+            <li>improve sexual function by enhancing sensation and arousal</li>
+            <li>support your lower back and pelvis</li>
+            <li>support your lower back and pelvis</li>
+          </ol>
+        </div>
+      </div>
+      <div
+        class="matrix-block matrix-block--topicsOnThisPage"
+        id="matrix-block-316014"
+      >
+        <h2 class="rb-zeplin-focused">Vestibulum at eros kula</h2>
+      </div>
+      <div class="matrix-block matrix-block--richText" id="matrix-block-323590">
+        <div
+          class="rich-text editor-default rich-text--whw rich-text-in-boxedWidthContent"
+        >
+          <h3>Sontes, nascetur ridiculus mus</h3>
+          <ul>
+            <li>
+              Squeeze and hold your pelvic floor muscles for three seconds, then
+              release and rest for six seconds. Repeat three to four times. Have
+              a two-minute rest, then repeat from the beginning. This is one
+              set.
+            </li>
+            <li>
+              Etiam porta sem malesuada magna mollis euismod. Donec sed odio
+              dui.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- sound start -->
+      <div
+        class="matrix-block matrix-block--customHtml"
+        id="matrix-block-323591"
+      >
+        <div class="custom-html">
+          <iframe
+            allow="autoplay"
+            frameborder="no"
+            height="166"
+            scrolling="no"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1322727853&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false"
+            width="100%"
+          ></iframe>
+        </div>
+      </div>
+      <div class="matrix-block matrix-block--buttons" id="matrix-block-323592">
+        <div class="neo-buttons">
+          <div
+            class="matrix-block matrix-block--callToAction neo-buttons__child"
+            id="matrix-block-323593"
+          >
+            <div class="btn__group">
+              <a
+                class="btn btn--small btn--primary"
+                href="https://jeanhailes8.staging.yump.com.au/news/why-health-checks-are-so-important-for-women"
+              >
+                <span class="button__text">On Apple Podcasts</span>
+              </a>
+
+              <a class="btn btn--small btn--secondary" href="/#">
+                <span class="button__text">Read her story</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="matrix-block matrix-block--richText" id="matrix-block-323596">
+        <div
+          class="rich-text editor-default rich-text--whw rich-text-in-boxedWidthContent"
+        >
+          <h3>Tip!</h3>
+          <p>Aim to do a set of these exercises three times each day.</p>
+        </div>
+      </div>
+
+      <!-- champion lists starts  -->
+      <div
+        class="matrix-block matrix-block--championCards matrix-block--championCardsList-View"
+      >
+        <div class="champion-cards-list">
+          <div class="matrix-block__header">
+            <h1 class="matrix-block__title">Champions for good health</h1>
+            <!-- <a href="#" class="btn btn--primary btn--small">View All</a> -->
+          </div>
+
+          <div class="component-grid">
+            <article class="component-card">
+              <figure class="component-card__figure" data-aos="fade-right">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/champion-user.png"
+                  alt="Ashley Sailability"
+                />
+                <div class="btn btn--primary btn--small btn--champion-chip">
+                  Alyssa Azar
+                </div>
+              </figure>
+              <div class="component-card__body" data-aos="fade-left">
+                <h3 class="component-card__title">Christina Ng</h3>
+                <div
+                  class="component-card__meta-info component-card__meta-info--designation"
+                >
+                  <a href="#" class="s">Australian Mountain Climber</a>
+                </div>
+                <div class="component-card__text">
+                  Alyssa Azar is an Australian high-altitude mountaineer. In
+                  2016, she became the youngest Australian to ever summit Mt.
+                  Everest, and she held that record for six years. To date,
+                  Alyssa has successfully climbed Mount Everest twice, amongst
+                  completing many other challenging climbs and adventures across
+                  the world.
+                </div>
+                <a class="btn btn--small btn--link" href="h#"> Read more </a>
+              </div>
+            </article>
+            <article class="component-card">
+              <figure class="component-card__figure" data-aos="fade-right">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/champion-user.png"
+                  alt="Ashley Sailability"
+                />
+                <div class="btn btn--primary btn--small btn--champion-chip">
+                  Alyssa Azar
+                </div>
+              </figure>
+              <div class="component-card__body" data-aos="fade-left">
+                <h3 class="component-card__title">Christina Ng</h3>
+                <div
+                  class="component-card__meta-info component-card__meta-info--designation"
+                >
+                  <a href="#" class="s">Australian Mountain Climber</a>
+                </div>
+                <div class="component-card__text">
+                  Alyssa Azar is an Australian high-altitude mountaineer. In
+                  2016, she became the youngest Australian to ever summit Mt.
+                  Everest, and she held that record for six years. To date,
+                  Alyssa has successfully climbed Mount Everest twice, amongst
+                  completing many other challenging climbs and adventures across
+                  the world.
+                </div>
+                <a class="btn btn--small btn--link" href="h#"> Read more </a>
+              </div>
+            </article>
+            <article class="component-card">
+              <figure class="component-card__figure" data-aos="fade-right">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/champion-user.png"
+                  alt="Ashley Sailability"
+                />
+                <div class="btn btn--primary btn--small btn--champion-chip">
+                  Alyssa Azar
+                </div>
+              </figure>
+              <div class="component-card__body" data-aos="fade-left">
+                <h3 class="component-card__title">Christina Ng</h3>
+                <div
+                  class="component-card__meta-info component-card__meta-info--designation"
+                >
+                  <a href="#" class="s">Australian Mountain Climber</a>
+                </div>
+                <div class="component-card__text">
+                  Alyssa Azar is an Australian high-altitude mountaineer. In
+                  2016, she became the youngest Australian to ever summit Mt.
+                  Everest, and she held that record for six years. To date,
+                  Alyssa has successfully climbed Mount Everest twice, amongst
+                  completing many other challenging climbs and adventures across
+                  the world.
+                </div>
+                <a class="btn btn--small btn--link" href="h#"> Read more </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="matrix-block matrix-block--richText" id="matrix-block-323598">
+        <div
+          class="rich-text editor-default rich-text--whw rich-text-in-boxedWidthContent"
+        >
+          <h3>Dolor id nibh ultricies vehicula ut id elit</h3>
+          <ul>
+            <li>
+              As your muscles get stronger, you’ll be able to hold them for
+              longer and do more sets. You can also try doing them while
+              standing.
+            </li>
+            <li>
+              Squeeze and hold your pelvic muscles for six seconds, then release
+              and rest for six seconds. Repeat six times. Have a two-minute
+              rest, then repeat from the beginning. This is one set.
+            </li>
+            <li>
+              Aim to do a set of these exercises three to four times each day.
+            </li>
+            <li>
+              You can gradually increase the holding time – aim to hold for 12
+              to 20 seconds.
+            </li>
+            <li>
+              Make sure you rest between each squeeze for at least the same
+              number of seconds that you have held for.
+            </li>
+            <li>
+              Aim for up to 10 repetitions, making sure you use the correct
+              technique.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- video starts  -->
+      <div class="matrix-block matrix-block--video" id="matrix-block-318238">
+        <div class="video">
+          <a
+            href="//www.youtube.com/embed/MlpmLA0OGP8?controls=1&amp;rel=0"
+            class="glightbox"
+            style="
+              background-image: url('https://jeanhailes8.staging.yump.com.au/imager/images/316533/Screen-Shot-2023-02-01-at-10.16.35-pm_353fe568217a4ecd8f2727f818d6534e.png');
+              background-position: 50% 50%;
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          >
+            <span
+              class="button video__button"
+              aria-label="click to watch the video"
+            >
+              <!-- <img
+                  src="https://jeanhailes8.staging.yump.com.au/dist/images/play-button.png"
+                  class="video__icon"
+                  alt=""
+                /> -->
+              <svg
+                width="162"
+                height="161"
+                viewBox="0 0 162 161"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M81 0C59.6473 0 39.1777 8.48536 24.0777 23.5777C8.98481 38.6777 0.5 59.1473 0.5 80.5C0.5 101.853 8.98536 122.322 24.0777 137.422C39.1777 152.515 59.6473 161 81 161C102.353 161 122.822 152.515 137.922 137.422C153.015 122.322 161.5 101.853 161.5 80.5C161.5 59.1473 153.015 38.6777 137.922 23.5777C122.822 8.48481 102.353 0 81 0Z"
+                  fill="#3D0F58"
+                  class="play-btn-circle"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M61.9704 53.481C61.7179 55.5299 61.8965 106.416 61.9704 107.96C62.0997 110.652 66.0721 113.211 70.2968 110.958C73.9428 109.011 114.171 86.5705 115.883 85.0615C119.012 82.3217 118.876 78.344 115.729 76.2952C113.371 74.763 70.9123 50.5431 70.1366 50.0201C67.6423 48.3498 62.5186 48.9927 61.9704 53.481Z"
+                  fill="white"
+                />
+              </svg>
+
+              <span class="sr-only">click to watch video</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="matrix-block matrix-block--richText" id="matrix-block-323600">
+        <div
+          class="rich-text editor-default rich-text--whw rich-text-in-boxedWidthContent"
+        >
+          <p>
+            This web page is designed to be informative and educational. It is
+            not intended to provide specific medical advice or replace advice
+            from your health practitioner. The information above is based on
+            current medical knowledge, evidence and practice as at August 2022.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="matrix-block matrix-block--hardCodedBlock"
+        id="matrix-block-328453"
+      >
+        <div class="last-updated flex-center-start pb-small">
+          <svg class="icon">
+            <use xlink:href="#clock" href="#clock"></use>
+          </svg>
+          <strong>Last updated:</strong> 15 March 2023
+        </div>
+      </div>
+
+      <div
+        class="matrix-block matrix-block--hardCodedBlock"
+        id="matrix-block-328438"
+      >
+        <div class="social-share my-large">
+          <span class="social-share__title uppercase">Share this page</span>
+          <div class="social-share__links">
+            <ul class="social-share__list flex-center-start">
+              <li>
+                <a
+                  class="social-share__item social-share__item--facebook gtm-click"
+                  title="Facebook"
+                  href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fjeanhailes8.staging.yump.com.au%2Fwomens-health-week%2Fprogram%2Fcheck-me-out"
+                  data-category="Social"
+                  data-action="Share: Facebook"
+                  target="_blank"
+                >
+                  <svg class="icon">
+                    <use
+                      xlink:href="#facebook-ghost"
+                      href="#facebook-ghost"
+                    ></use>
+                  </svg>
+                  <span class="accessibility"
+                    >Share Jean Hailes on Facebook</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-share__item social-share__item--twitter gtm-click"
+                  title="Twitter"
+                  href="https://twitter.com/intent/tweet?text=Jean Hailes - Check%20me%20out - https%3A%2F%2Fjeanhailes8.staging.yump.com.au%2Fwomens-health-week%2Fprogram%2Fcheck-me-out"
+                  data-category="Social"
+                  data-action="Share: Twitter"
+                  target="_blank"
+                >
+                  <svg class="icon">
+                    <use
+                      xlink:href="#twitter-ghost"
+                      href="#twitter-ghost"
+                    ></use>
+                  </svg>
+                  <span class="accessibility"
+                    >Share Jean Hailes on Twitter</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social-share__item social-share__item--mail gtm-click"
+                  title="Mail"
+                  href="mailto:%20?subject=Jean Hailes - Check%20me%20out&amp;body=Jean Hailes - Check%20me%20out - https%3A%2F%2Fjeanhailes8.staging.yump.com.au%2Fwomens-health-week%2Fprogram%2Fcheck-me-out"
+                  data-category="Social"
+                  data-action="Share: Mail"
+                >
+                  <svg class="icon">
+                    <use xlink:href="#email-ghost" href="#email-ghost"></use>
+                  </svg>
+                  <span class="accessibility"
+                    >Share Jean Hailes over email</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="matrix-block matrix-block--columns" id="matrix-block-320623">
+        <div class="columns">
+          <div class="columns__row row">
+            <div
+              class="columns__column col-lg-9 col-12"
+              id="matrix-block-320624"
+            >
+              <div
+                class="matrix-block matrix-block--textColumn"
+                id="matrix-block-320873"
+              >
+                <div class="rich-media--theme-white">
+                  <div
+                    class="rich-media__column rich-media__column--text rich-media__column--text--1"
+                  >
+                    <section
+                      class="banner__inner-column1 rich-media__inner-column1"
+                    >
+                      <h2 class="rich-media__text-content-heading">
+                        Nibh ultricies vehicula ut
+                      </h2>
+
+                      <div class="rich-media__text-content-summary">
+                        <p>
+                          More than 2400 events are happening this week across
+                          the country in celebration of Jean Hailes Women’s
+                          Health Week. Join with us this Women’s Health Week and
+                          together we can take steps toward good health.
+                        </p>
+                      </div>
+
+                      <div class="btn__group">
+                        <a class="btn btn--primary btn--small" href="#signup">
+                          <span class="button__text">Sign up</span>
+                        </a>
+
+                        <a
+                          class="btn btn--secondary btn--small"
+                          href="/find-an-event"
+                        >
+                          <span class="button__text">Find an event</span>
+                        </a>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="columns__column col-lg-3 col-12"
+              id="matrix-block-320625"
+            >
+              <div
+                class="matrix-block matrix-block--image"
+                id="matrix-block-320626"
+              >
+                <img
+                  class="img-fluid"
+                  src="./dist/img/Frame-911-1_b8a7d9426d44becbfab22c3e3256f6d7.png"
+                  alt="Frame 911 1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- week card starts  -->
+    <div class="main__container fullWidthContent">
+      <div
+        class="matrix-block matrix-block--eventDayCards"
+        id="matrix-block-331059"
+      >
+        <div class="component-grid cards--days-cards">
+          <article
+            class="component-card"
+            data-link="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/check-me-out"
+          >
+            <figure class="component-card__figure">
+              <img
+                class="component-card__img"
+                src="https://jeanhailes8.staging.yump.com.au/uploads/event-profile-pictures/preset/image-5.png"
+                alt="Check me out"
+                data-link="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/check-me-out"
+              />
+            </figure>
+
+            <div class="component-card__body">
+              <div
+                class="component-card__meta-info component-card__meta-info--week"
+              >
+                <b>Day 1</b> - Monday
+              </div>
+
+              <a
+                class="component-card__link--stretched"
+                href="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/check-me-out"
+              >
+                <h3 class="component-card__title">Check me out</h3>
+              </a>
+              <div class="component-card__text">Health checks at every age</div>
+
+              <p
+                class="component-card__meta-info component-card__meta-info--date"
+              >
+                4 September 2023
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="component-card"
+            data-link="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/menopause-matters"
+          >
+            <figure class="component-card__figure">
+              <img
+                class="component-card__img"
+                src="https://jeanhailes8.staging.yump.com.au/uploads/event-profile-pictures/preset/image-1.png"
+                alt="Menopause matters"
+                data-link="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/menopause-matters"
+              />
+            </figure>
+
+            <div class="component-card__body">
+              <div
+                class="component-card__meta-info component-card__meta-info--week"
+              >
+                <b>Day 2</b> - Tuesday
+              </div>
+
+              <a
+                class="component-card__link--stretched"
+                href="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/menopause-matters"
+              >
+                <h3 class="component-card__title">Menopause matters</h3>
+              </a>
+              <div class="component-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+
+              <p
+                class="component-card__meta-info component-card__meta-info--date"
+              >
+                5 September 2023
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="component-card"
+            data-link="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/pelvic-power"
+          >
+            <figure class="component-card__figure">
+              <img
+                class="component-card__img"
+                src="https://jeanhailes8.staging.yump.com.au/uploads/event-profile-pictures/preset/image-2.png"
+                alt="Pelvic power"
+                data-link="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/pelvic-power"
+              />
+            </figure>
+
+            <div class="component-card__body">
+              <div
+                class="component-card__meta-info component-card__meta-info--week"
+              >
+                <b>Day 3</b> - Wednesday
+              </div>
+
+              <a
+                class="component-card__link--stretched"
+                href="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/pelvic-power"
+              >
+                <h3 class="component-card__title">Pelvic power</h3>
+              </a>
+              <div class="component-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+
+              <p
+                class="component-card__meta-info component-card__meta-info--date"
+              >
+                6 September 2023
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="component-card"
+            data-link="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/mind-health"
+          >
+            <figure class="component-card__figure">
+              <img
+                class="component-card__img"
+                src="https://jeanhailes8.staging.yump.com.au/uploads/event-profile-pictures/preset/image-3.png"
+                alt="Mind health"
+                data-link="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/mind-health"
+              />
+            </figure>
+
+            <div class="component-card__body">
+              <div
+                class="component-card__meta-info component-card__meta-info--week"
+              >
+                <b>Day 4</b> - Thusday
+              </div>
+
+              <a
+                class="component-card__link--stretched"
+                href="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/mind-health"
+              >
+                <h3 class="component-card__title">Mind health</h3>
+              </a>
+              <div class="component-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+
+              <p
+                class="component-card__meta-info component-card__meta-info--date"
+              >
+                7 September 2023
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="component-card"
+            data-link="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/move-and-improve"
+          >
+            <figure class="component-card__figure">
+              <img
+                class="component-card__img"
+                src="https://jeanhailes8.staging.yump.com.au/uploads/event-profile-pictures/preset/image-4.png"
+                alt="Move and improve"
+                data-link="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/move-and-improve"
+              />
+            </figure>
+
+            <div class="component-card__body">
+              <div
+                class="component-card__meta-info component-card__meta-info--week"
+              >
+                <b>Day 5</b> - Friday
+              </div>
+
+              <a
+                class="component-card__link--stretched"
+                href="https://jeanhailes8.staging.yump.com.au/womens-health-week/program/move-and-improve"
+              >
+                <h3 class="component-card__title">Move and improve</h3>
+              </a>
+              <div class="component-card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+
+              <p
+                class="component-card__meta-info component-card__meta-info--date"
+              >
+                8 September 2023
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- rich media full width starts  -->
+      <div
+        class="matrix-block matrix-block--richMedia"
+        id="matrix-block-323612"
+      >
+        <div
+          class="rich-media rich-media--with-image rich-media--theme-gray rich-media--theme-outcast"
+        >
+          <div class="rich-media rich-media--with-video">
+            <div class="rich-media__row">
+              <div
+                class="rich-media__column rich-media__column--media rich-media__column--media--1"
+              >
+                <div class="rich-media__media rich-media__media--video">
+                  <div class="video">
+                    <a
+                      href="//www.youtube.com/embed/MlpmLA0OGP8?controls=1&amp;rel=0"
+                      class="glightbox"
+                      style="
+                        background-image: url('/imager/images/316805/aboriginal-woman-smiling-holding-phone-1-2_353fe568217a4ecd8f2727f818d6534e.png');
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                      "
+                    >
+                      <span
+                        class="button video__button"
+                        aria-label="click to watch the video"
+                      >
+                        <!-- <img src="/dist/images/play-button.png" class="video__icon" alt=""> -->
+                        <svg
+                          width="162"
+                          height="161"
+                          viewBox="0 0 162 161"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M81 0C59.6473 0 39.1777 8.48536 24.0777 23.5777C8.98481 38.6777 0.5 59.1473 0.5 80.5C0.5 101.853 8.98536 122.322 24.0777 137.422C39.1777 152.515 59.6473 161 81 161C102.353 161 122.822 152.515 137.922 137.422C153.015 122.322 161.5 101.853 161.5 80.5C161.5 59.1473 153.015 38.6777 137.922 23.5777C122.822 8.48481 102.353 0 81 0Z"
+                            fill="#3D0F58"
+                            class="play-btn-circle"
+                          ></path>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M61.9704 53.481C61.7179 55.5299 61.8965 106.416 61.9704 107.96C62.0997 110.652 66.0721 113.211 70.2968 110.958C73.9428 109.011 114.171 86.5705 115.883 85.0615C119.012 82.3217 118.876 78.344 115.729 76.2952C113.371 74.763 70.9123 50.5431 70.1366 50.0201C67.6423 48.3498 62.5186 48.9927 61.9704 53.481Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="rich-media__column rich-media__column--text rich-media__column--text--2"
+              >
+                <section class="banner__inner-column rich-media__inner-column">
+                  <h2 class="rich-media__text-content-heading">
+                    Dallam id dolor id nibh ultricies
+                  </h2>
+
+                  <div class="rich-media__text-content-summary">
+                    <p>
+                      This year's highlighted topics include the top five
+                      concerns in women’s health: menopause and perimenopause,
+                      pelvic health, health checks, mental wellbeing as well as
+                      physical activity.
+                    </p>
+                  </div>
+
+                  <div class="btn__group">
+                    <a
+                      class="btn btn--small btn--inline-wide btn--primary"
+                      href="/"
+                    >
+                      <span class="button__text">The week</span>
+                    </a>
+
+                    <a
+                      class="btn btn--small btn--secondary"
+                      href="https://www.womenshealthweek.com.au/get-involved/health-resources/"
+                    >
+                      <span class="button__text">Health resources</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="matrix-block matrix-block--richMedia"
+        id="matrix-block-323618"
+      >
+        <div
+          class="rich-media rich-media--with-image rich-media--theme-dark-purple rich-media--theme-outcast"
+        >
+          <div class="rich-media rich-media--with-image">
+            <div class="rich-media__row">
+              <div
+                class="rich-media__column rich-media__column--text rich-media__column--text--1"
+              >
+                <section class="banner__inner-column rich-media__inner-column">
+                  <h2 class="rich-media__text-content-heading">
+                    Dallam id dolor id nibh ultricies
+                  </h2>
+
+                  <div class="rich-media__text-content-summary">
+                    <p>
+                      This year's highlighted topics include the top five
+                      concerns in women’s health: menopause and perimenopause,
+                      pelvic health, health checks, mental wellbeing as well as
+                      physical activity.
+                    </p>
+                  </div>
+
+                  <div class="btn__group">
+                    <a
+                      class="btn btn--small btn--inline-wide btn--primary"
+                      href="/the-week"
+                    >
+                      <span class="button__text">The week</span>
+                    </a>
+
+                    <a
+                      class="btn btn--small btn--secondary"
+                      href="https://www.womenshealthweek.com.au/get-involved/health-resources/"
+                    >
+                      <span class="button__text">Health resources</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+
+              <div
+                class="rich-media__column rich-media__column--media rich-media__column--media--2"
+              >
+                <div class="rich-media__media">
+                  <div class="rich-media__media__figure">
+                    <img
+                      class="img-fluid"
+                      src="https://jeanhailes8.staging.yump.com.au/imager/images/314862/aboriginal-woman-smiling-holding-phone-2-3_4b32b63c5c28c858e051e9d1a2a717a1.png"
+                      alt="Aboriginal woman smiling holding phone 2 3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="matrix-block matrix-block--richMedia"
+        id="matrix-block-323624"
+      >
+        <div
+          class="rich-media rich-media--with-image rich-media--theme-purple-light rich-media--theme-outcast"
+        >
+          <div class="rich-media rich-media--with-video">
+            <div class="rich-media__row">
+              <div
+                class="rich-media__column rich-media__column--media rich-media__column--media--1"
+              >
+                <div class="rich-media__media rich-media__media--video">
+                  <div class="video">
+                    <a
+                      href="//www.youtube.com/embed/MlpmLA0OGP8?controls=1&amp;rel=0"
+                      class="glightbox"
+                      style="
+                        background-image: url('/imager/images/313604/aboriginal-woman-smiling-holding-phone-1_353fe568217a4ecd8f2727f818d6534e.png');
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                      "
+                    >
+                      <span
+                        class="button video__button"
+                        aria-label="click to watch the video"
+                      >
+                        <!-- <img src="/dist/images/play-button.png" class="video__icon" alt=""> -->
+                        <svg
+                          width="162"
+                          height="161"
+                          viewBox="0 0 162 161"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M81 0C59.6473 0 39.1777 8.48536 24.0777 23.5777C8.98481 38.6777 0.5 59.1473 0.5 80.5C0.5 101.853 8.98536 122.322 24.0777 137.422C39.1777 152.515 59.6473 161 81 161C102.353 161 122.822 152.515 137.922 137.422C153.015 122.322 161.5 101.853 161.5 80.5C161.5 59.1473 153.015 38.6777 137.922 23.5777C122.822 8.48481 102.353 0 81 0Z"
+                            fill="#3D0F58"
+                            class="play-btn-circle"
+                          ></path>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M61.9704 53.481C61.7179 55.5299 61.8965 106.416 61.9704 107.96C62.0997 110.652 66.0721 113.211 70.2968 110.958C73.9428 109.011 114.171 86.5705 115.883 85.0615C119.012 82.3217 118.876 78.344 115.729 76.2952C113.371 74.763 70.9123 50.5431 70.1366 50.0201C67.6423 48.3498 62.5186 48.9927 61.9704 53.481Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="rich-media__column rich-media__column--text rich-media__column--text--2"
+              >
+                <section class="banner__inner-column rich-media__inner-column">
+                  <h2 class="rich-media__text-content-heading">
+                    Dallam id dolor id nibh ultricies
+                  </h2>
+
+                  <div class="rich-media__text-content-summary">
+                    <p>
+                      This year's highlighted topics include the top five
+                      concerns in women’s health: menopause and perimenopause,
+                      pelvic health, health checks, mental wellbeing as well as
+                      physical activity.
+                    </p>
+                  </div>
+
+                  <div class="btn__group">
+                    <a
+                      class="btn btn--small btn--inline-wide btn--primary"
+                      href="/the-week"
+                    >
+                      <span class="button__text">The week</span>
+                    </a>
+
+                    <a
+                      class="btn btn--small btn--secondary"
+                      href="https://www.womenshealthweek.com.au/get-involved/health-resources/"
+                    >
+                      <span class="button__text">Health resources</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="matrix-block matrix-block--richMedia"
+        id="matrix-block-323630"
+      >
+        <div
+          class="rich-media rich-media--with-image rich-media--theme-white rich-media--theme-outcast"
+        >
+          <div class="rich-media rich-media--with-video">
+            <div class="rich-media__row">
+              <div
+                class="rich-media__column rich-media__column--text rich-media__column--text--1"
+              >
+                <section class="banner__inner-column rich-media__inner-column">
+                  <h2 class="rich-media__text-content-heading">
+                    Dallam id dolor id nibh ultricies
+                  </h2>
+
+                  <div class="rich-media__text-content-summary">
+                    <p>
+                      This year's highlighted topics include the top five
+                      concerns in women’s health: menopause and perimenopause,
+                      pelvic health, health checks, mental wellbeing as well as
+                      physical activity.
+                    </p>
+                  </div>
+
+                  <div class="btn__group">
+                    <a
+                      class="btn btn--small btn--inline-wide btn--primary"
+                      href="/the-week"
+                    >
+                      <span class="button__text">The week</span>
+                    </a>
+
+                    <a
+                      class="btn btn--small btn--secondary"
+                      href="/health-resources"
+                    >
+                      <span class="button__text">Health resources</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+
+              <div
+                class="rich-media__column rich-media__column--media rich-media__column--media--2"
+              >
+                <div class="rich-media__media rich-media__media--video">
+                  <div class="video">
+                    <a
+                      href="//www.youtube.com/embed/MlpmLA0OGP8?controls=1&amp;rel=0"
+                      class="glightbox"
+                      style="
+                        background-image: url('/imager/images/322388/aboriginal-woman-smiling-holding-phone-1-3_353fe568217a4ecd8f2727f818d6534e.png');
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                      "
+                    >
+                      <span
+                        class="button video__button"
+                        aria-label="click to watch the video"
+                      >
+                        <!-- <img src="/dist/images/play-button.png" class="video__icon" alt=""> -->
+                        <svg
+                          width="162"
+                          height="161"
+                          viewBox="0 0 162 161"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M81 0C59.6473 0 39.1777 8.48536 24.0777 23.5777C8.98481 38.6777 0.5 59.1473 0.5 80.5C0.5 101.853 8.98536 122.322 24.0777 137.422C39.1777 152.515 59.6473 161 81 161C102.353 161 122.822 152.515 137.922 137.422C153.015 122.322 161.5 101.853 161.5 80.5C161.5 59.1473 153.015 38.6777 137.922 23.5777C122.822 8.48481 102.353 0 81 0Z"
+                            fill="#3D0F58"
+                            class="play-btn-circle"
+                          ></path>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M61.9704 53.481C61.7179 55.5299 61.8965 106.416 61.9704 107.96C62.0997 110.652 66.0721 113.211 70.2968 110.958C73.9428 109.011 114.171 86.5705 115.883 85.0615C119.012 82.3217 118.876 78.344 115.729 76.2952C113.371 74.763 70.9123 50.5431 70.1366 50.0201C67.6423 48.3498 62.5186 48.9927 61.9704 53.481Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="matrix-block--card-columns-1 matrix-block--theme-gray matrix-block matrix-block--resourceCards"
+      >
+        <div class="container">
+          <div class="matrix-block__header">
+            <h2 class="matrix-block__title">Resources to check out</h2>
+          </div>
+
+          <div class="component-grid resourcesWithTag">
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="https://jeanhailes8.staging.yump.com.au/imager/images/Health-topics/VVOU/290528/Cervical_screening_test-thumb_2022-08-19-052517_b34175dc0932c133c2b9db89b3418cbc.png"
+                  data-link="https://jeanhailes8.staging.yump.com.au/resources/cervical-screening-test-fact-sheet"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">
+                  Cervical screening test fact sheet
+                </h3>
+                <div class="component-card__text">
+                  Cervical cancer is one of the most preventable cancers.
+                  Regular cervical screening is the best way to protect yourself
+                  from cervical cancer.
+                </div>
+
+                <a
+                  class="component-card__cta"
+                  href="https://jeanhailes8.staging.yump.com.au/resources/cervical-screening-test-fact-sheet"
+                >
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    ></rect>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="https://jeanhailes8.staging.yump.com.au/imager/images/Health-topics/Health-checks/204031/health-checks-fact-sheet-thumb_1884b5237dcdd5e9d195746d6cf02d83.png"
+                  data-link="https://jeanhailes8.staging.yump.com.au/resources/health-checks-fact-sheet"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">
+                  Health checks - fact sheet
+                </h3>
+                <div class="component-card__text">
+                  Regular health checks are an important part of staying well,
+                  as they can help to detect illness or disease early.
+                </div>
+
+                <a
+                  class="component-card__cta"
+                  href="https://jeanhailes8.staging.yump.com.au/resources/health-checks-fact-sheet"
+                >
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    ></rect>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="https://jeanhailes8.staging.yump.com.au/imager/images/Health-topics/Natural-therapies-supplements/224018/natural-therapies-thumb_3ea830f2ac0a9b93dbcc5ddba20ff01c.png"
+                  data-link="https://jeanhailes8.staging.yump.com.au/resources/natural-therapies-supplements-fact-sheet"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">
+                  Natural therapies &amp; supplements - fact sheet
+                </h3>
+                <div class="component-card__text">
+                  Natural therapies include acupuncture, herbal treatments,
+                  homeopathy, naturopathy, nutrition, massage and traditional
+                  Chinese medicine.
+                </div>
+
+                <a
+                  class="component-card__cta"
+                  href="https://jeanhailes8.staging.yump.com.au/resources/natural-therapies-supplements-fact-sheet"
+                >
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    ></rect>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="matrix-block--card-columns-1 matrix-block--theme-dark-purple matrix-block matrix-block--resourceCards"
+      >
+        <div class="container">
+          <div class="matrix-block__header">
+            <h2 class="matrix-block__title">Resources to check out</h2>
+          </div>
+
+          <div class="component-grid resourcesWithTag">
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="https://jeanhailes8.staging.yump.com.au/imager/images/Health-topics/VVOU/290528/Cervical_screening_test-thumb_2022-08-19-052517_b34175dc0932c133c2b9db89b3418cbc.png"
+                  data-link="https://jeanhailes8.staging.yump.com.au/resources/cervical-screening-test-fact-sheet"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">
+                  Cervical screening test fact sheet
+                </h3>
+                <div class="component-card__text">
+                  Cervical cancer is one of the most preventable cancers.
+                  Regular cervical screening is the best way to protect yourself
+                  from cervical cancer.
+                </div>
+
+                <a
+                  class="component-card__cta"
+                  href="https://jeanhailes8.staging.yump.com.au/resources/cervical-screening-test-fact-sheet"
+                >
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    ></rect>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="https://jeanhailes8.staging.yump.com.au/imager/images/Health-topics/Health-checks/204031/health-checks-fact-sheet-thumb_1884b5237dcdd5e9d195746d6cf02d83.png"
+                  data-link="https://jeanhailes8.staging.yump.com.au/resources/health-checks-fact-sheet"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">
+                  Health checks - fact sheet
+                </h3>
+                <div class="component-card__text">
+                  Regular health checks are an important part of staying well,
+                  as they can help to detect illness or disease early.
+                </div>
+
+                <a
+                  class="component-card__cta"
+                  href="https://jeanhailes8.staging.yump.com.au/resources/health-checks-fact-sheet"
+                >
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    ></rect>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="https://jeanhailes8.staging.yump.com.au/imager/images/Health-topics/Natural-therapies-supplements/224018/natural-therapies-thumb_3ea830f2ac0a9b93dbcc5ddba20ff01c.png"
+                  data-link="https://jeanhailes8.staging.yump.com.au/resources/natural-therapies-supplements-fact-sheet"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">
+                  Natural therapies &amp; supplements - fact sheet
+                </h3>
+                <div class="component-card__text">
+                  Natural therapies include acupuncture, herbal treatments,
+                  homeopathy, naturopathy, nutrition, massage and traditional
+                  Chinese medicine.
+                </div>
+
+                <a
+                  class="component-card__cta"
+                  href="https://jeanhailes8.staging.yump.com.au/resources/natural-therapies-supplements-fact-sheet"
+                >
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    ></rect>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="matrix-block matrix-block--resourceCards"
+        id="matrix-block-323638"
+      >
+        <div class="matrix-block--card-columns-1 matrix-block--theme-white">
+          <div class="container">
+            <div class="matrix-block__header">
+              <h2 class="matrix-block__title">Resources to check out</h2>
+            </div>
+
+            <div class="component-grid resourcesWithTag">
+              <article class="component-card">
+                <figure class="component-card__figure">
+                  <img
+                    class="component-card__img"
+                    src="https://jeanhailes8.staging.yump.com.au/imager/images/Health-topics/VVOU/290528/Cervical_screening_test-thumb_2022-08-19-052517_b34175dc0932c133c2b9db89b3418cbc.png"
+                    data-link="https://jeanhailes8.staging.yump.com.au/resources/cervical-screening-test-fact-sheet"
+                  />
+                  <span
+                    class="component-card__chip btn btn--small btn--primary-light"
+                    >Fact sheet</span
+                  >
+                </figure>
+                <div class="component-card__body">
+                  <h3 class="component-card__title">
+                    Cervical screening test fact sheet
+                  </h3>
+                  <div class="component-card__text">
+                    Cervical cancer is one of the most preventable cancers.
+                    Regular cervical screening is the best way to protect
+                    yourself from cervical cancer.
+                  </div>
+
+                  <a
+                    class="component-card__cta"
+                    href="https://jeanhailes8.staging.yump.com.au/resources/cervical-screening-test-fact-sheet"
+                  >
+                    <svg
+                      width="40"
+                      height="41"
+                      viewBox="0 0 40 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="0.473633"
+                        width="40"
+                        height="40"
+                        rx="20"
+                        fill="#3D0F58"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="component-card">
+                <figure class="component-card__figure">
+                  <img
+                    class="component-card__img"
+                    src="https://jeanhailes8.staging.yump.com.au/imager/images/Health-topics/Health-checks/204031/health-checks-fact-sheet-thumb_1884b5237dcdd5e9d195746d6cf02d83.png"
+                    data-link="https://jeanhailes8.staging.yump.com.au/resources/health-checks-fact-sheet"
+                  />
+                  <span
+                    class="component-card__chip btn btn--small btn--primary-light"
+                    >Fact sheet</span
+                  >
+                </figure>
+                <div class="component-card__body">
+                  <h3 class="component-card__title">
+                    Health checks - fact sheet
+                  </h3>
+                  <div class="component-card__text">
+                    Regular health checks are an important part of staying well,
+                    as they can help to detect illness or disease early.
+                  </div>
+
+                  <a
+                    class="component-card__cta"
+                    href="https://jeanhailes8.staging.yump.com.au/resources/health-checks-fact-sheet"
+                  >
+                    <svg
+                      width="40"
+                      height="41"
+                      viewBox="0 0 40 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="0.473633"
+                        width="40"
+                        height="40"
+                        rx="20"
+                        fill="#3D0F58"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="component-card">
+                <figure class="component-card__figure">
+                  <img
+                    class="component-card__img"
+                    src="https://jeanhailes8.staging.yump.com.au/imager/images/Health-topics/Natural-therapies-supplements/224018/natural-therapies-thumb_3ea830f2ac0a9b93dbcc5ddba20ff01c.png"
+                    data-link="https://jeanhailes8.staging.yump.com.au/resources/natural-therapies-supplements-fact-sheet"
+                  />
+                  <span
+                    class="component-card__chip btn btn--small btn--primary-light"
+                    >Fact sheet</span
+                  >
+                </figure>
+                <div class="component-card__body">
+                  <h3 class="component-card__title">
+                    Natural therapies &amp; supplements - fact sheet
+                  </h3>
+                  <div class="component-card__text">
+                    Natural therapies include acupuncture, herbal treatments,
+                    homeopathy, naturopathy, nutrition, massage and traditional
+                    Chinese medicine.
+                  </div>
+
+                  <a
+                    class="component-card__cta"
+                    href="https://jeanhailes8.staging.yump.com.au/resources/natural-therapies-supplements-fact-sheet"
+                  >
+                    <svg
+                      width="40"
+                      height="41"
+                      viewBox="0 0 40 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="0.473633"
+                        width="40"
+                        height="40"
+                        rx="20"
+                        fill="#3D0F58"
+                      ></rect>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main__container fullWidthContent">
+      <div
+        class="matrix-block matrix-block--card-columns-1 matrix-block-theme-white"
+      >
+        <div class="container">
+          <div class="matrix-block__header">
+            <h1 class="matrix-block__title">Resources to check out</h1>
+          </div>
+          <div class="component-grid">
+            <article
+              class="component-card"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact Sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Cervical screening</h3>
+                <div class="component-card__text">
+                  Are your checks up to date? Learn about the new
+                  self-collection screening option.
+                </div>
+                <a class="component-card__cta" href="h#">
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <article
+              class="component-card"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="500"
+            >
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact Sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Breast self-checks</h3>
+                <div class="component-card__text">
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.
+                </div>
+                <a class="component-card__cta" href="h#">
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <article
+              class="component-card"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="1000"
+            >
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact Sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Be in the know</h3>
+                <div class="component-card__text">
+                  Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                  venenatis vestibulum. Nulla vitae elit libero, a pharetra
+                  augue. Sed posuere consectetur est at lobortis.
+                </div>
+                <a class="component-card__cta" href="h#">
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main__container fullWidthContent">
+      <div
+        class="matrix-block matrix-block--card-columns-1 matrix-block--theme-primary"
+      >
+        <div class="container">
+          <div class="matrix-block__header">
+            <h1 class="matrix-block__title">Resources to check out</h1>
+          </div>
+          <div class="component-grid">
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact Sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Cervical screening</h3>
+                <div class="component-card__text">
+                  Are your checks up to date? Learn about the new
+                  self-collection screening option.
+                </div>
+                <a class="component-card__cta" href="h#">
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact Sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Breast self-checks</h3>
+                <div class="component-card__text">
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.
+                </div>
+                <a class="component-card__cta" href="h#">
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact Sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Be in the know</h3>
+                <div class="component-card__text">
+                  Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                  venenatis vestibulum. Nulla vitae elit libero, a pharetra
+                  augue. Sed posuere consectetur est at lobortis.
+                </div>
+                <a class="component-card__cta" href="h#">
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main__container fullWidthContent">
+      <div
+        class="matrix-block matrix-block--card-columns-1 matrix-block--theme-gray"
+      >
+        <div class="container">
+          <div class="matrix-block__header">
+            <h1 class="matrix-block__title">Resources to check out</h1>
+          </div>
+          <div class="component-grid">
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact Sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Cervical screening</h3>
+                <div class="component-card__text">
+                  Are your checks up to date? Learn about the new
+                  self-collection screening option.
+                </div>
+                <a class="component-card__cta" href="h#">
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact Sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Breast self-checks</h3>
+                <div class="component-card__text">
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Nullam id dolor id nibh ultricies vehicula ut id elit.
+                </div>
+                <a class="component-card__cta" href="h#">
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+                <span
+                  class="component-card__chip btn btn--small btn--primary-light"
+                  >Fact Sheet</span
+                >
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Be in the know</h3>
+                <div class="component-card__text">
+                  Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+                  venenatis vestibulum. Nulla vitae elit libero, a pharetra
+                  augue. Sed posuere consectetur est at lobortis.
+                </div>
+                <a class="component-card__cta" href="h#">
+                  <svg
+                    width="40"
+                    height="41"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.473633"
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="#3D0F58"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M22.8423 16.2097C23.1614 15.8871 23.6874 15.8871 24.0065 16.2097L27.6408 19.8828C27.9599 20.2053 27.9599 20.737 27.6309 21.0595L23.997 24.7326C23.8374 24.8943 23.6309 24.9795 23.4149 24.9795C23.2084 24.9795 22.9923 24.8939 22.8328 24.7326C22.5136 24.4101 22.5136 23.8784 22.8328 23.5559L24.9899 21.3748L12.7801 21.3748C12.2824 21.3748 11.8789 20.9714 11.8789 20.4737C11.8789 19.9759 12.2824 19.5725 12.7801 19.5725L24.9979 19.5718L22.8423 17.3864C22.5498 17.0908 22.5254 16.6194 22.7692 16.2944L22.8423 16.2097Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main__container fullWidthContent">
+      <div
+        class="matrix-block matrix-block--card-columns-2 matrix-block--theme-primary-lighter"
+      >
+        <div class="container">
+          <div class="matrix-block__header">
+            <h1 class="matrix-block__title">Resources to check out</h1>
+          </div>
+          <div class="component-grid">
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Cervical screening</h3>
+
+                <a class="component-card__cta btn btn--small" href="h#">
+                  Download
+                </a>
+              </div>
+            </article>
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Cervical screening</h3>
+
+                <a class="component-card__cta btn btn--small" href="h#">
+                  Download
+                </a>
+              </div>
+            </article>
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Cervical screening</h3>
+
+                <a class="component-card__cta btn btn--small" href="h#">
+                  Download
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main__container fullWidthContent">
+      <div
+        class="matrix-block matrix-block--card-columns-2 matrix-block--theme-white"
+      >
+        <div class="container">
+          <div class="matrix-block__header">
+            <h1 class="matrix-block__title">Resources to check out</h1>
+          </div>
+          <div class="component-grid">
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Cervical screening</h3>
+
+                <a class="component-card__cta btn btn--small" href="h#">
+                  Download
+                </a>
+              </div>
+            </article>
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Cervical screening</h3>
+
+                <a class="component-card__cta btn btn--small" href="h#">
+                  Download
+                </a>
+              </div>
+            </article>
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Cervical screening</h3>
+
+                <a class="component-card__cta btn btn--small" href="h#">
+                  Download
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main__container fullWidthContent">
+      <div
+        class="matrix-block matrix-block--card-columns-2 matrix-block--theme-gray"
+      >
+        <div class="container">
+          <div class="matrix-block__header">
+            <h1 class="matrix-block__title">Resources to check out</h1>
+          </div>
+          <div class="component-grid">
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Cervical screening</h3>
+
+                <a class="component-card__cta btn btn--small" href="h#">
+                  Download
+                </a>
+              </div>
+            </article>
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Cervical screening</h3>
+
+                <a class="component-card__cta btn btn--small" href="h#">
+                  Download
+                </a>
+              </div>
+            </article>
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/featured-img.jpg"
+                  alt="Ashley Sailability"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Cervical screening</h3>
+
+                <a class="component-card__cta btn btn--small" href="h#">
+                  Download
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </div>
     <div
-      class="matrix-block matrix-block--featured-block matrix-block--margin-bottom-zero"
+      class="matrix-block matrix-block--resourceCards"
+      id="matrix-block-323642"
     >
-      <div class="container featured-block">
-        <header class="featured-block__header">
-          <h3 class="featured-block__title">Featured articles</h3>
-        </header>
-        <article class="featured-block__article">
-          <div class="featured-block__article__content">
-            <h4 class="featured-block__article__title">
-              Celebrating Women’s Health Week
-            </h4>
-            <div class="featured-block__article__text">
-              More than 2300 events are happening this week across the country
-              in celebration of Jean Hailes Women’s Health Week.
-            </div>
-            <a
-              class="button button--primary-light banner__button featured-block__article__cta featured-block__article__cta--bottom"
-              href="h#"
-            >
-              <span class="button__text">Read more</span>
+      <div class="matrix-block--card-columns-1 matrix-block--theme-gray">
+        <div class="container">
+          <div class="matrix-block__header">
+            <h2 class="matrix-block__title">Resources to check out</h2>
+          </div>
+
+          <div class="component-grid resourcesWithDownload">
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="/imager/images/Health-topics/Health-checks/106574/My-Health-First-booklet_3ea830f2ac0a9b93dbcc5ddba20ff01c.png"
+                  data-link="https://jeanhailes8.staging.yump.com.au/resources/my-health-first-booklet"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">My Health First - booklet</h3>
+                <a
+                  class="component-card__cta btn btn--small"
+                  href="https://jeanhailes8.staging.yump.com.au/resources/my-health-first-booklet"
+                  >Download</a
+                >
+              </div>
+            </article>
+
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="/imager/images/Health-topics/Health-checks/288617/whw22_health_checks_poster_A3_WEB_3ea830f2ac0a9b93dbcc5ddba20ff01c.png"
+                  data-link="https://jeanhailes8.staging.yump.com.au/resources/health-checks-for-women-poster"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">
+                  Health checks for women poster
+                </h3>
+                <a
+                  class="component-card__cta btn btn--small"
+                  href="https://jeanhailes8.staging.yump.com.au/resources/health-checks-for-women-poster"
+                  >Download</a
+                >
+              </div>
+            </article>
+
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="/imager/images/Health-topics/Bone-health/117161/bone-health-fact-sheet-thumb_3ea830f2ac0a9b93dbcc5ddba20ff01c.png"
+                  data-link="https://jeanhailes8.staging.yump.com.au/resources/bone-health-fact-sheet"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">Bone health - fact sheet</h3>
+                <a
+                  class="component-card__cta btn btn--small"
+                  href="https://jeanhailes8.staging.yump.com.au/resources/bone-health-fact-sheet"
+                  >Download</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main__container container">
+      <div class="matrix-block matrix-block--highlightedResource">
+        <div class="matrix-block matrix-block--featured-card-reverse">
+          <div class="component-grid" data-aos="zoom-out-up">
+            <article class="component-card">
+              <figure class="component-card__figure">
+                <img
+                  class="component-card__img"
+                  src="./dist/img/feature-card-reverse-img.jpg"
+                  alt="Ashley Sailability"
+                />
+              </figure>
+              <div class="component-card__body">
+                <h3 class="component-card__title">
+                  A handy health checks guide
+                </h3>
+                <div class="component-card__text">
+                  Not sure which health checks you need and when? Thanks to our
+                  partner Hologic, here’s our handy guide for women.
+                </div>
+                <a class="btn btn--small" href="h#"> Get the poster </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main__container container">
+      <div class="matrix-block matrix-block--logo-list">
+        <div class="matrix-block__header">
+          <h1 class="matrix-block__title">Media Partners</h1>
+        </div>
+        <div class="logo-list">
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/ooh 1.png" alt="" />
             </a>
           </div>
-          <div class="featured-block__article__img">
-            <img src="./dist/img/featured-img.jpg" alt="" />
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/smoothfm_resize1.png" alt="" />
+            </a>
           </div>
-        </article>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/AWW.jpg" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="container cards cards--count-3 cards--news-cards">
-      <header class="cards__header">
-        <h2 class="cards__title">Vivamus sagittis lacus vel augue laoreet</h2>
-      </header>
-      <div class="cards__rows">
-        <article
-          class="card card__container card--whole-link card--flushed"
-          data-link="https://www.inlife.org.au/news/all-aboard-for-plenty-of-fun"
-        >
-          <div class="card__container card__inner-grid" data-animation-delay="">
-            <div class="card__body">
-              <a
-                class="card__link"
-                href="https://www.inlife.org.au/news/all-aboard-for-plenty-of-fun"
-              >
-                <h3 class="card__heading">
-                  <span class="card__title"> The 2022 Good Health Guide </span>
-                </h3>
-              </a>
-
-              <div class="card__text">
-                <p>
-                  Integer posuere erat a ante venenatis dapibus posuere velit
-                  aliquet. Aenean eu leo quam.
-                </p>
-              </div>
-              <a href="#" class="text-link">Read more</a>
-            </div>
-            <figure class="card__image-wrap">
+      <div class="matrix-block matrix-block--logo-list">
+        <div class="matrix-block__header">
+          <h1 class="matrix-block__title">Supporting Partners</h1>
+        </div>
+        <div class="logo-list">
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
               <img
-                class="img-fluid card__img"
-                src="./dist/img/aboriginal-woman-smiling-holding-phone 1.jpg"
-                alt="Ashley Sailability"
-                data-link="https://www.inlife.org.au/news/all-aboard-for-plenty-of-fun"
+                src="./dist/img/logostrip/LF-Lead-Logo-RGB-Black.png"
+                alt=""
               />
-            </figure>
+            </a>
           </div>
-        </article>
-        <article
-          class="card card__container card--whole-link card--flushed"
-          data-link="https://www.inlife.org.au/news/all-aboard-for-plenty-of-fun"
-        >
-          <div class="card__container card__inner-grid" data-animation-delay="">
-            <div class="card__body">
-              <a
-                class="card__link"
-                href="https://www.inlife.org.au/news/all-aboard-for-plenty-of-fun"
-              >
-                <h3 class="card__heading">
-                  <span class="card__title"> The 2022 Good Health Guide </span>
-                </h3>
-              </a>
-
-              <div class="card__text">
-                <p>
-                  Integer posuere erat a ante venenatis dapibus posuere velit
-                  aliquet. Aenean eu leo quam.
-                </p>
-              </div>
-              <a href="#" class="text-link">Read more</a>
-            </div>
-            <figure class="card__image-wrap">
-              <img
-                class="img-fluid card__img"
-                src="./dist/img/aboriginal-woman-smiling-holding-phone 1.jpg"
-                alt="Ashley Sailability"
-                data-link="https://www.inlife.org.au/news/all-aboard-for-plenty-of-fun"
-              />
-            </figure>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/OET-logo-white-space.png" alt="" />
+            </a>
           </div>
-        </article>
-        <article
-          class="card card__container card--whole-link card--flushed"
-          data-link="https://www.inlife.org.au/news/all-aboard-for-plenty-of-fun"
-        >
-          <div class="card__container card__inner-grid" data-animation-delay="">
-            <div class="card__body">
-              <a
-                class="card__link"
-                href="https://www.inlife.org.au/news/all-aboard-for-plenty-of-fun"
-              >
-                <h3 class="card__heading">
-                  <span class="card__title"> The 2022 Good Health Guide </span>
-                </h3>
-              </a>
-
-              <div class="card__text">
-                <p>
-                  Integer posuere erat a ante venenatis dapibus posuere velit
-                  aliquet. Aenean eu leo quam.
-                </p>
-              </div>
-              <a href="#" class="text-link">Read more</a>
-            </div>
-            <figure class="card__image-wrap">
-              <img
-                class="img-fluid card__img"
-                src="./dist/img/aboriginal-woman-smiling-holding-phone 1.jpg"
-                alt="Ashley Sailability"
-                data-link="https://www.inlife.org.au/news/all-aboard-for-plenty-of-fun"
-              />
-            </figure>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/ethnolink-logo-new.png" alt="" />
+            </a>
           </div>
-        </article>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/hologic-resize-med.png" alt="" />
+            </a>
+          </div>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/Fernwood-fitness.png" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div
-      class="matrix-block matrix-block--richMedia matrix-block--margin-bottom-zero"
-    >
-      <div
-        class="rich-media rich-media--with-image rich-media--theme-lightGray rich-media--theme-outcast"
-      >
-        <div class="rich-media__row">
-          <div class="rich-media__column rich-media__column--media">
-            <figure
-              class="rich-media__media rich-media__media--image"
-              style="
-                background-image: url('./dist/img/aboriginal-woman-smiling-holding-phone\ 1.jpg');
-                background-position: 50% 50%;
-                background-repeat: no-repeat;
-                background-size: cover;
-              "
-            ></figure>
+      <div class="matrix-block matrix-block--logo-grid">
+        <div class="matrix-block__header">
+          <h1 class="matrix-block__title">Supporting Partners</h1>
+        </div>
+        <div class="logo-list">
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/RACGP_Master_DIGITAL.png" alt="" />
+            </a>
           </div>
-          <div
-            class="rich-media__column rich-media__column--text rich-media__column--text--2"
-          >
-            <section class="banner__inner-column rich-media__inner-column">
-              <h2 class="rich-media__text-content-heading">
-                What's Women's Health Week all about?
-              </h2>
-              <div class="rich-media__text-content-summary">
-                <p>
-                  This year's highlighted topics include the top five concerns
-                  in women’s health: menopause and perimenopause, pelvic health,
-                  health checks, mental wellbeing as well as physical activity.
-                </p>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/Gidget_logo_sml.png" alt="" />
+            </a>
+          </div>
+
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/FECCA_logo_cropped.png" alt="" />
+            </a>
+          </div>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img
+                src="./dist/img/logostrip/Australian-Indigenous-health-infonet-logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img
+                src="./dist/img/logostrip/LGBTIQ+-Health-Australia.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/RFDS-logo-revised.png" alt="" />
+            </a>
+          </div>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/ANMF_Logo.jpg" alt="" />
+            </a>
+          </div>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/WWDA_Logo.png" alt="" />
+            </a>
+          </div>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/BSV_Logo_whitespace.png" alt="" />
+            </a>
+          </div>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/WHFS-logo.png" alt="" />
+            </a>
+          </div>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/BreastscreenWA-logo.png" alt="" />
+            </a>
+          </div>
+          <div class="logo-list-item">
+            <a href="#" class="logo-list-link">
+              <img src="./dist/img/logostrip/NATSIWA_logo.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="matrix-block matrix-block--columns" id="matrix-block-315479">
+        <div class="columns">
+          <div class="columns__row">
+            <div
+              class="columns__column col-lg-4 col-md-6 col-12"
+              id="matrix-block-315480"
+            >
+              <div
+                class="matrix-block matrix-block--image"
+                id="matrix-block-315485"
+              >
+                <img
+                  class="img-fluid slider-item__image"
+                  src="/dist/img/featured-img.jpg"
+                  alt="Image 56"
+                />
+                <!-- End image container -->
               </div>
-              <div class="button--group">
-                <a
-                  class="button button--primary banner__button button--extra-wide rich-media__text-content-cta"
-                  href="https://www.inlife.org.au/join-our-team/before-you-apply"
+            </div>
+            <div
+              class="columns__column col-lg-8 col-md-6 col-12"
+              id="matrix-block-315482"
+            >
+              <div
+                class="matrix-block matrix-block--richText"
+                id="matrix-block-315483"
+              >
+                <div
+                  class="rich-text editor-default rich-text--whw rich-text-in-boxedWidthContent rich-text-in-columns rich-text-in-column"
                 >
-                  <span class="button__text">The week</span>
-                </a>
-                <a
-                  class="button button--primary-outline banner__button rich-media__text-content-cta"
-                  href="https://www.inlife.org.au/join-our-team/before-you-apply"
-                >
-                  <span class="button__text">Health resources</span>
-                </a>
+                  <p>
+                    It’s normal to feel your lower tummy muscles draw in towards
+                    your spine as you tighten your pelvic floor muscles. It’s
+                    also okay if your lower tummy does not move.
+                  </p>
+                  <p>
+                    At the end of each squeeze, you should have a distinct
+                    feeling of the muscles ‘letting go’ and releasing.
+                  </p>
+                  <p>
+                    Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Aenean lacinia bibendum
+                    nulla sed consectetur. Praesent commodo cursus magna, vel
+                    scelerisque nisl consectetur et.
+                  </p>
+                </div>
               </div>
-            </section>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container cards cards--count-3 cards--customers">
-      <header class="cards__header">
-        <h1 class="cards__title">Champions for good health</h1>
-        <a href="#" class="button button--primary"
-          ><span class="button__text">View all</span>
-        </a>
-      </header>
-      <div class="cards__rows">
-        <article class="card card__container card--customers">
-          <div class="card__container card__inner-grid" data-animation-delay="">
-            <div class="card__body">
-              <div class="card__text">
-                <p>Australian Mountain Climber</p>
-              </div>
-            </div>
-            <figure class="card__image-wrap">
-              <div class="button button--primary">Alyssa Azar</div>
-              <img
-                class="img-fluid card__img"
-                src="./dist/img/aboriginal-woman-smiling-holding-phone 1.jpg"
-                alt="Ashley Sailability"
-                data-link="https://www.inlife.org.au/news/all-aboard-for-plenty-of-fun"
-              />
-            </figure>
-          </div>
-        </article>
-        <article class="card card__container card--customers">
-          <div class="card__container card__inner-grid" data-animation-delay="">
-            <div class="card__body">
-              <div class="card__text">
-                <p>Australian Mountain Climber</p>
-              </div>
-            </div>
-            <figure class="card__image-wrap">
-              <div class="button button--primary">Alyssa Azar</div>
-              <img
-                class="img-fluid card__img"
-                src="./dist/img/aboriginal-woman-smiling-holding-phone 1.jpg"
-                alt="Ashley Sailability"
-                data-link="https://www.inlife.org.au/news/all-aboard-for-plenty-of-fun"
-              />
-            </figure>
-          </div>
-        </article>
-        <article class="card card__container card--customers">
-          <div class="card__container card__inner-grid" data-animation-delay="">
-            <div class="card__body">
-              <div class="card__text">
-                <p>Australian Mountain Climber</p>
-              </div>
-            </div>
-            <figure class="card__image-wrap">
-              <div class="button button--primary">Alyssa Azar</div>
-              <img
-                class="img-fluid card__img"
-                src="./dist/img/aboriginal-woman-smiling-holding-phone 1.jpg"
-                alt="Ashley Sailability"
-                data-link="https://www.inlife.org.au/news/all-aboard-for-plenty-of-fun"
-              />
-            </figure>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <div
-      class="matrix-block matrix-block--richMedia matrix-block--margin-bottom-zero"
-    >
-      <div
-        class="rich-media rich-media--with-image rich-media--theme-lightPrimary rich-media--theme-outcast"
-      >
-        <div class="rich-media__row">
-          <div class="rich-media__column rich-media__column--media">
-            <figure
-              class="rich-media__media rich-media__media--image"
-              style="
-                background-image: url('./dist/img/aboriginal-woman-smiling-holding-phone\ 1.png');
-                background-position: 50% 50%;
-                background-repeat: no-repeat;
-                background-size: contain;
-              "
-            ></figure>
-          </div>
-          <div
-            class="rich-media__column rich-media__column--text rich-media__column--text--2"
-          >
-            <section class="banner__inner-column rich-media__inner-column">
-              <h2 class="rich-media__text-content-heading">
-                What's Women's Health Week all about?
-              </h2>
-              <div class="rich-media__text-content-summary">
-                <p>
-                  This year's highlighted topics include the top five concerns
-                  in women’s health: menopause and perimenopause, pelvic health,
-                  health checks, mental wellbeing as well as physical activity.
-                </p>
-              </div>
-              <div class="button--group">
-                <a
-                  class="button button--primary banner__button button--extra-wide rich-media__text-content-cta"
-                  href="https://www.inlife.org.au/join-our-team/before-you-apply"
-                >
-                  <span class="button__text">The week</span>
-                </a>
-                <a
-                  class="button button--primary-outline banner__button rich-media__text-content-cta"
-                  href="https://www.inlife.org.au/join-our-team/before-you-apply"
-                >
-                  <span class="button__text">Health resources</span>
-                </a>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

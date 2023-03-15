@@ -1,8 +1,9 @@
-.matrix-block--featured-card-reverse {
+.matrix-block--featured-card-reverse,
+.matrix-block--highlightedResource {
   @extend %matrix-block;
   @extend %matrix-block--section;
-  --matrix-block-section-padding-lg: 80px 0 80px 0;
-  --matrix-block-section-padding-sm: 40px 0 40px 0;
+  --matrix-block-section-margin-lg: 80px 0 80px 0;
+  --matrix-block-section-margin-sm: 40px 0 40px 0;
 
   .component-grid {
     --col: 12;

@@ -7,7 +7,8 @@
 .matrix-block--theme-primary-lighter {
   background-color: var(--primary-lighter);
 }
-.matrix-block--theme-primary {
+.matrix-block--theme-primary,
+.matrix-block--theme-dark-purple {
   --matrix-block-title-color: white;
   background-color: var(--primary-darker);
 }
@@ -28,26 +29,27 @@
     }
   }
 }
-.matrix-block--customHtml {
-  padding-bottom: 24px;
-  @media (min-width: 992px) {
-    padding-bottom: 40px;
-  }
-}
+
 .matrix-block--buttons {
-  padding-bottom: 4px;
-  @media (min-width: 992px) {
-    padding-bottom: 40px;
-  }
+  @extend %matrix-block;
+  @extend %matrix-block--section;
+  --matrix-block-section-margin-lg: 24px 0 24px 0;
+  --matrix-block-section-margin-sm: 24px 0 24px 0;
 }
 .matrix-block--columns .columns__column .matrix-block--image {
   @media (min-width: 992px) {
-    padding-left: 43px;
+    // padding-left: 43px;
   }
 
   img {
-    height: 117px;
+    height: 279px;
     display: block;
-    margin-inline: auto;
+    margin: 0;
+    // margin-inline: auto;
   }
+}
+
+.matrix-block--resourceCards {
+  padding: 0;
+  margin: 0;
 }

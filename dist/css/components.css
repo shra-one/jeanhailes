@@ -27104,13 +27104,13 @@ h6 {
 .rich-media__media--video .video {
   all: inherit;
   aspect-ratio: unset;
-  --minHeight: 250px;
-  min-height: var(--minHeight);
+  overflow: hidden;
 }
-@media (min-width: 992px) {
-  .rich-media__media--video .video {
-    --minHeight: unset;
-  }
+.rich-media__media--video .video img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .rich-media__media--video .video a {
   display: grid;
@@ -27118,6 +27118,8 @@ h6 {
   width: inherit;
   height: inherit;
   position: relative;
+  position: absolute;
+  inset: 0;
 }
 .rich-media__media--video .video a:before {
   content: "";
@@ -27128,13 +27130,6 @@ h6 {
   inset: 0;
   background: black;
   opacity: 0.2;
-}
-.rich-media__media--video .video a img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .rich-media__media--video .video a .video__button {
   display: flex;

@@ -190,11 +190,21 @@
       .video {
         all: inherit;
         aspect-ratio: unset;
-        --minHeight: 250px;
-        min-height: var(--minHeight);
+        overflow: hidden;
+        // --minHeight: 250px;
+        // min-height: var(--minHeight);
+        // @include media-breakpoint-up(sm) {
+        //   --minHeight: 400px;
+        // }
 
-        @include media-breakpoint-up(lg) {
-          --minHeight: unset;
+        // @include media-breakpoint-up(lg) {
+        //   --minHeight: unset;
+        // }
+        img {
+          // position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
         a {
           display: grid;
@@ -202,6 +212,8 @@
           width: inherit;
           height: inherit;
           position: relative;
+          position: absolute;
+          inset: 0;
           &:before {
             content: "";
             display: block;
@@ -211,12 +223,6 @@
             inset: 0;
             background: black;
             opacity: 0.2;
-          }
-          img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
           }
 
           .video__button {

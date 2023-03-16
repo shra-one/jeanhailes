@@ -27085,23 +27085,8 @@ h6 {
 .rich-media__media__figure {
   width: 100%;
   height: 100%;
-  --aspect-ratio: 16/10;
-  display: block;
-  aspect-ratio: var(--aspect-ratio);
   position: relative;
-}
-@supports not (aspect-ratio: 16/9) {
-  .rich-media__media__figure:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-bottom: calc(100% / (var(--aspect-ratio)));
-  }
-}
-@media (min-width: 992px) {
-  .rich-media__media__figure {
-    --aspect-ratio: 4/3;
-  }
+  display: block;
 }
 .rich-media__media__figure img {
   width: 100%;
@@ -27110,29 +27095,22 @@ h6 {
      object-fit: cover;
 }
 .rich-media__media--video {
-  --aspect-ratio: 16/9;
   width: 100%;
   height: 100%;
   padding: 0;
   display: block;
-  aspect-ratio: var(--aspect-ratio);
   position: relative;
-}
-@media (min-width: 992px) {
-  .rich-media__media--video {
-    --aspect-ratio: 4/3;
-  }
-}
-@supports not (aspect-ratio: 16/9) {
-  .rich-media__media--video:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-bottom: calc(100% / (var(--aspect-ratio)));
-  }
 }
 .rich-media__media--video .video {
   all: inherit;
+  aspect-ratio: unset;
+  --minHeight: 250px;
+  min-height: var(--minHeight);
+}
+@media (min-width: 992px) {
+  .rich-media__media--video .video {
+    --minHeight: unset;
+  }
 }
 .rich-media__media--video .video a {
   display: grid;
@@ -27150,6 +27128,13 @@ h6 {
   inset: 0;
   background: black;
   opacity: 0.2;
+}
+.rich-media__media--video .video a img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .rich-media__media--video .video a .video__button {
   display: flex;

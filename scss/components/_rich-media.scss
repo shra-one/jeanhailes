@@ -146,21 +146,21 @@
     &__figure {
       width: 100%;
       height: 100%;
-      --aspect-ratio: 16/10;
-      display: block;
-      aspect-ratio: var(--aspect-ratio);
       position: relative;
-      @supports not (aspect-ratio: 16 / 9) {
-        &:before {
-          display: block;
-          content: "";
-          width: 100%;
-          padding-bottom: calc(100% / (var(--aspect-ratio)));
-        }
-      }
-      @media (min-width: 992px) {
-        --aspect-ratio: 4/3;
-      }
+      display: block;
+      // --aspect-ratio: 16/10;
+      // aspect-ratio: var(--aspect-ratio);
+      // @supports not (aspect-ratio: 16 / 9) {
+      //   &:before {
+      //     display: block;
+      //     content: "";
+      //     width: 100%;
+      //     padding-bottom: calc(100% / (var(--aspect-ratio)));
+      //   }
+      // }
+      // @media (min-width: 992px) {
+      //   --aspect-ratio: 4/3;
+      // }
       img {
         width: 100%;
         height: 100%;
@@ -169,26 +169,33 @@
     }
 
     &--video {
-      --aspect-ratio: 16/9;
-      @media (min-width: 992px) {
-        --aspect-ratio: 4/3;
-      }
+      // --aspect-ratio: 16/9;
+      // @media (min-width: 992px) {
+      //   --aspect-ratio: 4/3;
+      // }
       width: 100%;
       height: 100%;
       padding: 0;
       display: block;
-      aspect-ratio: var(--aspect-ratio);
       position: relative;
-      @supports not (aspect-ratio: 16 / 9) {
-        &:before {
-          display: block;
-          content: "";
-          width: 100%;
-          padding-bottom: calc(100% / (var(--aspect-ratio)));
-        }
-      }
+      // aspect-ratio: var(--aspect-ratio);
+      // @supports not (aspect-ratio: 16 / 9) {
+      //   &:before {
+      //     display: block;
+      //     content: "";
+      //     width: 100%;
+      //     padding-bottom: calc(100% / (var(--aspect-ratio)));
+      //   }
+      // }
       .video {
         all: inherit;
+        aspect-ratio: unset;
+        --minHeight: 250px;
+        min-height: var(--minHeight);
+
+        @include media-breakpoint-up(lg) {
+          --minHeight: unset;
+        }
         a {
           display: grid;
           place-items: center;
@@ -204,6 +211,12 @@
             inset: 0;
             background: black;
             opacity: 0.2;
+          }
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
 
           .video__button {

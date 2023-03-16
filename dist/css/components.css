@@ -15084,6 +15084,15 @@ textarea.form-control-lg {
 
 /**
  *
+ *  Global settings
+ *
+ */
+body {
+  padding-top: 66px;
+}
+
+/**
+ *
  * Typography Global settings
  *
  */
@@ -15371,9 +15380,22 @@ h6 {
   white-space: nowrap;
   gap: 12px;
 }
+.btn:focus, .matrix-block--signup-banner .component-grid button[type=submit]:focus {
+  box-shadow: 0 0 0 0.25rem rgba(61, 15, 88, 0.1) !important;
+}
+.btn:focus-visible, .matrix-block--signup-banner .component-grid button[type=submit]:focus-visible {
+  outline-color: var(--primary-light);
+}
+.btn[disabled], .matrix-block--signup-banner .component-grid button[disabled][type=submit] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.btn[disabled]:hover, .matrix-block--signup-banner .component-grid button[disabled][type=submit]:hover {
+  background-color: var(--primary-darker);
+}
 .btn svg, .matrix-block--signup-banner .component-grid button[type=submit] svg {
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
 }
 .btn img, .matrix-block--signup-banner .component-grid button[type=submit] img {
   width: 1em;
@@ -26246,7 +26268,7 @@ h6 {
   color: white;
   border: 0;
 }
-.btn--primary:hover, .matrix-block--signup-banner .component-grid button[type=submit]:hover {
+.btn--primary:hover:not(:disabled), .matrix-block--signup-banner .component-grid button[type=submit]:hover:not(:disabled) {
   background: var(--primary);
   color: white;
 }
@@ -26257,19 +26279,19 @@ h6 {
   background: transparent !important;
   color: var(--primary-darker);
 }
-.btn--primary-outline:hover, .matrix-block--textColumn .btn__group .btn--secondary:hover, .matrix-block--buttons .btn--secondary:hover, .rich-media--theme-purple-light .btn--secondary:hover,
-.rich-media--theme-white .btn--secondary:hover,
-.rich-media--theme-gray .btn--secondary:hover {
+.btn--primary-outline:hover:not([disabled]), .matrix-block--textColumn .btn__group .btn--secondary:hover:not([disabled]), .matrix-block--buttons .btn--secondary:hover:not([disabled]), .rich-media--theme-purple-light .btn--secondary:hover:not([disabled]),
+.rich-media--theme-white .btn--secondary:hover:not([disabled]),
+.rich-media--theme-gray .btn--secondary:hover:not([disabled]) {
   text-decoration: underline;
 }
-.btn--primary-outline:hover svg rect, .matrix-block--textColumn .btn__group .btn--secondary:hover svg rect, .matrix-block--buttons .btn--secondary:hover svg rect, .rich-media--theme-purple-light .btn--secondary:hover svg rect,
-.rich-media--theme-white .btn--secondary:hover svg rect,
-.rich-media--theme-gray .btn--secondary:hover svg rect {
+.btn--primary-outline:hover:not([disabled]) svg rect, .matrix-block--textColumn .btn__group .btn--secondary:hover:not([disabled]) svg rect, .matrix-block--buttons .btn--secondary:hover:not([disabled]) svg rect, .rich-media--theme-purple-light .btn--secondary:hover:not([disabled]) svg rect,
+.rich-media--theme-white .btn--secondary:hover:not([disabled]) svg rect,
+.rich-media--theme-gray .btn--secondary:hover:not([disabled]) svg rect {
   fill: white;
 }
-.btn--primary-outline:hover svg path, .matrix-block--textColumn .btn__group .btn--secondary:hover svg path, .matrix-block--buttons .btn--secondary:hover svg path, .rich-media--theme-purple-light .btn--secondary:hover svg path,
-.rich-media--theme-white .btn--secondary:hover svg path,
-.rich-media--theme-gray .btn--secondary:hover svg path {
+.btn--primary-outline:hover:not([disabled]) svg path, .matrix-block--textColumn .btn__group .btn--secondary:hover:not([disabled]) svg path, .matrix-block--buttons .btn--secondary:hover:not([disabled]) svg path, .rich-media--theme-purple-light .btn--secondary:hover:not([disabled]) svg path,
+.rich-media--theme-white .btn--secondary:hover:not([disabled]) svg path,
+.rich-media--theme-gray .btn--secondary:hover:not([disabled]) svg path {
   fill: var(--primary-darker);
 }
 .btn--white-outline, .rich-media--theme-dark-purple .btn--secondary,
@@ -26339,6 +26361,10 @@ h6 {
 }
 .btn--radioGroup .btn--radio:last-child .btn, .btn--radioGroup .btn--radio:last-child .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .btn--radioGroup .btn--radio:last-child button[type=submit] {
   border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.btn-check:focus ~ label {
+  box-shadow: 0 0 0 0.25rem rgba(61, 15, 88, 0.1);
 }
 
 .matrix-block--richMedia .btn__group .btn, .matrix-block--richMedia .btn__group .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .matrix-block--richMedia .btn__group button[type=submit] {
@@ -29141,6 +29167,11 @@ select {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+@media (max-width: 1023px) {
+  .header__container .navigation .container {
+    padding-inline: 0;
+  }
+}
 
 .filter-event__header {
   border-bottom: 1px solid var(--border);
@@ -29490,6 +29521,7 @@ input[type=radio]:checked + label.btn {
 
 .matrix-block--card-columns-featured {
   background-color: var(--gray-light) !important;
+  --matrix-block-section-padding-sm: 0 0 16px 0;
   --matrix-block-title-size-lg: 20px;
   --matrix-block-title-lineheight-lg: 20px;
   --matrix-block-title-weight-lg: 600;
@@ -29500,11 +29532,11 @@ input[type=radio]:checked + label.btn {
   --matrix-block-header-margin-lg: 0 0 24px 0;
   --matrix-block-header-margin-sm: 0 0 36px 0;
   --matrix-block-section-padding-lg: 64px 0 64px 0;
-  --matrix-block-section-padding-sm: 0 0 0 0;
+  --matrix-block-section-padding-sm: 0 0 16px 0;
 }
 .matrix-block--card-columns-featured:not(.matrix-block--theme-primary) {
   --matrix-block-section-padding-lg: 48px 0 106px 0;
-  --matrix-block-section-padding-sm: 0 0 0 0;
+  --matrix-block-section-padding-sm: 0 0 16px 0;
 }
 @media (min-width: 992px) {
   .matrix-block--card-columns-featured.matrix-block--theme-primary {
@@ -30067,6 +30099,14 @@ input[type=radio]:checked + label.btn {
 .register-your-event {
   padding-top: 0;
 }
+.register-your-event .js-form-steps {
+  margin-top: 24px;
+}
+@media (min-width: 768px) {
+  .register-your-event .js-form-steps {
+    margin-top: 0;
+  }
+}
 .register-your-event .navigation {
   display: none;
 }
@@ -30075,6 +30115,7 @@ input[type=radio]:checked + label.btn {
 }
 .register-your-event .header__container {
   padding-block: 24px;
+  gap: 10px;
 }
 .register-your-event .header__wrap {
   border-bottom: 1px solid var(--border);

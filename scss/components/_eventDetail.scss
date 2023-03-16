@@ -118,6 +118,12 @@
 
 .register-your-event {
   padding-top: 0;
+  .js-form-steps {
+    margin-top: 24px;
+    @include media-breakpoint-up(md) {
+      margin-top: 0;
+    }
+  }
   .navigation {
     display: none;
   }
@@ -129,6 +135,7 @@
 
     &__container {
       padding-block: 24px;
+      gap: 10px;
     }
     &__wrap {
       border-bottom: 1px solid var(--border);

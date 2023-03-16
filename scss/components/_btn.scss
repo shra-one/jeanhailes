@@ -13,10 +13,23 @@
   transition: all 100ms linear;
   white-space: nowrap;
   gap: 12px;
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(61, 15, 88, 0.1) !important;
+  }
+  &:focus-visible {
+    outline-color: var(--primary-light);
+  }
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+    &:hover {
+      background-color: var(--primary-darker);
+    }
+  }
 
   svg {
-    width: 1em;
-    height: 1em;
+    width: 2em;
+    height: 2em;
   }
   img {
     width: 1em;
@@ -58,7 +71,7 @@
     background: var(--primary-darker);
     color: white;
     border: 0;
-    &:hover {
+    &:hover:not(:disabled) {
       background: var(--primary);
       color: white;
     }
@@ -68,7 +81,7 @@
     border: 2px solid var(--primary-darker);
     background: transparent !important;
     color: var(--primary-darker);
-    &:hover {
+    &:hover:not([disabled]) {
       text-decoration: underline;
       svg {
         rect {
@@ -151,6 +164,9 @@
       }
     }
   }
+}
+.btn-check:focus ~ label {
+  box-shadow: 0 0 0 0.25rem rgba(61, 15, 88, 0.1);
 }
 
 .matrix-block--richMedia {

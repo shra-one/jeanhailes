@@ -27117,7 +27117,6 @@ h6 {
   place-items: center;
   width: inherit;
   height: inherit;
-  position: relative;
   position: absolute;
   inset: 0;
 }
@@ -28762,7 +28761,8 @@ select {
   place-items: center;
   width: inherit;
   height: inherit;
-  position: relative;
+  position: absolute;
+  inset: 0;
 }
 .video a:hover {
   text-decoration: none;

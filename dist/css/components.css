@@ -15371,6 +15371,14 @@ h6 {
   white-space: nowrap;
   gap: 12px;
 }
+.btn svg, .matrix-block--signup-banner .component-grid button[type=submit] svg {
+  width: 1em;
+  height: 1em;
+}
+.btn img, .matrix-block--signup-banner .component-grid button[type=submit] img {
+  width: 1em;
+  height: 1em;
+}
 .btn--link {
   padding: 0 !important;
   background: transparent !important;

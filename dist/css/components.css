@@ -15087,10 +15087,6 @@ textarea.form-control-lg {
  *  Global settings
  *
  */
-body {
-  padding-top: 66px;
-}
-
 /**
  *
  * Typography Global settings
@@ -29167,8 +29163,9 @@ select {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+
 @media (max-width: 1023px) {
-  .header__container .navigation .container {
+  .header__wrap .navigation .container {
     padding-inline: 0;
   }
 }

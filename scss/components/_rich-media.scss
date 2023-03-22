@@ -321,4 +321,81 @@
       }
     }
   }
+
+  ul,
+  ol {
+    + p {
+      padding-top: 20px;
+    }
+    li {
+      margin-bottom: 16px;
+    }
+  }
+  ol {
+    padding-inline-start: 0;
+    counter-reset: item;
+    position: relative;
+    li {
+      padding-inline-start: 18px;
+      position: relative;
+      --offset-top: 6px;
+      padding-inline-start: 40px;
+      @media (min-width: 768px) {
+        --offset-top: 6px;
+      }
+      &:before {
+        counter-increment: ol;
+
+        position: absolute;
+        font-weight: bold;
+
+        content: counter(item) " ";
+        counter-increment: item;
+        left: 6px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        transform: translateY(var(--offset-top));
+      }
+      &:after {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid var(--primary-darker);
+        display: inline-block;
+        content: "";
+        transform: translateY(var(--offset-top));
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  ul {
+    padding-inline-start: 4px;
+    li {
+      position: relative;
+
+      padding-inline-start: 24px;
+      @media (min-width: 768px) {
+      }
+      &:before {
+        content: "";
+        margin-right: 8px;
+        background-color: var(--primary-darker);
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 14px;
+        left: 0;
+        @media (min-width: 768px) {
+          height: 6px;
+          width: 6px;
+          top: 12px;
+        }
+      }
+    }
+  }
 }

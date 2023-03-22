@@ -12,6 +12,7 @@
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   white-space: nowrap;
+  line-height: 1.6;
   gap: 12px;
   &:focus {
     box-shadow: 0 0 0 0.25rem rgba(61, 15, 88, 0.1) !important;
@@ -162,6 +163,25 @@
           border-radius: 0 var(--radius) var(--radius) 0;
         }
       }
+    }
+  }
+
+  &--circle {
+    --size: 2em;
+    width: var(--size);
+    height: var(--size);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #a7aaae;
+    border-radius: 50%;
+    font-size: 1rem;
+    svg {
+      width: 0.8em;
+      height: 0.8em;
+    }
+    &:hover {
+      background: var(--gray);
     }
   }
 }

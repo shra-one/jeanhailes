@@ -10,6 +10,8 @@
     align-items: center;
     &--previous,
     &--next {
+      display: flex;
+      align-items: center;
       .page-link {
         color: var(--primary-darker);
         display: flex;

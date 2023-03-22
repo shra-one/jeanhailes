@@ -57,7 +57,7 @@
         --offset-top: 6px;
         padding-inline-start: 40px;
         @media (min-width: 768px) {
-          --offset-top: 4px;
+          --offset-top: 6px;
         }
         &:before {
           counter-increment: ol;

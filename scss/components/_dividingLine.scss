@@ -1,0 +1,9 @@
+.matrix-block--dividingLine {
+  @extend %matrix-block;
+  @extend %matrix-block--section;
+
+  .dividing-line {
+    border-color: var(--border);
+    margin: 0;
+  }
+}

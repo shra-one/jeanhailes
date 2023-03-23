@@ -28941,6 +28941,25 @@ select {
   }
 }
 
+.figure-caption {
+  background-color: #f4f4f4;
+  padding: 8px 16px;
+  text-align: right;
+}
+.figure-caption span {
+  font-style: italic;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.figure-caption span:before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background-color: var(--text);
+  display: block;
+}
+
 .matrix-block--topicsOnThisPage {
   --matrix-block-section-padding-lg: 40px 0 0 0;
   --matrix-block-section-padding-sm: 24px 0 0 0;

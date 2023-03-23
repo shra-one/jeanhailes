@@ -28389,7 +28389,8 @@ select {
     -webkit-text-stroke: 3px white;
   }
 }
-.matrix-block--counterSteps .counter-steps__number svg {
+.matrix-block--counterSteps .counter-steps__number svg,
+.matrix-block--counterSteps .counter-steps__number img {
   width: 1em;
   height: 1em;
 }

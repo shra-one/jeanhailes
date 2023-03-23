@@ -28389,8 +28389,9 @@ select {
     -webkit-text-stroke: 3px white;
   }
 }
-.matrix-block--counterSteps .counter-steps__number:before {
-  content: counter(steps);
+.matrix-block--counterSteps .counter-steps__number svg {
+  width: 1em;
+  height: 1em;
 }
 .matrix-block--counterSteps .counter-steps__text {
   font-weight: 600;
@@ -30463,6 +30464,20 @@ input[type=radio]:checked + label.btn {
   height: 117px;
   display: block;
   margin-inline: auto;
+}
+
+.cards--primaryBg .component-card {
+  --card-title-color: white;
+  --card-root-bg: var(--primary-darker);
+}
+.cards--primaryBg .component-card .btn, .cards--primaryBg .component-card .matrix-block--signup-banner .component-grid button[type=submit], .matrix-block--signup-banner .component-grid .cards--primaryBg .component-card button[type=submit] {
+  background: var(--primary-light);
+  color: var(--primary-darker);
+  border: 0;
+}
+.cards--primaryBg .component-card .btn:hover, .cards--primaryBg .component-card .matrix-block--signup-banner .component-grid button[type=submit]:hover, .matrix-block--signup-banner .component-grid .cards--primaryBg .component-card button[type=submit]:hover {
+  background: var(--primary);
+  color: white;
 }
 
 .text--pinkSolid {

@@ -75,8 +75,13 @@
         line-height: 109px;
         -webkit-text-stroke: 3px white;
       }
+
+      svg {
+        width: 1em;
+        height: 1em;
+      }
       &:before {
-        content: counter(steps);
+        // content: counter(steps);
       }
     }
 

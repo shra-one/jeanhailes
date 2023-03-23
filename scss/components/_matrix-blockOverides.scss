@@ -51,3 +51,20 @@
     margin-inline: auto;
   }
 }
+
+.cards--primaryBg {
+  .component-card {
+    --card-title-color: white;
+    --card-root-bg: var(--primary-darker);
+
+    .btn {
+      background: var(--primary-light);
+      color: var(--primary-darker);
+      border: 0;
+      &:hover {
+        background: var(--primary);
+        color: white;
+      }
+    }
+  }
+}

@@ -30487,6 +30487,19 @@ input[type=radio]:checked + label.btn {
   color: white;
 }
 
+.signUpImage .component-card__figure {
+  display: flex !important;
+  justify-content: center;
+  padding: 24px !important;
+}
+.signUpImage .component-card__figure img {
+  width: auto;
+  height: 100%;
+  position: static;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
 .text--pinkSolid {
   color: var(--pink);
 }

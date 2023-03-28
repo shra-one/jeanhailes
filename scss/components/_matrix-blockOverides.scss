@@ -68,3 +68,17 @@
     }
   }
 }
+
+.signUpImage {
+  .component-card__figure {
+    display: flex !important;
+    justify-content: center;
+    padding: 24px !important;
+    img {
+      width: auto;
+      height: 100%;
+      position: static;
+      object-fit: contain !important;
+    }
+  }
+}

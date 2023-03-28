@@ -216,17 +216,17 @@
   }
 }
 .register-your-event {
-  --headerHeight: 80.5px;
+  // --headerHeight: 80.5px;
   --herogutterY: 70px;
   --fontSize: 24px;
   --lineHeight: 1.17;
   @include media-breakpoint-up(md) {
-    --headerHeight: 105px;
-    --herogutterY: 131.5px;
+    // --headerHeight: 105px;
+    // --herogutterY: 131.5px;
     --fontSize: 34px;
   }
   .hero {
-    padding-top: var(--headerHeight) !important;
+    // padding-top: var(--headerHeight) !important;
     height: auto;
     display: flex;
     align-items: center;

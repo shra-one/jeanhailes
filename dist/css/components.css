@@ -29028,24 +29028,11 @@ select {
   padding-top: 0 !important;
 }
 .event-detail .hero-special {
-  --headerHeight: 107px;
-  padding-top: var(--headerHeight);
-  padding: var(--headerHeight) 0 0 0;
   position: relative;
   display: flex;
   min-height: unset !important;
   height: unset !important;
   background-color: var(--primary-darker);
-}
-@media (min-width: 768px) {
-  .event-detail .hero-special {
-    --headerHeight: 80px;
-  }
-}
-@media (min-width: 992px) {
-  .event-detail .hero-special {
-    --headerHeight: 136px;
-  }
 }
 @media (min-width: 992px) {
   .event-detail .hero-special {
@@ -29207,12 +29194,14 @@ select {
 }
 
 .register-your-event {
+  --headerContainer: 78px;
   --herogutterY: 70px;
   --fontSize: 24px;
   --lineHeight: 1.17;
 }
 @media (min-width: 768px) {
   .register-your-event {
+    --headerContainer: 105px;
     --fontSize: 34px;
   }
 }
@@ -29225,9 +29214,6 @@ select {
 }
 .register-your-event .hero .breadcrumbs {
   display: none;
-}
-.register-your-event .hero__container {
-  margin-block: var(--herogutterY);
 }
 .register-your-event .hero__title {
   font-weight: 600;
@@ -30286,9 +30272,6 @@ input[type=radio]:checked + label.btn {
 }
 .register-your-event .navigation {
   display: none;
-}
-.register-your-event .header {
-  height: auto;
 }
 .register-your-event .header__container {
   padding-block: 24px;
